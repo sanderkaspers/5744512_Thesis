@@ -1,0 +1,130 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_034.py\", line 6, in test_centered_hexagonal_number_with_10_expect_271\n\
+    \    self.assertEqual(centered_hexagonal_number(10), 271)\nAssertionError: 3.6999999999999997\
+    \ != 271\n"
+  killer: test_centered_hexagonal_number_with_10_expect_271 (datasets.mbpp.tests.test_034.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_034 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_034.py\", line 6, in test_centered_hexagonal_number_with_10_expect_271\n\
+    \    self.assertEqual(centered_hexagonal_number(10), 271)\nAssertionError: 1 !=\
+    \ 271\n"
+  killer: test_centered_hexagonal_number_with_10_expect_271 (datasets.mbpp.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_034.py\", line 6, in test_centered_hexagonal_number_with_10_expect_271\n\
+    \    self.assertEqual(centered_hexagonal_number(10), 271)\nAssertionError: 531442\
+    \ != 271\n"
+  killer: test_centered_hexagonal_number_with_10_expect_271 (datasets.mbpp.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_034.py\", line 6, in test_centered_hexagonal_number_with_10_expect_271\n\
+    \    self.assertEqual(centered_hexagonal_number(10), 271)\nAssertionError: 4.333333333333334\
+    \ != 271\n"
+  killer: test_centered_hexagonal_number_with_10_expect_271 (datasets.mbpp.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_034.py\", line 6, in test_centered_hexagonal_number_with_10_expect_271\n\
+    \    self.assertEqual(centered_hexagonal_number(10), 271)\nAssertionError: 4 !=\
+    \ 271\n"
+  killer: test_centered_hexagonal_number_with_10_expect_271 (datasets.mbpp.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_034.py\", line 6, in test_centered_hexagonal_number_with_10_expect_271\n\
+    \    self.assertEqual(centered_hexagonal_number(10), 271)\nAssertionError: 19683000000001\
+    \ != 271\n"
+  killer: test_centered_hexagonal_number_with_10_expect_271 (datasets.mbpp.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_034.py\", line 6, in test_centered_hexagonal_number_with_10_expect_271\n\
+    \    self.assertEqual(centered_hexagonal_number(10), 271)\nAssertionError: 331\
+    \ != 271\n"
+  killer: test_centered_hexagonal_number_with_10_expect_271 (datasets.mbpp.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_034.py\", line 6, in test_centered_hexagonal_number_with_10_expect_271\n\
+    \    self.assertEqual(centered_hexagonal_number(10), 271)\nAssertionError: 269\
+    \ != 271\n"
+  killer: test_centered_hexagonal_number_with_10_expect_271 (datasets.mbpp.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_034
+tests:
+- name: datasets.mbpp.tests.test_034
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.03453969955444336
+  run_tests_with_mutant: 0.0005354881286621094
+total_time: 0.053154706954956055

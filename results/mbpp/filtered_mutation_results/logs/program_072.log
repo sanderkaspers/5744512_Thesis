@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_072
+   - tests: datasets.mbpp.tests.test_072
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_072 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ASR datasets.mbpp.programs.program_072: [0.00201 s] killed by test_max_occurrences_with_10_20_20_30_40_90_80_50_30_20_50_10_expect__20 (datasets.mbpp.tests.test_072.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_072.py", line 12, in test_max_occurrences_with_10_20_20_30_40_90_80_50_30_20_50_10_expect__20
+    self.assertEqual(max_occurrences([10,20,20,30,40,90,80,50,30,20,50,10]), (20))
+AssertionError: 40 != 20
+
+[*] Mutation score [0.03500 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

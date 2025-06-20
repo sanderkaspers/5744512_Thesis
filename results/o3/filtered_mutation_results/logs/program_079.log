@@ -1,0 +1,55 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_079
+   - tests: datasets.o3.tests.test_079
+[*] 5 tests passed:
+   - datasets.o3.tests.test_079 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.o3.programs.program_079: [0.00000 s] killed by test_float_radius (datasets.o3.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_079.py", line 12, in test_float_radius
+    self.assertAlmostEqual(circle_circumference(2.5), 2*3.1415*2.5, places=4)
+AssertionError: 1.5915963711602736 != 15.707500000000001 within 4 places (14.115903628839728 difference)
+
+   - [#   2] AOR datasets.o3.programs.program_079: [0.00000 s] killed by test_float_radius (datasets.o3.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_079.py", line 12, in test_float_radius
+    self.assertAlmostEqual(circle_circumference(2.5), 2*3.1415*2.5, places=4)
+AssertionError: 0.0 != 15.707500000000001 within 4 places (15.707500000000001 difference)
+
+   - [#   3] AOR datasets.o3.programs.program_079: [0.00000 s] killed by test_float_radius (datasets.o3.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_079.py", line 12, in test_float_radius
+    self.assertAlmostEqual(circle_circumference(2.5), 2*3.1415*2.5, places=4)
+AssertionError: 22.061027706197805 != 15.707500000000001 within 4 places (6.353527706197804 difference)
+
+   - [#   4] AOR datasets.o3.programs.program_079: [0.01563 s] killed by test_float_radius (datasets.o3.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_079.py", line 12, in test_float_radius
+    self.assertAlmostEqual(circle_circumference(2.5), 2*3.1415*2.5, places=4)
+AssertionError: 2.5132000000000003 != 15.707500000000001 within 4 places (13.194300000000002 difference)
+
+   - [#   5] AOR datasets.o3.programs.program_079: [0.00000 s] killed by test_float_radius (datasets.o3.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_079.py", line 12, in test_float_radius
+    self.assertAlmostEqual(circle_circumference(2.5), 2*3.1415*2.5, places=4)
+AssertionError: 2.0 != 15.707500000000001 within 4 places (13.707500000000001 difference)
+
+   - [#   6] AOR datasets.o3.programs.program_079: [0.00000 s] killed by test_float_radius (datasets.o3.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_079.py", line 12, in test_float_radius
+    self.assertAlmostEqual(circle_circumference(2.5), 2*3.1415*2.5, places=4)
+AssertionError: 98.9504216766649 != 15.707500000000001 within 4 places (83.2429216766649 difference)
+
+[*] Mutation score [0.04694 s]: 100.0%
+   - all: 6
+   - killed: 6 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

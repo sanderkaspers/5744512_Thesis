@@ -1,0 +1,146 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_020.py\", line 9, in test_is_Monotonic_with_1_2_2_3_expect_True\n\
+    \    self.assertEqual(is_Monotonic([1, 2, 2, 3]), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_Monotonic_with_1_2_2_3_expect_True (datasets.mbpp.tests.test_020.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_020 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0009975433349609375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_020.py\", line 9, in test_is_Monotonic_with_1_2_2_3_expect_True\n\
+    \    self.assertEqual(is_Monotonic([1, 2, 2, 3]), True)\n  File \"datasets.mbpp.programs.program_020\"\
+    , line 2, in is_Monotonic\n  File \"datasets.mbpp.programs.program_020\", line\
+    \ 2, in <genexpr>\nIndexError: list index out of range\n"
+  killer: test_is_Monotonic_with_1_2_2_3_expect_True (datasets.mbpp.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0010082721710205078
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_020.py\", line 6, in test_is_Monotonic_with_6_5_4_4_expect_True\n\
+    \    self.assertEqual(is_Monotonic([6, 5, 4, 4]), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_Monotonic_with_6_5_4_4_expect_True (datasets.mbpp.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 3
+  time: 0.000982046127319336
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_020.py\", line 6, in test_is_Monotonic_with_6_5_4_4_expect_True\n\
+    \    self.assertEqual(is_Monotonic([6, 5, 4, 4]), True)\n  File \"datasets.mbpp.programs.program_020\"\
+    , line 3, in is_Monotonic\n  File \"datasets.mbpp.programs.program_020\", line\
+    \ 3, in <genexpr>\nIndexError: list index out of range\n"
+  killer: test_is_Monotonic_with_6_5_4_4_expect_True (datasets.mbpp.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 3
+  time: 0.0019850730895996094
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_020.py\", line 9, in test_is_Monotonic_with_1_2_2_3_expect_True\n\
+    \    self.assertEqual(is_Monotonic([1, 2, 2, 3]), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_Monotonic_with_1_2_2_3_expect_True (datasets.mbpp.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010030269622802734
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_020.py\", line 9, in test_is_Monotonic_with_1_2_2_3_expect_True\n\
+    \    self.assertEqual(is_Monotonic([1, 2, 2, 3]), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_Monotonic_with_1_2_2_3_expect_True (datasets.mbpp.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.001031637191772461
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_020.py\", line 9, in test_is_Monotonic_with_1_2_2_3_expect_True\n\
+    \    self.assertEqual(is_Monotonic([1, 2, 2, 3]), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_Monotonic_with_1_2_2_3_expect_True (datasets.mbpp.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0009772777557373047
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_020.py\", line 6, in test_is_Monotonic_with_6_5_4_4_expect_True\n\
+    \    self.assertEqual(is_Monotonic([6, 5, 4, 4]), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_Monotonic_with_6_5_4_4_expect_True (datasets.mbpp.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 3
+  time: 0.0010037422180175781
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_020.py\", line 6, in test_is_Monotonic_with_6_5_4_4_expect_True\n\
+    \    self.assertEqual(is_Monotonic([6, 5, 4, 4]), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_Monotonic_with_6_5_4_4_expect_True (datasets.mbpp.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 9
+  status: killed
+  tests_run: 3
+  time: 0.0003294944763183594
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_020
+tests:
+- name: datasets.mbpp.tests.test_020
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0020394325256347656
+  create_target_ast: 0.0009922981262207031
+  mutate_module: 0.06830096244812012
+  run_tests_with_mutant: 0.011317968368530273
+total_time: 0.0743710994720459

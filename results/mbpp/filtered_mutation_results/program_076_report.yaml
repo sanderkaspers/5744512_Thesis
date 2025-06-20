@@ -1,0 +1,109 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_076.py\", line 6, in test_hexagonal_num_with_10_expect_190\n    self.assertEqual(hexagonal_num(10),\
+    \ 190)\nAssertionError: 0.5263157894736842 != 190\n"
+  killer: test_hexagonal_num_with_10_expect_190 (datasets.mbpp.tests.test_076.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_076 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010175704956054688
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_076.py\", line 6, in test_hexagonal_num_with_10_expect_190\n    self.assertEqual(hexagonal_num(10),\
+    \ 190)\nAssertionError: 0 != 190\n"
+  killer: test_hexagonal_num_with_10_expect_190 (datasets.mbpp.tests.test_076.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009572505950927734
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_076.py\", line 6, in test_hexagonal_num_with_10_expect_190\n    self.assertEqual(hexagonal_num(10),\
+    \ 190)\nAssertionError: 10000000000000000000 != 190\n"
+  killer: test_hexagonal_num_with_10_expect_190 (datasets.mbpp.tests.test_076.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.001001596450805664
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_076.py\", line 6, in test_hexagonal_num_with_10_expect_190\n    self.assertEqual(hexagonal_num(10),\
+    \ 190)\nAssertionError: -8.0 != 190\n"
+  killer: test_hexagonal_num_with_10_expect_190 (datasets.mbpp.tests.test_076.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_076.py\", line 6, in test_hexagonal_num_with_10_expect_190\n    self.assertEqual(hexagonal_num(10),\
+    \ 190)\nAssertionError: -10 != 190\n"
+  killer: test_hexagonal_num_with_10_expect_190 (datasets.mbpp.tests.test_076.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010018348693847656
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_076.py\", line 6, in test_hexagonal_num_with_10_expect_190\n    self.assertEqual(hexagonal_num(10),\
+    \ 190)\nAssertionError: 10230 != 190\n"
+  killer: test_hexagonal_num_with_10_expect_190 (datasets.mbpp.tests.test_076.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.00099945068359375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_076.py\", line 6, in test_hexagonal_num_with_10_expect_190\n    self.assertEqual(hexagonal_num(10),\
+    \ 190)\nAssertionError: 210 != 190\n"
+  killer: test_hexagonal_num_with_10_expect_190 (datasets.mbpp.tests.test_076.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_076
+tests:
+- name: datasets.mbpp.tests.test_076
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0019931793212890625
+  create_target_ast: 0.0
+  mutate_module: 0.032953739166259766
+  run_tests_with_mutant: 0.0059757232666015625
+total_time: 0.03894472122192383

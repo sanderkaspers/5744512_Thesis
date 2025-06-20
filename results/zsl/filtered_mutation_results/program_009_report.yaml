@@ -1,0 +1,179 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 46.666666666666664
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot.programs.program_009 ''
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 2
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 4
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 6
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 7
+  status: timeout
+  tests_run: null
+  time: 5.045409440994263
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_009.py\", line 33, in test_multiple_spaces_6\n    assert\
+    \ check(n) == expected_output\n  File \"datasets.GPT_4.Zero_shot.programs.program_009\"\
+    , line 8, in check\nZeroDivisionError: division by zero\n"
+  killer: test_multiple_spaces_6 (datasets.GPT_4.Zero_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 6
+  time: 0.0019605159759521484
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_009.py\", line 33, in test_multiple_spaces_6\n    assert\
+    \ check(n) == expected_output\n  File \"datasets.GPT_4.Zero_shot.programs.program_009\"\
+    , line 8, in check\nZeroDivisionError: integer division or modulo by zero\n"
+  killer: test_multiple_spaces_6 (datasets.GPT_4.Zero_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 6
+  time: 0.0009500980377197266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 10
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 11
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 12
+  status: timeout
+  tests_run: null
+  time: 5.034008026123047
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 13
+  status: timeout
+  tests_run: null
+  time: 5.036224603652954
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 14
+  status: timeout
+  tests_run: null
+  time: 5.040029764175415
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_009.py\", line 8, in test_multiple_spaces\n    assert check(n)\
+    \ == expected_output\nAssertionError\n"
+  killer: test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: ROR
+  number: 15
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Zero_shot.programs.program_009
+tests:
+- name: datasets.GPT_4.Zero_shot.tests.test_009
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0010080337524414062
+  create_target_ast: 0.0
+  mutate_module: 20.217896223068237
+  run_tests_with_mutant: 20.16057515144348
+total_time: 20.233518362045288

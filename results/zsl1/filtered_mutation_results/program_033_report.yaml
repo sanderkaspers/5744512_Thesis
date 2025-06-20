@@ -1,0 +1,144 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_033.py\", line 6, in test_1\n    self.assertAlmostEqual(surfacearea_sphere(1),\
+    \ 4 * math.pi)\nAssertionError: 1.2732395447351628 != 12.566370614359172 within\
+    \ 7 places (11.29313106962401 difference)\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_033.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot1.programs.program_033 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0009930133819580078
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_033.py\", line 6, in test_1\n    self.assertAlmostEqual(surfacearea_sphere(1),\
+    \ 4 * math.pi)\nAssertionError: 1.0 != 12.566370614359172 within 7 places (11.566370614359172\
+    \ difference)\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009999275207519531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_033.py\", line 6, in test_1\n    self.assertAlmostEqual(surfacearea_sphere(1),\
+    \ 4 * math.pi)\nAssertionError: 77.8802336483881 != 12.566370614359172 within\
+    \ 7 places (65.31386303402893 difference)\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.00099945068359375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_033.py\", line 9, in test_2\n    self.assertAlmostEqual(surfacearea_sphere(2),\
+    \ 4 * math.pi * 4)\nAssertionError: 12.566370614359172 != 50.26548245743669 within\
+    \ 7 places (37.69911184307752 difference)\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_033.py\", line 6, in test_1\n    self.assertAlmostEqual(surfacearea_sphere(1),\
+    \ 4 * math.pi)\nAssertionError: 12.0 != 12.566370614359172 within 7 places (0.5663706143591725\
+    \ difference)\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010004043579101562
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_033.py\", line 9, in test_2\n    self.assertAlmostEqual(surfacearea_sphere(2),\
+    \ 4 * math.pi * 4)\nAssertionError: 315.82734083485946 != 50.26548245743669 within\
+    \ 7 places (265.56185837742277 difference)\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 2
+  time: 0.0010001659393310547
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_033.py\", line 9, in test_2\n    self.assertAlmostEqual(surfacearea_sphere(2),\
+    \ 4 * math.pi * 4)\nAssertionError: 12.566370614359172 != 50.26548245743669 within\
+    \ 7 places (37.69911184307752 difference)\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_033.py\", line 6, in test_1\n    self.assertAlmostEqual(surfacearea_sphere(1),\
+    \ 4 * math.pi)\nAssertionError: 12.0 != 12.566370614359172 within 7 places (0.5663706143591725\
+    \ difference)\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_033.py\", line 9, in test_2\n    self.assertAlmostEqual(surfacearea_sphere(2),\
+    \ 4 * math.pi * 4)\nAssertionError: 631.6546816697189 != 50.26548245743669 within\
+    \ 7 places (581.3891992122822 difference)\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 2
+  time: 0.001001596450805664
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Zero_shot1.programs.program_033
+tests:
+- name: datasets.GPT_4.Zero_shot1.tests.test_033
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0009996891021728516
+  create_target_ast: 0.0
+  mutate_module: 0.0399935245513916
+  run_tests_with_mutant: 0.005994558334350586
+total_time: 0.04498410224914551

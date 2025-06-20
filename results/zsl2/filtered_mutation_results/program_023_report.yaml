@@ -1,0 +1,236 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 88.23529411764706
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot2.programs.program_023 ''
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 2
+  status: timeout
+  tests_run: null
+  time: 5.04025411605835
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\n  File \"datasets.GPT_4.Zero_shot2.programs.program_023\"\
+    , line 11, in comb_sort\nIndexError: list index out of range\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\nAssertionError: Lists differ: [2, 1, 3] != [1, 2, 3]\n\n\
+    First differing element 0:\n2\n1\n\n- [2, 1, 3]\n+ [1, 2, 3]\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\nAssertionError: Lists differ: [3, 2, 2] != [1, 2, 3]\n\n\
+    First differing element 0:\n3\n1\n\n- [3, 2, 2]\n?  ^     ^\n\n+ [1, 2, 3]\n?\
+    \  ^     ^\n\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\nAssertionError: Lists differ: [1, 1, 3] != [1, 2, 3]\n\n\
+    First differing element 1:\n1\n2\n\n- [1, 1, 3]\n?     ^\n\n+ [1, 2, 3]\n?   \
+    \  ^\n\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\n  File \"datasets.GPT_4.Zero_shot2.programs.program_023\"\
+    , line 11, in comb_sort\nIndexError: list index out of range\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: ASR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\nAssertionError: Lists differ: [3, 1, 2] != [1, 2, 3]\n\n\
+    First differing element 0:\n3\n1\n\n- [3, 1, 2]\n+ [1, 2, 3]\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\nAssertionError: Lists differ: [3, 1, 2] != [1, 2, 3]\n\n\
+    First differing element 0:\n3\n1\n\n- [3, 1, 2]\n+ [1, 2, 3]\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: COI
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: COI
+  number: 10
+  status: timeout
+  tests_run: null
+  time: 5.038561582565308
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 18, in test_comb_5\n    self.assertEqual(comb_sort([-3,\
+    \ -1, -2]), [-3, -2, -1])\nAssertionError: Lists differ: [-3, -1, -2] != [-3,\
+    \ -2, -1]\n\nFirst differing element 1:\n-1\n-2\n\n- [-3, -1, -2]\n+ [-3, -2,\
+    \ -1]\n"
+  killer: test_comb_5 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: LCR
+  number: 11
+  status: killed
+  tests_run: 5
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 12
+  status: timeout
+  tests_run: null
+  time: 5.046170473098755
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 13
+  status: survived
+  tests_run: 8
+  time: 0.0009942054748535156
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\nAssertionError: Lists differ: [3, 1, 2] != [1, 2, 3]\n\n\
+    First differing element 0:\n3\n1\n\n- [3, 1, 2]\n+ [1, 2, 3]\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: ROR
+  number: 14
+  status: killed
+  tests_run: 1
+  time: 0.0009946823120117188
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\n  File \"datasets.GPT_4.Zero_shot2.programs.program_023\"\
+    , line 11, in comb_sort\nIndexError: list index out of range\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: ROR
+  number: 15
+  status: killed
+  tests_run: 1
+  time: 0.0010128021240234375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_023.py\", line 6, in test_comb_1\n    self.assertEqual(comb_sort([3,\
+    \ 1, 2]), [1, 2, 3])\nAssertionError: Lists differ: [3, 2, 1] != [1, 2, 3]\n\n\
+    First differing element 0:\n3\n1\n\n- [3, 2, 1]\n?  ^     ^\n\n+ [1, 2, 3]\n?\
+    \  ^     ^\n\n"
+  killer: test_comb_1 (datasets.GPT_4.Zero_shot2.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: ROR
+  number: 16
+  status: killed
+  tests_run: 1
+  time: 0.0009884834289550781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: ROR
+  number: 17
+  status: timeout
+  tests_run: null
+  time: 5.037516832351685
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Zero_shot2.programs.program_023
+tests:
+- name: datasets.GPT_4.Zero_shot2.tests.test_023
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 20.274800300598145
+  run_tests_with_mutant: 20.17035412788391
+total_time: 20.274800300598145

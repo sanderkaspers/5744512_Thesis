@@ -1,0 +1,59 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_005.py\", line 6, in test_1\n    self.assertEqual(square_perimeter(0),\
+    \ 0)\n  File \"datasets.GPT_4.Zero_shot1.programs.program_005\", line 2, in square_perimeter\n\
+    ZeroDivisionError: division by zero\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_005.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot1.programs.program_005 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0019974708557128906
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_005.py\", line 6, in test_1\n    self.assertEqual(square_perimeter(0),\
+    \ 0)\n  File \"datasets.GPT_4.Zero_shot1.programs.program_005\", line 2, in square_perimeter\n\
+    ZeroDivisionError: integer division or modulo by zero\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_005.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0012149810791015625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_005.py\", line 6, in test_1\n    self.assertEqual(square_perimeter(0),\
+    \ 0)\nAssertionError: 1 != 0\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_005.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0010554790496826172
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Zero_shot1.programs.program_005
+tests:
+- name: datasets.GPT_4.Zero_shot1.tests.test_005
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0009856224060058594
+  mutate_module: 0.025926828384399414
+  run_tests_with_mutant: 0.005454063415527344
+total_time: 0.030992746353149414

@@ -1,0 +1,16 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 0
+mutations: []
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Chain_of_thought.programs.program_047
+tests:
+- name: datasets.GPT_4.Chain_of_thought.tests.test_047
+  target: null
+  time: 0.0
+time_stats:
+  create_target_ast: 0.0
+  mutate_module: 0.005997657775878906
+total_time: 0.01300668716430664

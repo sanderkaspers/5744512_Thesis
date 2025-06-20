@@ -1,0 +1,91 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_069
+   - tests: datasets.mbpp.tests.test_069
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_069 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.mbpp.programs.program_069: [0.01563 s] survived
+   - [#   2] AOD datasets.mbpp.programs.program_069: [0.00000 s] survived
+   - [#   3] AOR datasets.mbpp.programs.program_069: [0.00000 s] survived
+   - [#   4] AOR datasets.mbpp.programs.program_069: [0.00000 s] survived
+   - [#   5] AOR datasets.mbpp.programs.program_069: [0.00000 s] killed by test_multiply_int_with_10_20_expect_200 (datasets.mbpp.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_069.py", line 6, in test_multiply_int_with_10_20_expect_200
+    self.assertEqual(multiply_int(10,20), 200)
+AssertionError: 0 != 200
+
+   - [#   6] AOR datasets.mbpp.programs.program_069: [0.21118 s] killed by test_multiply_int_with_10_20_expect_200 (datasets.mbpp.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_069.py", line 6, in test_multiply_int_with_10_20_expect_200
+    self.assertEqual(multiply_int(10,20), 200)
+  File "datasets.mbpp.programs.program_069", line 9, in multiply_int
+  File "datasets.mbpp.programs.program_069", line 9, in multiply_int
+  File "datasets.mbpp.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.mbpp.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   7] COI datasets.mbpp.programs.program_069: [0.21336 s] killed by test_multiply_int_with_10_20_expect_200 (datasets.mbpp.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_069.py", line 6, in test_multiply_int_with_10_20_expect_200
+    self.assertEqual(multiply_int(10,20), 200)
+  File "datasets.mbpp.programs.program_069", line 3, in multiply_int
+  File "datasets.mbpp.programs.program_069", line 9, in multiply_int
+  File "datasets.mbpp.programs.program_069", line 9, in multiply_int
+  File "datasets.mbpp.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 982 more times]
+  File "datasets.mbpp.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   8] COI datasets.mbpp.programs.program_069: [0.00000 s] killed by test_multiply_int_with_10_20_expect_200 (datasets.mbpp.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_069.py", line 6, in test_multiply_int_with_10_20_expect_200
+    self.assertEqual(multiply_int(10,20), 200)
+AssertionError: 0 != 200
+
+   - [#   9] COI datasets.mbpp.programs.program_069: [0.00103 s] killed by test_multiply_int_with_10_20_expect_200 (datasets.mbpp.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_069.py", line 6, in test_multiply_int_with_10_20_expect_200
+    self.assertEqual(multiply_int(10,20), 200)
+AssertionError: 10 != 200
+
+   - [#  10] ROR datasets.mbpp.programs.program_069: [0.21498 s] killed by test_multiply_int_with_10_20_expect_200 (datasets.mbpp.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_069.py", line 6, in test_multiply_int_with_10_20_expect_200
+    self.assertEqual(multiply_int(10,20), 200)
+  File "datasets.mbpp.programs.program_069", line 3, in multiply_int
+  File "datasets.mbpp.programs.program_069", line 9, in multiply_int
+  File "datasets.mbpp.programs.program_069", line 9, in multiply_int
+  File "datasets.mbpp.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 982 more times]
+  File "datasets.mbpp.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#  11] ROR datasets.mbpp.programs.program_069: [0.00098 s] survived
+   - [#  12] ROR datasets.mbpp.programs.program_069: [0.00100 s] killed by test_multiply_int_with_10_20_expect_200 (datasets.mbpp.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_069.py", line 6, in test_multiply_int_with_10_20_expect_200
+    self.assertEqual(multiply_int(10,20), 200)
+AssertionError: 0 != 200
+
+   - [#  13] ROR datasets.mbpp.programs.program_069: [0.00000 s] killed by test_multiply_int_with_10_20_expect_200 (datasets.mbpp.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_069.py", line 6, in test_multiply_int_with_10_20_expect_200
+    self.assertEqual(multiply_int(10,20), 200)
+AssertionError: 10 != 200
+
+[*] Mutation score [0.71722 s]: 61.5%
+   - all: 13
+   - killed: 8 (61.5%)
+   - survived: 5 (38.5%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

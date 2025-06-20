@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MutPy mutation report - mutation #7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js" type="text/javascript"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+    window.setTimeout(function () {
+        
+        $('.line.number4').attr('title', 'COI');
+        
+    }, 0);
+</script>
+
+</head>
+<body>
+    <div class="container">
+        
+<div class="page-header">
+    <h1>Mutation #7</h1>
+</div>
+<h3>Details</h3>
+<ul>
+    <li>module - <code><module 'datasets.o3.programs.program_065' from 'C:\\Users\\skaspers\\OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\programs\\program_065.py'></code></li>
+    <li><span class="label label-success">killed</span> by <code>test_first_pair_full (datasets.o3.tests.test_065.TestVersion)</code></li>
+    
+    
+    <li>tests run - 1</li>
+    
+</ul>
+
+<h3>Exception traceback</h3>
+<pre>Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_065.py", line 22, in test_first_pair_full
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 'Input must be bigger than 0!' != 504
+</pre>
+
+<h3>Mutations</h3>
+<ul>
+    
+    <li>COI - line 4</li>
+    
+</ul>
+<h3>Mutant</h3>
+<pre class="brush: python; first-line: 1; highlight: [4]; toolbar: false;">def amicable_numbers_sum(limit):
+    if not (isinstance(limit, int)):
+        return 'Input is not an integer!'
+    if not (limit < 1):
+        return 'Input must be bigger than 0!'
+    amicables = set()
+    for num in range(2, limit + 1):
+        if num in amicables:
+            continue
+        sum_fact = sum([fact for fact in range(1, num) if num % fact == 0])
+        sum_fact2 = sum([fact for fact in range(1, sum_fact) if sum_fact % fact == 0])
+        if (num == sum_fact2 and num != sum_fact):
+            amicables.add(num)
+            amicables.add(sum_fact2)
+    return sum(amicables)</pre>
+
+    </div>
+</body>
+</html>

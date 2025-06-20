@@ -1,0 +1,151 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_085
+   - tests: datasets.mbpp.tests.test_085
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_085 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.mbpp.programs.program_085: [0.00201 s] survived
+   - [#   2] AOR datasets.mbpp.programs.program_085: [0.00100 s] survived
+   - [#   3] AOR datasets.mbpp.programs.program_085: [0.00000 s] survived
+   - [#   4] AOR datasets.mbpp.programs.program_085: [0.00100 s] killed by test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 12, in test_find_solution_with_1_13_17_expect__4
+    self.assertEqual(find_solution(1, 13, 17), (4, 1))
+AssertionError: Tuples differ: (9, 0) != (4, 1)
+
+First differing element 0:
+9
+4
+
+- (9, 0)
++ (4, 1)
+
+   - [#   5] AOR datasets.mbpp.programs.program_085: [0.00100 s] survived
+   - [#   6] AOR datasets.mbpp.programs.program_085: [0.00000 s] survived
+   - [#   7] AOR datasets.mbpp.programs.program_085: [0.00000 s] killed by test_case (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 9, in test_case
+    self.assertIsNone(find_solution(4, 2, 7))
+AssertionError: (1, 1) is not None
+
+   - [#   8] AOR datasets.mbpp.programs.program_085: [0.00100 s] killed by test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 12, in test_find_solution_with_1_13_17_expect__4
+    self.assertEqual(find_solution(1, 13, 17), (4, 1))
+AssertionError: Tuples differ: (17, 0) != (4, 1)
+
+First differing element 0:
+17
+4
+
+- (17, 0)
++ (4, 1)
+
+   - [#   9] AOR datasets.mbpp.programs.program_085: [0.00099 s] killed by test_find_solution_with_2_3_7_expect__2 (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 6, in test_find_solution_with_2_3_7_expect__2
+    self.assertEqual(find_solution(2, 3, 7), (2, 1))
+AssertionError: Tuples differ: (2, 3) != (2, 1)
+
+First differing element 1:
+3
+1
+
+- (2, 3)
+?     ^
+
++ (2, 1)
+?     ^
+
+
+   - [#  10] AOR datasets.mbpp.programs.program_085: [0.00153 s] killed by test_find_solution_with_2_3_7_expect__2 (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 6, in test_find_solution_with_2_3_7_expect__2
+    self.assertEqual(find_solution(2, 3, 7), (2, 1))
+AssertionError: Tuples differ: (2, 2.0) != (2, 1)
+
+First differing element 1:
+2.0
+1
+
+- (2, 2.0)
++ (2, 1)
+
+   - [#  11] AOR datasets.mbpp.programs.program_085: [0.00000 s] killed by test_find_solution_with_2_3_7_expect__2 (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 6, in test_find_solution_with_2_3_7_expect__2
+    self.assertEqual(find_solution(2, 3, 7), (2, 1))
+AssertionError: Tuples differ: (2, 2) != (2, 1)
+
+First differing element 1:
+2
+1
+
+- (2, 2)
+?     ^
+
++ (2, 1)
+?     ^
+
+
+   - [#  12] AOR datasets.mbpp.programs.program_085: [0.00099 s] survived
+   - [#  13] AOR datasets.mbpp.programs.program_085: [0.00132 s] survived
+   - [#  14] AOR datasets.mbpp.programs.program_085: [0.00000 s] killed by test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 12, in test_find_solution_with_1_13_17_expect__4
+    self.assertEqual(find_solution(1, 13, 17), (4, 1))
+AssertionError: Tuples differ: (4, 169) != (4, 1)
+
+First differing element 1:
+169
+1
+
+- (4, 169)
+?      --
+
++ (4, 1)
+
+   - [#  15] AOR datasets.mbpp.programs.program_085: [5.02330 s] timeout
+   - [#  16] COI datasets.mbpp.programs.program_085: [0.00000 s] killed by test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 12, in test_find_solution_with_1_13_17_expect__4
+    self.assertEqual(find_solution(1, 13, 17), (4, 1))
+AssertionError: None != (4, 1)
+
+   - [#  17] COI datasets.mbpp.programs.program_085: [0.00100 s] killed by test_case (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 9, in test_case
+    self.assertIsNone(find_solution(4, 2, 7))
+AssertionError: (0, 3) is not None
+
+   - [#  18] ROR datasets.mbpp.programs.program_085: [0.00100 s] killed by test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 12, in test_find_solution_with_1_13_17_expect__4
+    self.assertEqual(find_solution(1, 13, 17), (4, 1))
+AssertionError: None != (4, 1)
+
+   - [#  19] ROR datasets.mbpp.programs.program_085: [0.00097 s] survived
+   - [#  20] ROR datasets.mbpp.programs.program_085: [0.00000 s] killed by test_case (datasets.mbpp.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_085.py", line 9, in test_case
+    self.assertIsNone(find_solution(4, 2, 7))
+AssertionError: (0, 3) is not None
+
+[*] Mutation score [5.13788 s]: 60.0%
+   - all: 20
+   - killed: 11 (55.0%)
+   - survived: 8 (40.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 1 (5.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

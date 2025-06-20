@@ -1,0 +1,63 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_045.py\", line 9, in test_all_same_elements\n \
+    \   def test_all_same_elements(self): self.assertEqual(frequency_lists([[5, 5],\
+    \ [5], [5, 5]]), {5: 5})\nAssertionError: {5: -3} != {5: 5}\n- {5: -3}\n?    \
+    \ ^^\n\n+ {5: 5}\n?     ^\n\n"
+  killer: test_all_same_elements (datasets.GPT_4.Chain_of_thought2.tests.test_045.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought2.programs.program_045 ''
+  mutations:
+  - lineno: 6
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_045.py\", line 9, in test_all_same_elements\n \
+    \   def test_all_same_elements(self): self.assertEqual(frequency_lists([[5, 5],\
+    \ [5], [5, 5]]), {5: 5})\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_045\"\
+    , line 6, in frequency_lists\nKeyError: 5\n"
+  killer: test_all_same_elements (datasets.GPT_4.Chain_of_thought2.tests.test_045.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_045.py\", line 9, in test_all_same_elements\n \
+    \   def test_all_same_elements(self): self.assertEqual(frequency_lists([[5, 5],\
+    \ [5], [5, 5]]), {5: 5})\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_045\"\
+    , line 6, in frequency_lists\nKeyError: 5\n"
+  killer: test_all_same_elements (datasets.GPT_4.Chain_of_thought2.tests.test_045.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 2
+  time: 0.0
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Chain_of_thought2.programs.program_045
+tests:
+- name: datasets.GPT_4.Chain_of_thought2.tests.test_045
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.04688453674316406
+  run_tests_with_mutant: 0.0
+total_time: 0.04688453674316406

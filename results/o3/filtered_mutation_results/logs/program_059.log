@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_059
+   - tests: datasets.o3.tests.test_059
+[*] 3 tests passed:
+   - datasets.o3.tests.test_059 [0.00099 s]
+[*] Start mutants generation and execution:
+   - [#   1] COD datasets.o3.programs.program_059: [0.00099 s] killed by test_all_empty_dicts (datasets.o3.tests.test_059.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_059.py", line 6, in test_all_empty_dicts
+    self.assertTrue(empty_dit([{}, {}]))
+AssertionError: False is not true
+
+[*] Mutation score [0.02600 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

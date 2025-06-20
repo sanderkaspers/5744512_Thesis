@@ -1,0 +1,16 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 0
+mutations: []
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_016
+tests:
+- name: datasets.mbpp.tests.test_016
+  target: null
+  time: 0.0
+time_stats:
+  create_target_ast: 0.0010750293731689453
+  mutate_module: 0.008059978485107422
+total_time: 0.013621807098388672

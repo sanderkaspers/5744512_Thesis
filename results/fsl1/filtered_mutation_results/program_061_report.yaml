@@ -1,0 +1,34 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_061.py\", line 9, in test_list_to_float_all_numbers\n \
+    \   def test_list_to_float_all_numbers(self): self.assertEqual(list_to_float([('2',\
+    \ '3.5')]), [(2.0, 3.5)])\nAssertionError: Lists differ: [('2', '3.5')] != [(2.0,\
+    \ 3.5)]\n\nFirst differing element 0:\n('2', '3.5')\n(2.0, 3.5)\n\n- [('2', '3.5')]\n\
+    ?   - ^  -   -\n\n+ [(2.0, 3.5)]\n?    ^^\n\n"
+  killer: test_list_to_float_all_numbers (datasets.GPT_4.Few_shot1.tests.test_061.TestVersion)
+  module: !!python/module:datasets.GPT_4.Few_shot1.programs.program_061 ''
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0009984970092773438
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_061
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_061
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0012738704681396484
+  mutate_module: 0.03270149230957031
+  run_tests_with_mutant: 0.0009984970092773438
+total_time: 0.03877115249633789

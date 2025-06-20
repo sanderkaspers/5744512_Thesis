@@ -1,0 +1,16 @@
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_080
+   - tests: datasets.pynguin.tests.test_080
+[*] 1 tests passed:
+   - datasets.pynguin.tests.test_080 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COD datasets.pynguin.programs.program_080: [0.00000 s] survived
+   - [#   2] COI datasets.pynguin.programs.program_080: [0.00000 s] survived
+   - [#   3] COI datasets.pynguin.programs.program_080: [0.00000 s] survived
+[*] Mutation score [0.04233 s]: 0.0%
+   - all: 3
+   - killed: 0 (0.0%)
+   - survived: 3 (100.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

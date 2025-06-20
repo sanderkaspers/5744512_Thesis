@@ -1,0 +1,148 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: -17.0 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_012 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: -20 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: 590470 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: -17.0 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: -17 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: 590489999999980 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: 320 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: 299.8 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: 300 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_012.py\", line 9, in test_is_octagonal_with_10_expect_280\n    self.assertEqual(is_octagonal(10),\
+    \ 280)\nAssertionError: -724 != 280\n"
+  killer: test_is_octagonal_with_10_expect_280 (datasets.mbpp.tests.test_012.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_012
+tests:
+- name: datasets.mbpp.tests.test_012
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.032274484634399414
+  run_tests_with_mutant: 0.0
+total_time: 0.04794597625732422

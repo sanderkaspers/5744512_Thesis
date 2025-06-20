@@ -1,0 +1,55 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot1.programs.program_080
+   - tests: datasets.GPT_4.Zero_shot1.tests.test_080
+[*] 9 tests passed:
+   - datasets.GPT_4.Zero_shot1.tests.test_080 [0.00100 s]
+[*] Start mutants generation and execution:
+   - [#   1] COD datasets.GPT_4.Zero_shot1.programs.program_080: [0.00100 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_080.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_080.py", line 6, in test_1
+    self.assertEqual(extract_singly([[5, 6], [7, 8]]), [5, 6, 7, 8])
+AssertionError: Lists differ: [] != [5, 6, 7, 8]
+
+Second list contains 4 additional elements.
+First extra element 0:
+5
+
+- []
++ [5, 6, 7, 8]
+
+   - [#   2] COI datasets.GPT_4.Zero_shot1.programs.program_080: [0.00100 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_080.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_080.py", line 6, in test_1
+    self.assertEqual(extract_singly([[5, 6], [7, 8]]), [5, 6, 7, 8])
+AssertionError: Lists differ: [] != [5, 6, 7, 8]
+
+Second list contains 4 additional elements.
+First extra element 0:
+5
+
+- []
++ [5, 6, 7, 8]
+
+   - [#   3] COI datasets.GPT_4.Zero_shot1.programs.program_080: [0.00100 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_080.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_080.py", line 6, in test_1
+    self.assertEqual(extract_singly([[5, 6], [7, 8]]), [5, 6, 7, 8])
+AssertionError: Lists differ: [] != [5, 6, 7, 8]
+
+Second list contains 4 additional elements.
+First extra element 0:
+5
+
+- []
++ [5, 6, 7, 8]
+
+[*] Mutation score [0.03953 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

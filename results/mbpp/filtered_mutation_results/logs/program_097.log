@@ -1,0 +1,28 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_097
+   - tests: datasets.mbpp.tests.test_097
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_097 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] BCR datasets.mbpp.programs.program_097: [0.00000 s] survived
+   - [#   2] COD datasets.mbpp.programs.program_097: [0.00000 s] killed by test_check_type_with__3_2_1_4_5__expect_True (datasets.mbpp.tests.test_097.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_097.py", line 12, in test_check_type_with__3_2_1_4_5__expect_True
+    self.assertEqual(check_type((3, 2, 1, 4, 5)), True)
+AssertionError: False != True
+
+   - [#   3] COI datasets.mbpp.programs.program_097: [0.00000 s] killed by test_check_type_with__3_2_1_4_5__expect_True (datasets.mbpp.tests.test_097.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_097.py", line 12, in test_check_type_with__3_2_1_4_5__expect_True
+    self.assertEqual(check_type((3, 2, 1, 4, 5)), True)
+AssertionError: False != True
+
+[*] Mutation score [0.03849 s]: 66.7%
+   - all: 3
+   - killed: 2 (66.7%)
+   - survived: 1 (33.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

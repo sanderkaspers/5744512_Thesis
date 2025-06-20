@@ -1,0 +1,135 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot2.programs.program_069
+   - tests: datasets.GPT_4.Few_shot2.tests.test_069
+[*] 9 tests passed:
+   - datasets.GPT_4.Few_shot2.tests.test_069 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.GPT_4.Few_shot2.programs.program_069: [0.00000 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+AssertionError: -8 != 8
+
+   - [#   2] AOD datasets.GPT_4.Few_shot2.programs.program_069: [0.22685 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   3] AOR datasets.GPT_4.Few_shot2.programs.program_069: [0.00000 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+AssertionError: -8 != 8
+
+   - [#   4] AOR datasets.GPT_4.Few_shot2.programs.program_069: [0.22133 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   5] AOR datasets.GPT_4.Few_shot2.programs.program_069: [0.00000 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+AssertionError: 0 != 8
+
+   - [#   6] AOR datasets.GPT_4.Few_shot2.programs.program_069: [0.22018 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 982 more times]
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   7] COI datasets.GPT_4.Few_shot2.programs.program_069: [0.23707 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   8] COI datasets.GPT_4.Few_shot2.programs.program_069: [0.00000 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+AssertionError: 0 != 8
+
+   - [#   9] COI datasets.GPT_4.Few_shot2.programs.program_069: [0.00000 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+AssertionError: 4 != 8
+
+   - [#  10] ROR datasets.GPT_4.Few_shot2.programs.program_069: [0.22643 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#  11] ROR datasets.GPT_4.Few_shot2.programs.program_069: [0.23145 s] killed by test_multiply_int_zero (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 7, in test_multiply_int_zero
+    def test_multiply_int_zero(self): self.assertEqual(multiply_int(5, 0), 0)
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Few_shot2.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#  12] ROR datasets.GPT_4.Few_shot2.programs.program_069: [0.00000 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+AssertionError: 0 != 8
+
+   - [#  13] ROR datasets.GPT_4.Few_shot2.programs.program_069: [0.00000 s] killed by test_multiply_int_both_negative (datasets.GPT_4.Few_shot2.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_069.py", line 15, in test_multiply_int_both_negative
+    def test_multiply_int_both_negative(self): self.assertEqual(multiply_int(-4, -2), 8)
+AssertionError: 4 != 8
+
+[*] Mutation score [1.40943 s]: 100.0%
+   - all: 13
+   - killed: 13 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

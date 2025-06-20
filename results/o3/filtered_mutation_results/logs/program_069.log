@@ -1,0 +1,135 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_069
+   - tests: datasets.o3.tests.test_069
+[*] 5 tests passed:
+   - datasets.o3.tests.test_069 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.o3.programs.program_069: [0.00000 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+AssertionError: -6 != 6
+
+   - [#   2] AOD datasets.o3.programs.program_069: [0.21506 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.o3.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   3] AOR datasets.o3.programs.program_069: [0.00000 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+AssertionError: -6 != 6
+
+   - [#   4] AOR datasets.o3.programs.program_069: [0.21532 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.o3.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   5] AOR datasets.o3.programs.program_069: [0.00000 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+AssertionError: 2 != 6
+
+   - [#   6] AOR datasets.o3.programs.program_069: [0.20279 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  File "datasets.o3.programs.program_069", line 9, in multiply_int
+  File "datasets.o3.programs.program_069", line 9, in multiply_int
+  File "datasets.o3.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 982 more times]
+  File "datasets.o3.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   7] COI datasets.o3.programs.program_069: [0.21663 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+  File "datasets.o3.programs.program_069", line 9, in multiply_int
+  File "datasets.o3.programs.program_069", line 9, in multiply_int
+  File "datasets.o3.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.o3.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   8] COI datasets.o3.programs.program_069: [0.00000 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+AssertionError: 0 != 6
+
+   - [#   9] COI datasets.o3.programs.program_069: [0.00000 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+AssertionError: 2 != 6
+
+   - [#  10] ROR datasets.o3.programs.program_069: [0.21729 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+  File "datasets.o3.programs.program_069", line 9, in multiply_int
+  File "datasets.o3.programs.program_069", line 9, in multiply_int
+  File "datasets.o3.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.o3.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#  11] ROR datasets.o3.programs.program_069: [0.21139 s] killed by test_zero_multiplier (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 9, in test_zero_multiplier
+    self.assertEqual(multiply_int(7,0), 0)
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  File "datasets.o3.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.o3.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#  12] ROR datasets.o3.programs.program_069: [0.00000 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+AssertionError: 0 != 6
+
+   - [#  13] ROR datasets.o3.programs.program_069: [0.00000 s] killed by test_both_negative (datasets.o3.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_069.py", line 18, in test_both_negative
+    self.assertEqual(multiply_int(-2,-3), 6)
+AssertionError: 2 != 6
+
+[*] Mutation score [1.35665 s]: 100.0%
+   - all: 13
+   - killed: 13 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

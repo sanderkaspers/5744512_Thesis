@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought.programs.program_072
+   - tests: datasets.GPT_4.Chain_of_thought.tests.test_072
+[*] 10 tests passed:
+   - datasets.GPT_4.Chain_of_thought.tests.test_072 [0.07821 s]
+[*] Start mutants generation and execution:
+   - [#   1] ASR datasets.GPT_4.Chain_of_thought.programs.program_072: [0.00000 s] killed by test_floating_point_numbers (datasets.GPT_4.Chain_of_thought.tests.test_072.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_072.py", line 32, in test_floating_point_numbers
+    self.assertEqual(max_occurrences([1.1, 2.2, 3.3, 1.1, 1.1]), 1.1)
+AssertionError: 2.2 != 1.1
+
+[*] Mutation score [0.11337 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

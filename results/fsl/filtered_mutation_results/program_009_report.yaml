@@ -1,0 +1,192 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 66.66666666666666
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_009.py\", line 6, in test_case_1\n    self.assertEqual(rev(123),\
+    \ 321)\nAssertionError: 1.23 != 321\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_009.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot.programs.program_009 ''
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0009942054748535156
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_009.py\", line 6, in test_case_1\n    self.assertEqual(rev(123),\
+    \ 321)\nAssertionError: 1 != 321\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009982585906982422
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_009.py\", line 6, in test_case_1\n    self.assertEqual(rev(123),\
+    \ 321)\nAssertionError: 515552106611365551592119764048828798491838703002 != 321\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_009.py\", line 6, in test_case_1\n    self.assertEqual(rev(123),\
+    \ 321)\nAssertionError: -321 != 321\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0010018348693847656
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_009.py\", line 6, in test_case_1\n    self.assertEqual(rev(123),\
+    \ 321)\nAssertionError: 124210 != 321\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_009.py\", line 6, in test_case_1\n    self.assertEqual(rev(123),\
+    \ 321)\nAssertionError: inf != 321\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0009984970092773438
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 7
+  status: timeout
+  tests_run: null
+  time: 5.0397233963012695
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 8
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 10
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 11
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_009.py\", line 6, in test_case_1\n    self.assertEqual(rev(123),\
+    \ 321)\nAssertionError: 0 != 321\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 12
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_009.py\", line 6, in test_case_1\n    self.assertEqual(rev(123),\
+    \ 321)\nAssertionError: 0 != 321\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 13
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 14
+  status: timeout
+  tests_run: null
+  time: 5.042666435241699
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: ROR
+  number: 15
+  status: survived
+  tests_run: 8
+  time: 0.0
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Few_shot.programs.program_009
+tests:
+- name: datasets.GPT_4.Few_shot.tests.test_009
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0019927024841308594
+  create_target_ast: 0.0
+  mutate_module: 10.154703140258789
+  run_tests_with_mutant: 10.08838939666748
+total_time: 10.161705493927002

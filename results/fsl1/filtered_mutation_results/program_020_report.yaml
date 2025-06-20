@@ -1,0 +1,144 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 88.88888888888889
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_020.py\", line 5, in test_is_monotonic_increasing\n   \
+    \ def test_is_monotonic_increasing(self): self.assertEqual(is_Monotonic([1, 2,\
+    \ 3, 4]), True)\nAssertionError: False != True\n"
+  killer: test_is_monotonic_increasing (datasets.GPT_4.Few_shot1.tests.test_020.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_020 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 4
+  time: 0.0009224414825439453
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_020.py\", line 9, in test_is_monotonic_constant\n    def\
+    \ test_is_monotonic_constant(self): self.assertEqual(is_Monotonic([5, 5, 5, 5]),\
+    \ True)\n  File \"datasets.GPT_4.Few_shot1.programs.program_020\", line 2, in\
+    \ is_Monotonic\n  File \"datasets.GPT_4.Few_shot1.programs.program_020\", line\
+    \ 2, in <genexpr>\nIndexError: list index out of range\n"
+  killer: test_is_monotonic_constant (datasets.GPT_4.Few_shot1.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.001985311508178711
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_020.py\", line 7, in test_is_monotonic_decreasing\n   \
+    \ def test_is_monotonic_decreasing(self): self.assertEqual(is_Monotonic([4, 3,\
+    \ 2, 1]), True)\nAssertionError: False != True\n"
+  killer: test_is_monotonic_decreasing (datasets.GPT_4.Few_shot1.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 2
+  time: 0.0010063648223876953
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_020.py\", line 7, in test_is_monotonic_decreasing\n   \
+    \ def test_is_monotonic_decreasing(self): self.assertEqual(is_Monotonic([4, 3,\
+    \ 2, 1]), True)\n  File \"datasets.GPT_4.Few_shot1.programs.program_020\", line\
+    \ 3, in is_Monotonic\n  File \"datasets.GPT_4.Few_shot1.programs.program_020\"\
+    , line 3, in <genexpr>\nIndexError: list index out of range\n"
+  killer: test_is_monotonic_decreasing (datasets.GPT_4.Few_shot1.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.0019137859344482422
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_020.py\", line 7, in test_is_monotonic_decreasing\n   \
+    \ def test_is_monotonic_decreasing(self): self.assertEqual(is_Monotonic([4, 3,\
+    \ 2, 1]), True)\nAssertionError: False != True\n"
+  killer: test_is_monotonic_decreasing (datasets.GPT_4.Few_shot1.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.0009546279907226562
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_020.py\", line 5, in test_is_monotonic_increasing\n   \
+    \ def test_is_monotonic_increasing(self): self.assertEqual(is_Monotonic([1, 2,\
+    \ 3, 4]), True)\nAssertionError: False != True\n"
+  killer: test_is_monotonic_increasing (datasets.GPT_4.Few_shot1.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 4
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 7
+  status: survived
+  tests_run: 10
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_020.py\", line 7, in test_is_monotonic_decreasing\n   \
+    \ def test_is_monotonic_decreasing(self): self.assertEqual(is_Monotonic([4, 3,\
+    \ 2, 1]), True)\nAssertionError: False != True\n"
+  killer: test_is_monotonic_decreasing (datasets.GPT_4.Few_shot1.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_020.py\", line 23, in test_is_monotonic_with_duplicates\n\
+    \    def test_is_monotonic_with_duplicates(self): self.assertEqual(is_Monotonic([3,\
+    \ 3, 2, 2, 1]), True)\nAssertionError: False != True\n"
+  killer: test_is_monotonic_with_duplicates (datasets.GPT_4.Few_shot1.tests.test_020.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 9
+  status: killed
+  tests_run: 10
+  time: 0.0010180473327636719
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_020
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_020
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.06769180297851562
+  run_tests_with_mutant: 0.011901617050170898
+total_time: 0.07379817962646484

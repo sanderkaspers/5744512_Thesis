@@ -1,0 +1,57 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_024.py\", line 9, in test_dif_Square_mod_2\n    def test_dif_Square_mod_2(self):\
+    \ self.assertFalse(dif_Square(6))\nAssertionError: True is not false\n"
+  killer: test_dif_Square_mod_2 (datasets.GPT_4.Few_shot2.tests.test_024.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_024 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 3
+  time: 0.0009987354278564453
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_024.py\", line 5, in test_dif_Square_mod_0\n    def test_dif_Square_mod_0(self):\
+    \ self.assertTrue(dif_Square(4))\nAssertionError: False is not true\n"
+  killer: test_dif_Square_mod_0 (datasets.GPT_4.Few_shot2.tests.test_024.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_024.py\", line 5, in test_dif_Square_mod_0\n    def test_dif_Square_mod_0(self):\
+    \ self.assertTrue(dif_Square(4))\nAssertionError: False is not true\n"
+  killer: test_dif_Square_mod_0 (datasets.GPT_4.Few_shot2.tests.test_024.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0009999275207519531
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_024
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_024
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0010068416595458984
+  mutate_module: 0.024537086486816406
+  run_tests_with_mutant: 0.0029981136322021484
+total_time: 0.03190279006958008

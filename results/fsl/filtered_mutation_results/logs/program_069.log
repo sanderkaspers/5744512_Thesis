@@ -1,0 +1,136 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot.programs.program_069
+   - tests: datasets.GPT_4.Few_shot.tests.test_069
+[*] 8 tests passed:
+   - datasets.GPT_4.Few_shot.tests.test_069 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.GPT_4.Few_shot.programs.program_069: [0.00000 s] killed by test_case_3 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 12, in test_case_3
+    self.assertEqual(multiply_int(3, -4), -12) # Positive and negative)
+AssertionError: 12 != -12
+
+   - [#   2] AOD datasets.GPT_4.Few_shot.programs.program_069: [0.22100 s] killed by test_case_3 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 12, in test_case_3
+    self.assertEqual(multiply_int(3, -4), -12) # Positive and negative)
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   3] AOR datasets.GPT_4.Few_shot.programs.program_069: [0.00000 s] killed by test_case_3 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 12, in test_case_3
+    self.assertEqual(multiply_int(3, -4), -12) # Positive and negative)
+AssertionError: 12 != -12
+
+   - [#   4] AOR datasets.GPT_4.Few_shot.programs.program_069: [0.23665 s] killed by test_case_3 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 12, in test_case_3
+    self.assertEqual(multiply_int(3, -4), -12) # Positive and negative)
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   5] AOR datasets.GPT_4.Few_shot.programs.program_069: [0.00000 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 6, in test_case_1
+    self.assertEqual(multiply_int(3, 4), 12) # Positive integers)
+AssertionError: 0 != 12
+
+   - [#   6] AOR datasets.GPT_4.Few_shot.programs.program_069: [0.20855 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 6, in test_case_1
+    self.assertEqual(multiply_int(3, 4), 12) # Positive integers)
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   7] COI datasets.GPT_4.Few_shot.programs.program_069: [0.21681 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 6, in test_case_1
+    self.assertEqual(multiply_int(3, 4), 12) # Positive integers)
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 982 more times]
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   8] COI datasets.GPT_4.Few_shot.programs.program_069: [0.00000 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 6, in test_case_1
+    self.assertEqual(multiply_int(3, 4), 12) # Positive integers)
+AssertionError: 0 != 12
+
+   - [#   9] COI datasets.GPT_4.Few_shot.programs.program_069: [0.00000 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 6, in test_case_1
+    self.assertEqual(multiply_int(3, 4), 12) # Positive integers)
+AssertionError: 3 != 12
+
+   - [#  10] ROR datasets.GPT_4.Few_shot.programs.program_069: [0.22118 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 6, in test_case_1
+    self.assertEqual(multiply_int(3, 4), 12) # Positive integers)
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 982 more times]
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#  11] ROR datasets.GPT_4.Few_shot.programs.program_069: [0.23839 s] killed by test_case_6 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 21, in test_case_6
+    self.assertEqual(multiply_int(0, 0), 0) # Both zero)
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Few_shot.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#  12] ROR datasets.GPT_4.Few_shot.programs.program_069: [0.00000 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 6, in test_case_1
+    self.assertEqual(multiply_int(3, 4), 12) # Positive integers)
+AssertionError: 0 != 12
+
+   - [#  13] ROR datasets.GPT_4.Few_shot.programs.program_069: [0.00000 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_069.py", line 6, in test_case_1
+    self.assertEqual(multiply_int(3, 4), 12) # Positive integers)
+AssertionError: 3 != 12
+
+[*] Mutation score [1.43875 s]: 100.0%
+   - all: 13
+   - killed: 13 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

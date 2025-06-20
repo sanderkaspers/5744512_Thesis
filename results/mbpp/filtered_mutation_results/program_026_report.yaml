@@ -1,0 +1,48 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_026.py\", line 6, in test_case\n    self.assertEqual(find_tuples([(6,\
+    \ 24, 12), (5, 10, 15)], 6), [(6, 24, 12)])\nAssertionError: Lists differ: []\
+    \ != [(6, 24, 12)]\n\nSecond list contains 1 additional elements.\nFirst extra\
+    \ element 0:\n(6, 24, 12)\n\n- []\n+ [(6, 24, 12)]\n"
+  killer: test_case (datasets.mbpp.tests.test_026.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_026 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_026.py\", line 6, in test_case\n    self.assertEqual(find_tuples([(6,\
+    \ 24, 12), (5, 10, 15)], 6), [(6, 24, 12)])\nAssertionError: Lists differ: [(5,\
+    \ 10, 15)] != [(6, 24, 12)]\n\nFirst differing element 0:\n(5, 10, 15)\n(6, 24,\
+    \ 12)\n\n- [(5, 10, 15)]\n+ [(6, 24, 12)]\n"
+  killer: test_case (datasets.mbpp.tests.test_026.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_026
+tests:
+- name: datasets.mbpp.tests.test_026
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.015631437301635742
+  run_tests_with_mutant: 0.0
+total_time: 0.031244993209838867

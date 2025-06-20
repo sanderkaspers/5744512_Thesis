@@ -1,0 +1,55 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought.programs.program_080
+   - tests: datasets.GPT_4.Chain_of_thought.tests.test_080
+[*] 10 tests passed:
+   - datasets.GPT_4.Chain_of_thought.tests.test_080 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COD datasets.GPT_4.Chain_of_thought.programs.program_080: [0.00000 s] killed by test_all_identical_sublists (datasets.GPT_4.Chain_of_thought.tests.test_080.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_080.py", line 31, in test_all_identical_sublists
+    self.assertEqual(extract_singly([[1, 2], [1, 2], [1, 2]]), [1, 2])
+AssertionError: Lists differ: [] != [1, 2]
+
+Second list contains 2 additional elements.
+First extra element 0:
+1
+
+- []
++ [1, 2]
+
+   - [#   2] COI datasets.GPT_4.Chain_of_thought.programs.program_080: [0.00000 s] killed by test_all_identical_sublists (datasets.GPT_4.Chain_of_thought.tests.test_080.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_080.py", line 31, in test_all_identical_sublists
+    self.assertEqual(extract_singly([[1, 2], [1, 2], [1, 2]]), [1, 2])
+AssertionError: Lists differ: [] != [1, 2]
+
+Second list contains 2 additional elements.
+First extra element 0:
+1
+
+- []
++ [1, 2]
+
+   - [#   3] COI datasets.GPT_4.Chain_of_thought.programs.program_080: [0.00000 s] killed by test_all_identical_sublists (datasets.GPT_4.Chain_of_thought.tests.test_080.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_080.py", line 31, in test_all_identical_sublists
+    self.assertEqual(extract_singly([[1, 2], [1, 2], [1, 2]]), [1, 2])
+AssertionError: Lists differ: [] != [1, 2]
+
+Second list contains 2 additional elements.
+First extra element 0:
+1
+
+- []
++ [1, 2]
+
+[*] Mutation score [0.03149 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

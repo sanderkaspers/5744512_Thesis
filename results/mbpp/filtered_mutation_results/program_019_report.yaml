@@ -1,0 +1,155 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\n  File \"datasets.mbpp.programs.program_019\", line 7, in bell_number\n\
+    IndexError: list assignment index out of range\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_019 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0020074844360351562
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\n  File \"datasets.mbpp.programs.program_019\", line 5, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0015549659729003906
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\nAssertionError: 0 != 115975\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\n  File \"datasets.mbpp.programs.program_019\", line 5, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.002002716064453125
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\n  File \"datasets.mbpp.programs.program_019\", line 5, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010156631469726562
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\nAssertionError: 0 != 115975\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.001979827880859375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\n  File \"datasets.mbpp.programs.program_019\", line 7, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0009753704071044922
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\n  File \"datasets.mbpp.programs.program_019\", line 7, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0020020008087158203
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\nAssertionError: -1 != 115975\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0019996166229248047
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_019.py\", line 9, in test_bell_number_with_10_expect_115975\n    self.assertEqual(bell_number(10),\
+    \ 115975)\n  File \"datasets.mbpp.programs.program_019\", line 7, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_number_with_10_expect_115975 (datasets.mbpp.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0009882450103759766
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_019
+tests:
+- name: datasets.mbpp.tests.test_019
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0020067691802978516
+  mutate_module: 0.09902119636535645
+  run_tests_with_mutant: 0.016556262969970703
+total_time: 0.10465049743652344

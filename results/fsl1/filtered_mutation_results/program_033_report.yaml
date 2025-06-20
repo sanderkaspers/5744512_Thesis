@@ -1,0 +1,153 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_033.py\", line 11, in test_surfacearea_sphere_float\n \
+    \   def test_surfacearea_sphere_float(self): self.assertAlmostEqual(surfacearea_sphere(2.5),\
+    \ 4 * math.pi * 6.25)\nAssertionError: 7.957747154594768 != 78.53981633974483\
+    \ within 7 places (70.58206918515006 difference)\n"
+  killer: test_surfacearea_sphere_float (datasets.GPT_4.Few_shot1.tests.test_033.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_033 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_033.py\", line 11, in test_surfacearea_sphere_float\n \
+    \   def test_surfacearea_sphere_float(self): self.assertAlmostEqual(surfacearea_sphere(2.5),\
+    \ 4 * math.pi * 6.25)\nAssertionError: 6.25 != 78.53981633974483 within 7 places\
+    \ (72.28981633974483 difference)\n"
+  killer: test_surfacearea_sphere_float (datasets.GPT_4.Few_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009253025054931641
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_033.py\", line 11, in test_surfacearea_sphere_float\n \
+    \   def test_surfacearea_sphere_float(self): self.assertAlmostEqual(surfacearea_sphere(2.5),\
+    \ 4 * math.pi * 6.25)\nAssertionError: 486.7514603024256 != 78.53981633974483\
+    \ within 7 places (408.21164396268074 difference)\n"
+  killer: test_surfacearea_sphere_float (datasets.GPT_4.Few_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.000993490219116211
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_033.py\", line 11, in test_surfacearea_sphere_float\n \
+    \   def test_surfacearea_sphere_float(self): self.assertAlmostEqual(surfacearea_sphere(2.5),\
+    \ 4 * math.pi * 6.25)\nAssertionError: 12.566370614359172 != 78.53981633974483\
+    \ within 7 places (65.97344572538566 difference)\n"
+  killer: test_surfacearea_sphere_float (datasets.GPT_4.Few_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_033.py\", line 11, in test_surfacearea_sphere_float\n \
+    \   def test_surfacearea_sphere_float(self): self.assertAlmostEqual(surfacearea_sphere(2.5),\
+    \ 4 * math.pi * 6.25)\nAssertionError: 12.5 != 78.53981633974483 within 7 places\
+    \ (66.03981633974483 difference)\n"
+  killer: test_surfacearea_sphere_float (datasets.GPT_4.Few_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0009999275207519531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_033.py\", line 11, in test_surfacearea_sphere_float\n \
+    \   def test_surfacearea_sphere_float(self): self.assertAlmostEqual(surfacearea_sphere(2.5),\
+    \ 4 * math.pi * 6.25)\nAssertionError: 1399.473466209989 != 78.53981633974483\
+    \ within 7 places (1320.9336498702442 difference)\n"
+  killer: test_surfacearea_sphere_float (datasets.GPT_4.Few_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0009968280792236328
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_033.py\", line 11, in test_surfacearea_sphere_float\n \
+    \   def test_surfacearea_sphere_float(self): self.assertAlmostEqual(surfacearea_sphere(2.5),\
+    \ 4 * math.pi * 6.25)\nAssertionError: 12.566370614359172 != 78.53981633974483\
+    \ within 7 places (65.97344572538566 difference)\n"
+  killer: test_surfacearea_sphere_float (datasets.GPT_4.Few_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0009996891021728516
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_033.py\", line 11, in test_surfacearea_sphere_float\n \
+    \   def test_surfacearea_sphere_float(self): self.assertAlmostEqual(surfacearea_sphere(2.5),\
+    \ 4 * math.pi * 6.25)\nAssertionError: 12.0 != 78.53981633974483 within 7 places\
+    \ (66.53981633974483 difference)\n"
+  killer: test_surfacearea_sphere_float (datasets.GPT_4.Few_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0010006427764892578
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_033.py\", line 11, in test_surfacearea_sphere_float\n \
+    \   def test_surfacearea_sphere_float(self): self.assertAlmostEqual(surfacearea_sphere(2.5),\
+    \ 4 * math.pi * 6.25)\nAssertionError: 5531.904597742819 != 78.53981633974483\
+    \ within 7 places (5453.364781403074 difference)\n"
+  killer: test_surfacearea_sphere_float (datasets.GPT_4.Few_shot1.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.00099945068359375
+number_of_tests: 6
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_033
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_033
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.001001596450805664
+  mutate_module: 0.04661822319030762
+  run_tests_with_mutant: 0.010923624038696289
+total_time: 0.05260825157165527

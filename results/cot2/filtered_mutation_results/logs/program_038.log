@@ -1,0 +1,28 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought2.programs.program_038
+   - tests: datasets.GPT_4.Chain_of_thought2.tests.test_038
+[*] 8 tests passed:
+   - datasets.GPT_4.Chain_of_thought2.tests.test_038 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.GPT_4.Chain_of_thought2.programs.program_038: [0.00200 s] killed by test_different_lengths (datasets.GPT_4.Chain_of_thought2.tests.test_038.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_038.py", line 5, in test_different_lengths
+    def test_different_lengths(self): self.assertEqual(len_log(['cat', 'elephant', 'tiger']), 8)
+AssertionError: 3 != 8
+
+   - [#   2] ROR datasets.GPT_4.Chain_of_thought2.programs.program_038: [0.00100 s] killed by test_different_lengths (datasets.GPT_4.Chain_of_thought2.tests.test_038.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_038.py", line 5, in test_different_lengths
+    def test_different_lengths(self): self.assertEqual(len_log(['cat', 'elephant', 'tiger']), 8)
+AssertionError: 3 != 8
+
+   - [#   3] ROR datasets.GPT_4.Chain_of_thought2.programs.program_038: [0.00101 s] survived
+[*] Mutation score [0.03600 s]: 66.7%
+   - all: 3
+   - killed: 2 (66.7%)
+   - survived: 1 (33.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

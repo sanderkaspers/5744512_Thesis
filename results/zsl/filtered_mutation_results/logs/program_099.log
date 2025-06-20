@@ -1,0 +1,29 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot.programs.program_099
+   - tests: datasets.GPT_4.Zero_shot.tests.test_099
+[*] 9 tests passed:
+   - datasets.GPT_4.Zero_shot.tests.test_099 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ASR datasets.GPT_4.Zero_shot.programs.program_099: [0.00751 s] killed by test_multiple_spaces_2 (datasets.GPT_4.Zero_shot.tests.test_099.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_099.py", line 13, in test_multiple_spaces_2
+    assert count_Set_Bits(n) == expected_output
+AssertionError
+
+   - [#   2] COI datasets.GPT_4.Zero_shot.programs.program_099: [5.05976 s] timeout
+   - [#   3] LOR datasets.GPT_4.Zero_shot.programs.program_099: [0.00000 s] killed by test_multiple_spaces_3 (datasets.GPT_4.Zero_shot.tests.test_099.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_099.py", line 18, in test_multiple_spaces_3
+    assert count_Set_Bits(n) == expected_output
+AssertionError
+
+   - [#   4] LOR datasets.GPT_4.Zero_shot.programs.program_099: [5.03369 s] timeout
+[*] Mutation score [10.12909 s]: 100.0%
+   - all: 4
+   - killed: 2 (50.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 2 (50.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought1.programs.program_072
+   - tests: datasets.GPT_4.Chain_of_thought1.tests.test_072
+[*] 10 tests passed:
+   - datasets.GPT_4.Chain_of_thought1.tests.test_072 [0.00100 s]
+[*] Start mutants generation and execution:
+   - [#   1] ASR datasets.GPT_4.Chain_of_thought1.programs.program_072: [0.00100 s] killed by test_boolean_list (datasets.GPT_4.Chain_of_thought1.tests.test_072.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_072.py", line 23, in test_boolean_list
+    def test_boolean_list(self): self.assertEqual(max_occurrences([True, False, True]), True)
+AssertionError: False != True
+
+[*] Mutation score [0.03354 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

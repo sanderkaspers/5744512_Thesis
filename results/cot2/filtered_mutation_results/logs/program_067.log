@@ -1,0 +1,56 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought2.programs.program_067
+   - tests: datasets.GPT_4.Chain_of_thought2.tests.test_067
+[*] 13 tests passed:
+   - datasets.GPT_4.Chain_of_thought2.tests.test_067 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.GPT_4.Chain_of_thought2.programs.program_067: [0.00000 s] killed by test_all_ones (datasets.GPT_4.Chain_of_thought2.tests.test_067.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_067.py", line 7, in test_all_ones
+    def test_all_ones(self): self.assertEqual(find_length('11111'), 0)
+AssertionError: 5 != 0
+
+   - [#   2] AOR datasets.GPT_4.Chain_of_thought2.programs.program_067: [0.00000 s] killed by test_all_ones (datasets.GPT_4.Chain_of_thought2.tests.test_067.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_067.py", line 7, in test_all_ones
+    def test_all_ones(self): self.assertEqual(find_length('11111'), 0)
+AssertionError: 5 != 0
+
+   - [#   3] ASR datasets.GPT_4.Chain_of_thought2.programs.program_067: [0.00000 s] killed by test_all_ones (datasets.GPT_4.Chain_of_thought2.tests.test_067.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_067.py", line 7, in test_all_ones
+    def test_all_ones(self): self.assertEqual(find_length('11111'), 0)
+AssertionError: 5 != 0
+
+   - [#   4] COI datasets.GPT_4.Chain_of_thought2.programs.program_067: [0.00000 s] killed by test_all_zeros (datasets.GPT_4.Chain_of_thought2.tests.test_067.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_067.py", line 5, in test_all_zeros
+    def test_all_zeros(self): self.assertEqual(find_length('00000'), 5)
+AssertionError: 0 != 5
+
+   - [#   5] ROR datasets.GPT_4.Chain_of_thought2.programs.program_067: [0.00000 s] killed by test_all_ones (datasets.GPT_4.Chain_of_thought2.tests.test_067.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_067.py", line 7, in test_all_ones
+    def test_all_ones(self): self.assertEqual(find_length('11111'), 0)
+AssertionError: 5 != 0
+
+   - [#   6] ROR datasets.GPT_4.Chain_of_thought2.programs.program_067: [0.01501 s] killed by test_all_zeros (datasets.GPT_4.Chain_of_thought2.tests.test_067.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_067.py", line 5, in test_all_zeros
+    def test_all_zeros(self): self.assertEqual(find_length('00000'), 5)
+AssertionError: 0 != 5
+
+   - [#   7] ROR datasets.GPT_4.Chain_of_thought2.programs.program_067: [0.00000 s] survived
+[*] Mutation score [0.06349 s]: 85.7%
+   - all: 7
+   - killed: 6 (85.7%)
+   - survived: 1 (14.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

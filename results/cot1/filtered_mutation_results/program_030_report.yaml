@@ -1,0 +1,228 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 10.602875205865551 != 14.137166941154067\
+    \ within 6 places (3.534291735288516 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_030 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 127.23450247038662 != 14.137166941154067\
+    \ within 6 places (113.09733552923255 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0025892257690429688
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 1.4323944878270578 != 14.137166941154067\
+    \ within 6 places (12.70477245332701 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 0.0 != 14.137166941154067\
+    \ within 6 places (14.137166941154067 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 8.332597311742276 != 14.137166941154067\
+    \ within 6 places (5.804569629411791 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 6.283185307179586 != 14.137166941154067\
+    \ within 6 places (7.853981633974481 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 4.5 != 14.137166941154067\
+    \ within 6 places (9.637166941154067 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 19.289254007441492 != 14.137166941154067\
+    \ within 6 places (5.152087066287425 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 6.283185307179586 != 14.137166941154067\
+    \ within 6 places (7.853981633974481 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 6.0 != 14.137166941154067\
+    \ within 6 places (8.137166941154067 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 23.62441491858363 != 14.137166941154067\
+    \ within 6 places (9.487247977429561 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 11
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 6.283185307179586 != 14.137166941154067\
+    \ within 6 places (7.853981633974481 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 12
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 6.0 != 14.137166941154067\
+    \ within 6 places (8.137166941154067 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 13
+  status: killed
+  tests_run: 1
+  time: 0.01571941375732422
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_030.py\", line 13, in test_float_radius\n    def\
+    \ test_float_radius(self): self.assertAlmostEqual(volume_sphere(1.5), (4.0 / 3.0)\
+    \ * math.pi * (1.5 ** 3), places=6)\nAssertionError: 28.933881011162242 != 14.137166941154067\
+    \ within 6 places (14.796714070008175 difference)\n"
+  killer: test_float_radius (datasets.GPT_4.Chain_of_thought1.tests.test_030.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 14
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_030
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_030
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.04262423515319824
+  run_tests_with_mutant: 0.018308639526367188
+total_time: 0.04770970344543457

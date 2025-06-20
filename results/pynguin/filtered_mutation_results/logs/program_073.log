@@ -1,0 +1,25 @@
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_073
+   - tests: datasets.pynguin.tests.test_073
+[*] 1 tests passed:
+   - datasets.pynguin.tests.test_073 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#   2] AOD datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#   3] AOR datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#   4] AOR datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#   5] ASR datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#   6] ASR datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#   7] ASR datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#   8] COI datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#   9] COI datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#  10] COI datasets.pynguin.programs.program_073: [0.00000 s] survived
+   - [#  11] COI datasets.pynguin.programs.program_073: [0.00089 s] survived
+   - [#  12] SIR datasets.pynguin.programs.program_073: [0.00000 s] survived
+[*] Mutation score [0.07876 s]: 0.0%
+   - all: 12
+   - killed: 0 (0.0%)
+   - survived: 12 (100.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

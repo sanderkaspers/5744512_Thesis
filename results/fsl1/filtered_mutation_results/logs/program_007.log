@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot1.programs.program_007
+   - tests: datasets.GPT_4.Few_shot1.tests.test_007
+[*] 10 tests passed:
+   - datasets.GPT_4.Few_shot1.tests.test_007 [0.00099 s]
+[*] Start mutants generation and execution:
+   - [#   1] ROR datasets.GPT_4.Few_shot1.programs.program_007: [0.00093 s] killed by test_duplicate_all_same (datasets.GPT_4.Few_shot1.tests.test_007.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_007.py", line 15, in test_duplicate_all_same
+    def test_duplicate_all_same(self): self.assertEqual(test_duplicate([7, 7, 7, 7]), True)
+AssertionError: False != True
+
+[*] Mutation score [0.02628 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,27 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot.programs.program_026
+   - tests: datasets.GPT_4.Zero_shot.tests.test_026
+[*] 7 tests passed:
+   - datasets.GPT_4.Zero_shot.tests.test_026 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Zero_shot.programs.program_026: [0.00192 s] killed by test_multiple_spaces_4 (datasets.GPT_4.Zero_shot.tests.test_026.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_026.py", line 27, in test_multiple_spaces_4
+    assert find_tuples(test_list, K) == expected_output
+AssertionError
+
+   - [#   2] ROR datasets.GPT_4.Zero_shot.programs.program_026: [0.00193 s] killed by test_multiple_spaces_2 (datasets.GPT_4.Zero_shot.tests.test_026.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_026.py", line 15, in test_multiple_spaces_2
+    assert find_tuples(test_list, K) == expected_output
+AssertionError
+
+[*] Mutation score [0.03583 s]: 100.0%
+   - all: 2
+   - killed: 2 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,79 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot.programs.program_033
+   - tests: datasets.GPT_4.Zero_shot.tests.test_033
+[*] 6 tests passed:
+   - datasets.GPT_4.Zero_shot.tests.test_033 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Zero_shot.programs.program_033: [0.00101 s] killed by test_multiple_spaces_2 (datasets.GPT_4.Zero_shot.tests.test_033.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_033.py", line 13, in test_multiple_spaces_2
+    assert surfacearea_sphere(r) == expected_output
+AssertionError
+
+   - [#   2] AOR datasets.GPT_4.Zero_shot.programs.program_033: [0.00095 s] killed by test_multiple_spaces_2 (datasets.GPT_4.Zero_shot.tests.test_033.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_033.py", line 13, in test_multiple_spaces_2
+    assert surfacearea_sphere(r) == expected_output
+AssertionError
+
+   - [#   3] AOR datasets.GPT_4.Zero_shot.programs.program_033: [0.00059 s] killed by test_multiple_spaces_2 (datasets.GPT_4.Zero_shot.tests.test_033.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_033.py", line 13, in test_multiple_spaces_2
+    assert surfacearea_sphere(r) == expected_output
+AssertionError
+
+   - [#   4] AOR datasets.GPT_4.Zero_shot.programs.program_033: [0.00200 s] killed by test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_033.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_033.py", line 8, in test_multiple_spaces
+    assert surfacearea_sphere(r) == expected_output
+  File "datasets.GPT_4.Zero_shot.programs.program_033", line 3, in surfacearea_sphere
+ZeroDivisionError: float division by zero
+
+   - [#   5] AOR datasets.GPT_4.Zero_shot.programs.program_033: [0.00100 s] killed by test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_033.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_033.py", line 8, in test_multiple_spaces
+    assert surfacearea_sphere(r) == expected_output
+  File "datasets.GPT_4.Zero_shot.programs.program_033", line 3, in surfacearea_sphere
+ZeroDivisionError: float divmod()
+
+   - [#   6] AOR datasets.GPT_4.Zero_shot.programs.program_033: [0.00099 s] killed by test_multiple_spaces_3 (datasets.GPT_4.Zero_shot.tests.test_033.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_033.py", line 18, in test_multiple_spaces_3
+    assert surfacearea_sphere(r) == expected_output
+AssertionError
+
+   - [#   7] AOR datasets.GPT_4.Zero_shot.programs.program_033: [0.00202 s] killed by test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_033.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_033.py", line 8, in test_multiple_spaces
+    assert surfacearea_sphere(r) == expected_output
+  File "datasets.GPT_4.Zero_shot.programs.program_033", line 3, in surfacearea_sphere
+ZeroDivisionError: float division by zero
+
+   - [#   8] AOR datasets.GPT_4.Zero_shot.programs.program_033: [0.00194 s] killed by test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_033.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_033.py", line 8, in test_multiple_spaces
+    assert surfacearea_sphere(r) == expected_output
+  File "datasets.GPT_4.Zero_shot.programs.program_033", line 3, in surfacearea_sphere
+ZeroDivisionError: float divmod()
+
+   - [#   9] AOR datasets.GPT_4.Zero_shot.programs.program_033: [0.00100 s] killed by test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_033.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_033.py", line 8, in test_multiple_spaces
+    assert surfacearea_sphere(r) == expected_output
+AssertionError
+
+[*] Mutation score [0.06570 s]: 100.0%
+   - all: 9
+   - killed: 9 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)

@@ -1,0 +1,32 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_007.py\", line 12, in test_test_duplicate_with_1_1_2_2_3_3_4_4_5_expect_True\n\
+    \    self.assertEqual(test_duplicate([1,1,2,2,3,3,4,4,5]), True)\nAssertionError:\
+    \ False != True\n"
+  killer: test_test_duplicate_with_1_1_2_2_3_3_4_4_5_expect_True (datasets.mbpp.tests.test_007.TestVersion)
+  module: !!python/module:datasets.mbpp.programs.program_007 ''
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010001659393310547
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_007
+tests:
+- name: datasets.mbpp.tests.test_007
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.01999974250793457
+  run_tests_with_mutant: 0.0019989013671875
+total_time: 0.02653646469116211

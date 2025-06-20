@@ -1,0 +1,70 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_099.py\", line 13, in test_count_set_bits_all_ones\n  \
+    \  def test_count_set_bits_all_ones(self): self.assertEqual(count_Set_Bits(7),\
+    \ 3)\nAssertionError: -3 != 3\n"
+  killer: test_count_set_bits_all_ones (datasets.GPT_4.Few_shot2.tests.test_099.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_099 ''
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010385513305664062
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_099.py\", line 13, in test_count_set_bits_all_ones\n  \
+    \  def test_count_set_bits_all_ones(self): self.assertEqual(count_Set_Bits(7),\
+    \ 3)\nAssertionError: 0 != 3\n"
+  killer: test_count_set_bits_all_ones (datasets.GPT_4.Few_shot2.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009961128234863281
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_099.py\", line 13, in test_count_set_bits_all_ones\n  \
+    \  def test_count_set_bits_all_ones(self): self.assertEqual(count_Set_Bits(7),\
+    \ 3)\nAssertionError: 11 != 3\n"
+  killer: test_count_set_bits_all_ones (datasets.GPT_4.Few_shot2.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: LOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.001012563705444336
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 4
+  status: timeout
+  tests_run: null
+  time: 5.062790393829346
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_099
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_099
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0010037422180175781
+  mutate_module: 5.091509103775024
+  run_tests_with_mutant: 5.065837621688843
+total_time: 5.096505165100098

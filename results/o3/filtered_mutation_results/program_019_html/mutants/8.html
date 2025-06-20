@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MutPy mutation report - mutation #8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js" type="text/javascript"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+    window.setTimeout(function () {
+        
+        $('.line.number7').attr('title', 'AOR');
+        
+    }, 0);
+</script>
+
+</head>
+<body>
+    <div class="container">
+        
+<div class="page-header">
+    <h1>Mutation #8</h1>
+</div>
+<h3>Details</h3>
+<ul>
+    <li>module - <code><module 'datasets.o3.programs.program_019' from 'C:\\Users\\skaspers\\OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\programs\\program_019.py'></code></li>
+    <li><span class="label label-success">killed</span> by <code>test_bell_five (datasets.o3.tests.test_019.TestVersion)</code></li>
+    
+    <li>duration - 0.016 s</li>
+    
+    
+    <li>tests run - 1</li>
+    
+</ul>
+
+<h3>Exception traceback</h3>
+<pre>Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_019.py", line 15, in test_bell_five
+    self.assertEqual(bell_number(5), 52)
+  File "datasets.o3.programs.program_019", line 7, in bell_number
+IndexError: list index out of range
+</pre>
+
+<h3>Mutations</h3>
+<ul>
+    
+    <li>AOR - line 7</li>
+    
+</ul>
+<h3>Mutant</h3>
+<pre class="brush: python; first-line: 1; highlight: [7]; toolbar: false;">def bell_number(n):
+    bell = [[0 for i in range(n + 1)] for j in range(n + 1)]
+    bell[0][0] = 1
+    for i in range(1, n + 1):
+        bell[i][0] = bell[i - 1][i - 1]
+        for j in range(1, i + 1):
+            bell[i][j] = bell[i - 1][j + 1] + bell[i][j - 1]
+    return bell[n][0]</pre>
+
+    </div>
+</body>
+</html>

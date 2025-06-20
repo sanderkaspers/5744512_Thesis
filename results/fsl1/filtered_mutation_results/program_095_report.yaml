@@ -1,0 +1,62 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_095.py\", line 23, in test_perimeter_pentagon_boolean_false\n\
+    \    def test_perimeter_pentagon_boolean_false(self): self.assertEqual(perimeter_pentagon(False),\
+    \ 0)\n  File \"datasets.GPT_4.Few_shot1.programs.program_095\", line 3, in perimeter_pentagon\n\
+    ZeroDivisionError: division by zero\n"
+  killer: test_perimeter_pentagon_boolean_false (datasets.GPT_4.Few_shot1.tests.test_095.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_095 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_095.py\", line 23, in test_perimeter_pentagon_boolean_false\n\
+    \    def test_perimeter_pentagon_boolean_false(self): self.assertEqual(perimeter_pentagon(False),\
+    \ 0)\n  File \"datasets.GPT_4.Few_shot1.programs.program_095\", line 3, in perimeter_pentagon\n\
+    ZeroDivisionError: integer division or modulo by zero\n"
+  killer: test_perimeter_pentagon_boolean_false (datasets.GPT_4.Few_shot1.tests.test_095.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_095.py\", line 23, in test_perimeter_pentagon_boolean_false\n\
+    \    def test_perimeter_pentagon_boolean_false(self): self.assertEqual(perimeter_pentagon(False),\
+    \ 0)\nAssertionError: 1 != 0\n"
+  killer: test_perimeter_pentagon_boolean_false (datasets.GPT_4.Few_shot1.tests.test_095.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0051043033599853516
+number_of_tests: 12
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_095
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_095
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.029516220092773438
+  run_tests_with_mutant: 0.0051043033599853516
+total_time: 0.029516220092773438

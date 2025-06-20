@@ -1,0 +1,44 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot.programs.program_022
+   - tests: datasets.GPT_4.Zero_shot.tests.test_022
+[*] 7 tests passed:
+   - datasets.GPT_4.Zero_shot.tests.test_022 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] BCR datasets.GPT_4.Zero_shot.programs.program_022: [0.00000 s] survived
+   - [#   2] COD datasets.GPT_4.Zero_shot.programs.program_022: [0.00200 s] killed by test_multiple_spaces_3 (datasets.GPT_4.Zero_shot.tests.test_022.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_022.py", line 18, in test_multiple_spaces_3
+    assert get_equal(Input) == expected_output
+  File "datasets.GPT_4.Zero_shot.programs.program_022", line 10, in get_equal
+  File "datasets.GPT_4.Zero_shot.programs.program_022", line 2, in find_equal_tuple
+IndexError: list index out of range
+
+   - [#   3] COI datasets.GPT_4.Zero_shot.programs.program_022: [0.00100 s] killed by test_multiple_spaces_5 (datasets.GPT_4.Zero_shot.tests.test_022.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_022.py", line 28, in test_multiple_spaces_5
+    assert get_equal(Input) == expected_output
+AssertionError
+
+   - [#   4] ROR datasets.GPT_4.Zero_shot.programs.program_022: [0.00100 s] killed by test_multiple_spaces_5 (datasets.GPT_4.Zero_shot.tests.test_022.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_022.py", line 28, in test_multiple_spaces_5
+    assert get_equal(Input) == expected_output
+AssertionError
+
+   - [#   5] ROR datasets.GPT_4.Zero_shot.programs.program_022: [0.00101 s] killed by test_multiple_spaces_3 (datasets.GPT_4.Zero_shot.tests.test_022.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_022.py", line 18, in test_multiple_spaces_3
+    assert get_equal(Input) == expected_output
+AssertionError
+
+[*] Mutation score [0.05353 s]: 80.0%
+   - all: 5
+   - killed: 4 (80.0%)
+   - survived: 1 (20.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

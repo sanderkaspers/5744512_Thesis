@@ -1,0 +1,57 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought2.programs.program_077
+   - tests: datasets.GPT_4.Chain_of_thought2.tests.test_077
+[*] 7 tests passed:
+   - datasets.GPT_4.Chain_of_thought2.tests.test_077 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Chain_of_thought2.programs.program_077: [0.00000 s] killed by test_more_nonzeroes (datasets.GPT_4.Chain_of_thought2.tests.test_077.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_077.py", line 9, in test_more_nonzeroes
+    def test_more_nonzeroes(self): self.assertEqual(zero_count([0, 1, 2, 3]), 1/3)
+AssertionError: 0 != 0.3333333333333333
+
+   - [#   2] AOR datasets.GPT_4.Chain_of_thought2.programs.program_077: [0.01201 s] killed by test_more_nonzeroes (datasets.GPT_4.Chain_of_thought2.tests.test_077.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_077.py", line 9, in test_more_nonzeroes
+    def test_more_nonzeroes(self): self.assertEqual(zero_count([0, 1, 2, 3]), 1/3)
+AssertionError: 3 != 0.3333333333333333
+
+   - [#   3] AOR datasets.GPT_4.Chain_of_thought2.programs.program_077: [0.00000 s] killed by test_equal_zero_nonzero (datasets.GPT_4.Chain_of_thought2.tests.test_077.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_077.py", line 5, in test_equal_zero_nonzero
+    def test_equal_zero_nonzero(self): self.assertEqual(zero_count([0, 1]), 1.0)
+AssertionError: 0.3333333333333333 != 1.0
+
+   - [#   4] ASR datasets.GPT_4.Chain_of_thought2.programs.program_077: [0.00000 s] killed by test_equal_zero_nonzero (datasets.GPT_4.Chain_of_thought2.tests.test_077.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_077.py", line 5, in test_equal_zero_nonzero
+    def test_equal_zero_nonzero(self): self.assertEqual(zero_count([0, 1]), 1.0)
+AssertionError: -0.3333333333333333 != 1.0
+
+   - [#   5] COI datasets.GPT_4.Chain_of_thought2.programs.program_077: [0.00000 s] killed by test_all_nonzero (datasets.GPT_4.Chain_of_thought2.tests.test_077.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_077.py", line 11, in test_all_nonzero
+    def test_all_nonzero(self): self.assertEqual(zero_count([5, -2, 7]), 0.0)
+  File "datasets.GPT_4.Chain_of_thought2.programs.program_077", line 10, in zero_count
+ZeroDivisionError: division by zero
+
+   - [#   6] ROR datasets.GPT_4.Chain_of_thought2.programs.program_077: [0.00000 s] killed by test_all_nonzero (datasets.GPT_4.Chain_of_thought2.tests.test_077.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_077.py", line 11, in test_all_nonzero
+    def test_all_nonzero(self): self.assertEqual(zero_count([5, -2, 7]), 0.0)
+  File "datasets.GPT_4.Chain_of_thought2.programs.program_077", line 10, in zero_count
+ZeroDivisionError: division by zero
+
+[*] Mutation score [0.04718 s]: 100.0%
+   - all: 6
+   - killed: 6 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

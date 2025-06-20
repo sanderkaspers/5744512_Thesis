@@ -1,0 +1,31 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_083.py\", line 6, in test_1\n    self.assertEqual(find_lists(\"\
+    abc\"), 3)\nAssertionError: 1 != 3\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_083.TestVersion)
+  module: !!python/module:datasets.GPT_4.Zero_shot1.programs.program_083 ''
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Zero_shot1.programs.program_083
+tests:
+- name: datasets.GPT_4.Zero_shot1.tests.test_083
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.015625476837158203
+  run_tests_with_mutant: 0.0
+total_time: 0.03126215934753418

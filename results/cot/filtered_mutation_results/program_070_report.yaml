@@ -1,0 +1,65 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_070.py\", line 12, in test_all_words_longer_than_n\n\
+    \    self.assertEqual(long_words(1, 'longer words here'), ['longer', 'words',\
+    \ 'here'])\nAssertionError: Lists differ: [] != ['longer', 'words', 'here']\n\n\
+    Second list contains 3 additional elements.\nFirst extra element 0:\n'longer'\n\
+    \n- []\n+ ['longer', 'words', 'here']\n"
+  killer: test_all_words_longer_than_n (datasets.GPT_4.Chain_of_thought.tests.test_070.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought.programs.program_070 ''
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_070.py\", line 12, in test_all_words_longer_than_n\n\
+    \    self.assertEqual(long_words(1, 'longer words here'), ['longer', 'words',\
+    \ 'here'])\nAssertionError: Lists differ: [] != ['longer', 'words', 'here']\n\n\
+    Second list contains 3 additional elements.\nFirst extra element 0:\n'longer'\n\
+    \n- []\n+ ['longer', 'words', 'here']\n"
+  killer: test_all_words_longer_than_n (datasets.GPT_4.Chain_of_thought.tests.test_070.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_070.py\", line 15, in test_exact_length_match\n\
+    \    self.assertEqual(long_words(4, 'This is a test'), [])\nAssertionError: Lists\
+    \ differ: ['This', 'test'] != []\n\nFirst list contains 2 additional elements.\n\
+    First extra element 0:\n'This'\n\n- ['This', 'test']\n+ []\n"
+  killer: test_exact_length_match (datasets.GPT_4.Chain_of_thought.tests.test_070.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 3
+  status: killed
+  tests_run: 4
+  time: 0.0
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Chain_of_thought.programs.program_070
+tests:
+- name: datasets.GPT_4.Chain_of_thought.tests.test_070
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.03191685676574707
+  run_tests_with_mutant: 0.0
+total_time: 0.047666311264038086

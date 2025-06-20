@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot1.programs.program_037
+   - tests: datasets.GPT_4.Zero_shot1.tests.test_037
+[*] 9 tests passed:
+   - datasets.GPT_4.Zero_shot1.tests.test_037 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Zero_shot1.programs.program_037: [0.00099 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_037.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_037.py", line 6, in test_1
+    self.assertEqual(closest_num(0), -1)
+AssertionError: 1 != -1
+
+[*] Mutation score [0.02053 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,63 @@
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_058
+   - tests: datasets.pynguin.tests.test_058
+[*] 2 tests passed:
+   - datasets.pynguin.tests.test_058 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.pynguin.programs.program_058: [0.00100 s] killed by test_case_0 (datasets.pynguin.tests.test_058.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_058.py", line 8, in test_case_0
+    assert var_0 is False
+AssertionError
+
+   - [#   2] COI datasets.pynguin.programs.program_058: [0.00100 s] killed by test_case_0 (datasets.pynguin.tests.test_058.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_058.py", line 8, in test_case_0
+    assert var_0 is False
+AssertionError
+
+   - [#   3] COI datasets.pynguin.programs.program_058: [0.00104 s] killed by test_case_0 (datasets.pynguin.tests.test_058.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_058.py", line 8, in test_case_0
+    assert var_0 is False
+AssertionError
+
+   - [#   4] COI datasets.pynguin.programs.program_058: [0.00108 s] killed by test_case_0 (datasets.pynguin.tests.test_058.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_058.py", line 8, in test_case_0
+    assert var_0 is False
+AssertionError
+
+   - [#   5] COI datasets.pynguin.programs.program_058: [0.00104 s] survived
+   - [#   6] COI datasets.pynguin.programs.program_058: [0.00000 s] killed by test_case_0 (datasets.pynguin.tests.test_058.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_058.py", line 8, in test_case_0
+    assert var_0 is False
+AssertionError
+
+   - [#   7] LCR datasets.pynguin.programs.program_058: [0.00000 s] killed by test_case_0 (datasets.pynguin.tests.test_058.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_058.py", line 8, in test_case_0
+    assert var_0 is False
+AssertionError
+
+   - [#   8] ROR datasets.pynguin.programs.program_058: [0.00100 s] killed by test_case_0 (datasets.pynguin.tests.test_058.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_058.py", line 8, in test_case_0
+    assert var_0 is False
+AssertionError
+
+   - [#   9] ROR datasets.pynguin.programs.program_058: [0.00000 s] survived
+[*] Mutation score [0.08668 s]: 77.8%
+   - all: 9
+   - killed: 7 (77.8%)
+   - survived: 2 (22.2%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)

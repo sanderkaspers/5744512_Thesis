@@ -1,0 +1,96 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_048.py\", line 6, in test_case_1\n    self.assertEqual(next_smallest_palindrome(123),\
+    \ 131) # Small number)\nAssertionError: 124 != 131\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_048.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot.programs.program_048 ''
+  mutations:
+  - lineno: 5
+    operator: AOD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.002077817916870117
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_048.py\", line 9, in test_case_2\n    self.assertEqual(next_smallest_palindrome(9),\
+    \ 11) # Single-digit number)\nAssertionError: 8 != 11\n"
+  killer: test_case_2 (datasets.GPT_4.Few_shot.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.0010838508605957031
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_048.py\", line 6, in test_case_1\n    self.assertEqual(next_smallest_palindrome(123),\
+    \ 131) # Small number)\nAssertionError: 124 != 131\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0010013580322265625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_048.py\", line 6, in test_case_1\n    self.assertEqual(next_smallest_palindrome(123),\
+    \ 131) # Small number)\nAssertionError: 124 != 131\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_048.py\", line 6, in test_case_1\n    self.assertEqual(next_smallest_palindrome(123),\
+    \ 131) # Small number)\nAssertionError: 124 != 131\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0009174346923828125
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_048.py\", line 6, in test_case_1\n    self.assertEqual(next_smallest_palindrome(123),\
+    \ 131) # Small number)\nAssertionError: 124 != 131\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: SIR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Few_shot.programs.program_048
+tests:
+- name: datasets.GPT_4.Few_shot.tests.test_048
+  target: null
+  time: 0.001001119613647461
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.043512582778930664
+  run_tests_with_mutant: 0.007586240768432617
+total_time: 0.04943537712097168

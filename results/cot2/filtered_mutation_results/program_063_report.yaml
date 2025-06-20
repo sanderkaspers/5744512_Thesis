@@ -1,0 +1,32 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_063.py\", line 17, in test_large_numbers\n    def\
+    \ test_large_numbers(self): self.assertEqual(search([999999, 888888, 999999]),\
+    \ 888888)\nAssertionError: 0 != 888888\n"
+  killer: test_large_numbers (datasets.GPT_4.Chain_of_thought2.tests.test_063.TestVersion)
+  module: !!python/module:datasets.GPT_4.Chain_of_thought2.programs.program_063 ''
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.015621423721313477
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Chain_of_thought2.programs.program_063
+tests:
+- name: datasets.GPT_4.Chain_of_thought2.tests.test_063
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.023196935653686523
+  run_tests_with_mutant: 0.015621423721313477
+total_time: 0.038823843002319336

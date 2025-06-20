@@ -1,0 +1,27 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought1.programs.program_082
+   - tests: datasets.GPT_4.Chain_of_thought1.tests.test_082
+[*] 11 tests passed:
+   - datasets.GPT_4.Chain_of_thought1.tests.test_082 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ROR datasets.GPT_4.Chain_of_thought1.programs.program_082: [0.00241 s] killed by test_all_same (datasets.GPT_4.Chain_of_thought1.tests.test_082.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_082.py", line 5, in test_all_same
+    def test_all_same(self): self.assertEqual(count_samepair([1, 1], [1, 1], [1, 1]), 2)
+AssertionError: 0 != 2
+
+   - [#   2] ROR datasets.GPT_4.Chain_of_thought1.programs.program_082: [0.01000 s] killed by test_all_same (datasets.GPT_4.Chain_of_thought1.tests.test_082.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_082.py", line 5, in test_all_same
+    def test_all_same(self): self.assertEqual(count_samepair([1, 1], [1, 1], [1, 1]), 2)
+AssertionError: 0 != 2
+
+[*] Mutation score [0.04206 s]: 100.0%
+   - all: 2
+   - killed: 2 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

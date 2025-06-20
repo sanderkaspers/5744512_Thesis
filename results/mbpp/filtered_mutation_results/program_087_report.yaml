@@ -1,0 +1,87 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_087.py\", line 9, in test_sum_series_with_10_expect_30\n    self.assertEqual(sum_series(10),\
+    \ 30)\nAssertionError: 6 != 30\n"
+  killer: test_sum_series_with_10_expect_30 (datasets.mbpp.tests.test_087.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_087 ''
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.00034356117248535156
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_087.py\", line 9, in test_sum_series_with_10_expect_30\n    self.assertEqual(sum_series(10),\
+    \ 30)\n  File \"datasets.mbpp.programs.program_087\", line 5, in sum_series\n\
+    \  File \"datasets.mbpp.programs.program_087\", line 5, in sum_series\n  File\
+    \ \"datasets.mbpp.programs.program_087\", line 5, in sum_series\n  [Previous line\
+    \ repeated 983 more times]\n  File \"datasets.mbpp.programs.program_087\", line\
+    \ 2, in sum_series\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_sum_series_with_10_expect_30 (datasets.mbpp.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.24894952774047852
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_087.py\", line 9, in test_sum_series_with_10_expect_30\n    self.assertEqual(sum_series(10),\
+    \ 30)\nAssertionError: 0 != 30\n"
+  killer: test_sum_series_with_10_expect_30 (datasets.mbpp.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0009999275207519531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_087.py\", line 9, in test_sum_series_with_10_expect_30\n    self.assertEqual(sum_series(10),\
+    \ 30)\nAssertionError: 0 != 30\n"
+  killer: test_sum_series_with_10_expect_30 (datasets.mbpp.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.002004861831665039
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_087.py\", line 12, in test_sum_series_with_9_expect_25\n    self.assertEqual(sum_series(9),\
+    \ 25)\nAssertionError: 24 != 25\n"
+  killer: test_sum_series_with_9_expect_25 (datasets.mbpp.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 5
+  status: killed
+  tests_run: 3
+  time: 0.001001596450805664
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_087
+tests:
+- name: datasets.mbpp.tests.test_087
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0010006427764892578
+  create_target_ast: 0.0
+  mutate_module: 0.3008544445037842
+  run_tests_with_mutant: 0.25529909133911133
+total_time: 0.3061208724975586

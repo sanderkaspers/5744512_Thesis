@@ -1,0 +1,14 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_061
+   - tests: datasets.mbpp.tests.test_061
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_061 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.mbpp.programs.program_061: [0.00000 s] survived
+[*] Mutation score [0.04619 s]: 0.0%
+   - all: 1
+   - killed: 0 (0.0%)
+   - survived: 1 (100.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

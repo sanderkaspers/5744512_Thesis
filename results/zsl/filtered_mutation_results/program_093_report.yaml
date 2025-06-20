@@ -1,0 +1,57 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_093.py\", line 9, in test_multiple_spaces\n    assert frequency(a,\
+    \ x) == expected_output\nAssertionError\n"
+  killer: test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_093.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot.programs.program_093 ''
+  mutations:
+  - lineno: 5
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_093.py\", line 9, in test_multiple_spaces\n    assert frequency(a,\
+    \ x) == expected_output\nAssertionError\n"
+  killer: test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_093.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.00121307373046875
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_093.py\", line 9, in test_multiple_spaces\n    assert frequency(a,\
+    \ x) == expected_output\nAssertionError\n"
+  killer: test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_093.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0010979175567626953
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Zero_shot.programs.program_093
+tests:
+- name: datasets.GPT_4.Zero_shot.tests.test_093
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0005056858062744141
+  create_target_ast: 0.0
+  mutate_module: 0.03707551956176758
+  run_tests_with_mutant: 0.0023109912872314453
+total_time: 0.056142568588256836

@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_063
+   - tests: datasets.o3.tests.test_063
+[*] 5 tests passed:
+   - datasets.o3.tests.test_063 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] LOR datasets.o3.programs.program_063: [0.00102 s] killed by test_negative_numbers (datasets.o3.tests.test_063.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_063.py", line 18, in test_negative_numbers
+    self.assertEqual(search([-1,-1,2]), 2)
+AssertionError: 0 != 2
+
+[*] Mutation score [0.02866 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

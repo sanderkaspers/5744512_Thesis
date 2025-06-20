@@ -1,0 +1,154 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 90.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_029.py\", line 15, in test_tetrahedral_number_five\n  \
+    \  def test_tetrahedral_number_five(self): self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 0.9722222222222223 != 35\n"
+  killer: test_tetrahedral_number_five (datasets.GPT_4.Few_shot2.tests.test_029.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_029 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010280609130859375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_029.py\", line 15, in test_tetrahedral_number_five\n  \
+    \  def test_tetrahedral_number_five(self): self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 0.0 != 35\n"
+  killer: test_tetrahedral_number_five (datasets.GPT_4.Few_shot2.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009925365447998047
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_029.py\", line 15, in test_tetrahedral_number_five\n  \
+    \  def test_tetrahedral_number_five(self): self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 18229.166666666668 != 35\n"
+  killer: test_tetrahedral_number_five (datasets.GPT_4.Few_shot2.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_029.py\", line 15, in test_tetrahedral_number_five\n  \
+    \  def test_tetrahedral_number_five(self): self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 23.333333333333332 != 35\n"
+  killer: test_tetrahedral_number_five (datasets.GPT_4.Few_shot2.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0010027885437011719
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_029.py\", line 15, in test_tetrahedral_number_five\n  \
+    \  def test_tetrahedral_number_five(self): self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 0.7142857142857143 != 35\n"
+  killer: test_tetrahedral_number_five (datasets.GPT_4.Few_shot2.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0009944438934326172
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_029.py\", line 15, in test_tetrahedral_number_five\n  \
+    \  def test_tetrahedral_number_five(self): self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 0.6666666666666666 != 35\n"
+  killer: test_tetrahedral_number_five (datasets.GPT_4.Few_shot2.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_029.py\", line 15, in test_tetrahedral_number_five\n  \
+    \  def test_tetrahedral_number_five(self): self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 3645000000.0 != 35\n"
+  killer: test_tetrahedral_number_five (datasets.GPT_4.Few_shot2.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_029.py\", line 15, in test_tetrahedral_number_five\n  \
+    \  def test_tetrahedral_number_five(self): self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 15.0 != 35\n"
+  killer: test_tetrahedral_number_five (datasets.GPT_4.Few_shot2.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0010008811950683594
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_029.py\", line 15, in test_tetrahedral_number_five\n  \
+    \  def test_tetrahedral_number_five(self): self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 1260 != 35\n"
+  killer: test_tetrahedral_number_five (datasets.GPT_4.Few_shot2.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_029
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_029
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.001001596450805664
+  mutate_module: 0.038754940032958984
+  run_tests_with_mutant: 0.009032249450683594
+total_time: 0.04474043846130371

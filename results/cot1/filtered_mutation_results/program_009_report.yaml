@@ -1,0 +1,196 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 66.66666666666666
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_009.py\", line 13, in test_large_number\n    def\
+    \ test_large_number(self): self.assertEqual(rev(9876543210), 123456789)\nAssertionError:\
+    \ 9.87654321 != 123456789\n"
+  killer: test_large_number (datasets.GPT_4.Chain_of_thought1.tests.test_009.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_009 ''
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_009.py\", line 13, in test_large_number\n    def\
+    \ test_large_number(self): self.assertEqual(rev(9876543210), 123456789)\nAssertionError:\
+    \ 9 != 123456789\n"
+  killer: test_large_number (datasets.GPT_4.Chain_of_thought1.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 3
+  status: timeout
+  tests_run: null
+  time: 2.1745035648345947
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_009.py\", line 13, in test_large_number\n    def\
+    \ test_large_number(self): self.assertEqual(rev(9876543210), 123456789)\nAssertionError:\
+    \ -123456789 != 123456789\n"
+  killer: test_large_number (datasets.GPT_4.Chain_of_thought1.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_009.py\", line 13, in test_large_number\n    def\
+    \ test_large_number(self): self.assertEqual(rev(9876543210), 123456789)\nAssertionError:\
+    \ 99763062727260256890 != 123456789\n"
+  killer: test_large_number (datasets.GPT_4.Chain_of_thought1.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_009.py\", line 13, in test_large_number\n    def\
+    \ test_large_number(self): self.assertEqual(rev(9876543210), 123456789)\nAssertionError:\
+    \ inf != 123456789\n"
+  killer: test_large_number (datasets.GPT_4.Chain_of_thought1.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 7
+  status: timeout
+  tests_run: null
+  time: 1.0374038219451904
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 8
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 10
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 11
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_009.py\", line 13, in test_large_number\n    def\
+    \ test_large_number(self): self.assertEqual(rev(9876543210), 123456789)\nAssertionError:\
+    \ 0 != 123456789\n"
+  killer: test_large_number (datasets.GPT_4.Chain_of_thought1.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 12
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_009.py\", line 13, in test_large_number\n    def\
+    \ test_large_number(self): self.assertEqual(rev(9876543210), 123456789)\nAssertionError:\
+    \ 0 != 123456789\n"
+  killer: test_large_number (datasets.GPT_4.Chain_of_thought1.tests.test_009.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 13
+  status: killed
+  tests_run: 1
+  time: 0.0030062198638916016
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 14
+  status: timeout
+  tests_run: null
+  time: 1.0427601337432861
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: ROR
+  number: 15
+  status: survived
+  tests_run: 7
+  time: 0.0
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_009
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_009
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 4.317906856536865
+  run_tests_with_mutant: 4.257673740386963
+total_time: 4.317906856536865

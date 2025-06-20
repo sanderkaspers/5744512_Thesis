@@ -1,0 +1,63 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_080.py\", line 7, in test_all_distinct\n    def\
+    \ test_all_distinct(self): self.assertEqual(extract_singly([[1], [2], [3]]), [1,\
+    \ 2, 3])\nAssertionError: Lists differ: [] != [1, 2, 3]\n\nSecond list contains\
+    \ 3 additional elements.\nFirst extra element 0:\n1\n\n- []\n+ [1, 2, 3]\n"
+  killer: test_all_distinct (datasets.GPT_4.Chain_of_thought1.tests.test_080.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_080 ''
+  mutations:
+  - lineno: 6
+    operator: COD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0009968280792236328
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_080.py\", line 7, in test_all_distinct\n    def\
+    \ test_all_distinct(self): self.assertEqual(extract_singly([[1], [2], [3]]), [1,\
+    \ 2, 3])\nAssertionError: Lists differ: [] != [1, 2, 3]\n\nSecond list contains\
+    \ 3 additional elements.\nFirst extra element 0:\n1\n\n- []\n+ [1, 2, 3]\n"
+  killer: test_all_distinct (datasets.GPT_4.Chain_of_thought1.tests.test_080.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0010116100311279297
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_080.py\", line 7, in test_all_distinct\n    def\
+    \ test_all_distinct(self): self.assertEqual(extract_singly([[1], [2], [3]]), [1,\
+    \ 2, 3])\nAssertionError: Lists differ: [] != [1, 2, 3]\n\nSecond list contains\
+    \ 3 additional elements.\nFirst extra element 0:\n1\n\n- []\n+ [1, 2, 3]\n"
+  killer: test_all_distinct (datasets.GPT_4.Chain_of_thought1.tests.test_080.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_080
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_080
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0009965896606445312
+  create_target_ast: 0.0
+  mutate_module: 0.03539013862609863
+  run_tests_with_mutant: 0.0020084381103515625
+total_time: 0.04146075248718262

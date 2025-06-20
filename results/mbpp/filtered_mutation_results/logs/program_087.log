@@ -1,0 +1,53 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_087
+   - tests: datasets.mbpp.tests.test_087
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_087 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.mbpp.programs.program_087: [0.00034 s] killed by test_sum_series_with_10_expect_30 (datasets.mbpp.tests.test_087.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_087.py", line 9, in test_sum_series_with_10_expect_30
+    self.assertEqual(sum_series(10), 30)
+AssertionError: 6 != 30
+
+   - [#   2] AOR datasets.mbpp.programs.program_087: [0.24895 s] killed by test_sum_series_with_10_expect_30 (datasets.mbpp.tests.test_087.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_087.py", line 9, in test_sum_series_with_10_expect_30
+    self.assertEqual(sum_series(10), 30)
+  File "datasets.mbpp.programs.program_087", line 5, in sum_series
+  File "datasets.mbpp.programs.program_087", line 5, in sum_series
+  File "datasets.mbpp.programs.program_087", line 5, in sum_series
+  [Previous line repeated 983 more times]
+  File "datasets.mbpp.programs.program_087", line 2, in sum_series
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   3] COI datasets.mbpp.programs.program_087: [0.00100 s] killed by test_sum_series_with_10_expect_30 (datasets.mbpp.tests.test_087.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_087.py", line 9, in test_sum_series_with_10_expect_30
+    self.assertEqual(sum_series(10), 30)
+AssertionError: 0 != 30
+
+   - [#   4] ROR datasets.mbpp.programs.program_087: [0.00200 s] killed by test_sum_series_with_10_expect_30 (datasets.mbpp.tests.test_087.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_087.py", line 9, in test_sum_series_with_10_expect_30
+    self.assertEqual(sum_series(10), 30)
+AssertionError: 0 != 30
+
+   - [#   5] ROR datasets.mbpp.programs.program_087: [0.00100 s] killed by test_sum_series_with_9_expect_25 (datasets.mbpp.tests.test_087.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_087.py", line 12, in test_sum_series_with_9_expect_25
+    self.assertEqual(sum_series(9), 25)
+AssertionError: 24 != 25
+
+[*] Mutation score [0.30612 s]: 100.0%
+   - all: 5
+   - killed: 5 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

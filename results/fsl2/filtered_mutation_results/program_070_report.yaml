@@ -1,0 +1,67 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_070.py\", line 9, in test_long_words_all_long\n    def\
+    \ test_long_words_all_long(self): self.assertEqual(long_words(2, 'Hello world\
+    \ again'), ['Hello', 'world', 'again'])\nAssertionError: Lists differ: [] != ['Hello',\
+    \ 'world', 'again']\n\nSecond list contains 3 additional elements.\nFirst extra\
+    \ element 0:\n'Hello'\n\n- []\n+ ['Hello', 'world', 'again']\n"
+  killer: test_long_words_all_long (datasets.GPT_4.Few_shot2.tests.test_070.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_070 ''
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_070.py\", line 9, in test_long_words_all_long\n    def\
+    \ test_long_words_all_long(self): self.assertEqual(long_words(2, 'Hello world\
+    \ again'), ['Hello', 'world', 'again'])\nAssertionError: Lists differ: [] != ['Hello',\
+    \ 'world', 'again']\n\nSecond list contains 3 additional elements.\nFirst extra\
+    \ element 0:\n'Hello'\n\n- []\n+ ['Hello', 'world', 'again']\n"
+  killer: test_long_words_all_long (datasets.GPT_4.Few_shot2.tests.test_070.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.001018524169921875
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_070.py\", line 5, in test_long_words_basic\n    def test_long_words_basic(self):\
+    \ self.assertEqual(long_words(3, 'The quick brown fox'), ['quick', 'brown'])\n\
+    AssertionError: Lists differ: ['The', 'quick', 'brown', 'fox'] != ['quick', 'brown']\n\
+    \nFirst differing element 0:\n'The'\n'quick'\n\nFirst list contains 2 additional\
+    \ elements.\nFirst extra element 2:\n'brown'\n\n- ['The', 'quick', 'brown', 'fox']\n\
+    + ['quick', 'brown']\n"
+  killer: test_long_words_basic (datasets.GPT_4.Few_shot2.tests.test_070.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 3
+  status: killed
+  tests_run: 3
+  time: 0.0026290416717529297
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_070
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_070
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.028551816940307617
+  run_tests_with_mutant: 0.0036475658416748047
+total_time: 0.0472865104675293

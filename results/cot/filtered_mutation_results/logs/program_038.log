@@ -1,0 +1,28 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought.programs.program_038
+   - tests: datasets.GPT_4.Chain_of_thought.tests.test_038
+[*] 9 tests passed:
+   - datasets.GPT_4.Chain_of_thought.tests.test_038 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.GPT_4.Chain_of_thought.programs.program_038: [0.00200 s] killed by test_mixed_case_words (datasets.GPT_4.Chain_of_thought.tests.test_038.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_038.py", line 22, in test_mixed_case_words
+    self.assertEqual(len_log(['Python', 'javaScript', 'HTML']), 10)
+AssertionError: 4 != 10
+
+   - [#   2] ROR datasets.GPT_4.Chain_of_thought.programs.program_038: [0.00097 s] killed by test_mixed_case_words (datasets.GPT_4.Chain_of_thought.tests.test_038.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_038.py", line 22, in test_mixed_case_words
+    self.assertEqual(len_log(['Python', 'javaScript', 'HTML']), 10)
+AssertionError: 4 != 10
+
+   - [#   3] ROR datasets.GPT_4.Chain_of_thought.programs.program_038: [0.00000 s] survived
+[*] Mutation score [0.03856 s]: 66.7%
+   - all: 3
+   - killed: 2 (66.7%)
+   - survived: 1 (33.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

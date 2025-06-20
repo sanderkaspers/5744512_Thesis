@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py", line 184, in <module>
+    main(sys.argv[1:])
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py", line 10, in main
+    run_mutpy(parser)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py", line 63, in run_mutpy
+    mutation_controller.run()
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\controller.py", line 66, in run
+    self.run_mutation_process()
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\controller.py", line 85, in run_mutation_process
+    self.mutate_module(target_module, to_mutate, total_duration)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\utils.py", line 304, in __call__
+    result = self.method(*args, **kwargs)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\controller.py", line 122, in mutate_module
+    self.run_tests_with_mutant(total_duration, mutant_module, mutations, coverage_result)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\controller.py", line 148, in run_tests_with_mutant
+    self.update_score_and_notify_views(result, duration)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\controller.py", line 154, in update_score_and_notify_views
+    self.update_incompetent_mutant(result, mutant_duration)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\controller.py", line 165, in update_incompetent_mutant
+    self.notify_incompetent(duration, result.exception, result.tests_run)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\views.py", line 35, in <lambda>
+    return lambda *args, **kwargs: self.notify_all_views(notify, *args, **kwargs)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\views.py", line 30, in notify_all_views
+    attr(*args, **kwargs)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\views.py", line 181, in incompetent
+    self.print_exception(exception)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\views.py", line 178, in print_exception
+    print("\n" + "".join(traceback.format_exception(None, exception, None)))
+  File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\traceback.py", line 120, in format_exception
+    return list(TracebackException(
+  File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\traceback.py", line 479, in __init__
+    if (exc_value and exc_value.__cause__ is not None
+AttributeError: 'tuple' object has no attribute '__cause__'
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_006
+   - tests: datasets.mbpp.tests.test_006
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_006 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.mbpp.programs.program_006: [0.00000 s] incompetent

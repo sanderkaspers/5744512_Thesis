@@ -1,0 +1,41 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_018
+   - tests: datasets.o3.tests.test_018
+[*] 6 tests passed:
+   - datasets.o3.tests.test_018 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ASR datasets.o3.programs.program_018: [0.00000 s] killed by test_pos_count_all_positive (datasets.o3.tests.test_018.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_018.py", line 9, in test_pos_count_all_positive
+    self.assertEqual(pos_count([1,2,3,4]), 4)
+AssertionError: -4 != 4
+
+   - [#   2] COI datasets.o3.programs.program_018: [0.00099 s] killed by test_pos_count_all_negative (datasets.o3.tests.test_018.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_018.py", line 12, in test_pos_count_all_negative
+    self.assertEqual(pos_count([-1,-2,-3]), 0)
+AssertionError: 3 != 0
+
+   - [#   3] ROR datasets.o3.programs.program_018: [0.00100 s] killed by test_pos_count_all_negative (datasets.o3.tests.test_018.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_018.py", line 12, in test_pos_count_all_negative
+    self.assertEqual(pos_count([-1,-2,-3]), 0)
+AssertionError: 3 != 0
+
+   - [#   4] ROR datasets.o3.programs.program_018: [0.00000 s] killed by test_pos_count_floats (datasets.o3.tests.test_018.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_018.py", line 18, in test_pos_count_floats
+    self.assertEqual(pos_count([-1.5, 0.0, 2.7]), 2)
+AssertionError: 1 != 2
+
+[*] Mutation score [0.03828 s]: 100.0%
+   - all: 4
+   - killed: 4 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

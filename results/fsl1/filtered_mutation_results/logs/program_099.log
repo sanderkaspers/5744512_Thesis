@@ -1,0 +1,35 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot1.programs.program_099
+   - tests: datasets.GPT_4.Few_shot1.tests.test_099
+[*] 18 tests passed:
+   - datasets.GPT_4.Few_shot1.tests.test_099 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ASR datasets.GPT_4.Few_shot1.programs.program_099: [0.00000 s] killed by test_count_set_bits_all_bits_set (datasets.GPT_4.Few_shot1.tests.test_099.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_099.py", line 13, in test_count_set_bits_all_bits_set
+    def test_count_set_bits_all_bits_set(self): self.assertEqual(count_Set_Bits(15), 4)
+AssertionError: -4 != 4
+
+   - [#   2] COI datasets.GPT_4.Few_shot1.programs.program_099: [0.00000 s] killed by test_count_set_bits_all_bits_set (datasets.GPT_4.Few_shot1.tests.test_099.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_099.py", line 13, in test_count_set_bits_all_bits_set
+    def test_count_set_bits_all_bits_set(self): self.assertEqual(count_Set_Bits(15), 4)
+AssertionError: 0 != 4
+
+   - [#   3] LOR datasets.GPT_4.Few_shot1.programs.program_099: [0.00000 s] killed by test_count_set_bits_all_bits_set (datasets.GPT_4.Few_shot1.tests.test_099.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_099.py", line 13, in test_count_set_bits_all_bits_set
+    def test_count_set_bits_all_bits_set(self): self.assertEqual(count_Set_Bits(15), 4)
+AssertionError: 26 != 4
+
+   - [#   4] LOR datasets.GPT_4.Few_shot1.programs.program_099: [5.07069 s] timeout
+[*] Mutation score [5.10604 s]: 100.0%
+   - all: 4
+   - killed: 3 (75.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 1 (25.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

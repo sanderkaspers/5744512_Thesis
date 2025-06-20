@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py", line 184, in <module>
+    main(sys.argv[1:])
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py", line 10, in main
+    run_mutpy(parser)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py", line 63, in run_mutpy
+    mutation_controller.run()
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\controller.py", line 67, in run
+    self.notify_end(self.score, timer.stop())
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\views.py", line 35, in <lambda>
+    return lambda *args, **kwargs: self.notify_all_views(notify, *args, **kwargs)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\views.py", line 30, in notify_all_views
+    attr(*args, **kwargs)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\views.py", line 294, in end
+    report = template.render(context)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\templates\base.html", line 20, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\templates\index.html", line 38, in block 'content'
+    <div title="killed - {{ score.killed_mutants }}" class="progress-bar progress-bar-success" style="width: {{ 100 * score.killed_mutants / score.all_mutants }}%">
+ZeroDivisionError: division by zero
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_002
+   - tests: datasets.pynguin.tests.test_002
+[*] 1 tests passed:
+   - datasets.pynguin.tests.test_002 [0.00000 s]
+[*] Start mutants generation and execution:
+[*] Mutation score [0.01255 s]: 0.0%
+   - all: 0

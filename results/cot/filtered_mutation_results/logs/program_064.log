@@ -1,0 +1,34 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought.programs.program_064
+   - tests: datasets.GPT_4.Chain_of_thought.tests.test_064
+[*] 10 tests passed:
+   - datasets.GPT_4.Chain_of_thought.tests.test_064 [0.00098 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Chain_of_thought.programs.program_064: [0.00104 s] killed by test_floating_point_numbers (datasets.GPT_4.Chain_of_thought.tests.test_064.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_064.py", line 31, in test_floating_point_numbers
+    self.assertEqual(max_product_tuple([(1.5, 2.5), (3.5, 4.5), (5.5, 6.5)]), 35.75)
+AssertionError: 0.8461538461538461 != 35.75
+
+   - [#   2] AOR datasets.GPT_4.Chain_of_thought.programs.program_064: [0.00109 s] killed by test_floating_point_numbers (datasets.GPT_4.Chain_of_thought.tests.test_064.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_064.py", line 31, in test_floating_point_numbers
+    self.assertEqual(max_product_tuple([(1.5, 2.5), (3.5, 4.5), (5.5, 6.5)]), 35.75)
+AssertionError: 0.0 != 35.75
+
+   - [#   3] AOR datasets.GPT_4.Chain_of_thought.programs.program_064: [0.00100 s] killed by test_floating_point_numbers (datasets.GPT_4.Chain_of_thought.tests.test_064.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_064.py", line 31, in test_floating_point_numbers
+    self.assertEqual(max_product_tuple([(1.5, 2.5), (3.5, 4.5), (5.5, 6.5)]), 35.75)
+AssertionError: 64916.856514754334 != 35.75
+
+[*] Mutation score [0.03499 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

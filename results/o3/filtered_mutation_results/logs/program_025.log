@@ -1,0 +1,80 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_025
+   - tests: datasets.o3.tests.test_025
+[*] 6 tests passed:
+   - datasets.o3.tests.test_025 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.o3.programs.program_025: [0.00000 s] killed by test_large_unique_patterns (datasets.o3.tests.test_025.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_025.py", line 33, in test_large_unique_patterns
+    self.assertTrue(is_samepatterns(colors, patterns))
+  File "datasets.o3.programs.program_025", line 23, in is_samepatterns
+IndexError: list index out of range
+
+   - [#   2] AOR datasets.o3.programs.program_025: [0.00109 s] survived
+   - [#   3] COD datasets.o3.programs.program_025: [0.00000 s] killed by test_inconsistent_mapping (datasets.o3.tests.test_025.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_025.py", line 18, in test_inconsistent_mapping
+    self.assertFalse(is_samepatterns(colors, patterns))
+  File "datasets.o3.programs.program_025", line 13, in is_samepatterns
+KeyError: 'a'
+
+   - [#   4] COI datasets.o3.programs.program_025: [0.00000 s] killed by test_large_unique_patterns (datasets.o3.tests.test_025.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_025.py", line 33, in test_large_unique_patterns
+    self.assertTrue(is_samepatterns(colors, patterns))
+AssertionError: False is not true
+
+   - [#   5] COI datasets.o3.programs.program_025: [0.00000 s] killed by test_inconsistent_mapping (datasets.o3.tests.test_025.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_025.py", line 18, in test_inconsistent_mapping
+    self.assertFalse(is_samepatterns(colors, patterns))
+  File "datasets.o3.programs.program_025", line 13, in is_samepatterns
+KeyError: 'a'
+
+   - [#   6] COI datasets.o3.programs.program_025: [0.00000 s] killed by test_large_unique_patterns (datasets.o3.tests.test_025.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_025.py", line 33, in test_large_unique_patterns
+    self.assertTrue(is_samepatterns(colors, patterns))
+AssertionError: False is not true
+
+   - [#   7] COI datasets.o3.programs.program_025: [0.00000 s] killed by test_matching_simple (datasets.o3.tests.test_025.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_025.py", line 8, in test_matching_simple
+    self.assertTrue(is_samepatterns(colors, patterns))
+AssertionError: False is not true
+
+   - [#   8] ROR datasets.o3.programs.program_025: [0.00000 s] killed by test_large_unique_patterns (datasets.o3.tests.test_025.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_025.py", line 33, in test_large_unique_patterns
+    self.assertTrue(is_samepatterns(colors, patterns))
+AssertionError: False is not true
+
+   - [#   9] ROR datasets.o3.programs.program_025: [0.00000 s] killed by test_large_unique_patterns (datasets.o3.tests.test_025.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_025.py", line 33, in test_large_unique_patterns
+    self.assertTrue(is_samepatterns(colors, patterns))
+AssertionError: False is not true
+
+   - [#  10] ROR datasets.o3.programs.program_025: [0.00000 s] killed by test_matching_simple (datasets.o3.tests.test_025.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_025.py", line 8, in test_matching_simple
+    self.assertTrue(is_samepatterns(colors, patterns))
+AssertionError: False is not true
+
+[*] Mutation score [0.12256 s]: 90.0%
+   - all: 10
+   - killed: 9 (90.0%)
+   - survived: 1 (10.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

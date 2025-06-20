@@ -1,0 +1,27 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought.programs.program_039
+   - tests: datasets.GPT_4.Chain_of_thought.tests.test_039
+[*] 10 tests passed:
+   - datasets.GPT_4.Chain_of_thought.tests.test_039 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.GPT_4.Chain_of_thought.programs.program_039: [0.00060 s] killed by test_case_sensitivity (datasets.GPT_4.Chain_of_thought.tests.test_039.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_039.py", line 30, in test_case_sensitivity
+    self.assertFalse(find_substring(['apple', 'banana', 'cherry'], 'Ana'))
+AssertionError: True is not false
+
+   - [#   2] COI datasets.GPT_4.Chain_of_thought.programs.program_039: [0.00099 s] killed by test_case_sensitivity (datasets.GPT_4.Chain_of_thought.tests.test_039.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_039.py", line 30, in test_case_sensitivity
+    self.assertFalse(find_substring(['apple', 'banana', 'cherry'], 'Ana'))
+AssertionError: True is not false
+
+[*] Mutation score [0.03035 s]: 100.0%
+   - all: 2
+   - killed: 2 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,23 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_050
+   - tests: datasets.mbpp.tests.test_050
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_050 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] LCR datasets.mbpp.programs.program_050: [0.00197 s] killed by test_snake_to_camel_with_programming_language_expect__ProgrammingLanguage_ (datasets.mbpp.tests.test_050.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_050.py", line 12, in test_snake_to_camel_with_programming_language_expect__ProgrammingLanguage_
+    self.assertEqual(snake_to_camel('programming_language'), ('ProgrammingLanguage'))
+AssertionError: '__' != 'ProgrammingLanguage'
+- __
++ ProgrammingLanguage
+
+
+[*] Mutation score [0.02701 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

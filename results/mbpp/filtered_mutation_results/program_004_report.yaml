@@ -1,0 +1,32 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_004.py\", line 12, in test_text_lowercase_underscore_with_Aaab_abbbc_expect__False_\n\
+    \    self.assertEqual(text_lowercase_underscore(\"Aaab_abbbc\"), (False))\nAssertionError:\
+    \ True != False\n"
+  killer: test_text_lowercase_underscore_with_Aaab_abbbc_expect__False_ (datasets.mbpp.tests.test_004.TestVersion)
+  module: !!python/module:datasets.mbpp.programs.program_004 ''
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0009992122650146484
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_004
+tests:
+- name: datasets.mbpp.tests.test_004
+  target: null
+  time: 0.001004934310913086
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.01896071434020996
+  run_tests_with_mutant: 0.0009992122650146484
+total_time: 0.02496027946472168

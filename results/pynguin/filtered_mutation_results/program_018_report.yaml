@@ -1,0 +1,66 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_018.py\", line 8, in test_case_0\n    assert var_0 == 15\nAssertionError\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_018.TestAll)
+  module: &id001 !!python/module:datasets.pynguin.programs.program_018 ''
+  mutations:
+  - lineno: 5
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_018.py\", line 8, in test_case_0\n    assert var_0 == 15\nAssertionError\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_018.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.010095357894897461
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_018.py\", line 8, in test_case_0\n    assert var_0 == 15\nAssertionError\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_018.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_018.py\", line 8, in test_case_0\n    assert var_0 == 15\nAssertionError\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_018.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 2
+targets:
+- datasets.pynguin.programs.program_018
+tests:
+- name: datasets.pynguin.tests.test_018
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.03885054588317871
+  run_tests_with_mutant: 0.010095357894897461
+total_time: 0.0479581356048584

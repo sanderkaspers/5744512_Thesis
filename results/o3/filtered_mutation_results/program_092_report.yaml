@@ -1,0 +1,146 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_092.py\", line 9, in test_exact_power_of_two\n    self.assertEqual(next_power_of_2(16),\
+    \ 16)\nAssertionError: 32 != 16\n"
+  killer: test_exact_power_of_two (datasets.o3.tests.test_092.TestVersion)
+  module: &id001 !!python/module:datasets.o3.programs.program_092 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_092.py\", line 24, in test_large_number\n    self.assertEqual(next_power_of_2(1025),\
+    \ 2048)\n  File \"datasets.o3.programs.program_092\", line 10, in next_power_of_2\n\
+    ValueError: negative shift count\n"
+  killer: test_large_number (datasets.o3.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: ASR
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_092.py\", line 9, in test_exact_power_of_two\n    self.assertEqual(next_power_of_2(16),\
+    \ 16)\nAssertionError: 32 != 16\n"
+  killer: test_exact_power_of_two (datasets.o3.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COD
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_092.py\", line 9, in test_exact_power_of_two\n    self.assertEqual(next_power_of_2(16),\
+    \ 16)\nAssertionError: 32 != 16\n"
+  killer: test_exact_power_of_two (datasets.o3.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_092.py\", line 24, in test_large_number\n    self.assertEqual(next_power_of_2(1025),\
+    \ 2048)\nAssertionError: 1 != 2048\n"
+  killer: test_large_number (datasets.o3.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.005584239959716797
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_092.py\", line 24, in test_large_number\n    self.assertEqual(next_power_of_2(1025),\
+    \ 2048)\nAssertionError: 1025 != 2048\n"
+  killer: test_large_number (datasets.o3.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 6
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_092.py\", line 9, in test_exact_power_of_two\n    self.assertEqual(next_power_of_2(16),\
+    \ 16)\nAssertionError: 32 != 16\n"
+  killer: test_exact_power_of_two (datasets.o3.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: LOR
+  number: 8
+  status: timeout
+  tests_run: null
+  time: 5.038633346557617
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_092.py\", line 24, in test_large_number\n    self.assertEqual(next_power_of_2(1025),\
+    \ 2048)\nAssertionError: 0 != 2048\n"
+  killer: test_large_number (datasets.o3.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: LOR
+  number: 9
+  status: killed
+  tests_run: 2
+  time: 0.0009884834289550781
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_092.py\", line 24, in test_large_number\n    self.assertEqual(next_power_of_2(1025),\
+    \ 2048)\nAssertionError: 1 != 2048\n"
+  killer: test_large_number (datasets.o3.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 10
+  status: killed
+  tests_run: 2
+  time: 0.0009937286376953125
+number_of_tests: 7
+targets:
+- datasets.o3.programs.program_092
+tests:
+- name: datasets.o3.tests.test_092
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0021817684173583984
+  create_target_ast: 0.0
+  mutate_module: 5.102588891983032
+  run_tests_with_mutant: 5.046199798583984
+total_time: 5.103235244750977

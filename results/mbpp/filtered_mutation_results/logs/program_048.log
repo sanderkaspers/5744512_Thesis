@@ -1,0 +1,55 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_048
+   - tests: datasets.mbpp.tests.test_048
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_048 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.mbpp.programs.program_048: [0.00135 s] killed by test_next_smallest_palindrome_with_1221_expect_1331 (datasets.mbpp.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_048.py", line 9, in test_next_smallest_palindrome_with_1221_expect_1331
+    self.assertEqual(next_smallest_palindrome(1221), 1331)
+AssertionError: 1222 != 1331
+
+   - [#   2] AOR datasets.mbpp.programs.program_048: [0.00057 s] killed by test_next_smallest_palindrome_with_1221_expect_1331 (datasets.mbpp.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_048.py", line 9, in test_next_smallest_palindrome_with_1221_expect_1331
+    self.assertEqual(next_smallest_palindrome(1221), 1331)
+AssertionError: 1221 != 1331
+
+   - [#   3] AOR datasets.mbpp.programs.program_048: [0.00100 s] killed by test_next_smallest_palindrome_with_1221_expect_1331 (datasets.mbpp.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_048.py", line 9, in test_next_smallest_palindrome_with_1221_expect_1331
+    self.assertEqual(next_smallest_palindrome(1221), 1331)
+AssertionError: 1222 != 1331
+
+   - [#   4] COI datasets.mbpp.programs.program_048: [0.00057 s] killed by test_next_smallest_palindrome_with_120_expect_121 (datasets.mbpp.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_048.py", line 12, in test_next_smallest_palindrome_with_120_expect_121
+    self.assertEqual(next_smallest_palindrome(120), 121)
+AssertionError: 122 != 121
+
+   - [#   5] ROR datasets.mbpp.programs.program_048: [0.00000 s] killed by test_next_smallest_palindrome_with_120_expect_121 (datasets.mbpp.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_048.py", line 12, in test_next_smallest_palindrome_with_120_expect_121
+    self.assertEqual(next_smallest_palindrome(120), 121)
+AssertionError: 122 != 121
+
+   - [#   6] SIR datasets.mbpp.programs.program_048: [0.00000 s] killed by test_next_smallest_palindrome_with_1221_expect_1331 (datasets.mbpp.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_048.py", line 9, in test_next_smallest_palindrome_with_1221_expect_1331
+    self.assertEqual(next_smallest_palindrome(1221), 1331)
+AssertionError: 1222 != 1331
+
+[*] Mutation score [0.05085 s]: 100.0%
+   - all: 6
+   - killed: 6 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

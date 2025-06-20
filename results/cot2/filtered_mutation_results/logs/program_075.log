@@ -1,0 +1,21 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought2.programs.program_075
+   - tests: datasets.GPT_4.Chain_of_thought2.tests.test_075
+[*] 9 tests passed:
+   - datasets.GPT_4.Chain_of_thought2.tests.test_075 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ROR datasets.GPT_4.Chain_of_thought2.programs.program_075: [0.00000 s] killed by test_all_negatives (datasets.GPT_4.Chain_of_thought2.tests.test_075.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_075.py", line 5, in test_all_negatives
+    def test_all_negatives(self): self.assertEqual(sum_negativenum([-1, -2, -3]), -6)
+AssertionError: 0 != -6
+
+   - [#   2] ROR datasets.GPT_4.Chain_of_thought2.programs.program_075: [0.01560 s] survived
+[*] Mutation score [0.03900 s]: 50.0%
+   - all: 2
+   - killed: 1 (50.0%)
+   - survived: 1 (50.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

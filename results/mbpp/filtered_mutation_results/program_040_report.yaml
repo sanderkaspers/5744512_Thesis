@@ -1,0 +1,98 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 83.33333333333334
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_040.py\", line 6, in test_is_undulating_with__1212121__expect_True\n\
+    \    self.assertEqual(is_undulating(\"1212121\"), True)\n  File \"datasets.mbpp.programs.program_040\"\
+    , line 6, in is_undulating\nIndexError: string index out of range\n"
+  killer: test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_040 ''
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0030243396759033203
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_040.py\", line 6, in test_is_undulating_with__1212121__expect_True\n\
+    \    self.assertEqual(is_undulating(\"1212121\"), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0010030269622802734
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_040.py\", line 6, in test_is_undulating_with__1212121__expect_True\n\
+    \    self.assertEqual(is_undulating(\"1212121\"), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0009765625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_040.py\", line 6, in test_is_undulating_with__1212121__expect_True\n\
+    \    self.assertEqual(is_undulating(\"1212121\"), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0009961128234863281
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 5
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_040.py\", line 6, in test_is_undulating_with__1212121__expect_True\n\
+    \    self.assertEqual(is_undulating(\"1212121\"), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0009987354278564453
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_040
+tests:
+- name: datasets.mbpp.tests.test_040
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.046996355056762695
+  run_tests_with_mutant: 0.006998777389526367
+total_time: 0.054996490478515625

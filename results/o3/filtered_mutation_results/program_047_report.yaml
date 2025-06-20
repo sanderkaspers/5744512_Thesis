@@ -1,0 +1,16 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 0
+mutations: []
+number_of_tests: 6
+targets:
+- datasets.o3.programs.program_047
+tests:
+- name: datasets.o3.tests.test_047
+  target: null
+  time: 0.0
+time_stats:
+  create_target_ast: 0.0
+  mutate_module: 0.010061502456665039
+total_time: 0.010061502456665039

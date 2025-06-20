@@ -1,0 +1,157 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 90.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_025.py\", line 13, in test_samepatterns_all_same\n    def\
+    \ test_samepatterns_all_same(self): self.assertEqual(is_samepatterns(['red', 'red',\
+    \ 'red'], ['a', 'a', 'a']), True)\n  File \"datasets.GPT_4.Few_shot1.programs.program_025\"\
+    , line 23, in is_samepatterns\nIndexError: list index out of range\n"
+  killer: test_samepatterns_all_same (datasets.GPT_4.Few_shot1.tests.test_025.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_025 ''
+  mutations:
+  - lineno: 22
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0009989738464355469
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: AOR
+  number: 2
+  status: survived
+  tests_run: 10
+  time: 0.0009021759033203125
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_025.py\", line 13, in test_samepatterns_all_same\n    def\
+    \ test_samepatterns_all_same(self): self.assertEqual(is_samepatterns(['red', 'red',\
+    \ 'red'], ['a', 'a', 'a']), True)\n  File \"datasets.GPT_4.Few_shot1.programs.program_025\"\
+    , line 13, in is_samepatterns\nKeyError: 'a'\n"
+  killer: test_samepatterns_all_same (datasets.GPT_4.Few_shot1.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: COD
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.00099945068359375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_025.py\", line 13, in test_samepatterns_all_same\n    def\
+    \ test_samepatterns_all_same(self): self.assertEqual(is_samepatterns(['red', 'red',\
+    \ 'red'], ['a', 'a', 'a']), True)\nAssertionError: False != True\n"
+  killer: test_samepatterns_all_same (datasets.GPT_4.Few_shot1.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0009295940399169922
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_025.py\", line 13, in test_samepatterns_all_same\n    def\
+    \ test_samepatterns_all_same(self): self.assertEqual(is_samepatterns(['red', 'red',\
+    \ 'red'], ['a', 'a', 'a']), True)\n  File \"datasets.GPT_4.Few_shot1.programs.program_025\"\
+    , line 13, in is_samepatterns\nKeyError: 'a'\n"
+  killer: test_samepatterns_all_same (datasets.GPT_4.Few_shot1.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.001995086669921875
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_025.py\", line 13, in test_samepatterns_all_same\n    def\
+    \ test_samepatterns_all_same(self): self.assertEqual(is_samepatterns(['red', 'red',\
+    \ 'red'], ['a', 'a', 'a']), True)\nAssertionError: False != True\n"
+  killer: test_samepatterns_all_same (datasets.GPT_4.Few_shot1.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: COI
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0011107921600341797
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_025.py\", line 13, in test_samepatterns_all_same\n    def\
+    \ test_samepatterns_all_same(self): self.assertEqual(is_samepatterns(['red', 'red',\
+    \ 'red'], ['a', 'a', 'a']), True)\nAssertionError: False != True\n"
+  killer: test_samepatterns_all_same (datasets.GPT_4.Few_shot1.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: COI
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_025.py\", line 13, in test_samepatterns_all_same\n    def\
+    \ test_samepatterns_all_same(self): self.assertEqual(is_samepatterns(['red', 'red',\
+    \ 'red'], ['a', 'a', 'a']), True)\nAssertionError: False != True\n"
+  killer: test_samepatterns_all_same (datasets.GPT_4.Few_shot1.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0009984970092773438
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_025.py\", line 13, in test_samepatterns_all_same\n    def\
+    \ test_samepatterns_all_same(self): self.assertEqual(is_samepatterns(['red', 'red',\
+    \ 'red'], ['a', 'a', 'a']), True)\nAssertionError: False != True\n"
+  killer: test_samepatterns_all_same (datasets.GPT_4.Few_shot1.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: ROR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0009996891021728516
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_025.py\", line 13, in test_samepatterns_all_same\n    def\
+    \ test_samepatterns_all_same(self): self.assertEqual(is_samepatterns(['red', 'red',\
+    \ 'red'], ['a', 'a', 'a']), True)\nAssertionError: False != True\n"
+  killer: test_samepatterns_all_same (datasets.GPT_4.Few_shot1.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: ROR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_025
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_025
+  target: null
+  time: 0.00014328956604003906
+time_stats:
+  create_mutant_module: 0.002590656280517578
+  create_target_ast: 0.0012309551239013672
+  mutate_module: 0.12201571464538574
+  run_tests_with_mutant: 0.01295161247253418
+total_time: 0.12862920761108398

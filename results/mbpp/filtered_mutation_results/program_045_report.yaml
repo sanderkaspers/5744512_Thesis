@@ -1,0 +1,61 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_045.py\", line 6, in test_freq_case_1\n    self.assertEqual(\nAssertionError:\
+    \ {1: 1, 2: -1, 3: 1, 4: 1, 5: 0, 6: 1, 7: 1, 8: 1, 9: 1} != {1: 1, 2: 3, 3: 1,\
+    \ 4: 1, 5: 2, 6: 1, 7: 1, 8: 1, 9: 1}\n- {1: 1, 2: -1, 3: 1, 4: 1, 5: 0, 6: 1,\
+    \ 7: 1, 8: 1, 9: 1}\n+ {1: 1, 2: 3, 3: 1, 4: 1, 5: 2, 6: 1, 7: 1, 8: 1, 9: 1}\n"
+  killer: test_freq_case_1 (datasets.mbpp.tests.test_045.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_045 ''
+  mutations:
+  - lineno: 6
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010347366333007812
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_045.py\", line 7, in test_freq_case_1\n    frequency_lists([[1, 2,\
+    \ 3, 2], [4, 5, 6, 2], [7, 8, 9, 5]]),\n  File \"datasets.mbpp.programs.program_045\"\
+    , line 6, in frequency_lists\nKeyError: 1\n"
+  killer: test_freq_case_1 (datasets.mbpp.tests.test_045.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0010142326354980469
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_045.py\", line 7, in test_freq_case_1\n    frequency_lists([[1, 2,\
+    \ 3, 2], [4, 5, 6, 2], [7, 8, 9, 5]]),\n  File \"datasets.mbpp.programs.program_045\"\
+    , line 6, in frequency_lists\nKeyError: 1\n"
+  killer: test_freq_case_1 (datasets.mbpp.tests.test_045.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0009915828704833984
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_045
+tests:
+- name: datasets.mbpp.tests.test_045
+  target: null
+  time: 0.001046895980834961
+time_stats:
+  create_mutant_module: 0.0010454654693603516
+  create_target_ast: 0.0
+  mutate_module: 0.04604983329772949
+  run_tests_with_mutant: 0.004041194915771484
+total_time: 0.052048444747924805

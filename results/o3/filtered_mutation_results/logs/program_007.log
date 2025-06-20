@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_007
+   - tests: datasets.o3.tests.test_007
+[*] 5 tests passed:
+   - datasets.o3.tests.test_007 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ROR datasets.o3.programs.program_007: [0.00101 s] killed by test_duplicates_present (datasets.o3.tests.test_007.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_007.py", line 6, in test_duplicates_present
+    self.assertTrue(test_duplicate([1, 2, 3, 2]))
+AssertionError: False is not true
+
+[*] Mutation score [0.02404 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

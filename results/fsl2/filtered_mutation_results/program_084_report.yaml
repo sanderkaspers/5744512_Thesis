@@ -1,0 +1,32 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_084.py\", line 17, in test_max_Abs_Diff_large_range\n \
+    \   def test_max_Abs_Diff_large_range(self): self.assertEqual(max_Abs_Diff([1000,\
+    \ -1000]), 2000)\nAssertionError: 0 != 2000\n"
+  killer: test_max_Abs_Diff_large_range (datasets.GPT_4.Few_shot2.tests.test_084.TestVersion)
+  module: !!python/module:datasets.GPT_4.Few_shot2.programs.program_084 ''
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_084
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_084
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.031340837478637695
+  run_tests_with_mutant: 0.0
+total_time: 0.0474400520324707

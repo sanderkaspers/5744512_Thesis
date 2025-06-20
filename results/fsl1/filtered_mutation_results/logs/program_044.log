@@ -1,0 +1,34 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot1.programs.program_044
+   - tests: datasets.GPT_4.Few_shot1.tests.test_044
+[*] 5 tests passed:
+   - datasets.GPT_4.Few_shot1.tests.test_044 [0.00101 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Few_shot1.programs.program_044: [0.00101 s] killed by test_divisor_1 (datasets.GPT_4.Few_shot1.tests.test_044.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_044.py", line 5, in test_divisor_1
+    def test_divisor_1(self): self.assertEqual(divisor(1), 1)
+AssertionError: 0 != 1
+
+   - [#   2] AOR datasets.GPT_4.Few_shot1.programs.program_044: [0.00101 s] killed by test_divisor_1 (datasets.GPT_4.Few_shot1.tests.test_044.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_044.py", line 5, in test_divisor_1
+    def test_divisor_1(self): self.assertEqual(divisor(1), 1)
+AssertionError: 0 != 1
+
+   - [#   3] COD datasets.GPT_4.Few_shot1.programs.program_044: [0.00109 s] killed by test_divisor_1 (datasets.GPT_4.Few_shot1.tests.test_044.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_044.py", line 5, in test_divisor_1
+    def test_divisor_1(self): self.assertEqual(divisor(1), 1)
+AssertionError: 0 != 1
+
+[*] Mutation score [0.03510 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

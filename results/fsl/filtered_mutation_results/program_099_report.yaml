@@ -1,0 +1,67 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_099.py\", line 6, in test_case_1\n    self.assertEqual(count_Set_Bits(5),\
+    \ 2) # Binary 101)\nAssertionError: -2 != 2\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_099.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot.programs.program_099 ''
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_099.py\", line 6, in test_case_1\n    self.assertEqual(count_Set_Bits(5),\
+    \ 2) # Binary 101)\nAssertionError: 0 != 2\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_099.py\", line 6, in test_case_1\n    self.assertEqual(count_Set_Bits(5),\
+    \ 2) # Binary 101)\nAssertionError: 9 != 2\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: LOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 4
+  status: timeout
+  tests_run: null
+  time: 5.041682958602905
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Few_shot.programs.program_099
+tests:
+- name: datasets.GPT_4.Few_shot.tests.test_099
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 5.057314872741699
+  run_tests_with_mutant: 5.041682958602905
+total_time: 5.057314872741699

@@ -1,0 +1,59 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_045.py\", line 8, in test_multiple_spaces\n    assert frequency_lists(list1)\
+    \ == expected_output\nAssertionError\n"
+  killer: test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_045.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot.programs.program_045 ''
+  mutations:
+  - lineno: 6
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_045.py\", line 8, in test_multiple_spaces\n    assert frequency_lists(list1)\
+    \ == expected_output\n  File \"datasets.GPT_4.Zero_shot.programs.program_045\"\
+    , line 6, in frequency_lists\nKeyError: 1\n"
+  killer: test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_045.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_045.py\", line 8, in test_multiple_spaces\n    assert frequency_lists(list1)\
+    \ == expected_output\n  File \"datasets.GPT_4.Zero_shot.programs.program_045\"\
+    , line 6, in frequency_lists\nKeyError: 1\n"
+  killer: test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_045.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.015643835067749023
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Zero_shot.programs.program_045
+tests:
+- name: datasets.GPT_4.Zero_shot.tests.test_045
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.04790830612182617
+  run_tests_with_mutant: 0.015643835067749023
+total_time: 0.04790830612182617

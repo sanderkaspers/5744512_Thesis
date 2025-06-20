@@ -1,0 +1,250 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 94.44444444444444
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 9, in test_2\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3], [1, 2]), True)\nAssertionError: False != True\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot1.programs.program_021 ''
+  mutations:
+  - lineno: 13
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0009517669677734375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 9, in test_2\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3], [1, 2]), True)\nAssertionError: False != True\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: ASR
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.0009987354278564453
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\nAssertionError: True != False\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0010008811950683594
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\nAssertionError: True != False\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.001001596450805664
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 9, in test_2\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3], [1, 2]), True)\nAssertionError: False != True\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.0010869503021240234
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\n  File \"datasets.GPT_4.Zero_shot1.programs.program_021\"\
+    , line 13, in is_sublist\nIndexError: list index out of range\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: COI
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0009968280792236328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: COI
+  number: 7
+  status: timeout
+  tests_run: null
+  time: 5.0554492473602295
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\nAssertionError: True != False\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: COI
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\n  File \"datasets.GPT_4.Zero_shot1.programs.program_021\"\
+    , line 13, in is_sublist\nIndexError: list index out of range\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: LCR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0010914802551269531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\nAssertionError: True != False\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0009264945983886719
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\nAssertionError: True != False\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 11
+  status: killed
+  tests_run: 1
+  time: 0.0009932518005371094
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 9, in test_2\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3], [1, 2]), True)\nAssertionError: False != True\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ROR
+  number: 12
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ROR
+  number: 13
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\n  File \"datasets.GPT_4.Zero_shot1.programs.program_021\"\
+    , line 13, in is_sublist\nIndexError: list index out of range\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: ROR
+  number: 14
+  status: killed
+  tests_run: 1
+  time: 0.00099945068359375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 9, in test_2\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3], [1, 2]), True)\nAssertionError: False != True\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: ROR
+  number: 15
+  status: killed
+  tests_run: 2
+  time: 0.0009920597076416016
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 9, in test_2\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3], [1, 2]), True)\n  File \"datasets.GPT_4.Zero_shot1.programs.program_021\"\
+    , line 13, in is_sublist\nIndexError: list index out of range\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: ROR
+  number: 16
+  status: killed
+  tests_run: 2
+  time: 0.0010466575622558594
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\nAssertionError: True != False\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: ROR
+  number: 17
+  status: killed
+  tests_run: 1
+  time: 0.0009999275207519531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_021.py\", line 6, in test_1\n    self.assertEqual(is_sublist([1,\
+    \ 2, 3, 4], [3, 5]), False)\nAssertionError: True != False\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: ROR
+  number: 18
+  status: killed
+  tests_run: 1
+  time: 0.0010001659393310547
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Zero_shot1.programs.program_021
+tests:
+- name: datasets.GPT_4.Zero_shot1.tests.test_021
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.003050565719604492
+  create_target_ast: 0.000997781753540039
+  mutate_module: 5.180482625961304
+  run_tests_with_mutant: 5.073523998260498
+total_time: 5.186486482620239

@@ -1,0 +1,42 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 50.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_075.py\", line 9, in test_all_negative\n    def\
+    \ test_all_negative(self): self.assertEqual(sum_negativenum([-1, -2, -3]), -6)\n\
+    AssertionError: 0 != -6\n"
+  killer: test_all_negative (datasets.GPT_4.Chain_of_thought1.tests.test_075.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_075 ''
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.00099945068359375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 2
+  status: survived
+  tests_run: 8
+  time: 0.0009975433349609375
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_075
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_075
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0010008811950683594
+  mutate_module: 0.02546977996826172
+  run_tests_with_mutant: 0.0028023719787597656
+total_time: 0.03339219093322754

@@ -1,0 +1,155 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\n  File \"datasets.GPT_4.Few_shot2.programs.program_019\"\
+    , line 7, in bell_number\nIndexError: list assignment index out of range\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_019 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0009992122650146484
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\n  File \"datasets.GPT_4.Few_shot2.programs.program_019\"\
+    , line 5, in bell_number\nIndexError: list index out of range\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0005242824554443359
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\nAssertionError: 0 != 52\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0009980201721191406
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\n  File \"datasets.GPT_4.Few_shot2.programs.program_019\"\
+    , line 5, in bell_number\nIndexError: list index out of range\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0009114742279052734
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\n  File \"datasets.GPT_4.Few_shot2.programs.program_019\"\
+    , line 5, in bell_number\nIndexError: list index out of range\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010116100311279297
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\nAssertionError: 0 != 52\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0010845661163330078
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\n  File \"datasets.GPT_4.Few_shot2.programs.program_019\"\
+    , line 7, in bell_number\nIndexError: list index out of range\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0010223388671875
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\n  File \"datasets.GPT_4.Few_shot2.programs.program_019\"\
+    , line 7, in bell_number\nIndexError: list index out of range\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0009999275207519531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\nAssertionError: 0 != 52\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0009989738464355469
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_019.py\", line 15, in test_bell_number_five\n    def test_bell_number_five(self):\
+    \ self.assertEqual(bell_number(5), 52)\n  File \"datasets.GPT_4.Few_shot2.programs.program_019\"\
+    , line 7, in bell_number\nIndexError: list index out of range\n"
+  killer: test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.001003265380859375
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_019
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_019
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.004095792770385742
+  create_target_ast: 0.0019195079803466797
+  mutate_module: 0.10135722160339355
+  run_tests_with_mutant: 0.012490272521972656
+total_time: 0.10736513137817383

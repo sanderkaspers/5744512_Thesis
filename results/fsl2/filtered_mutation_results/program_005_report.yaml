@@ -1,0 +1,60 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_005.py\", line 11, in test_square_perimeter_float_value\n\
+    \    def test_square_perimeter_float_value(self): self.assertEqual(square_perimeter(2.5),\
+    \ 10.0)\nAssertionError: 1.6 != 10.0\n"
+  killer: test_square_perimeter_float_value (datasets.GPT_4.Few_shot2.tests.test_005.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_005 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010001659393310547
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_005.py\", line 11, in test_square_perimeter_float_value\n\
+    \    def test_square_perimeter_float_value(self): self.assertEqual(square_perimeter(2.5),\
+    \ 10.0)\nAssertionError: 1.0 != 10.0\n"
+  killer: test_square_perimeter_float_value (datasets.GPT_4.Few_shot2.tests.test_005.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009405612945556641
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_005.py\", line 11, in test_square_perimeter_float_value\n\
+    \    def test_square_perimeter_float_value(self): self.assertEqual(square_perimeter(2.5),\
+    \ 10.0)\nAssertionError: 32.0 != 10.0\n"
+  killer: test_square_perimeter_float_value (datasets.GPT_4.Few_shot2.tests.test_005.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 6
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_005
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_005
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.023377656936645508
+  run_tests_with_mutant: 0.004810333251953125
+total_time: 0.030379056930541992

@@ -1,0 +1,56 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 66.66666666666666
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_038.py\", line 22, in test_mixed_case_words\n  \
+    \  self.assertEqual(len_log(['Python', 'javaScript', 'HTML']), 10)\nAssertionError:\
+    \ 4 != 10\n"
+  killer: test_mixed_case_words (datasets.GPT_4.Chain_of_thought.tests.test_038.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought.programs.program_038 ''
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 1
+  status: killed
+  tests_run: 3
+  time: 0.0019991397857666016
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_038.py\", line 22, in test_mixed_case_words\n  \
+    \  self.assertEqual(len_log(['Python', 'javaScript', 'HTML']), 10)\nAssertionError:\
+    \ 4 != 10\n"
+  killer: test_mixed_case_words (datasets.GPT_4.Chain_of_thought.tests.test_038.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 2
+  status: killed
+  tests_run: 3
+  time: 0.0009739398956298828
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 3
+  status: survived
+  tests_run: 9
+  time: 0.0
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Chain_of_thought.programs.program_038
+tests:
+- name: datasets.GPT_4.Chain_of_thought.tests.test_038
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0009980201721191406
+  mutate_module: 0.03191828727722168
+  run_tests_with_mutant: 0.003912210464477539
+total_time: 0.0385594367980957

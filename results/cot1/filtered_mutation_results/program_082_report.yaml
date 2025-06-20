@@ -1,0 +1,46 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_082.py\", line 5, in test_all_same\n    def test_all_same(self):\
+    \ self.assertEqual(count_samepair([1, 1], [1, 1], [1, 1]), 2)\nAssertionError:\
+    \ 0 != 2\n"
+  killer: test_all_same (datasets.GPT_4.Chain_of_thought1.tests.test_082.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_082 ''
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0024068355560302734
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_082.py\", line 5, in test_all_same\n    def test_all_same(self):\
+    \ self.assertEqual(count_samepair([1, 1], [1, 1], [1, 1]), 2)\nAssertionError:\
+    \ 0 != 2\n"
+  killer: test_all_same (datasets.GPT_4.Chain_of_thought1.tests.test_082.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.010004281997680664
+number_of_tests: 11
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_082
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_082
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.02641916275024414
+  run_tests_with_mutant: 0.012411117553710938
+total_time: 0.04205822944641113

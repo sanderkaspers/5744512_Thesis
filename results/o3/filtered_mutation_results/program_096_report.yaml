@@ -1,0 +1,136 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_096.py\", line 15, in test_mixed_case\n    self.assertEqual(count_occurance(\"\
+    StDstdSTD\"), 1)\n  File \"datasets.o3.programs.program_096\", line 4, in count_occurance\n\
+    IndexError: string index out of range\n"
+  killer: test_mixed_case (datasets.o3.tests.test_096.TestVersion)
+  module: &id001 !!python/module:datasets.o3.programs.program_096 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0020024776458740234
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_096.py\", line 15, in test_mixed_case\n    self.assertEqual(count_occurance(\"\
+    StDstdSTD\"), 1)\nAssertionError: 0 != 1\n"
+  killer: test_mixed_case (datasets.o3.tests.test_096.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.001018524169921875
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_096.py\", line 15, in test_mixed_case\n    self.assertEqual(count_occurance(\"\
+    StDstdSTD\"), 1)\nAssertionError: 0 != 1\n"
+  killer: test_mixed_case (datasets.o3.tests.test_096.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0010914802551269531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_096.py\", line 15, in test_mixed_case\n    self.assertEqual(count_occurance(\"\
+    StDstdSTD\"), 1)\nAssertionError: -1 != 1\n"
+  killer: test_mixed_case (datasets.o3.tests.test_096.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0010030269622802734
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_096.py\", line 15, in test_mixed_case\n    self.assertEqual(count_occurance(\"\
+    StDstdSTD\"), 1)\nAssertionError: 6 != 1\n"
+  killer: test_mixed_case (datasets.o3.tests.test_096.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010135173797607422
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_096.py\", line 15, in test_mixed_case\n    self.assertEqual(count_occurance(\"\
+    StDstdSTD\"), 1)\nAssertionError: 2 != 1\n"
+  killer: test_mixed_case (datasets.o3.tests.test_096.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: LCR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0003571510314941406
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_096.py\", line 15, in test_mixed_case\n    self.assertEqual(count_occurance(\"\
+    StDstdSTD\"), 1)\nAssertionError: 0 != 1\n"
+  killer: test_mixed_case (datasets.o3.tests.test_096.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.001004934310913086
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_096.py\", line 15, in test_mixed_case\n    self.assertEqual(count_occurance(\"\
+    StDstdSTD\"), 1)\nAssertionError: 0 != 1\n"
+  killer: test_mixed_case (datasets.o3.tests.test_096.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_096.py\", line 15, in test_mixed_case\n    self.assertEqual(count_occurance(\"\
+    StDstdSTD\"), 1)\nAssertionError: 0 != 1\n"
+  killer: test_mixed_case (datasets.o3.tests.test_096.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0009946823120117188
+number_of_tests: 5
+targets:
+- datasets.o3.programs.program_096
+tests:
+- name: datasets.o3.tests.test_096
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0015511512756347656
+  mutate_module: 0.06037759780883789
+  run_tests_with_mutant: 0.010489463806152344
+total_time: 0.06437063217163086

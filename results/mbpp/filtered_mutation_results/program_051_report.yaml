@@ -1,0 +1,268 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 89.47368421052632
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 10 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_051 ''
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0021102428436279297
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 12, in test_eulerian_num_with_5_3_expect_26\n    self.assertEqual(eulerian_num(5,\
+    \ 3), 26)\nAssertionError: 4.571428571428571 != 26\n"
+  killer: test_eulerian_num_with_5_3_expect_26 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 12, in test_eulerian_num_with_5_3_expect_26\n    self.assertEqual(eulerian_num(5,\
+    \ 3), 26)\nAssertionError: 4 != 26\n"
+  killer: test_eulerian_num_with_5_3_expect_26 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 3
+  time: 0.002000093460083008
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 12, in test_eulerian_num_with_5_3_expect_26\n    self.assertEqual(eulerian_num(5,\
+    \ 3), 26)\nAssertionError: 524292 != 26\n"
+  killer: test_eulerian_num_with_5_3_expect_26 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 12, in test_eulerian_num_with_5_3_expect_26\n    self.assertEqual(eulerian_num(5,\
+    \ 3), 26)\nAssertionError: 5220 != 26\n"
+  killer: test_eulerian_num_with_5_3_expect_26 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 3
+  time: 0.0010006427764892578
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 0 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0010025501251220703
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 0 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0009617805480957031
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 2 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.00103759765625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\n  File \"datasets.mbpp.programs.program_051\", line 6, in eulerian_num\n\
+    \  File \"datasets.mbpp.programs.program_051\", line 6, in eulerian_num\nZeroDivisionError:\
+    \ division by zero\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0019605159759521484
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\n  File \"datasets.mbpp.programs.program_051\", line 6, in eulerian_num\n\
+    \  File \"datasets.mbpp.programs.program_051\", line 6, in eulerian_num\nZeroDivisionError:\
+    \ integer division or modulo by zero\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0010275840759277344
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 6 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 11
+  status: killed
+  tests_run: 1
+  time: 0.0010521411895751953
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\n  File \"datasets.mbpp.programs.program_051\", line 6, in eulerian_num\n\
+    \  File \"datasets.mbpp.programs.program_051\", line 6, in eulerian_num\n  File\
+    \ \"datasets.mbpp.programs.program_051\", line 6, in eulerian_num\n  [Previous\
+    \ line repeated 983 more times]\n  File \"datasets.mbpp.programs.program_051\"\
+    , line 2, in eulerian_num\nRecursionError: maximum recursion depth exceeded in\
+    \ comparison\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 12
+  status: killed
+  tests_run: 1
+  time: 0.2207198143005371
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 0 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 13
+  status: killed
+  tests_run: 1
+  time: 0.0010027885437011719
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 1 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 14
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 15
+  status: survived
+  tests_run: 3
+  time: 0.0010144710540771484
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 0 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 16
+  status: killed
+  tests_run: 1
+  time: 0.0010061264038085938
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 17
+  status: survived
+  tests_run: 3
+  time: 0.001104116439819336
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 0 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 18
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_051.py\", line 6, in test_eulerian_num_with_3_1_expect_4\n    self.assertEqual(eulerian_num(3,\
+    \ 1), 4)\nAssertionError: 1 != 4\n"
+  killer: test_eulerian_num_with_3_1_expect_4 (datasets.mbpp.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 19
+  status: killed
+  tests_run: 1
+  time: 0.0009868144989013672
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_051
+tests:
+- name: datasets.mbpp.tests.test_051
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0005779266357421875
+  create_target_ast: 0.0010023117065429688
+  mutate_module: 0.3175947666168213
+  run_tests_with_mutant: 0.24199509620666504
+total_time: 0.3225443363189697

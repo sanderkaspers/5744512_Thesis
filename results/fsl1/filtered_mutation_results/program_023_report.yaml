@@ -1,0 +1,255 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 88.23529411764706
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_023 ''
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 10
+  time: 0.0020055770874023438
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 2
+  status: timeout
+  tests_run: null
+  time: 5.0303544998168945
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 15, in test_comb_sort_all_same\n    def\
+    \ test_comb_sort_all_same(self): self.assertEqual(comb_sort([7, 7, 7]), [7, 7,\
+    \ 7])\n  File \"datasets.GPT_4.Few_shot1.programs.program_023\", line 11, in comb_sort\n\
+    IndexError: list index out of range\n"
+  killer: test_comb_sort_all_same (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0009350776672363281
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 9, in test_comb_sort_already_sorted\n  \
+    \  def test_comb_sort_already_sorted(self): self.assertEqual(comb_sort([1, 2,\
+    \ 3, 4, 5]), [1, 2, 3, 4, 5])\nAssertionError: Lists differ: [1, 5, 2, 3, 4] !=\
+    \ [1, 2, 3, 4, 5]\n\nFirst differing element 1:\n5\n2\n\n- [1, 5, 2, 3, 4]\n?\
+    \     ---\n\n+ [1, 2, 3, 4, 5]\n?            +++\n\n"
+  killer: test_comb_sort_already_sorted (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.001028299331665039
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 21, in test_comb_sort_large_input\n    def\
+    \ test_comb_sort_large_input(self): self.assertEqual(comb_sort(list(range(1000,\
+    \ 0, -1))), list(range(1, 1001)))\nAssertionError: Lists differ: [28, 28, 28,\
+    \ 28, 28, 49, 28, 34, 28, 46, 4[4141 chars], 34] != [1, 2, 3, 4, 5, 6, 7, 8, 9,\
+    \ 10, 11, 12, 13[4846 chars]1000]\n\nFirst differing element 0:\n28\n1\n\nDiff\
+    \ is 15335 characters long. Set self.maxDiff to None to see it.\n"
+  killer: test_comb_sort_large_input (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 5
+  time: 0.3608722686767578
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 21, in test_comb_sort_large_input\n    def\
+    \ test_comb_sort_large_input(self): self.assertEqual(comb_sort(list(range(1000,\
+    \ 0, -1))), list(range(1, 1001)))\nAssertionError: Lists differ: [1000, 1000,\
+    \ 1000, 1000, 1000, 1000, 1000, [5952 chars]1000] != [1, 2, 3, 4, 5, 6, 7, 8,\
+    \ 9, 10, 11, 12, 13,[4845 chars]1000]\n\nFirst differing element 0:\n1000\n1\n\
+    \nDiff is 16893 characters long. Set self.maxDiff to None to see it.\n"
+  killer: test_comb_sort_large_input (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 5
+  time: 1.3493320941925049
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 15, in test_comb_sort_all_same\n    def\
+    \ test_comb_sort_all_same(self): self.assertEqual(comb_sort([7, 7, 7]), [7, 7,\
+    \ 7])\n  File \"datasets.GPT_4.Few_shot1.programs.program_023\", line 11, in comb_sort\n\
+    IndexError: list index out of range\n"
+  killer: test_comb_sort_all_same (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: ASR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.002002239227294922
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 21, in test_comb_sort_large_input\n    def\
+    \ test_comb_sort_large_input(self): self.assertEqual(comb_sort(list(range(1000,\
+    \ 0, -1))), list(range(1, 1001)))\nAssertionError: Lists differ: [1000, 999, 998,\
+    \ 997, 996, 995, 994, 993, 9[4845 chars]2, 1] != [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,\
+    \ 11, 12, 13,[4845 chars]1000]\n\nFirst differing element 0:\n1000\n1\n\nDiff\
+    \ is 15778 characters long. Set self.maxDiff to None to see it.\n"
+  killer: test_comb_sort_large_input (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 8
+  status: killed
+  tests_run: 5
+  time: 0.00700831413269043
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 5, in test_comb_sort_empty_list\n    def\
+    \ test_comb_sort_empty_list(self): self.assertEqual(comb_sort([]), [])\n  File\
+    \ \"datasets.GPT_4.Few_shot1.programs.program_023\", line 11, in comb_sort\nIndexError:\
+    \ list index out of range\n"
+  killer: test_comb_sort_empty_list (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: COI
+  number: 9
+  status: killed
+  tests_run: 4
+  time: 0.0019903182983398438
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: COI
+  number: 10
+  status: timeout
+  tests_run: null
+  time: 5.0482096672058105
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 21, in test_comb_sort_large_input\n    def\
+    \ test_comb_sort_large_input(self): self.assertEqual(comb_sort(list(range(1000,\
+    \ 0, -1))), list(range(1, 1001)))\nAssertionError: Lists differ: [231, 230, 229,\
+    \ 228, 227, 226, 225, 224, 2[4846 chars] 770] != [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,\
+    \ 11, 12, 13[4846 chars]1000]\n\nFirst differing element 0:\n231\n1\n\nDiff is\
+    \ 16309 characters long. Set self.maxDiff to None to see it.\n"
+  killer: test_comb_sort_large_input (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: LCR
+  number: 11
+  status: killed
+  tests_run: 5
+  time: 3.052912950515747
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 12
+  status: timeout
+  tests_run: null
+  time: 5.033395051956177
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 13
+  status: survived
+  tests_run: 10
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 21, in test_comb_sort_large_input\n    def\
+    \ test_comb_sort_large_input(self): self.assertEqual(comb_sort(list(range(1000,\
+    \ 0, -1))), list(range(1, 1001)))\nAssertionError: Lists differ: [1000, 999, 998,\
+    \ 997, 996, 995, 994, 993, 9[4845 chars]2, 1] != [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,\
+    \ 11, 12, 13,[4845 chars]1000]\n\nFirst differing element 0:\n1000\n1\n\nDiff\
+    \ is 15778 characters long. Set self.maxDiff to None to see it.\n"
+  killer: test_comb_sort_large_input (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: ROR
+  number: 14
+  status: killed
+  tests_run: 5
+  time: 0.015718936920166016
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 15, in test_comb_sort_all_same\n    def\
+    \ test_comb_sort_all_same(self): self.assertEqual(comb_sort([7, 7, 7]), [7, 7,\
+    \ 7])\n  File \"datasets.GPT_4.Few_shot1.programs.program_023\", line 11, in comb_sort\n\
+    IndexError: list index out of range\n"
+  killer: test_comb_sort_all_same (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: ROR
+  number: 15
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_023.py\", line 9, in test_comb_sort_already_sorted\n  \
+    \  def test_comb_sort_already_sorted(self): self.assertEqual(comb_sort([1, 2,\
+    \ 3, 4, 5]), [1, 2, 3, 4, 5])\nAssertionError: Lists differ: [5, 4, 3, 2, 1] !=\
+    \ [1, 2, 3, 4, 5]\n\nFirst differing element 0:\n5\n1\n\n- [5, 4, 3, 2, 1]\n+\
+    \ [1, 2, 3, 4, 5]\n"
+  killer: test_comb_sort_already_sorted (datasets.GPT_4.Few_shot1.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: ROR
+  number: 16
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: ROR
+  number: 17
+  status: timeout
+  tests_run: null
+  time: 5.03491997718811
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_023
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_023
+  target: null
+  time: 0.0019989013671875
+time_stats:
+  create_mutant_module: 0.0019648075103759766
+  create_target_ast: 0.0009982585906982422
+  mutate_module: 25.046836137771606
+  run_tests_with_mutant: 24.944976806640625
+total_time: 25.05634880065918

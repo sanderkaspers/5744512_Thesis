@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_083
+   - tests: datasets.o3.tests.test_083
+[*] 7 tests passed:
+   - datasets.o3.tests.test_083 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.o3.programs.program_083: [0.00811 s] killed by test_find_lists_dict (datasets.o3.tests.test_083.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_083.py", line 18, in test_find_lists_dict
+    self.assertEqual(find_lists({'x':1,'y':2}), 2)
+AssertionError: 1 != 2
+
+[*] Mutation score [0.01630 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot.programs.program_086
+   - tests: datasets.GPT_4.Zero_shot.tests.test_086
+[*] 7 tests passed:
+   - datasets.GPT_4.Zero_shot.tests.test_086 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COD datasets.GPT_4.Zero_shot.programs.program_086: [0.00159 s] killed by test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_086.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_086.py", line 9, in test_multiple_spaces
+    assert remove_elements(list1, list2) == expected_output
+AssertionError
+
+[*] Mutation score [0.03222 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

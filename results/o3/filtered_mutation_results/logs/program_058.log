@@ -1,0 +1,70 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_058
+   - tests: datasets.o3.tests.test_058
+[*] 7 tests passed:
+   - datasets.o3.tests.test_058 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.o3.programs.program_058: [0.00000 s] killed by test_empty_string (datasets.o3.tests.test_058.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_058.py", line 21, in test_empty_string
+    self.assertIsNone(check_integer(""))
+AssertionError: True is not None
+
+   - [#   2] COI datasets.o3.programs.program_058: [0.00000 s] killed by test_invalid_characters (datasets.o3.tests.test_058.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_058.py", line 18, in test_invalid_characters
+    self.assertFalse(check_integer("12a"))
+AssertionError: True is not false
+
+   - [#   3] COI datasets.o3.programs.program_058: [0.00000 s] killed by test_positive_int (datasets.o3.tests.test_058.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_058.py", line 6, in test_positive_int
+    self.assertTrue(check_integer("123"))
+AssertionError: False is not true
+
+   - [#   4] COI datasets.o3.programs.program_058: [0.00000 s] killed by test_invalid_characters (datasets.o3.tests.test_058.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_058.py", line 18, in test_invalid_characters
+    self.assertFalse(check_integer("12a"))
+AssertionError: True is not false
+
+   - [#   5] COI datasets.o3.programs.program_058: [0.00000 s] killed by test_minus_sign (datasets.o3.tests.test_058.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_058.py", line 12, in test_minus_sign
+    self.assertTrue(check_integer("-42"))
+AssertionError: False is not true
+
+   - [#   6] COI datasets.o3.programs.program_058: [0.00000 s] killed by test_minus_sign (datasets.o3.tests.test_058.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_058.py", line 12, in test_minus_sign
+    self.assertTrue(check_integer("-42"))
+AssertionError: False is not true
+
+   - [#   7] LCR datasets.o3.programs.program_058: [0.00000 s] survived
+   - [#   8] ROR datasets.o3.programs.program_058: [0.00000 s] killed by test_empty_string (datasets.o3.tests.test_058.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_058.py", line 21, in test_empty_string
+    self.assertIsNone(check_integer(""))
+AssertionError: True is not None
+
+   - [#   9] ROR datasets.o3.programs.program_058: [0.00000 s] killed by test_single_plus (datasets.o3.tests.test_058.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_058.py", line 24, in test_single_plus
+    self.assertTrue(check_integer("+"))
+AssertionError: None is not true
+
+[*] Mutation score [0.07657 s]: 88.9%
+   - all: 9
+   - killed: 8 (88.9%)
+   - survived: 1 (11.1%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

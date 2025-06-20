@@ -1,0 +1,504 @@
+program_001 (source):
+    def remove_Occ(s,ch): 
+        for i in range(len(s)): 
+            if (s[i] == ch): 
+                s = s[0 : i] + s[i + 1:] 
+                break
+        for i in range(len(s) - 1,-1,-1):  
+            if (s[i] == ch): 
+                s = s[0 : i] + s[i + 1:] 
+                break
+        return s
+program_001 (failed test code):
+    (Test code for test_001 not found)
+
+program_001 (assert errors):
+    FAILED: test_001
+        ImportError: Failed to import test module: test_001
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_001.py", line 15
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_004 (source):
+    import re
+    def text_lowercase_underscore(text):
+            patterns = '^[a-z]+_[a-z]+$'
+            if re.search(patterns,  text):
+                    return True
+            else:
+                    return False
+program_004 (failed test code):
+    (Test code for test_004 not found)
+
+program_004 (assert errors):
+    FAILED: test_004
+        ImportError: Failed to import test module: test_004
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_004.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_006 (source):
+    NO_OF_CHARS = 256
+    def str_to_list(string): 
+    	temp = [] 
+    	for x in string: 
+    		temp.append(x) 
+    	return temp 
+    def lst_to_string(List): 
+    	return ''.join(List) 
+    def get_char_count_array(string): 
+    	count = [0] * NO_OF_CHARS 
+    	for i in string: 
+    		count[ord(i)] += 1
+    	return count 
+    def remove_dirty_chars(string, second_string): 
+    	count = get_char_count_array(second_string) 
+    	ip_ind = 0
+    	res_ind = 0
+    	temp = '' 
+    	str_list = str_to_list(string) 
+    	while ip_ind != len(str_list): 
+    		temp = str_list[ip_ind] 
+    		if count[ord(temp)] == 0: 
+    			str_list[res_ind] = str_list[ip_ind] 
+    			res_ind += 1
+    		ip_ind+=1
+    	return lst_to_string(str_list[0:res_ind])
+program_006 (failed test code):
+    (Test code for test_006 not found)
+
+program_006 (assert errors):
+    FAILED: test_006
+        ImportError: Failed to import test module: test_006
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_006.py", line 26
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_017 (source):
+    def recursive_list_sum(data_list):
+    	total = 0
+    	for element in data_list:
+    		if type(element) == type([]):
+    			total = total + recursive_list_sum(element)
+    		else:
+    			total = total + element
+    	return total
+program_017 (failed test code):
+    (Test code for test_017 not found)
+
+program_017 (assert errors):
+    FAILED: test_017
+        ImportError: Failed to import test module: test_017
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_017.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_018 (source):
+    def pos_count(list):
+      pos_count= 0
+      for num in list: 
+        if num >= 0: 
+          pos_count += 1
+      return pos_count
+program_018 (failed test code):
+    (Test code for test_018 not found)
+
+program_018 (assert errors):
+    FAILED: test_018
+        ImportError: Failed to import test module: test_018
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_018.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_020 (source):
+    def is_Monotonic(A): 
+        return (all(A[i] <= A[i + 1] for i in range(len(A) - 1)) or
+                all(A[i] >= A[i + 1] for i in range(len(A) - 1)))
+program_020 (failed test code):
+    (Test code for test_020 not found)
+
+program_020 (assert errors):
+    FAILED: test_020
+        ImportError: Failed to import test module: test_020
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_020.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_025 (source):
+    def is_samepatterns(colors, patterns):    
+        if len(colors) != len(patterns):
+            return False    
+        sdict = {}
+        pset = set()
+        sset = set()    
+        for i in range(len(patterns)):
+            pset.add(patterns[i])
+            sset.add(colors[i])
+            if patterns[i] not in sdict.keys():
+                sdict[patterns[i]] = []
+    
+            keys = sdict[patterns[i]]
+            keys.append(colors[i])
+            sdict[patterns[i]] = keys
+    
+        if len(pset) != len(sset):
+            return False   
+    
+        for values in sdict.values():
+    
+            for i in range(len(values) - 1):
+                if values[i] != values[i+1]:
+                    return False
+    
+        return True
+program_025 (failed test code):
+    (Test code for test_025 not found)
+
+program_025 (assert errors):
+    FAILED: test_025
+        ImportError: Failed to import test module: test_025
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_025.py", line 15
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_040 (source):
+    def is_undulating(n): 
+    	n = str(n)
+    	if (len(n) <= 2): 
+    		return False
+    	for i in range(2, len(n)): 
+    		if (n[i - 2] != n[i]): 
+    			return False
+    	return True
+program_040 (failed test code):
+    (Test code for test_040 not found)
+
+program_040 (assert errors):
+    FAILED: test_040
+        ImportError: Failed to import test module: test_040
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_040.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_058 (source):
+    def check_integer(text):
+     text = text.strip()
+     if len(text) < 1:
+        return None
+     else:
+         if all(text[i] in "0123456789" for i in range(len(text))):
+              return True
+         elif (text[0] in "+-") and \
+             all(text[i] in "0123456789" for i in range(1,len(text))):
+             return True
+         else:
+            return False
+program_058 (failed test code):
+    (Test code for test_058 not found)
+
+program_058 (assert errors):
+    FAILED: test_058
+        ImportError: Failed to import test module: test_058
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_058.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_059 (source):
+    def empty_dit(list1):
+     empty_dit=all(not d for d in list1)
+     return empty_dit
+program_059 (failed test code):
+    (Test code for test_059 not found)
+
+program_059 (assert errors):
+    FAILED: test_059
+        ImportError: Failed to import test module: test_059
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_059.py", line 13
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_063 (source):
+    def search(arr):
+        n = len(arr)
+        XOR = 0
+        for i in range(n) :
+            XOR = XOR ^ arr[i]
+        return (XOR)
+program_063 (failed test code):
+    (Test code for test_063 not found)
+
+program_063 (assert errors):
+    FAILED: test_063
+        ImportError: Failed to import test module: test_063
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_063.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_067 (source):
+    def find_length(string): 
+    	n = len(string)
+    	current_sum = 0
+    	max_sum = 0
+    	for i in range(n): 
+    		current_sum += (1 if string[i] == '0' else -1) 
+    		if current_sum < 0: 
+    			current_sum = 0
+    		max_sum = max(current_sum, max_sum) 
+    	return max_sum if max_sum else 0
+program_067 (failed test code):
+    (Test code for test_067 not found)
+
+program_067 (assert errors):
+    FAILED: test_067
+        ImportError: Failed to import test module: test_067
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_067.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_068 (source):
+    def sum(a,b): 
+        sum = 0
+        for i in range (1,min(a,b)): 
+            if (a % i == 0 and b % i == 0): 
+                sum += i 
+        return sum
+program_068 (failed test code):
+    (Test code for test_068 not found)
+
+program_068 (assert errors):
+    FAILED: test_068
+        ImportError: Failed to import test module: test_068
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_068.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_075 (source):
+    def sum_negativenum(nums):
+      sum_negativenum = list(filter(lambda nums:nums<0,nums))
+      return sum(sum_negativenum)
+program_075 (failed test code):
+    (Test code for test_075 not found)
+
+program_075 (assert errors):
+    FAILED: test_075
+        ImportError: Failed to import test module: test_075
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_075.py", line 13
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_091 (source):
+    def find_even_pair(A): 
+      count = 0
+      for i in range(0, len(A)): 
+        for j in range(i+1, len(A)): 
+            if ((A[i] ^ A[j]) % 2 == 0): 
+              count += 1
+    
+      return count
+program_091 (failed test code):
+    (Test code for test_091 not found)
+
+program_091 (assert errors):
+    FAILED: test_091
+        ImportError: Failed to import test module: test_091
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_091.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_093 (source):
+    def frequency(a,x): 
+        count = 0  
+        for i in a: 
+          if i == x: 
+            count += 1
+    
+        return count
+program_093 (failed test code):
+    (Test code for test_093 not found)
+
+program_093 (assert errors):
+    FAILED: test_093
+        ImportError: Failed to import test module: test_093
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_093.py", line 15
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_096 (source):
+    def count_occurance(s):
+      count = 0
+      for i in range(len(s) - 2):
+        if (s[i] == 's' and s[i+1] == 't' and s[i+2] == 'd'):
+          count = count + 1
+      return count
+program_096 (failed test code):
+    (Test code for test_096 not found)
+
+program_096 (assert errors):
+    FAILED: test_096
+        ImportError: Failed to import test module: test_096
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_096.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+
+program_097 (source):
+    def check_type(test_tuple):
+      res = True
+      for ele in test_tuple:
+        if not isinstance(ele, type(test_tuple[0])):
+          res = False
+          break
+      return (res)
+program_097 (failed test code):
+    (Test code for test_097 not found)
+
+program_097 (assert errors):
+    FAILED: test_097
+        ImportError: Failed to import test module: test_097
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 436, in _find_test_path
+            module = self._get_module_from_name(name)
+          File "C:\Users\skaspers\AppData\Local\Programs\Python\Python38\lib\unittest\loader.py", line 377, in _get_module_from_name
+            __import__(name)
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\pynguin\tests\test_097.py", line 14
+            def test_case_1(self):
+                                 ^
+        IndentationError: unindent does not match any outer indentation level
+        
+        
+

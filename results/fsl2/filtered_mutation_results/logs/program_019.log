@@ -1,0 +1,90 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot2.programs.program_019
+   - tests: datasets.GPT_4.Few_shot2.tests.test_019
+[*] 8 tests passed:
+   - datasets.GPT_4.Few_shot2.tests.test_019 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00100 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+  File "datasets.GPT_4.Few_shot2.programs.program_019", line 7, in bell_number
+IndexError: list assignment index out of range
+
+   - [#   2] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00052 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+  File "datasets.GPT_4.Few_shot2.programs.program_019", line 5, in bell_number
+IndexError: list index out of range
+
+   - [#   3] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00100 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+AssertionError: 0 != 52
+
+   - [#   4] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00091 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+  File "datasets.GPT_4.Few_shot2.programs.program_019", line 5, in bell_number
+IndexError: list index out of range
+
+   - [#   5] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00101 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+  File "datasets.GPT_4.Few_shot2.programs.program_019", line 5, in bell_number
+IndexError: list index out of range
+
+   - [#   6] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00108 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+AssertionError: 0 != 52
+
+   - [#   7] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00102 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+  File "datasets.GPT_4.Few_shot2.programs.program_019", line 7, in bell_number
+IndexError: list index out of range
+
+   - [#   8] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00100 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+  File "datasets.GPT_4.Few_shot2.programs.program_019", line 7, in bell_number
+IndexError: list index out of range
+
+   - [#   9] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00100 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+AssertionError: 0 != 52
+
+   - [#  10] AOR datasets.GPT_4.Few_shot2.programs.program_019: [0.00100 s] killed by test_bell_number_five (datasets.GPT_4.Few_shot2.tests.test_019.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_019.py", line 15, in test_bell_number_five
+    def test_bell_number_five(self): self.assertEqual(bell_number(5), 52)
+  File "datasets.GPT_4.Few_shot2.programs.program_019", line 7, in bell_number
+IndexError: list index out of range
+
+[*] Mutation score [0.10737 s]: 100.0%
+   - all: 10
+   - killed: 10 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,155 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_092.py\", line 5, in test_already_power_of_2\n\
+    \    def test_already_power_of_2(self): self.assertEqual(next_power_of_2(8), 8)\n\
+    AssertionError: 16 != 8\n"
+  killer: test_already_power_of_2 (datasets.GPT_4.Chain_of_thought2.tests.test_092.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought2.programs.program_092 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_092.py\", line 9, in test_just_above_power_of_2\n\
+    \    def test_just_above_power_of_2(self): self.assertEqual(next_power_of_2(9),\
+    \ 16)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_092\", line\
+    \ 10, in next_power_of_2\nValueError: negative shift count\n"
+  killer: test_just_above_power_of_2 (datasets.GPT_4.Chain_of_thought2.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: ASR
+  number: 2
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_092.py\", line 5, in test_already_power_of_2\n\
+    \    def test_already_power_of_2(self): self.assertEqual(next_power_of_2(8), 8)\n\
+    AssertionError: 16 != 8\n"
+  killer: test_already_power_of_2 (datasets.GPT_4.Chain_of_thought2.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COD
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_092.py\", line 5, in test_already_power_of_2\n\
+    \    def test_already_power_of_2(self): self.assertEqual(next_power_of_2(8), 8)\n\
+    AssertionError: 16 != 8\n"
+  killer: test_already_power_of_2 (datasets.GPT_4.Chain_of_thought2.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_092.py\", line 9, in test_just_above_power_of_2\n\
+    \    def test_just_above_power_of_2(self): self.assertEqual(next_power_of_2(9),\
+    \ 16)\nAssertionError: 1 != 16\n"
+  killer: test_just_above_power_of_2 (datasets.GPT_4.Chain_of_thought2.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_092.py\", line 9, in test_just_above_power_of_2\n\
+    \    def test_just_above_power_of_2(self): self.assertEqual(next_power_of_2(9),\
+    \ 16)\nAssertionError: 9 != 16\n"
+  killer: test_just_above_power_of_2 (datasets.GPT_4.Chain_of_thought2.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 6
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_092.py\", line 5, in test_already_power_of_2\n\
+    \    def test_already_power_of_2(self): self.assertEqual(next_power_of_2(8), 8)\n\
+    AssertionError: 16 != 8\n"
+  killer: test_already_power_of_2 (datasets.GPT_4.Chain_of_thought2.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.014523506164550781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: LOR
+  number: 8
+  status: timeout
+  tests_run: null
+  time: 5.03985333442688
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_092.py\", line 9, in test_just_above_power_of_2\n\
+    \    def test_just_above_power_of_2(self): self.assertEqual(next_power_of_2(9),\
+    \ 16)\nAssertionError: 0 != 16\n"
+  killer: test_just_above_power_of_2 (datasets.GPT_4.Chain_of_thought2.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: LOR
+  number: 9
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_092.py\", line 9, in test_just_above_power_of_2\n\
+    \    def test_just_above_power_of_2(self): self.assertEqual(next_power_of_2(9),\
+    \ 16)\nAssertionError: 1 != 16\n"
+  killer: test_just_above_power_of_2 (datasets.GPT_4.Chain_of_thought2.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 10
+  status: killed
+  tests_run: 3
+  time: 0.0
+number_of_tests: 6
+targets:
+- datasets.GPT_4.Chain_of_thought2.programs.program_092
+tests:
+- name: datasets.GPT_4.Chain_of_thought2.tests.test_092
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 5.097765922546387
+  run_tests_with_mutant: 5.054376840591431
+total_time: 5.106293201446533

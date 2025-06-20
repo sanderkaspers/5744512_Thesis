@@ -1,0 +1,32 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_037.py\", line 23, in test_closest_num_boolean_false\n\
+    \    def test_closest_num_boolean_false(self): self.assertEqual(closest_num(False),\
+    \ -1)\nAssertionError: 1 != -1\n"
+  killer: test_closest_num_boolean_false (datasets.GPT_4.Few_shot2.tests.test_037.TestVersion)
+  module: !!python/module:datasets.GPT_4.Few_shot2.programs.program_037 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010066032409667969
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_037
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_037
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.001001596450805664
+  mutate_module: 0.015007495880126953
+  run_tests_with_mutant: 0.0010066032409667969
+total_time: 0.021007537841796875

@@ -1,0 +1,42 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 50.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_075.py\", line 9, in test_sum_negativenum_all_positive\n\
+    \    def test_sum_negativenum_all_positive(self): self.assertEqual(sum_negativenum([1,\
+    \ 2, 3]), 0)\nAssertionError: 6 != 0\n"
+  killer: test_sum_negativenum_all_positive (datasets.GPT_4.Few_shot1.tests.test_075.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_075 ''
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.000997304916381836
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 2
+  status: survived
+  tests_run: 10
+  time: 0.0009312629699707031
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_075
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_075
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.001003265380859375
+  create_target_ast: 0.0010025501251220703
+  mutate_module: 0.024327516555786133
+  run_tests_with_mutant: 0.001928567886352539
+total_time: 0.03032231330871582

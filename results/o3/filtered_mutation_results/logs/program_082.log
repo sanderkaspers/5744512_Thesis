@@ -1,0 +1,27 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_082
+   - tests: datasets.o3.tests.test_082
+[*] 7 tests passed:
+   - datasets.o3.tests.test_082 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ROR datasets.o3.programs.program_082: [0.01571 s] killed by test_count_samepair_all_equal (datasets.o3.tests.test_082.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_082.py", line 6, in test_count_samepair_all_equal
+    self.assertEqual(count_samepair([1,1],[1,1],[1,1]), 2)
+AssertionError: 0 != 2
+
+   - [#   2] ROR datasets.o3.programs.program_082: [0.00000 s] killed by test_count_samepair_all_equal (datasets.o3.tests.test_082.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_082.py", line 6, in test_count_samepair_all_equal
+    self.assertEqual(count_samepair([1,1],[1,1],[1,1]), 2)
+AssertionError: 0 != 2
+
+[*] Mutation score [0.03536 s]: 100.0%
+   - all: 2
+   - killed: 2 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,102 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_079.py\", line 6, in test_circle_circumference_with_10_expect_62_830000000000005\n\
+    \    self.assertEqual(circle_circumference(10), 62.830000000000005)\nAssertionError:\
+    \ 6.3663854846410945 != 62.830000000000005\n"
+  killer: test_circle_circumference_with_10_expect_62_830000000000005 (datasets.mbpp.tests.test_079.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_079 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.000995635986328125
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_079.py\", line 6, in test_circle_circumference_with_10_expect_62_830000000000005\n\
+    \    self.assertEqual(circle_circumference(10), 62.830000000000005)\nAssertionError:\
+    \ 0.0 != 62.830000000000005\n"
+  killer: test_circle_circumference_with_10_expect_62_830000000000005 (datasets.mbpp.tests.test_079.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009961128234863281
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_079.py\", line 6, in test_circle_circumference_with_10_expect_62_830000000000005\n\
+    \    self.assertEqual(circle_circumference(10), 62.830000000000005)\nAssertionError:\
+    \ 88.24411082479122 != 62.830000000000005\n"
+  killer: test_circle_circumference_with_10_expect_62_830000000000005 (datasets.mbpp.tests.test_079.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_079.py\", line 6, in test_circle_circumference_with_10_expect_62_830000000000005\n\
+    \    self.assertEqual(circle_circumference(10), 62.830000000000005)\nAssertionError:\
+    \ 0.6283000000000001 != 62.830000000000005\n"
+  killer: test_circle_circumference_with_10_expect_62_830000000000005 (datasets.mbpp.tests.test_079.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0010149478912353516
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_079.py\", line 6, in test_circle_circumference_with_10_expect_62_830000000000005\n\
+    \    self.assertEqual(circle_circumference(10), 62.830000000000005)\nAssertionError:\
+    \ 0.0 != 62.830000000000005\n"
+  killer: test_circle_circumference_with_10_expect_62_830000000000005 (datasets.mbpp.tests.test_079.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010037422180175781
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_079.py\", line 6, in test_circle_circumference_with_10_expect_62_830000000000005\n\
+    \    self.assertEqual(circle_circumference(10), 62.830000000000005)\nAssertionError:\
+    \ 95867322.30727756 != 62.830000000000005\n"
+  killer: test_circle_circumference_with_10_expect_62_830000000000005 (datasets.mbpp.tests.test_079.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0010128021240234375
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_079
+tests:
+- name: datasets.mbpp.tests.test_079
+  target: null
+  time: 0.0010077953338623047
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.04762411117553711
+  run_tests_with_mutant: 0.008103370666503906
+total_time: 0.05532240867614746

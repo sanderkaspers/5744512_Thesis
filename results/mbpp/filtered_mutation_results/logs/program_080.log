@@ -1,0 +1,55 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_080
+   - tests: datasets.mbpp.tests.test_080
+[*] 1 tests passed:
+   - datasets.mbpp.tests.test_080 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COD datasets.mbpp.programs.program_080: [0.00206 s] killed by test_case (datasets.mbpp.tests.test_080.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_080.py", line 12, in test_case
+    self.assertEqual(extract_singly([[7, 8], [8, 9], [9, 10]]), [7, 8, 9, 10])
+AssertionError: Lists differ: [] != [7, 8, 9, 10]
+
+Second list contains 4 additional elements.
+First extra element 0:
+7
+
+- []
++ [7, 8, 9, 10]
+
+   - [#   2] COI datasets.mbpp.programs.program_080: [0.00105 s] killed by test_case (datasets.mbpp.tests.test_080.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_080.py", line 12, in test_case
+    self.assertEqual(extract_singly([[7, 8], [8, 9], [9, 10]]), [7, 8, 9, 10])
+AssertionError: Lists differ: [] != [7, 8, 9, 10]
+
+Second list contains 4 additional elements.
+First extra element 0:
+7
+
+- []
++ [7, 8, 9, 10]
+
+   - [#   3] COI datasets.mbpp.programs.program_080: [0.00056 s] killed by test_case (datasets.mbpp.tests.test_080.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_080.py", line 12, in test_case
+    self.assertEqual(extract_singly([[7, 8], [8, 9], [9, 10]]), [7, 8, 9, 10])
+AssertionError: Lists differ: [] != [7, 8, 9, 10]
+
+Second list contains 4 additional elements.
+First extra element 0:
+7
+
+- []
++ [7, 8, 9, 10]
+
+[*] Mutation score [0.04364 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,80 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot.programs.program_020
+   - tests: datasets.GPT_4.Few_shot.tests.test_020
+[*] 8 tests passed:
+   - datasets.GPT_4.Few_shot.tests.test_020 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Few_shot.programs.program_020: [0.00000 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_020.py", line 6, in test_case_1
+    self.assertEqual(is_Monotonic([1, 2, 3, 4, 5]), True) # Strictly increasing)
+AssertionError: False != True
+
+   - [#   2] AOR datasets.GPT_4.Few_shot.programs.program_020: [0.00000 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_020.py", line 6, in test_case_1
+    self.assertEqual(is_Monotonic([1, 2, 3, 4, 5]), True) # Strictly increasing)
+  File "datasets.GPT_4.Few_shot.programs.program_020", line 2, in is_Monotonic
+  File "datasets.GPT_4.Few_shot.programs.program_020", line 2, in <genexpr>
+IndexError: list index out of range
+
+   - [#   3] AOR datasets.GPT_4.Few_shot.programs.program_020: [0.00000 s] killed by test_case_2 (datasets.GPT_4.Few_shot.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_020.py", line 9, in test_case_2
+    self.assertEqual(is_Monotonic([5, 4, 3, 2, 1]), True) # Strictly decreasing)
+AssertionError: False != True
+
+   - [#   4] AOR datasets.GPT_4.Few_shot.programs.program_020: [0.00000 s] killed by test_case_2 (datasets.GPT_4.Few_shot.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_020.py", line 9, in test_case_2
+    self.assertEqual(is_Monotonic([5, 4, 3, 2, 1]), True) # Strictly decreasing)
+  File "datasets.GPT_4.Few_shot.programs.program_020", line 3, in is_Monotonic
+  File "datasets.GPT_4.Few_shot.programs.program_020", line 3, in <genexpr>
+IndexError: list index out of range
+
+   - [#   5] LCR datasets.GPT_4.Few_shot.programs.program_020: [0.00000 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_020.py", line 6, in test_case_1
+    self.assertEqual(is_Monotonic([1, 2, 3, 4, 5]), True) # Strictly increasing)
+AssertionError: False != True
+
+   - [#   6] ROR datasets.GPT_4.Few_shot.programs.program_020: [0.00000 s] killed by test_case_1 (datasets.GPT_4.Few_shot.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_020.py", line 6, in test_case_1
+    self.assertEqual(is_Monotonic([1, 2, 3, 4, 5]), True) # Strictly increasing)
+AssertionError: False != True
+
+   - [#   7] ROR datasets.GPT_4.Few_shot.programs.program_020: [0.00000 s] killed by test_case_7 (datasets.GPT_4.Few_shot.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_020.py", line 24, in test_case_7
+    self.assertEqual(is_Monotonic([2, 2, 3, 4, 4, 5]), True) # Non-decreasing with repeats)
+AssertionError: False != True
+
+   - [#   8] ROR datasets.GPT_4.Few_shot.programs.program_020: [0.00000 s] killed by test_case_2 (datasets.GPT_4.Few_shot.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_020.py", line 9, in test_case_2
+    self.assertEqual(is_Monotonic([5, 4, 3, 2, 1]), True) # Strictly decreasing)
+AssertionError: False != True
+
+   - [#   9] ROR datasets.GPT_4.Few_shot.programs.program_020: [0.00000 s] killed by test_case_8 (datasets.GPT_4.Few_shot.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot\tests\test_020.py", line 27, in test_case_8
+    self.assertEqual(is_Monotonic([5, 4, 4, 3, 2, 2]), True) # Non-increasing with repeats)
+AssertionError: False != True
+
+[*] Mutation score [0.07871 s]: 100.0%
+   - all: 9
+   - killed: 9 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

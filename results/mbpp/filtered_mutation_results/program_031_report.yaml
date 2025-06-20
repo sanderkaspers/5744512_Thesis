@@ -1,0 +1,132 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 88.88888888888889
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_031.py\", line 12, in test_get_Char_with_ab_expect_c\n    self.assertEqual(get_Char(\"\
+    ab\"), \"c\")\nAssertionError: 'a' != 'c'\n- a\n+ c\n\n"
+  killer: test_get_Char_with_ab_expect_c (datasets.mbpp.tests.test_031.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_031 ''
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_031.py\", line 12, in test_get_Char_with_ab_expect_c\n    self.assertEqual(get_Char(\"\
+    ab\"), \"c\")\nAssertionError: 'y' != 'c'\n- y\n+ c\n\n"
+  killer: test_get_Char_with_ab_expect_c (datasets.mbpp.tests.test_031.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_031.py\", line 12, in test_get_Char_with_ab_expect_c\n    self.assertEqual(get_Char(\"\
+    ab\"), \"c\")\nAssertionError: '\xAE' != 'c'\n- \xAE\n+ c\n\n"
+  killer: test_get_Char_with_ab_expect_c (datasets.mbpp.tests.test_031.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.005627632141113281
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_031.py\", line 12, in test_get_Char_with_ab_expect_c\n    self.assertEqual(get_Char(\"\
+    ab\"), \"c\")\nAssertionError: ']' != 'c'\n- ]\n+ c\n\n"
+  killer: test_get_Char_with_ab_expect_c (datasets.mbpp.tests.test_031.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.005517005920410156
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_031.py\", line 12, in test_get_Char_with_ab_expect_c\n    self.assertEqual(get_Char(\"\
+    ab\"), \"c\")\nAssertionError: 'e' != 'c'\n- e\n+ c\n\n"
+  killer: test_get_Char_with_ab_expect_c (datasets.mbpp.tests.test_031.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_031.py\", line 12, in test_get_Char_with_ab_expect_c\n    self.assertEqual(get_Char(\"\
+    ab\"), \"c\")\nAssertionError: 'w' != 'c'\n- w\n+ c\n\n"
+  killer: test_get_Char_with_ab_expect_c (datasets.mbpp.tests.test_031.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.010560989379882812
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_031.py\", line 12, in test_get_Char_with_ab_expect_c\n    self.assertEqual(get_Char(\"\
+    ab\"), \"c\")\nAssertionError: 122 != 'c'\n"
+  killer: test_get_Char_with_ab_expect_c (datasets.mbpp.tests.test_031.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.010077953338623047
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_031.py\", line 12, in test_get_Char_with_ab_expect_c\n    self.assertEqual(get_Char(\"\
+    ab\"), \"c\")\nAssertionError: 122 != 'c'\n"
+  killer: test_get_Char_with_ab_expect_c (datasets.mbpp.tests.test_031.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_031
+tests:
+- name: datasets.mbpp.tests.test_031
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.08023810386657715
+  run_tests_with_mutant: 0.041906118392944336
+total_time: 0.09586858749389648

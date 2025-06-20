@@ -1,0 +1,144 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_033.py\", line 15, in test_floating_point_radius\n\
+    \    self.assertAlmostEqual(surfacearea_sphere(2.5), 78.53981633974483)\nAssertionError:\
+    \ 7.957747154594768 != 78.53981633974483 within 7 places (70.58206918515006 difference)\n"
+  killer: test_floating_point_radius (datasets.GPT_4.Chain_of_thought.tests.test_033.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought.programs.program_033 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.001001596450805664
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_033.py\", line 15, in test_floating_point_radius\n\
+    \    self.assertAlmostEqual(surfacearea_sphere(2.5), 78.53981633974483)\nAssertionError:\
+    \ 6.25 != 78.53981633974483 within 7 places (72.28981633974483 difference)\n"
+  killer: test_floating_point_radius (datasets.GPT_4.Chain_of_thought.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0010118484497070312
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_033.py\", line 15, in test_floating_point_radius\n\
+    \    self.assertAlmostEqual(surfacearea_sphere(2.5), 78.53981633974483)\nAssertionError:\
+    \ 486.7514603024256 != 78.53981633974483 within 7 places (408.21164396268074 difference)\n"
+  killer: test_floating_point_radius (datasets.GPT_4.Chain_of_thought.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0010187625885009766
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_033.py\", line 15, in test_floating_point_radius\n\
+    \    self.assertAlmostEqual(surfacearea_sphere(2.5), 78.53981633974483)\nAssertionError:\
+    \ 12.566370614359172 != 78.53981633974483 within 7 places (65.97344572538566 difference)\n"
+  killer: test_floating_point_radius (datasets.GPT_4.Chain_of_thought.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0010921955108642578
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_033.py\", line 15, in test_floating_point_radius\n\
+    \    self.assertAlmostEqual(surfacearea_sphere(2.5), 78.53981633974483)\nAssertionError:\
+    \ 12.5 != 78.53981633974483 within 7 places (66.03981633974483 difference)\n"
+  killer: test_floating_point_radius (datasets.GPT_4.Chain_of_thought.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010330677032470703
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_033.py\", line 15, in test_floating_point_radius\n\
+    \    self.assertAlmostEqual(surfacearea_sphere(2.5), 78.53981633974483)\nAssertionError:\
+    \ 1399.473466209989 != 78.53981633974483 within 7 places (1320.9336498702442 difference)\n"
+  killer: test_floating_point_radius (datasets.GPT_4.Chain_of_thought.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0010004043579101562
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_033.py\", line 15, in test_floating_point_radius\n\
+    \    self.assertAlmostEqual(surfacearea_sphere(2.5), 78.53981633974483)\nAssertionError:\
+    \ 12.566370614359172 != 78.53981633974483 within 7 places (65.97344572538566 difference)\n"
+  killer: test_floating_point_radius (datasets.GPT_4.Chain_of_thought.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_033.py\", line 15, in test_floating_point_radius\n\
+    \    self.assertAlmostEqual(surfacearea_sphere(2.5), 78.53981633974483)\nAssertionError:\
+    \ 12.0 != 78.53981633974483 within 7 places (66.53981633974483 difference)\n"
+  killer: test_floating_point_radius (datasets.GPT_4.Chain_of_thought.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0010271072387695312
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_033.py\", line 15, in test_floating_point_radius\n\
+    \    self.assertAlmostEqual(surfacearea_sphere(2.5), 78.53981633974483)\nAssertionError:\
+    \ 5531.904597742819 != 78.53981633974483 within 7 places (5453.364781403074 difference)\n"
+  killer: test_floating_point_radius (datasets.GPT_4.Chain_of_thought.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0010111331939697266
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Chain_of_thought.programs.program_033
+tests:
+- name: datasets.GPT_4.Chain_of_thought.tests.test_033
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.001001119613647461
+  create_target_ast: 0.0010106563568115234
+  mutate_module: 0.04280567169189453
+  run_tests_with_mutant: 0.00919485092163086
+total_time: 0.04885983467102051

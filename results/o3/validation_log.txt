@@ -1,0 +1,25 @@
+EXCLUDED tests (3+ errors):
+
+MANUAL CHECK recommended (1-2 errors):
+test_001: 1/6 failures
+test_002: 2/6 failures
+test_003: 4/6 failures
+test_004: 7/7 failures
+test_005: 1/6 failures
+test_021: 1/9 failures
+test_026: 2/5 failures
+test_028: 4/5 failures
+test_032: 1/5 failures
+test_040: 1/7 failures
+test_049: 4/6 failures
+test_050: 4/7 failures
+test_061: 1/6 failures
+test_066: 3/5 failures
+test_070: 1/5 failures
+test_079: 1/6 failures
+test_085: 3/7 failures
+test_087: 3/6 failures
+test_088: 3/6 failures
+test_089: 2/6 failures
+test_090: 6/6 failures
+test_094: 1/6 failures

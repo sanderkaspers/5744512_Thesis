@@ -1,0 +1,130 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 40.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.pynguin.programs.program_041 ''
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 1
+  time: 0.0009996891021728516
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 2
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 4
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_041.py\", line 11, in test_case_0\n    assert var_0 == b'\\x82'\n\
+    AssertionError\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_041.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0009975433349609375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_041.py\", line 11, in test_case_0\n    assert var_0 == b'\\x82'\n\
+    AssertionError\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_041.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 7
+  status: survived
+  tests_run: 1
+  time: 0.00099945068359375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_041.py\", line 11, in test_case_0\n    assert var_0 == b'\\x82'\n\
+    AssertionError\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_041.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0009987354278564453
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_041.py\", line 11, in test_case_0\n    assert var_0 == b'\\x82'\n\
+    AssertionError\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_041.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0010004043579101562
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 10
+  status: survived
+  tests_run: 1
+  time: 0.0009996891021728516
+number_of_tests: 1
+targets:
+- datasets.pynguin.programs.program_041
+tests:
+- name: datasets.pynguin.tests.test_041
+  target: null
+  time: 0.0010004043579101562
+time_stats:
+  create_mutant_module: 0.0009989738464355469
+  create_target_ast: 0.0
+  mutate_module: 0.05152606964111328
+  run_tests_with_mutant: 0.005995512008666992
+total_time: 0.057535409927368164

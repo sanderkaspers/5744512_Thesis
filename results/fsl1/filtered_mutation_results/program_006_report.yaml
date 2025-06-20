@@ -1,0 +1,138 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 0.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_006 ''
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 9
+  time: 0.001001596450805664
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 2
+  status: survived
+  tests_run: 9
+  time: 0.001001596450805664
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 9
+  time: 0.00099945068359375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: ASR
+  number: 4
+  status: survived
+  tests_run: 9
+  time: 0.0009996891021728516
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 24
+    operator: ASR
+  number: 5
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: ASR
+  number: 6
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: COI
+  number: 7
+  status: survived
+  tests_run: 9
+  time: 0.001514434814453125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: COI
+  number: 8
+  status: survived
+  tests_run: 9
+  time: 0.0009992122650146484
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: ROR
+  number: 9
+  status: survived
+  tests_run: 9
+  time: 0.0009663105010986328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: ROR
+  number: 10
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: SIR
+  number: 11
+  status: survived
+  tests_run: 9
+  time: 0.0010821819305419922
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: SIR
+  number: 12
+  status: survived
+  tests_run: 9
+  time: 0.0010044574737548828
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_006
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_006
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.001993894577026367
+  create_target_ast: 0.0010001659393310547
+  mutate_module: 0.12053155899047852
+  run_tests_with_mutant: 0.012551307678222656
+total_time: 0.12952423095703125

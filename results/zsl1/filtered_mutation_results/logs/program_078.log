@@ -1,0 +1,34 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot1.programs.program_078
+   - tests: datasets.GPT_4.Zero_shot1.tests.test_078
+[*] 7 tests passed:
+   - datasets.GPT_4.Zero_shot1.tests.test_078 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Zero_shot1.programs.program_078: [0.00101 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_078.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_078.py", line 6, in test_1
+    self.assertFalse(is_Sum_Of_Powers_Of_Two(3))
+AssertionError: True is not false
+
+   - [#   2] COI datasets.GPT_4.Zero_shot1.programs.program_078: [0.00100 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_078.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_078.py", line 6, in test_1
+    self.assertFalse(is_Sum_Of_Powers_Of_Two(3))
+AssertionError: True is not false
+
+   - [#   3] ROR datasets.GPT_4.Zero_shot1.programs.program_078: [0.00100 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_078.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_078.py", line 6, in test_1
+    self.assertFalse(is_Sum_Of_Powers_Of_Two(3))
+AssertionError: True is not false
+
+[*] Mutation score [0.02853 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

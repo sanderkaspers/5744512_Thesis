@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_075
+   - tests: datasets.pynguin.tests.test_075
+[*] 2 tests passed:
+   - datasets.pynguin.tests.test_075 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ROR datasets.pynguin.programs.program_075: [0.00124 s] killed by test_case_1 (datasets.pynguin.tests.test_075.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_075.py", line 14, in test_case_1
+    assert var_0 == 0
+AssertionError
+
+   - [#   2] ROR datasets.pynguin.programs.program_075: [0.00000 s] survived
+[*] Mutation score [0.03017 s]: 50.0%
+   - all: 2
+   - killed: 1 (50.0%)
+   - survived: 1 (50.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)

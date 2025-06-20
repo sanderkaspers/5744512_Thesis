@@ -1,0 +1,50 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_070
+   - tests: datasets.mbpp.tests.test_070
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_070 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.mbpp.programs.program_070: [0.00199 s] killed by test_long_words_with_2__writingaprogram__expect__writing (datasets.mbpp.tests.test_070.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_070.py", line 9, in test_long_words_with_2__writingaprogram__expect__writing
+    self.assertEqual(long_words(2, "writing a program"), ["writing", "program"])
+AssertionError: Lists differ: ['a'] != ['writing', 'program']
+
+First differing element 0:
+'a'
+'writing'
+
+Second list contains 1 additional elements.
+First extra element 1:
+'program'
+
+- ['a']
++ ['writing', 'program']
+
+   - [#   2] ROR datasets.mbpp.programs.program_070: [0.00104 s] killed by test_long_words_with_2__writingaprogram__expect__writing (datasets.mbpp.tests.test_070.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_070.py", line 9, in test_long_words_with_2__writingaprogram__expect__writing
+    self.assertEqual(long_words(2, "writing a program"), ["writing", "program"])
+AssertionError: Lists differ: ['a'] != ['writing', 'program']
+
+First differing element 0:
+'a'
+'writing'
+
+Second list contains 1 additional elements.
+First extra element 1:
+'program'
+
+- ['a']
++ ['writing', 'program']
+
+   - [#   3] ROR datasets.mbpp.programs.program_070: [0.00000 s] survived
+[*] Mutation score [0.03600 s]: 66.7%
+   - all: 3
+   - killed: 2 (66.7%)
+   - survived: 1 (33.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

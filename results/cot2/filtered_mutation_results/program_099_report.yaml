@@ -1,0 +1,70 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_099.py\", line 7, in test_all_bits_set\n    def\
+    \ test_all_bits_set(self): self.assertEqual(count_Set_Bits(7), 3)\nAssertionError:\
+    \ -3 != 3\n"
+  killer: test_all_bits_set (datasets.GPT_4.Chain_of_thought2.tests.test_099.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought2.programs.program_099 ''
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.000995635986328125
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_099.py\", line 7, in test_all_bits_set\n    def\
+    \ test_all_bits_set(self): self.assertEqual(count_Set_Bits(7), 3)\nAssertionError:\
+    \ 0 != 3\n"
+  killer: test_all_bits_set (datasets.GPT_4.Chain_of_thought2.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_099.py\", line 7, in test_all_bits_set\n    def\
+    \ test_all_bits_set(self): self.assertEqual(count_Set_Bits(7), 3)\nAssertionError:\
+    \ 11 != 3\n"
+  killer: test_all_bits_set (datasets.GPT_4.Chain_of_thought2.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: LOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0015034675598144531
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 4
+  status: timeout
+  tests_run: null
+  time: 5.053994417190552
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Chain_of_thought2.programs.program_099
+tests:
+- name: datasets.GPT_4.Chain_of_thought2.tests.test_099
+  target: null
+  time: 0.0009281635284423828
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 5.082491159439087
+  run_tests_with_mutant: 5.057716608047485
+total_time: 5.088525772094727

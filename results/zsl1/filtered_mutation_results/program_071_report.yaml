@@ -1,0 +1,149 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 6, in test_1\n    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))\n\
+    AssertionError: False is not true\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot1.programs.program_071 ''
+  mutations:
+  - lineno: 12
+    operator: AOD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 6, in test_1\n    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))\n\
+    AssertionError: False is not true\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOD
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 6, in test_1\n    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))\n\
+    \  File \"datasets.GPT_4.Zero_shot1.programs.program_071\", line 13, in magic_square_test\n\
+    IndexError: list index out of range\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 6, in test_1\n    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))\n\
+    AssertionError: False is not true\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 6, in test_1\n    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))\n\
+    AssertionError: False is not true\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.013012170791625977
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 6, in test_1\n    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))\n\
+    AssertionError: False is not true\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: ASR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 6, in test_1\n    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))\n\
+    AssertionError: False is not true\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: ASR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 6, in test_1\n    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))\n\
+    AssertionError: False is not true\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: COI
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 9, in test_2\n    self.assertFalse(magic_square_test([[2,7,6],[9,5,1],[4,3,7]]))\n\
+    AssertionError: True is not false\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: ROR
+  number: 9
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_071.py\", line 6, in test_1\n    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))\n\
+    AssertionError: False is not true\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: ROR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Zero_shot1.programs.program_071
+tests:
+- name: datasets.GPT_4.Zero_shot1.tests.test_071
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.09979796409606934
+  run_tests_with_mutant: 0.013012170791625977
+total_time: 0.10587882995605469

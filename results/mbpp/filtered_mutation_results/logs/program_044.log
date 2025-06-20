@@ -1,0 +1,34 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_044
+   - tests: datasets.mbpp.tests.test_044
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_044 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.mbpp.programs.program_044: [0.00200 s] killed by test_divisor_with_12_expect_6 (datasets.mbpp.tests.test_044.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_044.py", line 9, in test_divisor_with_12_expect_6
+    self.assertEqual(divisor(12), 6)
+AssertionError: 5 != 6
+
+   - [#   2] AOR datasets.mbpp.programs.program_044: [0.00101 s] killed by test_divisor_with_12_expect_6 (datasets.mbpp.tests.test_044.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_044.py", line 9, in test_divisor_with_12_expect_6
+    self.assertEqual(divisor(12), 6)
+AssertionError: 0 != 6
+
+   - [#   3] COD datasets.mbpp.programs.program_044: [0.00107 s] killed by test_divisor_with_15_expect_4 (datasets.mbpp.tests.test_044.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_044.py", line 6, in test_divisor_with_15_expect_4
+    self.assertEqual(divisor(15), 4)
+AssertionError: 11 != 4
+
+[*] Mutation score [0.03856 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

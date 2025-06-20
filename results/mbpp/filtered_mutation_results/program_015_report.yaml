@@ -1,0 +1,31 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_015.py\", line 6, in test_case\n    self.assertEqual(max_difference([(3,\
+    \ 5), (1, 7), (10, 3), (1, 2)]), 7)\nAssertionError: 13 != 7\n"
+  killer: test_case (datasets.mbpp.tests.test_015.TestVersion)
+  module: !!python/module:datasets.mbpp.programs.program_015 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010008811950683594
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_015
+tests:
+- name: datasets.mbpp.tests.test_015
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.02162480354309082
+  run_tests_with_mutant: 0.0010008811950683594
+total_time: 0.0276796817779541

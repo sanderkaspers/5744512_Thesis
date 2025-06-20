@@ -1,0 +1,106 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 85.71428571428571
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_067.py\", line 9, in test_find_length_with__10111__5_expect_1\n  \
+    \  self.assertEqual(find_length(\"10111\"), 1)\nAssertionError: 5 != 1\n"
+  killer: test_find_length_with__10111__5_expect_1 (datasets.mbpp.tests.test_067.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_067 ''
+  mutations:
+  - lineno: 6
+    operator: AOD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_067.py\", line 9, in test_find_length_with__10111__5_expect_1\n  \
+    \  self.assertEqual(find_length(\"10111\"), 1)\nAssertionError: 5 != 1\n"
+  killer: test_find_length_with__10111__5_expect_1 (datasets.mbpp.tests.test_067.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_067.py\", line 9, in test_find_length_with__10111__5_expect_1\n  \
+    \  self.assertEqual(find_length(\"10111\"), 1)\nAssertionError: 3 != 1\n"
+  killer: test_find_length_with__10111__5_expect_1 (datasets.mbpp.tests.test_067.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ASR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_067.py\", line 9, in test_find_length_with__10111__5_expect_1\n  \
+    \  self.assertEqual(find_length(\"10111\"), 1)\nAssertionError: 0 != 1\n"
+  killer: test_find_length_with__10111__5_expect_1 (datasets.mbpp.tests.test_067.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_067.py\", line 9, in test_find_length_with__10111__5_expect_1\n  \
+    \  self.assertEqual(find_length(\"10111\"), 1)\nAssertionError: 3 != 1\n"
+  killer: test_find_length_with__10111__5_expect_1 (datasets.mbpp.tests.test_067.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_067.py\", line 9, in test_find_length_with__10111__5_expect_1\n  \
+    \  self.assertEqual(find_length(\"10111\"), 1)\nAssertionError: 0 != 1\n"
+  killer: test_find_length_with__10111__5_expect_1 (datasets.mbpp.tests.test_067.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ROR
+  number: 7
+  status: survived
+  tests_run: 3
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_067
+tests:
+- name: datasets.mbpp.tests.test_067
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.04638481140136719
+  run_tests_with_mutant: 0.0
+total_time: 0.05759787559509277

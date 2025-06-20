@@ -1,0 +1,54 @@
+program_077 (source):
+    from array import array
+    def zero_count(nums):
+        n = len(nums)
+        n1 = 0
+        for x in nums:
+            if x == 0:
+                n1 += 1
+            else:
+              None
+        return n1/(n-n1)
+program_077 (failed test code):
+        def test_zero_count_with_0_1_2__1__5_6_0__3__2_3_4_6_8_expect_0_15(self):
+            self.assertEqual(zero_count([0, 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 0.15, places=2)
+    
+        def test_zero_count_with_2_1_2__1__5_6_4__3__2_3_4_6_8_expect_0_00(self):
+            self.assertEqual(zero_count([2, 1, 2, -1, -5, 6, 4, -3, -2, 3, 4, 6, 8]), 0.00, places=2)
+    
+        def test_zero_count_with_2_4__6__9_11__12_14__5_17_expect_0_00(self):
+            self.assertEqual(zero_count([2, 4, -6, -9, 11, -12, 14, -5, 17]), 0.00, places=2)
+    
+
+        def test_zero_count_with_2_1_2__1__5_6_4__3__2_3_4_6_8_expect_0_00(self):
+            self.assertEqual(zero_count([2, 1, 2, -1, -5, 6, 4, -3, -2, 3, 4, 6, 8]), 0.00, places=2)
+    
+        def test_zero_count_with_2_4__6__9_11__12_14__5_17_expect_0_00(self):
+            self.assertEqual(zero_count([2, 4, -6, -9, 11, -12, 14, -5, 17]), 0.00, places=2)
+    
+
+        def test_zero_count_with_2_4__6__9_11__12_14__5_17_expect_0_00(self):
+            self.assertEqual(zero_count([2, 4, -6, -9, 11, -12, 14, -5, 17]), 0.00, places=2)
+    
+
+
+program_077 (assert errors):
+    FAILED: test_zero_count_with_0_1_2__1__5_6_0__3__2_3_4_6_8_expect_0_15
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\mbpp\tests\test_077.py", line 6, in test_zero_count_with_0_1_2__1__5_6_0__3__2_3_4_6_8_expect_0_15
+            self.assertEqual(zero_count([0, 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 0.15, places=2)
+        TypeError: assertEqual() got an unexpected keyword argument 'places'
+        
+    FAILED: test_zero_count_with_2_1_2__1__5_6_4__3__2_3_4_6_8_expect_0_00
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\mbpp\tests\test_077.py", line 9, in test_zero_count_with_2_1_2__1__5_6_4__3__2_3_4_6_8_expect_0_00
+            self.assertEqual(zero_count([2, 1, 2, -1, -5, 6, 4, -3, -2, 3, 4, 6, 8]), 0.00, places=2)
+        TypeError: assertEqual() got an unexpected keyword argument 'places'
+        
+    FAILED: test_zero_count_with_2_4__6__9_11__12_14__5_17_expect_0_00
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\mbpp\tests\test_077.py", line 12, in test_zero_count_with_2_4__6__9_11__12_14__5_17_expect_0_00
+            self.assertEqual(zero_count([2, 4, -6, -9, 11, -12, 14, -5, 17]), 0.00, places=2)
+        TypeError: assertEqual() got an unexpected keyword argument 'places'
+        
+

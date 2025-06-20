@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_050
+   - tests: datasets.pynguin.tests.test_050
+[*] 1 tests passed:
+   - datasets.pynguin.tests.test_050 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] LCR datasets.pynguin.programs.program_050: [0.00100 s] killed by test_case_0 (datasets.pynguin.tests.test_050.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_050.py", line 10, in test_case_0
+    assert var_0 == 'Yt-'
+AssertionError
+
+[*] Mutation score [0.02500 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,31 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot1.programs.program_061
+   - tests: datasets.GPT_4.Few_shot1.tests.test_061
+[*] 7 tests passed:
+   - datasets.GPT_4.Few_shot1.tests.test_061 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.GPT_4.Few_shot1.programs.program_061: [0.00100 s] killed by test_list_to_float_all_numbers (datasets.GPT_4.Few_shot1.tests.test_061.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_061.py", line 9, in test_list_to_float_all_numbers
+    def test_list_to_float_all_numbers(self): self.assertEqual(list_to_float([('2', '3.5')]), [(2.0, 3.5)])
+AssertionError: Lists differ: [('2', '3.5')] != [(2.0, 3.5)]
+
+First differing element 0:
+('2', '3.5')
+(2.0, 3.5)
+
+- [('2', '3.5')]
+?   - ^  -   -
+
++ [(2.0, 3.5)]
+?    ^^
+
+
+[*] Mutation score [0.03877 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

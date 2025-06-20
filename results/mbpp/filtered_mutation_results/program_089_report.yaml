@@ -1,0 +1,194 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 80.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.mbpp.programs.program_089 ''
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 1
+  status: timeout
+  tests_run: null
+  time: 5.039654970169067
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 2
+  status: timeout
+  tests_run: null
+  time: 5.048083305358887
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_089.py\", line 9, in test_areEquivalent_with_2_4_expect_False\n  \
+    \  self.assertEqual(are_equivalent(2,4), False)\nAssertionError: True != False\n"
+  killer: test_areEquivalent_with_2_4_expect_False (datasets.mbpp.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_089.py\", line 9, in test_areEquivalent_with_2_4_expect_False\n  \
+    \  self.assertEqual(are_equivalent(2,4), False)\nAssertionError: True != False\n"
+  killer: test_areEquivalent_with_2_4_expect_False (datasets.mbpp.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.0009989738464355469
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_089.py\", line 9, in test_areEquivalent_with_2_4_expect_False\n  \
+    \  self.assertEqual(are_equivalent(2,4), False)\nAssertionError: True != False\n"
+  killer: test_areEquivalent_with_2_4_expect_False (datasets.mbpp.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 7
+  status: survived
+  tests_run: 3
+  time: 0.0008749961853027344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 8
+  status: survived
+  tests_run: 3
+  time: 0.001020193099975586
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_089.py\", line 12, in test_areEquivalent_with_23_47_expect_True\n\
+    \    self.assertEqual(are_equivalent(23,47), True)\n  File \"datasets.mbpp.programs.program_089\"\
+    , line 14, in are_equivalent\n  File \"datasets.mbpp.programs.program_089\", line\
+    \ 7, in div_sum\nZeroDivisionError: integer division or modulo by zero\n"
+  killer: test_areEquivalent_with_23_47_expect_True (datasets.mbpp.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: ASR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0009999275207519531
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 10
+  status: timeout
+  tests_run: null
+  time: 5.032485008239746
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_089.py\", line 12, in test_areEquivalent_with_23_47_expect_True\n\
+    \    self.assertEqual(are_equivalent(23,47), True)\nAssertionError: False != True\n"
+  killer: test_areEquivalent_with_23_47_expect_True (datasets.mbpp.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: COI
+  number: 11
+  status: killed
+  tests_run: 1
+  time: 0.0010037422180175781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 12
+  status: timeout
+  tests_run: null
+  time: 5.033918857574463
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_089.py\", line 9, in test_areEquivalent_with_2_4_expect_False\n  \
+    \  self.assertEqual(are_equivalent(2,4), False)\nAssertionError: True != False\n"
+  killer: test_areEquivalent_with_2_4_expect_False (datasets.mbpp.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 13
+  status: killed
+  tests_run: 2
+  time: 0.001013040542602539
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_089.py\", line 12, in test_areEquivalent_with_23_47_expect_True\n\
+    \    self.assertEqual(are_equivalent(23,47), True)\nAssertionError: False != True\n"
+  killer: test_areEquivalent_with_23_47_expect_True (datasets.mbpp.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ROR
+  number: 14
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_089.py\", line 12, in test_areEquivalent_with_23_47_expect_True\n\
+    \    self.assertEqual(are_equivalent(23,47), True)\nAssertionError: False != True\n"
+  killer: test_areEquivalent_with_23_47_expect_True (datasets.mbpp.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: ROR
+  number: 15
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_089
+tests:
+- name: datasets.mbpp.tests.test_089
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.003126382827758789
+  create_target_ast: 0.0
+  mutate_module: 20.243367910385132
+  run_tests_with_mutant: 20.161054134368896
+total_time: 20.249366998672485

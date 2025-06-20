@@ -1,0 +1,78 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot1.programs.program_092
+   - tests: datasets.GPT_4.Few_shot1.tests.test_092
+[*] 16 tests passed:
+   - datasets.GPT_4.Few_shot1.tests.test_092 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Few_shot1.programs.program_092: [0.00201 s] killed by test_next_power_of_2_already_power_of_2_large (datasets.GPT_4.Few_shot1.tests.test_092.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_092.py", line 39, in test_next_power_of_2_already_power_of_2_large
+    def test_next_power_of_2_already_power_of_2_large(self): self.assertEqual(next_power_of_2(1024), 1024)
+AssertionError: 2048 != 1024
+
+   - [#   2] ASR datasets.GPT_4.Few_shot1.programs.program_092: [0.00201 s] killed by test_next_power_of_2_edge_case (datasets.GPT_4.Few_shot1.tests.test_092.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_092.py", line 41, in test_next_power_of_2_edge_case
+    def test_next_power_of_2_edge_case(self): self.assertEqual(next_power_of_2(1023), 1024)
+  File "datasets.GPT_4.Few_shot1.programs.program_092", line 10, in next_power_of_2
+ValueError: negative shift count
+
+   - [#   3] COD datasets.GPT_4.Few_shot1.programs.program_092: [0.00104 s] killed by test_next_power_of_2_already_power_of_2_large (datasets.GPT_4.Few_shot1.tests.test_092.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_092.py", line 39, in test_next_power_of_2_already_power_of_2_large
+    def test_next_power_of_2_already_power_of_2_large(self): self.assertEqual(next_power_of_2(1024), 1024)
+AssertionError: 2048 != 1024
+
+   - [#   4] COI datasets.GPT_4.Few_shot1.programs.program_092: [0.00100 s] killed by test_next_power_of_2_already_power_of_2_large (datasets.GPT_4.Few_shot1.tests.test_092.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_092.py", line 39, in test_next_power_of_2_already_power_of_2_large
+    def test_next_power_of_2_already_power_of_2_large(self): self.assertEqual(next_power_of_2(1024), 1024)
+AssertionError: 2048 != 1024
+
+   - [#   5] COI datasets.GPT_4.Few_shot1.programs.program_092: [0.00100 s] killed by test_next_power_of_2_edge_case (datasets.GPT_4.Few_shot1.tests.test_092.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_092.py", line 41, in test_next_power_of_2_edge_case
+    def test_next_power_of_2_edge_case(self): self.assertEqual(next_power_of_2(1023), 1024)
+AssertionError: 1 != 1024
+
+   - [#   6] LCR datasets.GPT_4.Few_shot1.programs.program_092: [0.00100 s] killed by test_next_power_of_2_edge_case (datasets.GPT_4.Few_shot1.tests.test_092.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_092.py", line 41, in test_next_power_of_2_edge_case
+    def test_next_power_of_2_edge_case(self): self.assertEqual(next_power_of_2(1023), 1024)
+AssertionError: 1023 != 1024
+
+   - [#   7] LOR datasets.GPT_4.Few_shot1.programs.program_092: [0.00100 s] killed by test_next_power_of_2_already_power_of_2_large (datasets.GPT_4.Few_shot1.tests.test_092.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_092.py", line 39, in test_next_power_of_2_already_power_of_2_large
+    def test_next_power_of_2_already_power_of_2_large(self): self.assertEqual(next_power_of_2(1024), 1024)
+AssertionError: 2048 != 1024
+
+   - [#   8] LOR datasets.GPT_4.Few_shot1.programs.program_092: [5.05913 s] timeout
+   - [#   9] LOR datasets.GPT_4.Few_shot1.programs.program_092: [0.00099 s] killed by test_next_power_of_2_edge_case (datasets.GPT_4.Few_shot1.tests.test_092.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_092.py", line 41, in test_next_power_of_2_edge_case
+    def test_next_power_of_2_edge_case(self): self.assertEqual(next_power_of_2(1023), 1024)
+AssertionError: 0 != 1024
+
+   - [#  10] ROR datasets.GPT_4.Few_shot1.programs.program_092: [0.00100 s] killed by test_next_power_of_2_edge_case (datasets.GPT_4.Few_shot1.tests.test_092.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_092.py", line 41, in test_next_power_of_2_edge_case
+    def test_next_power_of_2_edge_case(self): self.assertEqual(next_power_of_2(1023), 1024)
+AssertionError: 1 != 1024
+
+[*] Mutation score [5.12696 s]: 100.0%
+   - all: 10
+   - killed: 9 (90.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 1 (10.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

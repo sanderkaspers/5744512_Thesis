@@ -1,0 +1,98 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_077.py\", line 25, in test_7\n    self.assertIsInstance(zero_count([0,\
+    \ 1]), float)\nAssertionError: 1 is not an instance of <class 'float'>\n"
+  killer: test_7 (datasets.GPT_4.Zero_shot1.tests.test_077.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot1.programs.program_077 ''
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 7
+  time: 0.0009992122650146484
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_077.py\", line 22, in test_6\n    self.assertEqual(zero_count([0,\
+    \ 2, 2.0, 0.0]), 2 / 2)\nAssertionError: 4 != 1.0\n"
+  killer: test_6 (datasets.GPT_4.Zero_shot1.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 6
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_077.py\", line 9, in test_2\n    self.assertEqual(zero_count([0,\
+    \ 5]), 1.0)\nAssertionError: 0.3333333333333333 != 1.0\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_077.py\", line 9, in test_2\n    self.assertEqual(zero_count([0,\
+    \ 5]), 1.0)\nAssertionError: -0.3333333333333333 != 1.0\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ASR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.0009999275207519531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_077.py\", line 6, in test_1\n    self.assertEqual(zero_count([1,\
+    \ 2, 3]), 0.0)\n  File \"datasets.GPT_4.Zero_shot1.programs.program_077\", line\
+    \ 10, in zero_count\nZeroDivisionError: division by zero\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010006427764892578
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_077.py\", line 6, in test_1\n    self.assertEqual(zero_count([1,\
+    \ 2, 3]), 0.0)\n  File \"datasets.GPT_4.Zero_shot1.programs.program_077\", line\
+    \ 10, in zero_count\nZeroDivisionError: division by zero\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0015225410461425781
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Zero_shot1.programs.program_077
+tests:
+- name: datasets.GPT_4.Zero_shot1.tests.test_077
+  target: null
+  time: 0.001001119613647461
+time_stats:
+  create_mutant_module: 0.0009965896606445312
+  create_target_ast: 0.0
+  mutate_module: 0.04153800010681152
+  run_tests_with_mutant: 0.00752568244934082
+total_time: 0.048538923263549805

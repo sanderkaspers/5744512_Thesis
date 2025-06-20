@@ -1,0 +1,151 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_032.py\", line 15, in test_n_equals_10\n    def\
+    \ test_n_equals_10(self): self.assertEqual(sequence(10), 6)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_n_equals_10 (datasets.GPT_4.Chain_of_thought2.tests.test_032.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought2.programs.program_032 ''
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.22046375274658203
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_032.py\", line 15, in test_n_equals_10\n    def\
+    \ test_n_equals_10(self): self.assertEqual(sequence(10), 6)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_n_equals_10 (datasets.GPT_4.Chain_of_thought2.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.23110628128051758
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_032.py\", line 15, in test_n_equals_10\n    def\
+    \ test_n_equals_10(self): self.assertEqual(sequence(10), 6)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_n_equals_10 (datasets.GPT_4.Chain_of_thought2.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 2
+  time: 0.22036480903625488
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_032.py\", line 15, in test_n_equals_10\n    def\
+    \ test_n_equals_10(self): self.assertEqual(sequence(10), 6)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_n_equals_10 (datasets.GPT_4.Chain_of_thought2.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.255220890045166
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_032.py\", line 5, in test_n_equals_1\n    def test_n_equals_1(self):\
+    \ self.assertEqual(sequence(1), 1)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_n_equals_1 (datasets.GPT_4.Chain_of_thought2.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.22542929649353027
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_032.py\", line 5, in test_n_equals_1\n    def test_n_equals_1(self):\
+    \ self.assertEqual(sequence(1), 1)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_n_equals_1 (datasets.GPT_4.Chain_of_thought2.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.2206735610961914
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_032.py\", line 5, in test_n_equals_1\n    def test_n_equals_1(self):\
+    \ self.assertEqual(sequence(1), 1)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_n_equals_1 (datasets.GPT_4.Chain_of_thought2.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.2364799976348877
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_032.py\", line 15, in test_n_equals_10\n    def\
+    \ test_n_equals_10(self): self.assertEqual(sequence(10), 6)\nAssertionError: 1\
+    \ != 6\n"
+  killer: test_n_equals_10 (datasets.GPT_4.Chain_of_thought2.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 2
+  time: 0.0
+number_of_tests: 6
+targets:
+- datasets.GPT_4.Chain_of_thought2.programs.program_032
+tests:
+- name: datasets.GPT_4.Chain_of_thought2.tests.test_032
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 1.6865713596343994
+  run_tests_with_mutant: 1.6097385883331299
+total_time: 1.702218770980835

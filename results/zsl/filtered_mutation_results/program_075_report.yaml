@@ -1,0 +1,41 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 50.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot\\tests\\test_075.py\", line 8, in test_multiple_spaces\n    assert sum_negativenum(nums)\
+    \ == expected_output\nAssertionError\n"
+  killer: test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_075.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot.programs.program_075 ''
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 2
+  status: survived
+  tests_run: 7
+  time: 0.0
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Zero_shot.programs.program_075
+tests:
+- name: datasets.GPT_4.Zero_shot.tests.test_075
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.016816139221191406
+  run_tests_with_mutant: 0.0
+total_time: 0.023331642150878906

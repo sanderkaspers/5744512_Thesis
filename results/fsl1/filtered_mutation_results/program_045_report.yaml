@@ -1,0 +1,64 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_045.py\", line 5, in test_frequency_lists_basic\n    def\
+    \ test_frequency_lists_basic(self): self.assertEqual(frequency_lists([[1, 2],\
+    \ [2, 3]]), {1: 1, 2: 2, 3: 1})\nAssertionError: {1: 1, 2: 0, 3: 1} != {1: 1,\
+    \ 2: 2, 3: 1}\n- {1: 1, 2: 0, 3: 1}\n?           ^\n\n+ {1: 1, 2: 2, 3: 1}\n?\
+    \           ^\n\n"
+  killer: test_frequency_lists_basic (datasets.GPT_4.Few_shot1.tests.test_045.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_045 ''
+  mutations:
+  - lineno: 6
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0020728111267089844
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_045.py\", line 5, in test_frequency_lists_basic\n    def\
+    \ test_frequency_lists_basic(self): self.assertEqual(frequency_lists([[1, 2],\
+    \ [2, 3]]), {1: 1, 2: 2, 3: 1})\n  File \"datasets.GPT_4.Few_shot1.programs.program_045\"\
+    , line 6, in frequency_lists\nKeyError: 1\n"
+  killer: test_frequency_lists_basic (datasets.GPT_4.Few_shot1.tests.test_045.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0005972385406494141
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_045.py\", line 5, in test_frequency_lists_basic\n    def\
+    \ test_frequency_lists_basic(self): self.assertEqual(frequency_lists([[1, 2],\
+    \ [2, 3]]), {1: 1, 2: 2, 3: 1})\n  File \"datasets.GPT_4.Few_shot1.programs.program_045\"\
+    , line 6, in frequency_lists\nKeyError: 1\n"
+  killer: test_frequency_lists_basic (datasets.GPT_4.Few_shot1.tests.test_045.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0019502639770507812
+number_of_tests: 6
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_045
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_045
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.03934311866760254
+  run_tests_with_mutant: 0.004948616027832031
+total_time: 0.04543161392211914

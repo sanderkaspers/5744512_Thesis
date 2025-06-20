@@ -1,0 +1,60 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 66.66666666666666
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_070.py\", line 9, in test_long_words_with_2__writingaprogram__expect__writing\n\
+    \    self.assertEqual(long_words(2, \"writing a program\"), [\"writing\", \"program\"\
+    ])\nAssertionError: Lists differ: ['a'] != ['writing', 'program']\n\nFirst differing\
+    \ element 0:\n'a'\n'writing'\n\nSecond list contains 1 additional elements.\n\
+    First extra element 1:\n'program'\n\n- ['a']\n+ ['writing', 'program']\n"
+  killer: test_long_words_with_2__writingaprogram__expect__writing (datasets.mbpp.tests.test_070.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_070 ''
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0019931793212890625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_070.py\", line 9, in test_long_words_with_2__writingaprogram__expect__writing\n\
+    \    self.assertEqual(long_words(2, \"writing a program\"), [\"writing\", \"program\"\
+    ])\nAssertionError: Lists differ: ['a'] != ['writing', 'program']\n\nFirst differing\
+    \ element 0:\n'a'\n'writing'\n\nSecond list contains 1 additional elements.\n\
+    First extra element 1:\n'program'\n\n- ['a']\n+ ['writing', 'program']\n"
+  killer: test_long_words_with_2__writingaprogram__expect__writing (datasets.mbpp.tests.test_070.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0010352134704589844
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 3
+  status: survived
+  tests_run: 3
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_070
+tests:
+- name: datasets.mbpp.tests.test_070
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0009951591491699219
+  mutate_module: 0.03100109100341797
+  run_tests_with_mutant: 0.003028392791748047
+total_time: 0.03600120544433594

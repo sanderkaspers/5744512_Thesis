@@ -1,0 +1,287 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 89.47368421052632
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    AssertionError: 105 != 11\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_051 ''
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 6
+  time: 0.001230001449584961
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    AssertionError: 3.5 != 11\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 6
+  time: 0.0009236335754394531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    AssertionError: 3 != 11\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 6
+  time: 0.0010678768157958984
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    AssertionError: 19 != 11\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 6
+  time: 0.0010204315185546875
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    AssertionError: 85 != 11\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 6
+  time: 0.0005428791046142578
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    AssertionError: 0 != 11\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 6
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    AssertionError: -3 != 11\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 6
+  time: 0.0010480880737304688
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    AssertionError: 5 != 11\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 6
+  time: 0.0009763240814208984
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    \  File \"datasets.GPT_4.Few_shot1.programs.program_051\", line 6, in eulerian_num\n\
+    \  File \"datasets.GPT_4.Few_shot1.programs.program_051\", line 6, in eulerian_num\n\
+    \  File \"datasets.GPT_4.Few_shot1.programs.program_051\", line 6, in eulerian_num\n\
+    ZeroDivisionError: division by zero\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 6
+  time: 0.001051187515258789
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    \  File \"datasets.GPT_4.Few_shot1.programs.program_051\", line 6, in eulerian_num\n\
+    \  File \"datasets.GPT_4.Few_shot1.programs.program_051\", line 6, in eulerian_num\n\
+    \  File \"datasets.GPT_4.Few_shot1.programs.program_051\", line 6, in eulerian_num\n\
+    ZeroDivisionError: integer division or modulo by zero\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 6
+  time: 0.0019228458404541016
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    AssertionError: 39 != 11\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 11
+  status: killed
+  tests_run: 6
+  time: 0.0010044574737548828
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 15, in test_eulerian_num_typical\n    def\
+    \ test_eulerian_num_typical(self): self.assertEqual(eulerian_num(4, 2), 11)\n\
+    \  File \"datasets.GPT_4.Few_shot1.programs.program_051\", line 6, in eulerian_num\n\
+    \  File \"datasets.GPT_4.Few_shot1.programs.program_051\", line 6, in eulerian_num\n\
+    \  File \"datasets.GPT_4.Few_shot1.programs.program_051\", line 6, in eulerian_num\n\
+    \  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Few_shot1.programs.program_051\"\
+    , line 2, in eulerian_num\nRecursionError: maximum recursion depth exceeded in\
+    \ comparison\n"
+  killer: test_eulerian_num_typical (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 12
+  status: killed
+  tests_run: 6
+  time: 0.2263469696044922
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 5, in test_eulerian_num_base_zero_zero\n\
+    \    def test_eulerian_num_base_zero_zero(self): self.assertEqual(eulerian_num(0,\
+    \ 0), 0)\nAssertionError: 1 != 0\n"
+  killer: test_eulerian_num_base_zero_zero (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 13
+  status: killed
+  tests_run: 1
+  time: 0.001008749008178711
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 7, in test_eulerian_num_m_equals_zero\n\
+    \    def test_eulerian_num_m_equals_zero(self): self.assertEqual(eulerian_num(3,\
+    \ 0), 1)\nAssertionError: 5 != 1\n"
+  killer: test_eulerian_num_m_equals_zero (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 14
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 15
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 7, in test_eulerian_num_m_equals_zero\n\
+    \    def test_eulerian_num_m_equals_zero(self): self.assertEqual(eulerian_num(3,\
+    \ 0), 1)\nAssertionError: 0 != 1\n"
+  killer: test_eulerian_num_m_equals_zero (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 16
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 17
+  status: survived
+  tests_run: 7
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 7, in test_eulerian_num_m_equals_zero\n\
+    \    def test_eulerian_num_m_equals_zero(self): self.assertEqual(eulerian_num(3,\
+    \ 0), 1)\nAssertionError: 0 != 1\n"
+  killer: test_eulerian_num_m_equals_zero (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 18
+  status: killed
+  tests_run: 3
+  time: 0.000919342041015625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_051.py\", line 7, in test_eulerian_num_m_equals_zero\n\
+    \    def test_eulerian_num_m_equals_zero(self): self.assertEqual(eulerian_num(3,\
+    \ 0), 1)\nAssertionError: 5 != 1\n"
+  killer: test_eulerian_num_m_equals_zero (datasets.GPT_4.Few_shot1.tests.test_051.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 19
+  status: killed
+  tests_run: 3
+  time: 0.0009965896606445312
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_051
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_051
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.321319580078125
+  run_tests_with_mutant: 0.2459545135498047
+total_time: 0.32691407203674316

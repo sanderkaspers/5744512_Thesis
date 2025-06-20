@@ -1,0 +1,29 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_043
+   - tests: datasets.o3.tests.test_043
+[*] 6 tests passed:
+   - datasets.o3.tests.test_043 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COD datasets.o3.programs.program_043: [0.00000 s] killed by test_all_equal_lengths (datasets.o3.tests.test_043.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_043.py", line 12, in test_all_equal_lengths
+    self.assertEqual(min_list_length([[1],[2],[3]]), 1)
+  File "datasets.o3.programs.program_043", line 4, in min_list_length
+ValueError: lists must not be empty
+
+   - [#   2] COI datasets.o3.programs.program_043: [0.00000 s] killed by test_all_equal_lengths (datasets.o3.tests.test_043.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_043.py", line 12, in test_all_equal_lengths
+    self.assertEqual(min_list_length([[1],[2],[3]]), 1)
+  File "datasets.o3.programs.program_043", line 4, in min_list_length
+ValueError: lists must not be empty
+
+[*] Mutation score [0.03161 s]: 100.0%
+   - all: 2
+   - killed: 2 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

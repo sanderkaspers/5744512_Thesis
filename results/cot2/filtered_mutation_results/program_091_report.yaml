@@ -1,0 +1,96 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_091.py\", line 5, in test_all_even\n    def test_all_even(self):\
+    \ self.assertEqual(find_even_pair([2, 4, 6, 8]), 6)\nAssertionError: 14 != 6\n"
+  killer: test_all_even (datasets.GPT_4.Chain_of_thought2.tests.test_091.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought2.programs.program_091 ''
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_091.py\", line 5, in test_all_even\n    def test_all_even(self):\
+    \ self.assertEqual(find_even_pair([2, 4, 6, 8]), 6)\nAssertionError: 0 != 6\n"
+  killer: test_all_even (datasets.GPT_4.Chain_of_thought2.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_091.py\", line 5, in test_all_even\n    def test_all_even(self):\
+    \ self.assertEqual(find_even_pair([2, 4, 6, 8]), 6)\nAssertionError: -6 != 6\n"
+  killer: test_all_even (datasets.GPT_4.Chain_of_thought2.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ASR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.015548467636108398
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_091.py\", line 5, in test_all_even\n    def test_all_even(self):\
+    \ self.assertEqual(find_even_pair([2, 4, 6, 8]), 6)\nAssertionError: 0 != 6\n"
+  killer: test_all_even (datasets.GPT_4.Chain_of_thought2.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_091.py\", line 7, in test_all_odd\n    def test_all_odd(self):\
+    \ self.assertEqual(find_even_pair([1, 3, 5]), 3)\nAssertionError: 0 != 3\n"
+  killer: test_all_odd (datasets.GPT_4.Chain_of_thought2.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_091.py\", line 5, in test_all_even\n    def test_all_even(self):\
+    \ self.assertEqual(find_even_pair([2, 4, 6, 8]), 6)\nAssertionError: 0 != 6\n"
+  killer: test_all_even (datasets.GPT_4.Chain_of_thought2.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Chain_of_thought2.programs.program_091
+tests:
+- name: datasets.GPT_4.Chain_of_thought2.tests.test_091
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.05759167671203613
+  run_tests_with_mutant: 0.015548467636108398
+total_time: 0.05759167671203613

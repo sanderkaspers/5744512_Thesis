@@ -1,0 +1,28 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_038
+   - tests: datasets.o3.tests.test_038
+[*] 7 tests passed:
+   - datasets.o3.tests.test_038 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.o3.programs.program_038: [0.00000 s] killed by test_contains_empty_string (datasets.o3.tests.test_038.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_038.py", line 12, in test_contains_empty_string
+    self.assertEqual(len_log(["", "a", "abcde"]), 5)
+AssertionError: 0 != 5
+
+   - [#   2] ROR datasets.o3.programs.program_038: [0.00000 s] killed by test_contains_empty_string (datasets.o3.tests.test_038.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_038.py", line 12, in test_contains_empty_string
+    self.assertEqual(len_log(["", "a", "abcde"]), 5)
+AssertionError: 0 != 5
+
+   - [#   3] ROR datasets.o3.programs.program_038: [0.00000 s] survived
+[*] Mutation score [0.04734 s]: 66.7%
+   - all: 3
+   - killed: 2 (66.7%)
+   - survived: 1 (33.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

@@ -1,0 +1,71 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_010.py\", line 15, in test_all_same_digits\n    self.assertEqual(find_Max_Num([9,\
+    \ 9, 9]), 999)\nAssertionError: 9.99 != 999\n"
+  killer: test_all_same_digits (datasets.o3.tests.test_010.TestVersion)
+  module: &id001 !!python/module:datasets.o3.programs.program_010 ''
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_010.py\", line 15, in test_all_same_digits\n    self.assertEqual(find_Max_Num([9,\
+    \ 9, 9]), 999)\nAssertionError: 9 != 999\n"
+  killer: test_all_same_digits (datasets.o3.tests.test_010.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_010.py\", line 15, in test_all_same_digits\n    self.assertEqual(find_Max_Num([9,\
+    \ 9, 9]), 999)\nAssertionError: 26561399573183617310071262330187655387299[50 chars]00009\
+    \ != 999\n"
+  killer: test_all_same_digits (datasets.o3.tests.test_010.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_010.py\", line 15, in test_all_same_digits\n    self.assertEqual(find_Max_Num([9,\
+    \ 9, 9]), 999)\nAssertionError: 801 != 999\n"
+  killer: test_all_same_digits (datasets.o3.tests.test_010.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 6
+targets:
+- datasets.o3.programs.program_010
+tests:
+- name: datasets.o3.tests.test_010
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.031670331954956055
+  run_tests_with_mutant: 0.0
+total_time: 0.04457497596740723

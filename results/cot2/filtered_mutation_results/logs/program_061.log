@@ -1,0 +1,21 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought2.programs.program_061
+   - tests: datasets.GPT_4.Chain_of_thought2.tests.test_061
+[*] 8 tests passed:
+   - datasets.GPT_4.Chain_of_thought2.tests.test_061 [0.00020 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.GPT_4.Chain_of_thought2.programs.program_061: [0.00208 s] killed by test_both_alpha (datasets.GPT_4.Chain_of_thought2.tests.test_061.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_061.py", line 9, in test_both_alpha
+    def test_both_alpha(self): self.assertEqual(list_to_float([['x', 'y']]), [('x', 'y')])
+  File "datasets.GPT_4.Chain_of_thought2.programs.program_061", line 9, in list_to_float
+ValueError: could not convert string to float: 'x'
+
+[*] Mutation score [0.02845 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

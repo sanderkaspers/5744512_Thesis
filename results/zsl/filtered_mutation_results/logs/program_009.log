@@ -1,0 +1,48 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot.programs.program_009
+   - tests: datasets.GPT_4.Zero_shot.tests.test_009
+[*] 7 tests passed:
+   - datasets.GPT_4.Zero_shot.tests.test_009 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00000 s] survived
+   - [#   2] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00000 s] survived
+   - [#   3] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00000 s] survived
+   - [#   4] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00000 s] survived
+   - [#   5] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00000 s] survived
+   - [#   6] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00000 s] survived
+   - [#   7] AOR datasets.GPT_4.Zero_shot.programs.program_009: [5.04541 s] timeout
+   - [#   8] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00196 s] killed by test_multiple_spaces_6 (datasets.GPT_4.Zero_shot.tests.test_009.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_009.py", line 33, in test_multiple_spaces_6
+    assert check(n) == expected_output
+  File "datasets.GPT_4.Zero_shot.programs.program_009", line 8, in check
+ZeroDivisionError: division by zero
+
+   - [#   9] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00095 s] killed by test_multiple_spaces_6 (datasets.GPT_4.Zero_shot.tests.test_009.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_009.py", line 33, in test_multiple_spaces_6
+    assert check(n) == expected_output
+  File "datasets.GPT_4.Zero_shot.programs.program_009", line 8, in check
+ZeroDivisionError: integer division or modulo by zero
+
+   - [#  10] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00000 s] survived
+   - [#  11] AOR datasets.GPT_4.Zero_shot.programs.program_009: [0.00000 s] survived
+   - [#  12] COI datasets.GPT_4.Zero_shot.programs.program_009: [5.03401 s] timeout
+   - [#  13] ROR datasets.GPT_4.Zero_shot.programs.program_009: [5.03622 s] timeout
+   - [#  14] ROR datasets.GPT_4.Zero_shot.programs.program_009: [5.04003 s] timeout
+   - [#  15] ROR datasets.GPT_4.Zero_shot.programs.program_009: [0.00000 s] killed by test_multiple_spaces (datasets.GPT_4.Zero_shot.tests.test_009.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_009.py", line 8, in test_multiple_spaces
+    assert check(n) == expected_output
+AssertionError
+
+[*] Mutation score [20.23352 s]: 46.7%
+   - all: 15
+   - killed: 3 (20.0%)
+   - survived: 8 (53.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 4 (26.7%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

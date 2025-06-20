@@ -1,0 +1,33 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_072.py\", line 12, in test_max_occurrences_with_10_20_20_30_40_90_80_50_30_20_50_10_expect__20\n\
+    \    self.assertEqual(max_occurrences([10,20,20,30,40,90,80,50,30,20,50,10]),\
+    \ (20))\nAssertionError: 40 != 20\n"
+  killer: test_max_occurrences_with_10_20_20_30_40_90_80_50_30_20_50_10_expect__20
+    (datasets.mbpp.tests.test_072.TestVersion)
+  module: !!python/module:datasets.mbpp.programs.program_072 ''
+  mutations:
+  - lineno: 5
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.002008199691772461
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_072
+tests:
+- name: datasets.mbpp.tests.test_072
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.02788996696472168
+  run_tests_with_mutant: 0.002008199691772461
+total_time: 0.03500032424926758

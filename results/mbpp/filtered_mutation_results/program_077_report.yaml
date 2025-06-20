@@ -1,0 +1,100 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_077.py\", line 6, in test_zero_count_with_0s_expect_0_18\n    self.assertEqual(round(zero_count([0,\
+    \ 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 2), 0.18)\nAssertionError: 0 != 0.18\n"
+  killer: test_zero_count_with_0s_expect_0_18 (datasets.mbpp.tests.test_077.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_077 ''
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.001013040542602539
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_077.py\", line 6, in test_zero_count_with_0s_expect_0_18\n    self.assertEqual(round(zero_count([0,\
+    \ 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 2), 0.18)\nAssertionError: 22 != 0.18\n"
+  killer: test_zero_count_with_0s_expect_0_18 (datasets.mbpp.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009989738464355469
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_077.py\", line 6, in test_zero_count_with_0s_expect_0_18\n    self.assertEqual(round(zero_count([0,\
+    \ 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 2), 0.18)\nAssertionError: 0.13 !=\
+    \ 0.18\n"
+  killer: test_zero_count_with_0s_expect_0_18 (datasets.mbpp.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0009996891021728516
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_077.py\", line 6, in test_zero_count_with_0s_expect_0_18\n    self.assertEqual(round(zero_count([0,\
+    \ 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 2), 0.18)\nAssertionError: -0.13 !=\
+    \ 0.18\n"
+  killer: test_zero_count_with_0s_expect_0_18 (datasets.mbpp.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ASR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0005061626434326172
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_077.py\", line 6, in test_zero_count_with_0s_expect_0_18\n    self.assertEqual(round(zero_count([0,\
+    \ 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 2), 0.18)\nAssertionError: 5.5 !=\
+    \ 0.18\n"
+  killer: test_zero_count_with_0s_expect_0_18 (datasets.mbpp.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010013580322265625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_077.py\", line 6, in test_zero_count_with_0s_expect_0_18\n    self.assertEqual(round(zero_count([0,\
+    \ 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 2), 0.18)\nAssertionError: 5.5 !=\
+    \ 0.18\n"
+  killer: test_zero_count_with_0s_expect_0_18 (datasets.mbpp.tests.test_077.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_077
+tests:
+- name: datasets.mbpp.tests.test_077
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0010006427764892578
+  mutate_module: 0.05026054382324219
+  run_tests_with_mutant: 0.00552058219909668
+total_time: 0.05526137351989746

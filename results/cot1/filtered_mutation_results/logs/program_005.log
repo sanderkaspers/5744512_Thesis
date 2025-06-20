@@ -1,0 +1,34 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought1.programs.program_005
+   - tests: datasets.GPT_4.Chain_of_thought1.tests.test_005
+[*] 6 tests passed:
+   - datasets.GPT_4.Chain_of_thought1.tests.test_005 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Chain_of_thought1.programs.program_005: [0.00101 s] killed by test_large_input (datasets.GPT_4.Chain_of_thought1.tests.test_005.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_005.py", line 11, in test_large_input
+    def test_large_input(self): self.assertEqual(square_perimeter(10**6), 4000000)
+AssertionError: 4e-06 != 4000000
+
+   - [#   2] AOR datasets.GPT_4.Chain_of_thought1.programs.program_005: [0.00098 s] killed by test_large_input (datasets.GPT_4.Chain_of_thought1.tests.test_005.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_005.py", line 11, in test_large_input
+    def test_large_input(self): self.assertEqual(square_perimeter(10**6), 4000000)
+AssertionError: 0 != 4000000
+
+   - [#   3] AOR datasets.GPT_4.Chain_of_thought1.programs.program_005: [4.64158 s] killed by test_large_input (datasets.GPT_4.Chain_of_thought1.tests.test_005.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_005.py", line 11, in test_large_input
+    def test_large_input(self): self.assertEqual(square_perimeter(10**6), 4000000)
+AssertionError: 98022993770695674158932757872977379981744[602014 chars]09376 != 4000000
+
+[*] Mutation score [4.66953 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

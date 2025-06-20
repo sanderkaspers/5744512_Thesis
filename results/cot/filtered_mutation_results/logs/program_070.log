@@ -1,0 +1,55 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought.programs.program_070
+   - tests: datasets.GPT_4.Chain_of_thought.tests.test_070
+[*] 10 tests passed:
+   - datasets.GPT_4.Chain_of_thought.tests.test_070 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.GPT_4.Chain_of_thought.programs.program_070: [0.00000 s] killed by test_all_words_longer_than_n (datasets.GPT_4.Chain_of_thought.tests.test_070.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_070.py", line 12, in test_all_words_longer_than_n
+    self.assertEqual(long_words(1, 'longer words here'), ['longer', 'words', 'here'])
+AssertionError: Lists differ: [] != ['longer', 'words', 'here']
+
+Second list contains 3 additional elements.
+First extra element 0:
+'longer'
+
+- []
++ ['longer', 'words', 'here']
+
+   - [#   2] ROR datasets.GPT_4.Chain_of_thought.programs.program_070: [0.00000 s] killed by test_all_words_longer_than_n (datasets.GPT_4.Chain_of_thought.tests.test_070.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_070.py", line 12, in test_all_words_longer_than_n
+    self.assertEqual(long_words(1, 'longer words here'), ['longer', 'words', 'here'])
+AssertionError: Lists differ: [] != ['longer', 'words', 'here']
+
+Second list contains 3 additional elements.
+First extra element 0:
+'longer'
+
+- []
++ ['longer', 'words', 'here']
+
+   - [#   3] ROR datasets.GPT_4.Chain_of_thought.programs.program_070: [0.00000 s] killed by test_exact_length_match (datasets.GPT_4.Chain_of_thought.tests.test_070.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_070.py", line 15, in test_exact_length_match
+    self.assertEqual(long_words(4, 'This is a test'), [])
+AssertionError: Lists differ: ['This', 'test'] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+'This'
+
+- ['This', 'test']
++ []
+
+[*] Mutation score [0.04767 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

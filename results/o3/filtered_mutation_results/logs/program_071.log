@@ -1,0 +1,84 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_071
+   - tests: datasets.o3.tests.test_071
+[*] 6 tests passed:
+   - datasets.o3.tests.test_071 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.o3.programs.program_071: [0.00000 s] killed by test_five_by_five_magic_square (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 26, in test_five_by_five_magic_square
+    self.assertTrue(magic_square_test(square))
+AssertionError: False is not true
+
+   - [#   2] AOD datasets.o3.programs.program_071: [0.00000 s] killed by test_five_by_five_magic_square (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 26, in test_five_by_five_magic_square
+    self.assertTrue(magic_square_test(square))
+AssertionError: False is not true
+
+   - [#   3] AOR datasets.o3.programs.program_071: [0.01588 s] killed by test_five_by_five_magic_square (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 26, in test_five_by_five_magic_square
+    self.assertTrue(magic_square_test(square))
+  File "datasets.o3.programs.program_071", line 13, in magic_square_test
+IndexError: list index out of range
+
+   - [#   4] AOR datasets.o3.programs.program_071: [0.00000 s] killed by test_five_by_five_magic_square (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 26, in test_five_by_five_magic_square
+    self.assertTrue(magic_square_test(square))
+AssertionError: False is not true
+
+   - [#   5] AOR datasets.o3.programs.program_071: [0.00000 s] killed by test_five_by_five_magic_square (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 26, in test_five_by_five_magic_square
+    self.assertTrue(magic_square_test(square))
+AssertionError: False is not true
+
+   - [#   6] ASR datasets.o3.programs.program_071: [0.00000 s] killed by test_five_by_five_magic_square (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 26, in test_five_by_five_magic_square
+    self.assertTrue(magic_square_test(square))
+AssertionError: False is not true
+
+   - [#   7] ASR datasets.o3.programs.program_071: [0.00000 s] killed by test_five_by_five_magic_square (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 26, in test_five_by_five_magic_square
+    self.assertTrue(magic_square_test(square))
+AssertionError: False is not true
+
+   - [#   8] COI datasets.o3.programs.program_071: [0.00000 s] killed by test_five_by_five_magic_square (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 26, in test_five_by_five_magic_square
+    self.assertTrue(magic_square_test(square))
+AssertionError: False is not true
+
+   - [#   9] ROR datasets.o3.programs.program_071: [0.00000 s] killed by test_non_magic_square_returns_false (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 11, in test_non_magic_square_returns_false
+    self.assertFalse(magic_square_test(matrix))
+AssertionError: True is not false
+
+   - [#  10] ROR datasets.o3.programs.program_071: [0.00000 s] killed by test_five_by_five_magic_square (datasets.o3.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_071.py", line 26, in test_five_by_five_magic_square
+    self.assertTrue(magic_square_test(square))
+AssertionError: False is not true
+
+[*] Mutation score [0.11337 s]: 100.0%
+   - all: 10
+   - killed: 10 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

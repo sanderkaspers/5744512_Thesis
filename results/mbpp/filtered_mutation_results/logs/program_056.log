@@ -1,0 +1,34 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_056
+   - tests: datasets.mbpp.tests.test_056
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_056 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.mbpp.programs.program_056: [0.00000 s] killed by test_odd_Equivalent_with__011001__6_expect_3 (datasets.mbpp.tests.test_056.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_056.py", line 6, in test_odd_Equivalent_with__011001__6_expect_3
+    self.assertEqual(odd_Equivalent("011001",6), 3)
+AssertionError: -3 != 3
+
+   - [#   2] COI datasets.mbpp.programs.program_056: [0.00000 s] killed by test_odd_Equivalent_with__11011__5_expect_4 (datasets.mbpp.tests.test_056.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_056.py", line 9, in test_odd_Equivalent_with__11011__5_expect_4
+    self.assertEqual(odd_Equivalent("11011",5), 4)
+AssertionError: 1 != 4
+
+   - [#   3] ROR datasets.mbpp.programs.program_056: [0.00000 s] killed by test_odd_Equivalent_with__11011__5_expect_4 (datasets.mbpp.tests.test_056.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_056.py", line 9, in test_odd_Equivalent_with__11011__5_expect_4
+    self.assertEqual(odd_Equivalent("11011",5), 4)
+AssertionError: 1 != 4
+
+[*] Mutation score [0.03283 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

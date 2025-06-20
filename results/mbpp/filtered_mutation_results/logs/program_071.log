@@ -1,0 +1,84 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_071
+   - tests: datasets.mbpp.tests.test_071
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_071 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.mbpp.programs.program_071: [0.00199 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 9, in test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 8]]), True)
+AssertionError: False != True
+
+   - [#   2] AOD datasets.mbpp.programs.program_071: [0.00098 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 9, in test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 8]]), True)
+AssertionError: False != True
+
+   - [#   3] AOR datasets.mbpp.programs.program_071: [0.00100 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_7_expect_False (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 12, in test_magic_square_test_with_2_7_6_9_5_1_4_3_7_expect_False
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 7]]), False)
+  File "datasets.mbpp.programs.program_071", line 13, in magic_square_test
+IndexError: list index out of range
+
+   - [#   4] AOR datasets.mbpp.programs.program_071: [0.00100 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 9, in test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 8]]), True)
+AssertionError: False != True
+
+   - [#   5] AOR datasets.mbpp.programs.program_071: [0.00100 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 9, in test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 8]]), True)
+AssertionError: False != True
+
+   - [#   6] ASR datasets.mbpp.programs.program_071: [0.00100 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 9, in test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 8]]), True)
+AssertionError: False != True
+
+   - [#   7] ASR datasets.mbpp.programs.program_071: [0.00000 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 9, in test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 8]]), True)
+AssertionError: False != True
+
+   - [#   8] COI datasets.mbpp.programs.program_071: [0.00100 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_7_expect_False (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 12, in test_magic_square_test_with_2_7_6_9_5_1_4_3_7_expect_False
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 7]]), False)
+AssertionError: True != False
+
+   - [#   9] ROR datasets.mbpp.programs.program_071: [0.00099 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_7_expect_False (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 12, in test_magic_square_test_with_2_7_6_9_5_1_4_3_7_expect_False
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 7]]), False)
+AssertionError: True != False
+
+   - [#  10] ROR datasets.mbpp.programs.program_071: [0.00056 s] killed by test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True (datasets.mbpp.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 9, in test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 8]]), True)
+AssertionError: False != True
+
+[*] Mutation score [0.10244 s]: 100.0%
+   - all: 10
+   - killed: 10 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

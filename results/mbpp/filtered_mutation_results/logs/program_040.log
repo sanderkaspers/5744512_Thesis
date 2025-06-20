@@ -1,0 +1,50 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_040
+   - tests: datasets.mbpp.tests.test_040
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_040 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.mbpp.programs.program_040: [0.00302 s] killed by test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_040.py", line 6, in test_is_undulating_with__1212121__expect_True
+    self.assertEqual(is_undulating("1212121"), True)
+  File "datasets.mbpp.programs.program_040", line 6, in is_undulating
+IndexError: string index out of range
+
+   - [#   2] COI datasets.mbpp.programs.program_040: [0.00100 s] killed by test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_040.py", line 6, in test_is_undulating_with__1212121__expect_True
+    self.assertEqual(is_undulating("1212121"), True)
+AssertionError: False != True
+
+   - [#   3] COI datasets.mbpp.programs.program_040: [0.00098 s] killed by test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_040.py", line 6, in test_is_undulating_with__1212121__expect_True
+    self.assertEqual(is_undulating("1212121"), True)
+AssertionError: False != True
+
+   - [#   4] ROR datasets.mbpp.programs.program_040: [0.00100 s] killed by test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_040.py", line 6, in test_is_undulating_with__1212121__expect_True
+    self.assertEqual(is_undulating("1212121"), True)
+AssertionError: False != True
+
+   - [#   5] ROR datasets.mbpp.programs.program_040: [0.00000 s] survived
+   - [#   6] ROR datasets.mbpp.programs.program_040: [0.00100 s] killed by test_is_undulating_with__1212121__expect_True (datasets.mbpp.tests.test_040.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_040.py", line 6, in test_is_undulating_with__1212121__expect_True
+    self.assertEqual(is_undulating("1212121"), True)
+AssertionError: False != True
+
+[*] Mutation score [0.05500 s]: 83.3%
+   - all: 6
+   - killed: 5 (83.3%)
+   - survived: 1 (16.7%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

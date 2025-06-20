@@ -1,0 +1,66 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_080.py\", line 11, in test_extract_singly_all_unique\n\
+    \    def test_extract_singly_all_unique(self): self.assertEqual(extract_singly([[1],\
+    \ [2], [3]]), [1, 2, 3])\nAssertionError: Lists differ: [] != [1, 2, 3]\n\nSecond\
+    \ list contains 3 additional elements.\nFirst extra element 0:\n1\n\n- []\n+ [1,\
+    \ 2, 3]\n"
+  killer: test_extract_singly_all_unique (datasets.GPT_4.Few_shot1.tests.test_080.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_080 ''
+  mutations:
+  - lineno: 6
+    operator: COD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.001081228256225586
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_080.py\", line 11, in test_extract_singly_all_unique\n\
+    \    def test_extract_singly_all_unique(self): self.assertEqual(extract_singly([[1],\
+    \ [2], [3]]), [1, 2, 3])\nAssertionError: Lists differ: [] != [1, 2, 3]\n\nSecond\
+    \ list contains 3 additional elements.\nFirst extra element 0:\n1\n\n- []\n+ [1,\
+    \ 2, 3]\n"
+  killer: test_extract_singly_all_unique (datasets.GPT_4.Few_shot1.tests.test_080.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_080.py\", line 11, in test_extract_singly_all_unique\n\
+    \    def test_extract_singly_all_unique(self): self.assertEqual(extract_singly([[1],\
+    \ [2], [3]]), [1, 2, 3])\nAssertionError: Lists differ: [] != [1, 2, 3]\n\nSecond\
+    \ list contains 3 additional elements.\nFirst extra element 0:\n1\n\n- []\n+ [1,\
+    \ 2, 3]\n"
+  killer: test_extract_singly_all_unique (datasets.GPT_4.Few_shot1.tests.test_080.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 6.4849853515625e-05
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_080
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_080
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0010221004486083984
+  mutate_module: 0.03443646430969238
+  run_tests_with_mutant: 0.004004240036010742
+total_time: 0.040435075759887695

@@ -1,0 +1,61 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_005.py\", line 11, in test_large_input\n    def\
+    \ test_large_input(self): self.assertEqual(square_perimeter(10**6), 4000000)\n\
+    AssertionError: 4e-06 != 4000000\n"
+  killer: test_large_input (datasets.GPT_4.Chain_of_thought1.tests.test_005.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_005 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010149478912353516
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_005.py\", line 11, in test_large_input\n    def\
+    \ test_large_input(self): self.assertEqual(square_perimeter(10**6), 4000000)\n\
+    AssertionError: 0 != 4000000\n"
+  killer: test_large_input (datasets.GPT_4.Chain_of_thought1.tests.test_005.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009806156158447266
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_005.py\", line 11, in test_large_input\n    def\
+    \ test_large_input(self): self.assertEqual(square_perimeter(10**6), 4000000)\n\
+    AssertionError: 98022993770695674158932757872977379981744[602014 chars]09376 !=\
+    \ 4000000\n"
+  killer: test_large_input (datasets.GPT_4.Chain_of_thought1.tests.test_005.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 4.6415791511535645
+number_of_tests: 6
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_005
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_005
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0009922981262207031
+  mutate_module: 4.663546800613403
+  run_tests_with_mutant: 4.6435747146606445
+total_time: 4.669525384902954

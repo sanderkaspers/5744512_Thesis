@@ -1,0 +1,249 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 88.23529411764706
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot.programs.program_023 ''
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\n  File \"datasets.GPT_4.Few_shot.programs.program_023\"\
+    , line 7, in comb_sort\nOverflowError: cannot convert float infinity to integer\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\n  File \"datasets.GPT_4.Few_shot.programs.program_023\"\
+    , line 11, in comb_sort\nIndexError: list index out of range\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\nAssertionError: Lists differ:\
+    \ [2, 7, 3, 8, 5] != [2, 3, 5, 7, 8]\n\nFirst differing element 1:\n7\n3\n\n-\
+    \ [2, 7, 3, 8, 5]\n+ [2, 3, 5, 7, 8]\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\nAssertionError: Lists differ:\
+    \ [3, 2, 2, 5, 7] != [2, 3, 5, 7, 8]\n\nFirst differing element 0:\n3\n2\n\n-\
+    \ [3, 2, 2, 5, 7]\n+ [2, 3, 5, 7, 8]\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\nAssertionError: Lists differ:\
+    \ [7, 7, 8, 8, 8] != [2, 3, 5, 7, 8]\n\nFirst differing element 0:\n7\n2\n\n-\
+    \ [7, 7, 8, 8, 8]\n+ [2, 3, 5, 7, 8]\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\n  File \"datasets.GPT_4.Few_shot.programs.program_023\"\
+    , line 11, in comb_sort\nIndexError: list index out of range\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: ASR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\nAssertionError: Lists differ:\
+    \ [5, 3, 2, 8, 7] != [2, 3, 5, 7, 8]\n\nFirst differing element 0:\n5\n2\n\n-\
+    \ [5, 3, 2, 8, 7]\n+ [2, 3, 5, 7, 8]\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\nAssertionError: Lists differ:\
+    \ [5, 3, 2, 8, 7] != [2, 3, 5, 7, 8]\n\nFirst differing element 0:\n5\n2\n\n-\
+    \ [5, 3, 2, 8, 7]\n+ [2, 3, 5, 7, 8]\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: COI
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: COI
+  number: 10
+  status: timeout
+  tests_run: null
+  time: 5.043229103088379
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\nAssertionError: Lists differ:\
+    \ [5, 3, 2, 8, 7] != [2, 3, 5, 7, 8]\n\nFirst differing element 0:\n5\n2\n\n-\
+    \ [5, 3, 2, 8, 7]\n+ [2, 3, 5, 7, 8]\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: LCR
+  number: 11
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\nAssertionError: Lists differ:\
+    \ [5, 3, 2, 8, 7] != [2, 3, 5, 7, 8]\n\nFirst differing element 0:\n5\n2\n\n-\
+    \ [5, 3, 2, 8, 7]\n+ [2, 3, 5, 7, 8]\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 12
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 13
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\nAssertionError: Lists differ:\
+    \ [5, 3, 2, 8, 7] != [2, 3, 5, 7, 8]\n\nFirst differing element 0:\n5\n2\n\n-\
+    \ [5, 3, 2, 8, 7]\n+ [2, 3, 5, 7, 8]\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: ROR
+  number: 14
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\n  File \"datasets.GPT_4.Few_shot.programs.program_023\"\
+    , line 11, in comb_sort\nIndexError: list index out of range\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: ROR
+  number: 15
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_023.py\", line 6, in test_case_1\n    self.assertEqual(comb_sort([5,\
+    \ 3, 2, 8, 7]), [2, 3, 5, 7, 8]) # Unsorted list)\nAssertionError: Lists differ:\
+    \ [8, 7, 5, 3, 2] != [2, 3, 5, 7, 8]\n\nFirst differing element 0:\n8\n2\n\n-\
+    \ [8, 7, 5, 3, 2]\n+ [2, 3, 5, 7, 8]\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_023.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: ROR
+  number: 16
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: ROR
+  number: 17
+  status: timeout
+  tests_run: null
+  time: 5.042590856552124
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Few_shot.programs.program_023
+tests:
+- name: datasets.GPT_4.Few_shot.tests.test_023
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.009511947631835938
+  create_target_ast: 0.0
+  mutate_module: 10.207117080688477
+  run_tests_with_mutant: 10.106484174728394
+total_time: 10.222738265991211

@@ -1,0 +1,87 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot2.programs.program_085
+   - tests: datasets.GPT_4.Few_shot2.tests.test_085
+[*] 9 tests passed:
+   - datasets.GPT_4.Few_shot2.tests.test_085 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] killed by test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_085.py", line 9, in test_find_solution_invalid_combo
+    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5, 7, 1))
+AssertionError: (3, -2) is not false
+
+   - [#   2] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] killed by test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_085.py", line 9, in test_find_solution_invalid_combo
+    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5, 7, 1))
+AssertionError: (3, -2) is not false
+
+   - [#   3] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#   4] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#   5] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#   6] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#   7] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#   8] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] killed by test_find_solution_valid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_085.py", line 5, in test_find_solution_valid_combo
+    def test_find_solution_valid_combo(self): self.assertTrue(find_solution(3, 5, 11))
+AssertionError: None is not true
+
+   - [#   9] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#  10] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#  11] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#  12] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#  13] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#  14] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] survived
+   - [#  15] AOR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] killed by test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_085.py", line 9, in test_find_solution_invalid_combo
+    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5, 7, 1))
+AssertionError: (-4, 3) is not false
+
+   - [#  16] COI datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] killed by test_find_solution_exact_multiple (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_085.py", line 7, in test_find_solution_exact_multiple
+    def test_find_solution_exact_multiple(self): self.assertTrue(find_solution(4, 6, 12))
+AssertionError: None is not true
+
+   - [#  17] COI datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] killed by test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_085.py", line 9, in test_find_solution_invalid_combo
+    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5, 7, 1))
+AssertionError: (0, 0) is not false
+
+   - [#  18] ROR datasets.GPT_4.Few_shot2.programs.program_085: [0.01400 s] killed by test_find_solution_exact_multiple (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_085.py", line 7, in test_find_solution_exact_multiple
+    def test_find_solution_exact_multiple(self): self.assertTrue(find_solution(4, 6, 12))
+AssertionError: None is not true
+
+   - [#  19] ROR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] killed by test_find_solution_zero_target (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_085.py", line 11, in test_find_solution_zero_target
+    def test_find_solution_zero_target(self): self.assertTrue(find_solution(5, 3, 0))
+AssertionError: None is not true
+
+   - [#  20] ROR datasets.GPT_4.Few_shot2.programs.program_085: [0.00000 s] killed by test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_085.py", line 9, in test_find_solution_invalid_combo
+    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5, 7, 1))
+AssertionError: (0, 0) is not false
+
+[*] Mutation score [0.10758 s]: 45.0%
+   - all: 20
+   - killed: 9 (45.0%)
+   - survived: 11 (55.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

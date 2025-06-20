@@ -1,0 +1,46 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_043.py\", line 12, in test_all_equal_lengths\n    self.assertEqual(min_list_length([[1],[2],[3]]),\
+    \ 1)\n  File \"datasets.o3.programs.program_043\", line 4, in min_list_length\n\
+    ValueError: lists must not be empty\n"
+  killer: test_all_equal_lengths (datasets.o3.tests.test_043.TestVersion)
+  module: &id001 !!python/module:datasets.o3.programs.program_043 ''
+  mutations:
+  - lineno: 3
+    operator: COD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_043.py\", line 12, in test_all_equal_lengths\n    self.assertEqual(min_list_length([[1],[2],[3]]),\
+    \ 1)\n  File \"datasets.o3.programs.program_043\", line 4, in min_list_length\n\
+    ValueError: lists must not be empty\n"
+  killer: test_all_equal_lengths (datasets.o3.tests.test_043.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 6
+targets:
+- datasets.o3.programs.program_043
+tests:
+- name: datasets.o3.tests.test_043
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.031612396240234375
+  run_tests_with_mutant: 0.0
+total_time: 0.031612396240234375

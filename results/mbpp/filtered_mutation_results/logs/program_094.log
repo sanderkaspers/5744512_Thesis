@@ -1,0 +1,27 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_094
+   - tests: datasets.mbpp.tests.test_094
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_094 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.mbpp.programs.program_094: [0.00000 s] killed by test_sum_range_list_with_2_1_5_6_8_3_4_9_10_11_8_12_5_7_expect_16 (datasets.mbpp.tests.test_094.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_094.py", line 9, in test_sum_range_list_with_2_1_5_6_8_3_4_9_10_11_8_12_5_7_expect_16
+    self.assertEqual(sum_range_list([2,1,5,6,8,3,4,9,10,11,8,12],5,7), 16)
+AssertionError: 3 != 16
+
+   - [#   2] ASR datasets.mbpp.programs.program_094: [0.00000 s] killed by test_sum_range_list_with_2_1_5_6_8_3_4_9_10_11_8_12_5_7_expect_16 (datasets.mbpp.tests.test_094.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_094.py", line 9, in test_sum_range_list_with_2_1_5_6_8_3_4_9_10_11_8_12_5_7_expect_16
+    self.assertEqual(sum_range_list([2,1,5,6,8,3,4,9,10,11,8,12],5,7), 16)
+AssertionError: -16 != 16
+
+[*] Mutation score [0.02415 s]: 100.0%
+   - all: 2
+   - killed: 2 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

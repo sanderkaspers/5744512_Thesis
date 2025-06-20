@@ -1,0 +1,57 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot1.programs.program_079
+   - tests: datasets.GPT_4.Zero_shot1.tests.test_079
+[*] 5 tests passed:
+   - datasets.GPT_4.Zero_shot1.tests.test_079 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Zero_shot1.programs.program_079: [0.00093 s] killed by test_2 (datasets.GPT_4.Zero_shot1.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_079.py", line 9, in test_2
+    self.assertAlmostEqual(circle_circumference(-2), -12.566)
+AssertionError: -1.273277096928219 != -12.566 within 7 places (11.292722903071782 difference)
+
+   - [#   2] AOR datasets.GPT_4.Zero_shot1.programs.program_079: [0.00100 s] killed by test_2 (datasets.GPT_4.Zero_shot1.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_079.py", line 9, in test_2
+    self.assertAlmostEqual(circle_circumference(-2), -12.566)
+AssertionError: -0.0 != -12.566 within 7 places (12.566 difference)
+
+   - [#   3] AOR datasets.GPT_4.Zero_shot1.programs.program_079: [0.00100 s] killed by test_2 (datasets.GPT_4.Zero_shot1.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_079.py", line 9, in test_2
+    self.assertAlmostEqual(circle_circumference(-2), -12.566)
+AssertionError: -17.648822164958244 != -12.566 within 7 places (5.082822164958243 difference)
+
+   - [#   4] AOR datasets.GPT_4.Zero_shot1.programs.program_079: [0.00100 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_079.py", line 6, in test_1
+    self.assertEqual(circle_circumference(0), 0.0)
+  File "datasets.GPT_4.Zero_shot1.programs.program_079", line 2, in circle_circumference
+ZeroDivisionError: float division by zero
+
+   - [#   5] AOR datasets.GPT_4.Zero_shot1.programs.program_079: [0.00101 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_079.py", line 6, in test_1
+    self.assertEqual(circle_circumference(0), 0.0)
+  File "datasets.GPT_4.Zero_shot1.programs.program_079", line 2, in circle_circumference
+ZeroDivisionError: float divmod()
+
+   - [#   6] AOR datasets.GPT_4.Zero_shot1.programs.program_079: [0.00100 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_079.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_079.py", line 6, in test_1
+    self.assertEqual(circle_circumference(0), 0.0)
+AssertionError: 1.0 != 0.0
+
+[*] Mutation score [0.03660 s]: 100.0%
+   - all: 6
+   - killed: 6 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

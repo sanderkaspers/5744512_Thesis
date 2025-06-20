@@ -1,0 +1,124 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 55.55555555555556
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.pynguin.programs.program_020 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_020.py\", line 7, in test_case_0\n    var_0 = module_0.is_Monotonic(dict_0)\n\
+    \  File \"datasets.pynguin.programs.program_020\", line 2, in is_Monotonic\n \
+    \ File \"datasets.pynguin.programs.program_020\", line 2, in <genexpr>\nKeyError:\
+    \ 0\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_020.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.015531063079833984
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_020.py\", line 21, in test_case_2\n    assert var_0 is True\nAssertionError\n"
+  killer: test_case_2 (datasets.pynguin.tests.test_020.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_020.py\", line 20, in test_case_2\n    var_0 = module_0.is_Monotonic(bytes_0)\n\
+    \  File \"datasets.pynguin.programs.program_020\", line 3, in is_Monotonic\n \
+    \ File \"datasets.pynguin.programs.program_020\", line 3, in <genexpr>\nIndexError:\
+    \ index out of range\n"
+  killer: test_case_2 (datasets.pynguin.tests.test_020.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_020.py\", line 21, in test_case_2\n    assert var_0 is True\nAssertionError\n"
+  killer: test_case_2 (datasets.pynguin.tests.test_020.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 5
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 6
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 7
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_020.py\", line 21, in test_case_2\n    assert var_0 is True\nAssertionError\n"
+  killer: test_case_2 (datasets.pynguin.tests.test_020.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 9
+  status: survived
+  tests_run: 3
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.pynguin.programs.program_020
+tests:
+- name: datasets.pynguin.tests.test_020
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.011197566986083984
+  create_target_ast: 0.0
+  mutate_module: 0.07951760292053223
+  run_tests_with_mutant: 0.01781153678894043
+total_time: 0.09523129463195801

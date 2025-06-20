@@ -1,0 +1,33 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_086.py\", line 7, in test_remove_elements_all_removed\n\
+    \    def test_remove_elements_all_removed(self): self.assertEqual(remove_elements([1,\
+    \ 2], [1, 2]), [])\nAssertionError: Lists differ: [1, 2] != []\n\nFirst list contains\
+    \ 2 additional elements.\nFirst extra element 0:\n1\n\n- [1, 2]\n+ []\n"
+  killer: test_remove_elements_all_removed (datasets.GPT_4.Few_shot2.tests.test_086.TestVersion)
+  module: !!python/module:datasets.GPT_4.Few_shot2.programs.program_086 ''
+  mutations:
+  - lineno: 2
+    operator: COD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_086
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_086
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.021224260330200195
+  run_tests_with_mutant: 0.0
+total_time: 0.03180956840515137

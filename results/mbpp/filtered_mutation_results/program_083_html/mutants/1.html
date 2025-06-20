@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MutPy mutation report - mutation #1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js" type="text/javascript"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+    window.setTimeout(function () {
+        
+        $('.line.number2').attr('title', 'COI');
+        
+    }, 0);
+</script>
+
+</head>
+<body>
+    <div class="container">
+        
+<div class="page-header">
+    <h1>Mutation #1</h1>
+</div>
+<h3>Details</h3>
+<ul>
+    <li>module - <code><module 'datasets.mbpp.programs.program_083' from 'C:\\Users\\skaspers\\OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\programs\\program_083.py'></code></li>
+    <li><span class="label label-success">killed</span> by <code>test_find_lists_with__1_2_3_4_5_6_7_8__expect_2 (datasets.mbpp.tests.test_083.TestVersion)</code></li>
+    
+    <li>duration - 0.001 s</li>
+    
+    
+    <li>tests run - 1</li>
+    
+</ul>
+
+<h3>Exception traceback</h3>
+<pre>Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_083.py", line 6, in test_find_lists_with__1_2_3_4_5_6_7_8__expect_2
+    self.assertEqual(find_lists(([1, 2, 3, 4], [5, 6, 7, 8])), 2)
+AssertionError: 1 != 2
+</pre>
+
+<h3>Mutations</h3>
+<ul>
+    
+    <li>COI - line 2</li>
+    
+</ul>
+<h3>Mutant</h3>
+<pre class="brush: python; first-line: 1; highlight: [2]; toolbar: false;">def find_lists(Input):
+    if not (isinstance(Input, list)):
+        return 1
+    else:
+        return len(Input)</pre>
+
+    </div>
+</body>
+</html>

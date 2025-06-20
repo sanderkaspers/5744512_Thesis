@@ -1,0 +1,28 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought2.programs.program_097
+   - tests: datasets.GPT_4.Chain_of_thought2.tests.test_097
+[*] 10 tests passed:
+   - datasets.GPT_4.Chain_of_thought2.tests.test_097 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] BCR datasets.GPT_4.Chain_of_thought2.programs.program_097: [0.01102 s] survived
+   - [#   2] COD datasets.GPT_4.Chain_of_thought2.programs.program_097: [0.00000 s] killed by test_all_booleans (datasets.GPT_4.Chain_of_thought2.tests.test_097.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_097.py", line 11, in test_all_booleans
+    def test_all_booleans(self): self.assertTrue(check_type((True, False, True)))
+AssertionError: False is not true
+
+   - [#   3] COI datasets.GPT_4.Chain_of_thought2.programs.program_097: [0.00000 s] killed by test_all_booleans (datasets.GPT_4.Chain_of_thought2.tests.test_097.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_097.py", line 11, in test_all_booleans
+    def test_all_booleans(self): self.assertTrue(check_type((True, False, True)))
+AssertionError: False is not true
+
+[*] Mutation score [0.03166 s]: 66.7%
+   - all: 3
+   - killed: 2 (66.7%)
+   - survived: 1 (33.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

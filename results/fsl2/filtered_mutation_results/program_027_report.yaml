@@ -1,0 +1,46 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_027.py\", line 5, in test_is_Diff_divisible_by_11\n   \
+    \ def test_is_Diff_divisible_by_11(self): self.assertTrue(is_Diff(22))\nAssertionError:\
+    \ False is not true\n"
+  killer: test_is_Diff_divisible_by_11 (datasets.GPT_4.Few_shot2.tests.test_027.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_027 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010256767272949219
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_027.py\", line 5, in test_is_Diff_divisible_by_11\n   \
+    \ def test_is_Diff_divisible_by_11(self): self.assertTrue(is_Diff(22))\nAssertionError:\
+    \ False is not true\n"
+  killer: test_is_Diff_divisible_by_11 (datasets.GPT_4.Few_shot2.tests.test_027.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009963512420654297
+number_of_tests: 5
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_027
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_027
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0010139942169189453
+  mutate_module: 0.018006563186645508
+  run_tests_with_mutant: 0.0020220279693603516
+total_time: 0.023092985153198242

@@ -1,0 +1,155 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 6, in test_bell_1\n    self.assertEqual(bell_number(0),\
+    \ 1)\n  File \"datasets.GPT_4.Zero_shot2.programs.program_019\", line 3, in bell_number\n\
+    IndexError: list assignment index out of range\n"
+  killer: test_bell_1 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot2.programs.program_019 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 6, in test_bell_1\n    self.assertEqual(bell_number(0),\
+    \ 1)\n  File \"datasets.GPT_4.Zero_shot2.programs.program_019\", line 3, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_1 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 9, in test_bell_2\n    self.assertEqual(bell_number(1),\
+    \ 1)\nAssertionError: 0 != 1\n"
+  killer: test_bell_2 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 9, in test_bell_2\n    self.assertEqual(bell_number(1),\
+    \ 1)\n  File \"datasets.GPT_4.Zero_shot2.programs.program_019\", line 5, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_2 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 9, in test_bell_2\n    self.assertEqual(bell_number(1),\
+    \ 1)\n  File \"datasets.GPT_4.Zero_shot2.programs.program_019\", line 5, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_2 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 12, in test_bell_3\n    self.assertEqual(bell_number(2),\
+    \ 2)\nAssertionError: 0 != 2\n"
+  killer: test_bell_3 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 9, in test_bell_2\n    self.assertEqual(bell_number(1),\
+    \ 1)\n  File \"datasets.GPT_4.Zero_shot2.programs.program_019\", line 7, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_2 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 9, in test_bell_2\n    self.assertEqual(bell_number(1),\
+    \ 1)\n  File \"datasets.GPT_4.Zero_shot2.programs.program_019\", line 7, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_2 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 2
+  time: 0.0006921291351318359
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 12, in test_bell_3\n    self.assertEqual(bell_number(2),\
+    \ 2)\nAssertionError: 0 != 2\n"
+  killer: test_bell_3 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_019.py\", line 9, in test_bell_2\n    self.assertEqual(bell_number(1),\
+    \ 1)\n  File \"datasets.GPT_4.Zero_shot2.programs.program_019\", line 7, in bell_number\n\
+    IndexError: list index out of range\n"
+  killer: test_bell_2 (datasets.GPT_4.Zero_shot2.tests.test_019.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 2
+  time: 0.0
+number_of_tests: 5
+targets:
+- datasets.GPT_4.Zero_shot2.programs.program_019
+tests:
+- name: datasets.GPT_4.Zero_shot2.tests.test_019
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.1105813980102539
+  run_tests_with_mutant: 0.016321897506713867
+total_time: 0.1105813980102539

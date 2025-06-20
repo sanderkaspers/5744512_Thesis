@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot.programs.program_007
+   - tests: datasets.GPT_4.Zero_shot.tests.test_007
+[*] 8 tests passed:
+   - datasets.GPT_4.Zero_shot.tests.test_007 [0.07865 s]
+[*] Start mutants generation and execution:
+   - [#   1] ROR datasets.GPT_4.Zero_shot.programs.program_007: [0.01563 s] killed by test_multiple_spaces_3 (datasets.GPT_4.Zero_shot.tests.test_007.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot\tests\test_007.py", line 18, in test_multiple_spaces_3
+    assert test_duplicate(arraynums) == expected_output
+AssertionError
+
+[*] Mutation score [0.10992 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

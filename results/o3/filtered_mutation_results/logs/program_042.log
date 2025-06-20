@@ -1,0 +1,29 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_042
+   - tests: datasets.o3.tests.test_042
+[*] 6 tests passed:
+   - datasets.o3.tests.test_042 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COD datasets.o3.programs.program_042: [0.00000 s] killed by test_multiple_min_values (datasets.o3.tests.test_042.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_042.py", line 12, in test_multiple_min_values
+    self.assertEqual(first_of_min_second([(7, 2), (8, 2), (1, 5)]), 7)
+  File "datasets.o3.programs.program_042", line 4, in first_of_min_second
+ValueError: pairs must not be empty
+
+   - [#   2] COI datasets.o3.programs.program_042: [0.00000 s] killed by test_multiple_min_values (datasets.o3.tests.test_042.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_042.py", line 12, in test_multiple_min_values
+    self.assertEqual(first_of_min_second([(7, 2), (8, 2), (1, 5)]), 7)
+  File "datasets.o3.programs.program_042", line 4, in first_of_min_second
+ValueError: pairs must not be empty
+
+[*] Mutation score [0.03168 s]: 100.0%
+   - all: 2
+   - killed: 2 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

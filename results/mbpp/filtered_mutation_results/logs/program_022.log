@@ -1,0 +1,42 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_022
+   - tests: datasets.mbpp.tests.test_022
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_022 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] BCR datasets.mbpp.programs.program_022: [0.00200 s] survived
+   - [#   2] COD datasets.mbpp.programs.program_022: [0.00100 s] killed by test_case (datasets.mbpp.tests.test_022.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_022.py", line 6, in test_case
+    self.assertEqual(get_equal([(11, 22, 33), (44, 55, 66)]), True)
+AssertionError: False != True
+
+   - [#   3] COI datasets.mbpp.programs.program_022: [0.00100 s] killed by test_case (datasets.mbpp.tests.test_022.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_022.py", line 6, in test_case
+    self.assertEqual(get_equal([(11, 22, 33), (44, 55, 66)]), True)
+AssertionError: False != True
+
+   - [#   4] ROR datasets.mbpp.programs.program_022: [0.00112 s] killed by test_case (datasets.mbpp.tests.test_022.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_022.py", line 6, in test_case
+    self.assertEqual(get_equal([(11, 22, 33), (44, 55, 66)]), True)
+AssertionError: False != True
+
+   - [#   5] ROR datasets.mbpp.programs.program_022: [0.00100 s] killed by test_case (datasets.mbpp.tests.test_022.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_022.py", line 6, in test_case
+    self.assertEqual(get_equal([(11, 22, 33), (44, 55, 66)]), True)
+AssertionError: False != True
+
+[*] Mutation score [0.06115 s]: 80.0%
+   - all: 5
+   - killed: 4 (80.0%)
+   - survived: 1 (20.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

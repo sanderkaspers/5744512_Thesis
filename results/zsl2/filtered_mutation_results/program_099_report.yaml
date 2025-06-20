@@ -1,0 +1,64 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_099.py\", line 35, in test_bits_10\n    self.assertEqual(count_Set_Bits(42),\
+    \ 3)\nAssertionError: -3 != 3\n"
+  killer: test_bits_10 (datasets.GPT_4.Zero_shot2.tests.test_099.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot2.programs.program_099 ''
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0010192394256591797
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 2
+  status: timeout
+  tests_run: null
+  time: 5.031263113021851
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot2\\tests\\test_099.py\", line 35, in test_bits_10\n    self.assertEqual(count_Set_Bits(42),\
+    \ 3)\nAssertionError: 84 != 3\n"
+  killer: test_bits_10 (datasets.GPT_4.Zero_shot2.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: LOR
+  number: 3
+  status: killed
+  tests_run: 2
+  time: 0.0010077953338623047
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 4
+  status: timeout
+  tests_run: null
+  time: 5.033488512039185
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Zero_shot2.programs.program_099
+tests:
+- name: datasets.GPT_4.Zero_shot2.tests.test_099
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 10.092130899429321
+  run_tests_with_mutant: 10.067782163619995
+total_time: 10.098792552947998

@@ -1,0 +1,94 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 42.857142857142854
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.pynguin.programs.program_068 ''
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 2
+  time: 0.001024484634399414
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 2
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ASR
+  number: 3
+  status: survived
+  tests_run: 2
+  time: 0.0010297298431396484
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_068.py\", line 16, in test_case_1\n    assert var_0 == 0\nAssertionError\n"
+  killer: test_case_1 (datasets.pynguin.tests.test_068.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.0010001659393310547
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_068.py\", line 16, in test_case_1\n    assert var_0 == 0\nAssertionError\n"
+  killer: test_case_1 (datasets.pynguin.tests.test_068.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: LCR
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.0010099411010742188
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_068.py\", line 16, in test_case_1\n    assert var_0 == 0\nAssertionError\n"
+  killer: test_case_1 (datasets.pynguin.tests.test_068.TestAll)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 2
+  time: 0.0019991397857666016
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 7
+  status: survived
+  tests_run: 2
+  time: 0.0009980201721191406
+number_of_tests: 2
+targets:
+- datasets.pynguin.programs.program_068
+tests:
+- name: datasets.pynguin.tests.test_068
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.04843568801879883
+  run_tests_with_mutant: 0.008062124252319336
+total_time: 0.05511665344238281

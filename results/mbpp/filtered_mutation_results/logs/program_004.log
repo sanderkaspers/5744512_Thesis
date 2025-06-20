@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_004
+   - tests: datasets.mbpp.tests.test_004
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_004 [0.00100 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.mbpp.programs.program_004: [0.00100 s] killed by test_text_lowercase_underscore_with_Aaab_abbbc_expect__False_ (datasets.mbpp.tests.test_004.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_004.py", line 12, in test_text_lowercase_underscore_with_Aaab_abbbc_expect__False_
+    self.assertEqual(text_lowercase_underscore("Aaab_abbbc"), (False))
+AssertionError: True != False
+
+[*] Mutation score [0.02496 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

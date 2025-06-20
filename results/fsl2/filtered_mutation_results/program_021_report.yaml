@@ -1,0 +1,268 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 94.44444444444444
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 11, in test_is_sublist_false_non_contiguous\n\
+    \    def test_is_sublist_false_non_contiguous(self): self.assertFalse(is_sublist([1,\
+    \ 2, 3], [1, 3]))\nAssertionError: True is not false\n"
+  killer: test_is_sublist_false_non_contiguous (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_021 ''
+  mutations:
+  - lineno: 13
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 4
+  time: 0.0010180473327636719
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 23, in test_is_sublist_duplicates\n    def\
+    \ test_is_sublist_duplicates(self): self.assertTrue(is_sublist([1, 2, 2, 3], [2,\
+    \ 2]))\nAssertionError: False is not true\n"
+  killer: test_is_sublist_duplicates (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: ASR
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.0010046958923339844
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 15, in test_is_sublist_empty_sublist\n \
+    \   def test_is_sublist_empty_sublist(self): self.assertTrue(is_sublist([1, 2,\
+    \ 3], []))\n  File \"datasets.GPT_4.Few_shot2.programs.program_021\", line 11,\
+    \ in is_sublist\nIndexError: list index out of range\n"
+  killer: test_is_sublist_empty_sublist (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 3
+  time: 0.0020225048065185547
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 11, in test_is_sublist_false_non_contiguous\n\
+    \    def test_is_sublist_false_non_contiguous(self): self.assertFalse(is_sublist([1,\
+    \ 2, 3], [1, 3]))\nAssertionError: True is not false\n"
+  killer: test_is_sublist_false_non_contiguous (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 4
+  time: 0.001003265380859375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 23, in test_is_sublist_duplicates\n    def\
+    \ test_is_sublist_duplicates(self): self.assertTrue(is_sublist([1, 2, 2, 3], [2,\
+    \ 2]))\nAssertionError: False is not true\n"
+  killer: test_is_sublist_duplicates (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.0012922286987304688
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 23, in test_is_sublist_duplicates\n    def\
+    \ test_is_sublist_duplicates(self): self.assertTrue(is_sublist([1, 2, 2, 3], [2,\
+    \ 2]))\n  File \"datasets.GPT_4.Few_shot2.programs.program_021\", line 13, in\
+    \ is_sublist\nIndexError: list index out of range\n"
+  killer: test_is_sublist_duplicates (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: COI
+  number: 6
+  status: killed
+  tests_run: 2
+  time: 0.0010952949523925781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: COI
+  number: 7
+  status: timeout
+  tests_run: null
+  time: 5.046367883682251
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 11, in test_is_sublist_false_non_contiguous\n\
+    \    def test_is_sublist_false_non_contiguous(self): self.assertFalse(is_sublist([1,\
+    \ 2, 3], [1, 3]))\nAssertionError: True is not false\n"
+  killer: test_is_sublist_false_non_contiguous (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: COI
+  number: 8
+  status: killed
+  tests_run: 4
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 23, in test_is_sublist_duplicates\n    def\
+    \ test_is_sublist_duplicates(self): self.assertTrue(is_sublist([1, 2, 2, 3], [2,\
+    \ 2]))\n  File \"datasets.GPT_4.Few_shot2.programs.program_021\", line 13, in\
+    \ is_sublist\nIndexError: list index out of range\n"
+  killer: test_is_sublist_duplicates (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: LCR
+  number: 9
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 15, in test_is_sublist_empty_sublist\n \
+    \   def test_is_sublist_empty_sublist(self): self.assertTrue(is_sublist([1, 2,\
+    \ 3], []))\n  File \"datasets.GPT_4.Few_shot2.programs.program_021\", line 11,\
+    \ in is_sublist\nIndexError: list index out of range\n"
+  killer: test_is_sublist_empty_sublist (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 10
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 11, in test_is_sublist_false_non_contiguous\n\
+    \    def test_is_sublist_false_non_contiguous(self): self.assertFalse(is_sublist([1,\
+    \ 2, 3], [1, 3]))\nAssertionError: True is not false\n"
+  killer: test_is_sublist_false_non_contiguous (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 11
+  status: killed
+  tests_run: 4
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 23, in test_is_sublist_duplicates\n    def\
+    \ test_is_sublist_duplicates(self): self.assertTrue(is_sublist([1, 2, 2, 3], [2,\
+    \ 2]))\nAssertionError: False is not true\n"
+  killer: test_is_sublist_duplicates (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ROR
+  number: 12
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ROR
+  number: 13
+  status: survived
+  tests_run: 10
+  time: 0.015627145767211914
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 23, in test_is_sublist_duplicates\n    def\
+    \ test_is_sublist_duplicates(self): self.assertTrue(is_sublist([1, 2, 2, 3], [2,\
+    \ 2]))\n  File \"datasets.GPT_4.Few_shot2.programs.program_021\", line 13, in\
+    \ is_sublist\nIndexError: list index out of range\n"
+  killer: test_is_sublist_duplicates (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: ROR
+  number: 14
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 23, in test_is_sublist_duplicates\n    def\
+    \ test_is_sublist_duplicates(self): self.assertTrue(is_sublist([1, 2, 2, 3], [2,\
+    \ 2]))\nAssertionError: False is not true\n"
+  killer: test_is_sublist_duplicates (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: ROR
+  number: 15
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 23, in test_is_sublist_duplicates\n    def\
+    \ test_is_sublist_duplicates(self): self.assertTrue(is_sublist([1, 2, 2, 3], [2,\
+    \ 2]))\n  File \"datasets.GPT_4.Few_shot2.programs.program_021\", line 13, in\
+    \ is_sublist\nIndexError: list index out of range\n"
+  killer: test_is_sublist_duplicates (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: ROR
+  number: 16
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 11, in test_is_sublist_false_non_contiguous\n\
+    \    def test_is_sublist_false_non_contiguous(self): self.assertFalse(is_sublist([1,\
+    \ 2, 3], [1, 3]))\nAssertionError: True is not false\n"
+  killer: test_is_sublist_false_non_contiguous (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: ROR
+  number: 17
+  status: killed
+  tests_run: 4
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_021.py\", line 11, in test_is_sublist_false_non_contiguous\n\
+    \    def test_is_sublist_false_non_contiguous(self): self.assertFalse(is_sublist([1,\
+    \ 2, 3], [1, 3]))\nAssertionError: True is not false\n"
+  killer: test_is_sublist_false_non_contiguous (datasets.GPT_4.Few_shot2.tests.test_021.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: ROR
+  number: 18
+  status: killed
+  tests_run: 4
+  time: 0.0
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_021
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_021
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.002034902572631836
+  mutate_module: 5.17948842048645
+  run_tests_with_mutant: 5.071585416793823
+total_time: 5.18608832359314

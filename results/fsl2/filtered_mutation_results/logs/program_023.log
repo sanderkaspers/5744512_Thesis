@@ -1,0 +1,167 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot2.programs.program_023
+   - tests: datasets.GPT_4.Few_shot2.tests.test_023
+[*] 9 tests passed:
+   - datasets.GPT_4.Few_shot2.tests.test_023 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Few_shot2.programs.program_023: [0.00000 s] survived
+   - [#   2] AOR datasets.GPT_4.Few_shot2.programs.program_023: [5.04327 s] timeout
+   - [#   3] AOR datasets.GPT_4.Few_shot2.programs.program_023: [0.00110 s] killed by test_comb_sort_all_equal (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 17, in test_comb_sort_all_equal
+    def test_comb_sort_all_equal(self): self.assertEqual(comb_sort([2, 2, 2]), [2, 2, 2])
+  File "datasets.GPT_4.Few_shot2.programs.program_023", line 11, in comb_sort
+IndexError: list index out of range
+
+   - [#   4] AOR datasets.GPT_4.Few_shot2.programs.program_023: [0.00104 s] killed by test_comb_sort_already_sorted (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 7, in test_comb_sort_already_sorted
+    def test_comb_sort_already_sorted(self): self.assertEqual(comb_sort([1, 2, 3]), [1, 2, 3])
+AssertionError: Lists differ: [1, 3, 2] != [1, 2, 3]
+
+First differing element 1:
+3
+2
+
+- [1, 3, 2]
++ [1, 2, 3]
+
+   - [#   5] AOR datasets.GPT_4.Few_shot2.programs.program_023: [0.00106 s] killed by test_comb_sort_basic (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 5, in test_comb_sort_basic
+    def test_comb_sort_basic(self): self.assertEqual(comb_sort([3, 1, 2]), [1, 2, 3])
+AssertionError: Lists differ: [3, 2, 2] != [1, 2, 3]
+
+First differing element 0:
+3
+1
+
+- [3, 2, 2]
+?  ^     ^
+
++ [1, 2, 3]
+?  ^     ^
+
+
+   - [#   6] AOR datasets.GPT_4.Few_shot2.programs.program_023: [0.00091 s] killed by test_comb_sort_basic (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 5, in test_comb_sort_basic
+    def test_comb_sort_basic(self): self.assertEqual(comb_sort([3, 1, 2]), [1, 2, 3])
+AssertionError: Lists differ: [1, 1, 3] != [1, 2, 3]
+
+First differing element 1:
+1
+2
+
+- [1, 1, 3]
+?     ^
+
++ [1, 2, 3]
+?     ^
+
+
+   - [#   7] ASR datasets.GPT_4.Few_shot2.programs.program_023: [0.00198 s] killed by test_comb_sort_all_equal (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 17, in test_comb_sort_all_equal
+    def test_comb_sort_all_equal(self): self.assertEqual(comb_sort([2, 2, 2]), [2, 2, 2])
+  File "datasets.GPT_4.Few_shot2.programs.program_023", line 11, in comb_sort
+IndexError: list index out of range
+
+   - [#   8] COI datasets.GPT_4.Few_shot2.programs.program_023: [0.00099 s] killed by test_comb_sort_basic (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 5, in test_comb_sort_basic
+    def test_comb_sort_basic(self): self.assertEqual(comb_sort([3, 1, 2]), [1, 2, 3])
+AssertionError: Lists differ: [3, 1, 2] != [1, 2, 3]
+
+First differing element 0:
+3
+1
+
+- [3, 1, 2]
++ [1, 2, 3]
+
+   - [#   9] COI datasets.GPT_4.Few_shot2.programs.program_023: [0.00083 s] killed by test_comb_sort_basic (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 5, in test_comb_sort_basic
+    def test_comb_sort_basic(self): self.assertEqual(comb_sort([3, 1, 2]), [1, 2, 3])
+AssertionError: Lists differ: [3, 1, 2] != [1, 2, 3]
+
+First differing element 0:
+3
+1
+
+- [3, 1, 2]
++ [1, 2, 3]
+
+   - [#  10] COI datasets.GPT_4.Few_shot2.programs.program_023: [5.04561 s] timeout
+   - [#  11] LCR datasets.GPT_4.Few_shot2.programs.program_023: [0.00101 s] killed by test_comb_sort_mixed_numbers (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 21, in test_comb_sort_mixed_numbers
+    def test_comb_sort_mixed_numbers(self): self.assertEqual(comb_sort([3, -1, 0, 5, 2]), [-1, 0, 2, 3, 5])
+AssertionError: Lists differ: [3, -1, 0, 5, 2] != [-1, 0, 2, 3, 5]
+
+First differing element 0:
+3
+-1
+
+- [3, -1, 0, 5, 2]
++ [-1, 0, 2, 3, 5]
+
+   - [#  12] ROR datasets.GPT_4.Few_shot2.programs.program_023: [5.03578 s] timeout
+   - [#  13] ROR datasets.GPT_4.Few_shot2.programs.program_023: [0.00100 s] survived
+   - [#  14] ROR datasets.GPT_4.Few_shot2.programs.program_023: [0.00099 s] killed by test_comb_sort_basic (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 5, in test_comb_sort_basic
+    def test_comb_sort_basic(self): self.assertEqual(comb_sort([3, 1, 2]), [1, 2, 3])
+AssertionError: Lists differ: [3, 1, 2] != [1, 2, 3]
+
+First differing element 0:
+3
+1
+
+- [3, 1, 2]
++ [1, 2, 3]
+
+   - [#  15] ROR datasets.GPT_4.Few_shot2.programs.program_023: [0.00209 s] killed by test_comb_sort_all_equal (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 17, in test_comb_sort_all_equal
+    def test_comb_sort_all_equal(self): self.assertEqual(comb_sort([2, 2, 2]), [2, 2, 2])
+  File "datasets.GPT_4.Few_shot2.programs.program_023", line 11, in comb_sort
+IndexError: list index out of range
+
+   - [#  16] ROR datasets.GPT_4.Few_shot2.programs.program_023: [0.00100 s] killed by test_comb_sort_already_sorted (datasets.GPT_4.Few_shot2.tests.test_023.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_023.py", line 7, in test_comb_sort_already_sorted
+    def test_comb_sort_already_sorted(self): self.assertEqual(comb_sort([1, 2, 3]), [1, 2, 3])
+AssertionError: Lists differ: [3, 2, 1] != [1, 2, 3]
+
+First differing element 0:
+3
+1
+
+- [3, 2, 1]
+?  ^     ^
+
++ [1, 2, 3]
+?  ^     ^
+
+
+   - [#  17] ROR datasets.GPT_4.Few_shot2.programs.program_023: [5.04130 s] timeout
+[*] Mutation score [20.31669 s]: 88.2%
+   - all: 17
+   - killed: 11 (64.7%)
+   - survived: 2 (11.8%)
+   - incompetent: 0 (0.0%)
+   - timeout: 4 (23.5%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

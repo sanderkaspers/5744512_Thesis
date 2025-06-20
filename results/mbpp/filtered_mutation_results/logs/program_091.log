@@ -1,0 +1,55 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_091
+   - tests: datasets.mbpp.tests.test_091
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_091 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.mbpp.programs.program_091: [0.00102 s] killed by test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_091.py", line 12, in test_find_even_pair_with_1_2_3_expect_1
+    self.assertEqual(find_even_pair([1,2,3]), 1)
+AssertionError: 5 != 1
+
+   - [#   2] AOR datasets.mbpp.programs.program_091: [0.00141 s] killed by test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_091.py", line 12, in test_find_even_pair_with_1_2_3_expect_1
+    self.assertEqual(find_even_pair([1,2,3]), 1)
+AssertionError: 0 != 1
+
+   - [#   3] ASR datasets.mbpp.programs.program_091: [0.00000 s] killed by test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_091.py", line 12, in test_find_even_pair_with_1_2_3_expect_1
+    self.assertEqual(find_even_pair([1,2,3]), 1)
+AssertionError: -1 != 1
+
+   - [#   4] COI datasets.mbpp.programs.program_091: [0.00100 s] killed by test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_091.py", line 12, in test_find_even_pair_with_1_2_3_expect_1
+    self.assertEqual(find_even_pair([1,2,3]), 1)
+AssertionError: 2 != 1
+
+   - [#   5] LOR datasets.mbpp.programs.program_091: [0.00100 s] killed by test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_091.py", line 12, in test_find_even_pair_with_1_2_3_expect_1
+    self.assertEqual(find_even_pair([1,2,3]), 1)
+AssertionError: 2 != 1
+
+   - [#   6] ROR datasets.mbpp.programs.program_091: [0.00101 s] killed by test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_091.py", line 12, in test_find_even_pair_with_1_2_3_expect_1
+    self.assertEqual(find_even_pair([1,2,3]), 1)
+AssertionError: 2 != 1
+
+[*] Mutation score [0.06009 s]: 100.0%
+   - all: 6
+   - killed: 6 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

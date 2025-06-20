@@ -1,0 +1,27 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_039
+   - tests: datasets.o3.tests.test_039
+[*] 7 tests passed:
+   - datasets.o3.tests.test_039 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.o3.programs.program_039: [0.00000 s] killed by test_case_sensitivity (datasets.o3.tests.test_039.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_039.py", line 21, in test_case_sensitivity
+    self.assertFalse(find_substring(["Hello"], "hello"))
+AssertionError: True is not false
+
+   - [#   2] COI datasets.o3.programs.program_039: [0.00000 s] killed by test_case_sensitivity (datasets.o3.tests.test_039.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_039.py", line 21, in test_case_sensitivity
+    self.assertFalse(find_substring(["Hello"], "hello"))
+AssertionError: True is not false
+
+[*] Mutation score [0.01674 s]: 100.0%
+   - all: 2
+   - killed: 2 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

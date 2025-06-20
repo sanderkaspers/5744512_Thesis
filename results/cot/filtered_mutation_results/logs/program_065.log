@@ -1,0 +1,126 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought.programs.program_065
+   - tests: datasets.GPT_4.Chain_of_thought.tests.test_065
+[*] 10 tests passed:
+   - datasets.GPT_4.Chain_of_thought.tests.test_065 [3.91193 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00300 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 220 != 504
+
+   - [#   2] AOR datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00198 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 0 != 504
+
+   - [#   3] AOR datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00200 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 0 != 504
+
+   - [#   4] BCR datasets.GPT_4.Chain_of_thought.programs.program_065: [4.09167 s] survived
+   - [#   5] COD datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00101 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 'Input is not an integer!' != 504
+
+   - [#   6] COI datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00200 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 'Input is not an integer!' != 504
+
+   - [#   7] COI datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00132 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 'Input must be bigger than 0!' != 504
+
+   - [#   8] COI datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00000 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 0 != 504
+
+   - [#   9] COI datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00099 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 0 != 504
+
+   - [#  10] COI datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00200 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 48130 != 504
+
+   - [#  11] LCR datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00308 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 48634 != 504
+
+   - [#  12] ROR datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00100 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 'Input must be bigger than 0!' != 504
+
+   - [#  13] ROR datasets.GPT_4.Chain_of_thought.programs.program_065: [1.98478 s] killed by test_limit_as_one (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 12, in test_limit_as_one
+    self.assertEqual(amicable_numbers_sum(1), 0)
+AssertionError: 'Input must be bigger than 0!' != 0
+
+   - [#  14] ROR datasets.GPT_4.Chain_of_thought.programs.program_065: [0.09009 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 0 != 504
+
+   - [#  15] ROR datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00000 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 0 != 504
+
+   - [#  16] ROR datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00000 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 48102 != 504
+
+   - [#  17] ROR datasets.GPT_4.Chain_of_thought.programs.program_065: [0.00000 s] killed by test_amicable_numbers_at_boundary (datasets.GPT_4.Chain_of_thought.tests.test_065.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_065.py", line 27, in test_amicable_numbers_at_boundary
+    self.assertEqual(amicable_numbers_sum(284), 504)
+AssertionError: 34 != 504
+
+[*] Mutation score [10.22782 s]: 94.1%
+   - all: 17
+   - killed: 16 (94.1%)
+   - survived: 1 (5.9%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

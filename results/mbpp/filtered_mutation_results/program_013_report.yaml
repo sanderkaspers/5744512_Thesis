@@ -1,0 +1,137 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_013.py\", line 12, in test_count_Substrings_with_1101112_7_expect_12\n\
+    \    self.assertEqual(count_Substrings('1101112'), 12)\nAssertionError: 0 != 12\n"
+  killer: test_count_Substrings_with_1101112_7_expect_12 (datasets.mbpp.tests.test_013.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_013 ''
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.015707731246948242
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_013.py\", line 12, in test_count_Substrings_with_1101112_7_expect_12\n\
+    \    self.assertEqual(count_Substrings('1101112'), 12)\nAssertionError: 0 != 12\n"
+  killer: test_count_Substrings_with_1101112_7_expect_12 (datasets.mbpp.tests.test_013.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_013.py\", line 12, in test_count_Substrings_with_1101112_7_expect_12\n\
+    \    self.assertEqual(count_Substrings('1101112'), 12)\nAssertionError: 0 != 12\n"
+  killer: test_count_Substrings_with_1101112_7_expect_12 (datasets.mbpp.tests.test_013.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_013.py\", line 12, in test_count_Substrings_with_1101112_7_expect_12\n\
+    \    self.assertEqual(count_Substrings('1101112'), 12)\nAssertionError: 3 != 12\n"
+  killer: test_count_Substrings_with_1101112_7_expect_12 (datasets.mbpp.tests.test_013.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_013.py\", line 12, in test_count_Substrings_with_1101112_7_expect_12\n\
+    \    self.assertEqual(count_Substrings('1101112'), 12)\nAssertionError: 3 != 12\n"
+  killer: test_count_Substrings_with_1101112_7_expect_12 (datasets.mbpp.tests.test_013.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_013.py\", line 12, in test_count_Substrings_with_1101112_7_expect_12\n\
+    \    self.assertEqual(count_Substrings('1101112'), 12)\nAssertionError: 6 != 12\n"
+  killer: test_count_Substrings_with_1101112_7_expect_12 (datasets.mbpp.tests.test_013.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ASR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_013.py\", line 12, in test_count_Substrings_with_1101112_7_expect_12\n\
+    \    self.assertEqual(count_Substrings('1101112'), 12)\nAssertionError: 0 != 12\n"
+  killer: test_count_Substrings_with_1101112_7_expect_12 (datasets.mbpp.tests.test_013.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: ASR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_013.py\", line 12, in test_count_Substrings_with_1101112_7_expect_12\n\
+    \    self.assertEqual(count_Substrings('1101112'), 12)\nAssertionError: -12 !=\
+    \ 12\n"
+  killer: test_count_Substrings_with_1101112_7_expect_12 (datasets.mbpp.tests.test_013.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: ASR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_013.py\", line 12, in test_count_Substrings_with_1101112_7_expect_12\n\
+    \    self.assertEqual(count_Substrings('1101112'), 12)\nAssertionError: -6 !=\
+    \ 12\n"
+  killer: test_count_Substrings_with_1101112_7_expect_12 (datasets.mbpp.tests.test_013.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: ASR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_013
+tests:
+- name: datasets.mbpp.tests.test_013
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.07930445671081543
+  run_tests_with_mutant: 0.03888845443725586
+total_time: 0.07930445671081543

@@ -1,0 +1,58 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_011.py\", line 6, in test_opposite_Signs_with_1__2_expect_True\n \
+    \   self.assertEqual(opposite_Signs(1,-2), True)\nAssertionError: False != True\n"
+  killer: test_opposite_Signs_with_1__2_expect_True (datasets.mbpp.tests.test_011.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_011 ''
+  mutations:
+  - lineno: 2
+    operator: LOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_011.py\", line 6, in test_opposite_Signs_with_1__2_expect_True\n \
+    \   self.assertEqual(opposite_Signs(1,-2), True)\nAssertionError: False != True\n"
+  killer: test_opposite_Signs_with_1__2_expect_True (datasets.mbpp.tests.test_011.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_011.py\", line 12, in test_opposite_Signs_with__10__10_expect_False\n\
+    \    self.assertEqual(opposite_Signs(-10,-10), False)\nAssertionError: True !=\
+    \ False\n"
+  killer: test_opposite_Signs_with__10__10_expect_False (datasets.mbpp.tests.test_011.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 3
+  status: killed
+  tests_run: 3
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_011
+tests:
+- name: datasets.mbpp.tests.test_011
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.020800113677978516
+  run_tests_with_mutant: 0.0
+total_time: 0.03085780143737793

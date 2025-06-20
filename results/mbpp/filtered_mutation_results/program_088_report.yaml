@@ -1,0 +1,172 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ 0.03419648374639171 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_088 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ 0.0 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ 7.694208842938133e+224 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0016562938690185547
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ 230.82626528814404 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.000997781753540039
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ 1731.0 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0009531974792480469
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ 2924.2772660961564 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ 182.76732913100977 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ 187.5 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0009686946868896484
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ 1434.040340900998 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0010645389556884766
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\n  File \"datasets.mbpp.programs.program_088\"\
+    , line 3, in area_polygon\nZeroDivisionError: float division by zero\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0010006427764892578
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_088.py\", line 9, in test_area_polygon_with_10_15_expect_1731_1969896610804\n\
+    \    self.assertEqual(area_polygon(10,15), 1731.1969896610804)\nAssertionError:\
+    \ -4.593161068086198e+17 != 1731.1969896610804\n"
+  killer: test_area_polygon_with_10_15_expect_1731_1969896610804 (datasets.mbpp.tests.test_088.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 11
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_088
+tests:
+- name: datasets.mbpp.tests.test_088
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0010008811950683594
+  create_target_ast: 0.0009927749633789062
+  mutate_module: 0.05410337448120117
+  run_tests_with_mutant: 0.010574817657470703
+total_time: 0.0599360466003418

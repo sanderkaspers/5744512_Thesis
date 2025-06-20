@@ -1,0 +1,124 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_034.py\", line 15, in test_centered_hexagonal_large\n    self.assertEqual(centered_hexagonal_number(1000),\
+    \ 3*1000*(999)+1)\nAssertionError: 3.997 != 2997001\n"
+  killer: test_centered_hexagonal_large (datasets.o3.tests.test_034.TestVersion)
+  module: &id001 !!python/module:datasets.o3.programs.program_034 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_034.py\", line 15, in test_centered_hexagonal_large\n    self.assertEqual(centered_hexagonal_number(1000),\
+    \ 3*1000*(999)+1)\nAssertionError: 1 != 2997001\n"
+  killer: test_centered_hexagonal_large (datasets.o3.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0005629062652587891
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_034.py\", line 15, in test_centered_hexagonal_large\n    self.assertEqual(centered_hexagonal_number(1000),\
+    \ 3*1000*(999)+1)\nAssertionError: 13207487486613258302535648044923922215994[435\
+    \ chars]81000 != 2997001\n"
+  killer: test_centered_hexagonal_large (datasets.o3.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.002671480178833008
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_034.py\", line 15, in test_centered_hexagonal_large\n    self.assertEqual(centered_hexagonal_number(1000),\
+    \ 3*1000*(999)+1)\nAssertionError: 4.003003003003003 != 2997001\n"
+  killer: test_centered_hexagonal_large (datasets.o3.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_034.py\", line 15, in test_centered_hexagonal_large\n    self.assertEqual(centered_hexagonal_number(1000),\
+    \ 3*1000*(999)+1)\nAssertionError: 4 != 2997001\n"
+  killer: test_centered_hexagonal_large (datasets.o3.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_034.py\", line 15, in test_centered_hexagonal_large\n    self.assertEqual(centered_hexagonal_number(1000),\
+    \ 3*1000*(999)+1)\nAssertionError: 44069027316026887896348508658404812198847[3428\
+    \ chars]00001 != 2997001\n"
+  killer: test_centered_hexagonal_large (datasets.o3.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_034.py\", line 15, in test_centered_hexagonal_large\n    self.assertEqual(centered_hexagonal_number(1000),\
+    \ 3*1000*(999)+1)\nAssertionError: 3003001 != 2997001\n"
+  killer: test_centered_hexagonal_large (datasets.o3.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_034.py\", line 15, in test_centered_hexagonal_large\n    self.assertEqual(centered_hexagonal_number(1000),\
+    \ 3*1000*(999)+1)\nAssertionError: 2996999 != 2997001\n"
+  killer: test_centered_hexagonal_large (datasets.o3.tests.test_034.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 5
+targets:
+- datasets.o3.programs.program_034
+tests:
+- name: datasets.o3.tests.test_034
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.03174901008605957
+  run_tests_with_mutant: 0.012180566787719727
+total_time: 0.03641963005065918

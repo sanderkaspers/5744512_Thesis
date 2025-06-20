@@ -1,0 +1,32 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_059.py\", line 5, in test_empty_dit_all_empty\n    def\
+    \ test_empty_dit_all_empty(self): self.assertEqual(empty_dit([{}, {}, {}]), True)\n\
+    AssertionError: False != True\n"
+  killer: test_empty_dit_all_empty (datasets.GPT_4.Few_shot1.tests.test_059.TestVersion)
+  module: !!python/module:datasets.GPT_4.Few_shot1.programs.program_059 ''
+  mutations:
+  - lineno: 2
+    operator: COD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.001001119613647461
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_059
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_059
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.018915891647338867
+  run_tests_with_mutant: 0.001001119613647461
+total_time: 0.025000810623168945

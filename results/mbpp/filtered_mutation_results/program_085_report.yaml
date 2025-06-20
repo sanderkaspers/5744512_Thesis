@@ -1,0 +1,265 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 60.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.mbpp.programs.program_085 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 3
+  time: 0.0020132064819335938
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: survived
+  tests_run: 3
+  time: 0.0009975433349609375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 12, in test_find_solution_with_1_13_17_expect__4\n\
+    \    self.assertEqual(find_solution(1, 13, 17), (4, 1))\nAssertionError: Tuples\
+    \ differ: (9, 0) != (4, 1)\n\nFirst differing element 0:\n9\n4\n\n- (9, 0)\n+\
+    \ (4, 1)\n"
+  killer: test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.0010020732879638672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 3
+  time: 0.0009963512420654297
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 6
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 9, in test_case\n    self.assertIsNone(find_solution(4,\
+    \ 2, 7))\nAssertionError: (1, 1) is not None\n"
+  killer: test_case (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 12, in test_find_solution_with_1_13_17_expect__4\n\
+    \    self.assertEqual(find_solution(1, 13, 17), (4, 1))\nAssertionError: Tuples\
+    \ differ: (17, 0) != (4, 1)\n\nFirst differing element 0:\n17\n4\n\n- (17, 0)\n\
+    + (4, 1)\n"
+  killer: test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 2
+  time: 0.0010018348693847656
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 6, in test_find_solution_with_2_3_7_expect__2\n   \
+    \ self.assertEqual(find_solution(2, 3, 7), (2, 1))\nAssertionError: Tuples differ:\
+    \ (2, 3) != (2, 1)\n\nFirst differing element 1:\n3\n1\n\n- (2, 3)\n?     ^\n\n\
+    + (2, 1)\n?     ^\n\n"
+  killer: test_find_solution_with_2_3_7_expect__2 (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 3
+  time: 0.0009942054748535156
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 6, in test_find_solution_with_2_3_7_expect__2\n   \
+    \ self.assertEqual(find_solution(2, 3, 7), (2, 1))\nAssertionError: Tuples differ:\
+    \ (2, 2.0) != (2, 1)\n\nFirst differing element 1:\n2.0\n1\n\n- (2, 2.0)\n+ (2,\
+    \ 1)\n"
+  killer: test_find_solution_with_2_3_7_expect__2 (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 3
+  time: 0.0015251636505126953
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 6, in test_find_solution_with_2_3_7_expect__2\n   \
+    \ self.assertEqual(find_solution(2, 3, 7), (2, 1))\nAssertionError: Tuples differ:\
+    \ (2, 2) != (2, 1)\n\nFirst differing element 1:\n2\n1\n\n- (2, 2)\n?     ^\n\n\
+    + (2, 1)\n?     ^\n\n"
+  killer: test_find_solution_with_2_3_7_expect__2 (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 11
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 12
+  status: survived
+  tests_run: 3
+  time: 0.0009922981262207031
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 13
+  status: survived
+  tests_run: 3
+  time: 0.0013208389282226562
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 12, in test_find_solution_with_1_13_17_expect__4\n\
+    \    self.assertEqual(find_solution(1, 13, 17), (4, 1))\nAssertionError: Tuples\
+    \ differ: (4, 169) != (4, 1)\n\nFirst differing element 1:\n169\n1\n\n- (4, 169)\n\
+    ?      --\n\n+ (4, 1)\n"
+  killer: test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 14
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 15
+  status: timeout
+  tests_run: null
+  time: 5.023303270339966
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 12, in test_find_solution_with_1_13_17_expect__4\n\
+    \    self.assertEqual(find_solution(1, 13, 17), (4, 1))\nAssertionError: None\
+    \ != (4, 1)\n"
+  killer: test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 16
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 9, in test_case\n    self.assertIsNone(find_solution(4,\
+    \ 2, 7))\nAssertionError: (0, 3) is not None\n"
+  killer: test_case (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 17
+  status: killed
+  tests_run: 1
+  time: 0.0009982585906982422
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 12, in test_find_solution_with_1_13_17_expect__4\n\
+    \    self.assertEqual(find_solution(1, 13, 17), (4, 1))\nAssertionError: None\
+    \ != (4, 1)\n"
+  killer: test_find_solution_with_1_13_17_expect__4 (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 18
+  status: killed
+  tests_run: 2
+  time: 0.0009975433349609375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 19
+  status: survived
+  tests_run: 3
+  time: 0.0009706020355224609
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_085.py\", line 9, in test_case\n    self.assertIsNone(find_solution(4,\
+    \ 2, 7))\nAssertionError: (0, 3) is not None\n"
+  killer: test_case (datasets.mbpp.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 20
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_085
+tests:
+- name: datasets.mbpp.tests.test_085
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0009534358978271484
+  create_target_ast: 0.0009944438934326172
+  mutate_module: 5.131969928741455
+  run_tests_with_mutant: 5.043587684631348
+total_time: 5.137879133224487

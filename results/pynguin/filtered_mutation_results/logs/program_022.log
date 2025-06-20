@@ -1,0 +1,32 @@
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_022
+   - tests: datasets.pynguin.tests.test_022
+[*] 1 tests passed:
+   - datasets.pynguin.tests.test_022 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] BCR datasets.pynguin.programs.program_022: [0.00000 s] survived
+   - [#   2] COD datasets.pynguin.programs.program_022: [0.00205 s] killed by test_case_0 (datasets.pynguin.tests.test_022.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_022.py", line 9, in test_case_0
+    var_0 = module_0.get_equal(dict_0)
+  File "datasets.pynguin.programs.program_022", line 10, in get_equal
+  File "datasets.pynguin.programs.program_022", line 2, in find_equal_tuple
+KeyError: 0
+
+   - [#   3] COI datasets.pynguin.programs.program_022: [0.00000 s] survived
+   - [#   4] ROR datasets.pynguin.programs.program_022: [0.00000 s] survived
+   - [#   5] ROR datasets.pynguin.programs.program_022: [0.00100 s] killed by test_case_0 (datasets.pynguin.tests.test_022.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_022.py", line 10, in test_case_0
+    assert var_0 is True
+AssertionError
+
+[*] Mutation score [0.04833 s]: 40.0%
+   - all: 5
+   - killed: 2 (40.0%)
+   - survived: 3 (60.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

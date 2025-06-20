@@ -1,0 +1,121 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 87.5
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_003.py\", line 6, in test_find_Volume_with_10_8_6_expect_240\n   \
+    \ self.assertEqual(find_Volume(10,8,6), 240)\nAssertionError: 3.75 != 240\n"
+  killer: test_find_Volume_with_10_8_6_expect_240 (datasets.mbpp.tests.test_003.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_003 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.001001596450805664
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_003.py\", line 6, in test_find_Volume_with_10_8_6_expect_240\n   \
+    \ self.assertEqual(find_Volume(10,8,6), 240)\nAssertionError: 3.0 != 240\n"
+  killer: test_find_Volume_with_10_8_6_expect_240 (datasets.mbpp.tests.test_003.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0010004043579101562
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_003.py\", line 6, in test_find_Volume_with_10_8_6_expect_240\n   \
+    \ self.assertEqual(find_Volume(10,8,6), 240)\nAssertionError: 300000000.0 != 240\n"
+  killer: test_find_Volume_with_10_8_6_expect_240 (datasets.mbpp.tests.test_003.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.00200653076171875
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_003.py\", line 6, in test_find_Volume_with_10_8_6_expect_240\n   \
+    \ self.assertEqual(find_Volume(10,8,6), 240)\nAssertionError: 6.666666666666667\
+    \ != 240\n"
+  killer: test_find_Volume_with_10_8_6_expect_240 (datasets.mbpp.tests.test_003.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0010008811950683594
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_003.py\", line 6, in test_find_Volume_with_10_8_6_expect_240\n   \
+    \ self.assertEqual(find_Volume(10,8,6), 240)\nAssertionError: 6.5 != 240\n"
+  killer: test_find_Volume_with_10_8_6_expect_240 (datasets.mbpp.tests.test_003.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_003.py\", line 6, in test_find_Volume_with_10_8_6_expect_240\n   \
+    \ self.assertEqual(find_Volume(10,8,6), 240)\nAssertionError: 131072000000.0 !=\
+    \ 240\n"
+  killer: test_find_Volume_with_10_8_6_expect_240 (datasets.mbpp.tests.test_003.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0010366439819335938
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 7
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_003.py\", line 6, in test_find_Volume_with_10_8_6_expect_240\n   \
+    \ self.assertEqual(find_Volume(10,8,6), 240)\nAssertionError: 960 != 240\n"
+  killer: test_find_Volume_with_10_8_6_expect_240 (datasets.mbpp.tests.test_003.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0009999275207519531
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_003
+tests:
+- name: datasets.mbpp.tests.test_003
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0009982585906982422
+  mutate_module: 0.04001331329345703
+  run_tests_with_mutant: 0.0070459842681884766
+total_time: 0.045015811920166016

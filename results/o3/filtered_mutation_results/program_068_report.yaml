@@ -1,0 +1,109 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_068.py\", line 6, in test_common_divisors\n    self.assertEqual(sum(12,18),\
+    \ 12)\nAssertionError: 0 != 12\n"
+  killer: test_common_divisors (datasets.o3.tests.test_068.TestVersion)
+  module: &id001 !!python/module:datasets.o3.programs.program_068 ''
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.010101556777954102
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_068.py\", line 6, in test_common_divisors\n    self.assertEqual(sum(12,18),\
+    \ 12)\nAssertionError: 0 != 12\n"
+  killer: test_common_divisors (datasets.o3.tests.test_068.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_068.py\", line 6, in test_common_divisors\n    self.assertEqual(sum(12,18),\
+    \ 12)\nAssertionError: -12 != 12\n"
+  killer: test_common_divisors (datasets.o3.tests.test_068.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ASR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_068.py\", line 6, in test_common_divisors\n    self.assertEqual(sum(12,18),\
+    \ 12)\nAssertionError: 54 != 12\n"
+  killer: test_common_divisors (datasets.o3.tests.test_068.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_068.py\", line 6, in test_common_divisors\n    self.assertEqual(sum(12,18),\
+    \ 12)\nAssertionError: 25 != 12\n"
+  killer: test_common_divisors (datasets.o3.tests.test_068.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: LCR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_068.py\", line 6, in test_common_divisors\n    self.assertEqual(sum(12,18),\
+    \ 12)\nAssertionError: 9 != 12\n"
+  killer: test_common_divisors (datasets.o3.tests.test_068.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.011593103408813477
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_068.py\", line 6, in test_common_divisors\n    self.assertEqual(sum(12,18),\
+    \ 12)\nAssertionError: 4 != 12\n"
+  killer: test_common_divisors (datasets.o3.tests.test_068.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0011353492736816406
+number_of_tests: 5
+targets:
+- datasets.o3.programs.program_068
+tests:
+- name: datasets.o3.tests.test_068
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.05107402801513672
+  run_tests_with_mutant: 0.02283000946044922
+total_time: 0.05150032043457031

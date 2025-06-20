@@ -1,0 +1,145 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 90.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_029.py\", line 15, in test_five\n    self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 0.9722222222222223 != 35\n"
+  killer: test_five (datasets.o3.tests.test_029.TestVersion)
+  module: &id001 !!python/module:datasets.o3.programs.program_029 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_029.py\", line 15, in test_five\n    self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 0.0 != 35\n"
+  killer: test_five (datasets.o3.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_029.py\", line 15, in test_five\n    self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 18229.166666666668 != 35\n"
+  killer: test_five (datasets.o3.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_029.py\", line 15, in test_five\n    self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 23.333333333333332 != 35\n"
+  killer: test_five (datasets.o3.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.006556272506713867
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_029.py\", line 15, in test_five\n    self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 0.7142857142857143 != 35\n"
+  killer: test_five (datasets.o3.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_029.py\", line 15, in test_five\n    self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 0.6666666666666666 != 35\n"
+  killer: test_five (datasets.o3.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_029.py\", line 15, in test_five\n    self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 3645000000.0 != 35\n"
+  killer: test_five (datasets.o3.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_029.py\", line 15, in test_five\n    self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 15.0 != 35\n"
+  killer: test_five (datasets.o3.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 5
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_029.py\", line 15, in test_five\n    self.assertEqual(tetrahedral_number(5),\
+    \ 35)\nAssertionError: 1260 != 35\n"
+  killer: test_five (datasets.o3.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 5
+targets:
+- datasets.o3.programs.program_029
+tests:
+- name: datasets.o3.tests.test_029
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.05123615264892578
+  run_tests_with_mutant: 0.006556272506713867
+total_time: 0.05123615264892578

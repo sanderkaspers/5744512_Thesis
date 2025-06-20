@@ -1,0 +1,137 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought1.programs.program_069
+   - tests: datasets.GPT_4.Chain_of_thought1.tests.test_069
+[*] 9 tests passed:
+   - datasets.GPT_4.Chain_of_thought1.tests.test_069 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.00268 s] killed by test_negative_negative (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 15, in test_negative_negative
+    def test_negative_negative(self): self.assertEqual(multiply_int(-2, -3), 6)
+AssertionError: -6 != 6
+
+   - [#   2] AOD datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.22642 s] killed by test_negative_negative (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 15, in test_negative_negative
+    def test_negative_negative(self): self.assertEqual(multiply_int(-2, -3), 6)
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   3] AOR datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.00099 s] killed by test_negative_negative (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 15, in test_negative_negative
+    def test_negative_negative(self): self.assertEqual(multiply_int(-2, -3), 6)
+AssertionError: -6 != 6
+
+   - [#   4] AOR datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.22784 s] killed by test_negative_negative (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 15, in test_negative_negative
+    def test_negative_negative(self): self.assertEqual(multiply_int(-2, -3), 6)
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   5] AOR datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.00202 s] killed by test_negative_negative (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 15, in test_negative_negative
+    def test_negative_negative(self): self.assertEqual(multiply_int(-2, -3), 6)
+AssertionError: 2 != 6
+
+   - [#   6] AOR datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.22681 s] killed by test_negative_negative (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 15, in test_negative_negative
+    def test_negative_negative(self): self.assertEqual(multiply_int(-2, -3), 6)
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 982 more times]
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   7] COI datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.23006 s] killed by test_large_small (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 19, in test_large_small
+    def test_large_small(self): self.assertEqual(multiply_int(1000, 1), 1000)
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 982 more times]
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#   8] COI datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.00200 s] killed by test_large_small (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 19, in test_large_small
+    def test_large_small(self): self.assertEqual(multiply_int(1000, 1), 1000)
+AssertionError: 0 != 1000
+
+   - [#   9] COI datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.00100 s] killed by test_negative_negative (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 15, in test_negative_negative
+    def test_negative_negative(self): self.assertEqual(multiply_int(-2, -3), 6)
+AssertionError: 2 != 6
+
+   - [#  10] ROR datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.22237 s] killed by test_large_small (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 19, in test_large_small
+    def test_large_small(self): self.assertEqual(multiply_int(1000, 1), 1000)
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 9, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 9, in multiply_int
+  [Previous line repeated 982 more times]
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#  11] ROR datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.22998 s] killed by test_large_zero (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 21, in test_large_zero
+    def test_large_zero(self): self.assertEqual(multiply_int(9999, 0), 0)
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 3, in multiply_int
+  [Previous line repeated 983 more times]
+  File "datasets.GPT_4.Chain_of_thought1.programs.program_069", line 2, in multiply_int
+RecursionError: maximum recursion depth exceeded in comparison
+
+   - [#  12] ROR datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.00100 s] killed by test_large_small (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 19, in test_large_small
+    def test_large_small(self): self.assertEqual(multiply_int(1000, 1), 1000)
+AssertionError: 0 != 1000
+
+   - [#  13] ROR datasets.GPT_4.Chain_of_thought1.programs.program_069: [0.00000 s] killed by test_negative_negative (datasets.GPT_4.Chain_of_thought1.tests.test_069.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought1\tests\test_069.py", line 15, in test_negative_negative
+    def test_negative_negative(self): self.assertEqual(multiply_int(-2, -3), 6)
+AssertionError: 2 != 6
+
+[*] Mutation score [1.44237 s]: 100.0%
+   - all: 13
+   - killed: 13 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

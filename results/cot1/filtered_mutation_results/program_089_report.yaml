@@ -1,0 +1,189 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 60.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_089 ''
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 1
+  status: timeout
+  tests_run: null
+  time: 5.037878036499023
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 2
+  status: timeout
+  tests_run: null
+  time: 5.0387444496154785
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 8
+  time: 0.0009601116180419922
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_089.py\", line 5, in test_different_sums\n    def\
+    \ test_different_sums(self): self.assertFalse(are_equivalent(10, 14))\nAssertionError:\
+    \ True is not false\n"
+  killer: test_different_sums (datasets.GPT_4.Chain_of_thought1.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 8
+  time: 0.0009512901306152344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 6
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 7
+  status: survived
+  tests_run: 8
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: AOR
+  number: 8
+  status: survived
+  tests_run: 8
+  time: 0.0010113716125488281
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_089.py\", line 5, in test_different_sums\n    def\
+    \ test_different_sums(self): self.assertFalse(are_equivalent(10, 14))\n  File\
+    \ \"datasets.GPT_4.Chain_of_thought1.programs.program_089\", line 14, in are_equivalent\n\
+    \  File \"datasets.GPT_4.Chain_of_thought1.programs.program_089\", line 7, in\
+    \ div_sum\nZeroDivisionError: integer division or modulo by zero\n"
+  killer: test_different_sums (datasets.GPT_4.Chain_of_thought1.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: ASR
+  number: 9
+  status: killed
+  tests_run: 2
+  time: 0.003010272979736328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 10
+  status: timeout
+  tests_run: null
+  time: 5.02514123916626
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_089.py\", line 17, in test_negative_input\n   \
+    \ def test_negative_input(self): self.assertFalse(are_equivalent(-6, 6))\nAssertionError:\
+    \ True is not false\n"
+  killer: test_negative_input (datasets.GPT_4.Chain_of_thought1.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: COI
+  number: 11
+  status: killed
+  tests_run: 4
+  time: 0.0010151863098144531
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 12
+  status: timeout
+  tests_run: null
+  time: 5.035244464874268
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 13
+  status: survived
+  tests_run: 8
+  time: 0.0009598731994628906
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_089.py\", line 17, in test_negative_input\n   \
+    \ def test_negative_input(self): self.assertFalse(are_equivalent(-6, 6))\nAssertionError:\
+    \ True is not false\n"
+  killer: test_negative_input (datasets.GPT_4.Chain_of_thought1.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: ROR
+  number: 14
+  status: killed
+  tests_run: 4
+  time: 0.0010192394256591797
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_089.py\", line 11, in test_both_ones\n    def test_both_ones(self):\
+    \ self.assertTrue(are_equivalent(1, 1))\nAssertionError: False is not true\n"
+  killer: test_both_ones (datasets.GPT_4.Chain_of_thought1.tests.test_089.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: ROR
+  number: 15
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_089
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_089
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0021610260009765625
+  create_target_ast: 0.0
+  mutate_module: 20.240224361419678
+  run_tests_with_mutant: 20.152950525283813
+total_time: 20.241599798202515

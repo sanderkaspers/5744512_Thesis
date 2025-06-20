@@ -1,0 +1,137 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_032.py\", line 6, in test_sequence_with_10_expect_6\n    self.assertEqual(sequence(10),\
+    \ 6)\n  File \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File\
+    \ \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_sequence_with_10_expect_6 (datasets.mbpp.tests.test_032.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_032 ''
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.22109198570251465
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_032.py\", line 6, in test_sequence_with_10_expect_6\n    self.assertEqual(sequence(10),\
+    \ 6)\n  File \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File\
+    \ \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_sequence_with_10_expect_6 (datasets.mbpp.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.2209329605102539
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_032.py\", line 6, in test_sequence_with_10_expect_6\n    self.assertEqual(sequence(10),\
+    \ 6)\n  File \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File\
+    \ \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_sequence_with_10_expect_6 (datasets.mbpp.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.2404022216796875
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_032.py\", line 6, in test_sequence_with_10_expect_6\n    self.assertEqual(sequence(10),\
+    \ 6)\n  File \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File\
+    \ \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_sequence_with_10_expect_6 (datasets.mbpp.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.2364964485168457
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_032.py\", line 6, in test_sequence_with_10_expect_6\n    self.assertEqual(sequence(10),\
+    \ 6)\nAssertionError: 1 != 6\n"
+  killer: test_sequence_with_10_expect_6 (datasets.mbpp.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_032.py\", line 6, in test_sequence_with_10_expect_6\n    self.assertEqual(sequence(10),\
+    \ 6)\n  File \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File\
+    \ \"datasets.mbpp.programs.program_032\", line 5, in sequence\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 5, in sequence\n  [Previous line repeated 983 more times]\n  File \"datasets.mbpp.programs.program_032\"\
+    , line 2, in sequence\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_sequence_with_10_expect_6 (datasets.mbpp.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.22590947151184082
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_032.py\", line 6, in test_sequence_with_10_expect_6\n    self.assertEqual(sequence(10),\
+    \ 6)\nAssertionError: 1 != 6\n"
+  killer: test_sequence_with_10_expect_6 (datasets.mbpp.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_032.py\", line 6, in test_sequence_with_10_expect_6\n    self.assertEqual(sequence(10),\
+    \ 6)\nAssertionError: 1 != 6\n"
+  killer: test_sequence_with_10_expect_6 (datasets.mbpp.tests.test_032.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_032
+tests:
+- name: datasets.mbpp.tests.test_032
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 1.1928791999816895
+  run_tests_with_mutant: 1.1448330879211426
+total_time: 1.1928791999816895

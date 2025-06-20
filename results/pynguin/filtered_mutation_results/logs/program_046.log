@@ -1,0 +1,38 @@
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_046
+   - tests: datasets.pynguin.tests.test_046
+[*] 1 tests passed:
+   - datasets.pynguin.tests.test_046 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.pynguin.programs.program_046: [0.00100 s] survived
+   - [#   2] AOR datasets.pynguin.programs.program_046: [0.00087 s] survived
+   - [#   3] ASR datasets.pynguin.programs.program_046: [0.00204 s] killed by test_case_0 (datasets.pynguin.tests.test_046.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_046.py", line 10, in test_case_0
+    var_0 = module_0.multiply_num(bytes_0)
+  File "datasets.pynguin.programs.program_046", line 4, in multiply_num
+ZeroDivisionError: float division by zero
+
+   - [#   4] ASR datasets.pynguin.programs.program_046: [0.00094 s] killed by test_case_0 (datasets.pynguin.tests.test_046.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_046.py", line 10, in test_case_0
+    var_0 = module_0.multiply_num(bytes_0)
+  File "datasets.pynguin.programs.program_046", line 4, in multiply_num
+ZeroDivisionError: integer division or modulo by zero
+
+   - [#   5] ASR datasets.pynguin.programs.program_046: [0.00093 s] killed by test_case_0 (datasets.pynguin.tests.test_046.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_046.py", line 11, in test_case_0
+    assert var_0 == pytest.approx(0.0, abs=0.01, rel=0.01)
+AssertionError
+
+[*] Mutation score [0.03858 s]: 60.0%
+   - all: 5
+   - killed: 3 (60.0%)
+   - survived: 2 (40.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

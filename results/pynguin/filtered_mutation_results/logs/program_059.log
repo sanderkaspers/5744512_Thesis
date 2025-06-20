@@ -1,0 +1,13 @@
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_059
+   - tests: datasets.pynguin.tests.test_059
+[*] 2 tests passed:
+   - datasets.pynguin.tests.test_059 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COD datasets.pynguin.programs.program_059: [0.00000 s] survived
+[*] Mutation score [0.03144 s]: 0.0%
+   - all: 1
+   - killed: 0 (0.0%)
+   - survived: 1 (100.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)

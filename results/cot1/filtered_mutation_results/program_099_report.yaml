@@ -1,0 +1,67 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_099.py\", line 19, in test_1023\n    def test_1023(self):\
+    \ self.assertEqual(count_Set_Bits(1023), 10)\nAssertionError: -10 != 10\n"
+  killer: test_1023 (datasets.GPT_4.Chain_of_thought1.tests.test_099.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_099 ''
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010416507720947266
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_099.py\", line 19, in test_1023\n    def test_1023(self):\
+    \ self.assertEqual(count_Set_Bits(1023), 10)\nAssertionError: 0 != 10\n"
+  killer: test_1023 (datasets.GPT_4.Chain_of_thought1.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_099.py\", line 19, in test_1023\n    def test_1023(self):\
+    \ self.assertEqual(count_Set_Bits(1023), 10)\nAssertionError: 2036 != 10\n"
+  killer: test_1023 (datasets.GPT_4.Chain_of_thought1.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: LOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 4
+  status: timeout
+  tests_run: null
+  time: 5.040992498397827
+number_of_tests: 11
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_099
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_099
+  target: null
+  time: 0.0010540485382080078
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 5.052234172821045
+  run_tests_with_mutant: 5.042034149169922
+total_time: 5.072674751281738

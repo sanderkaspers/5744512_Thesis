@@ -1,0 +1,34 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_064
+   - tests: datasets.o3.tests.test_064
+[*] 6 tests passed:
+   - datasets.o3.tests.test_064 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.o3.programs.program_064: [0.00102 s] killed by test_duplicate_max_product (datasets.o3.tests.test_064.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_064.py", line 15, in test_duplicate_max_product
+    self.assertEqual(max_product_tuple([(-3,-5),(3,5)]), 15)
+AssertionError: 0.6 != 15
+
+   - [#   2] AOR datasets.o3.programs.program_064: [0.00099 s] killed by test_duplicate_max_product (datasets.o3.tests.test_064.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_064.py", line 15, in test_duplicate_max_product
+    self.assertEqual(max_product_tuple([(-3,-5),(3,5)]), 15)
+AssertionError: 0 != 15
+
+   - [#   3] AOR datasets.o3.programs.program_064: [0.00098 s] killed by test_duplicate_max_product (datasets.o3.tests.test_064.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_064.py", line 15, in test_duplicate_max_product
+    self.assertEqual(max_product_tuple([(-3,-5),(3,5)]), 15)
+AssertionError: 243 != 15
+
+[*] Mutation score [0.03124 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

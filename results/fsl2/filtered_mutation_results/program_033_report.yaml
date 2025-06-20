@@ -1,0 +1,153 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_033.py\", line 17, in test_surfacearea_sphere_large_radius\n\
+    \    def test_surfacearea_sphere_large_radius(self): self.assertAlmostEqual(surfacearea_sphere(1000),\
+    \ 4 * math.pi * 1000000)\nAssertionError: 1273239.5447351628 != 12566370.614359172\
+    \ within 7 places (11293131.069624009 difference)\n"
+  killer: test_surfacearea_sphere_large_radius (datasets.GPT_4.Few_shot2.tests.test_033.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_033 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010030269622802734
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_033.py\", line 17, in test_surfacearea_sphere_large_radius\n\
+    \    def test_surfacearea_sphere_large_radius(self): self.assertAlmostEqual(surfacearea_sphere(1000),\
+    \ 4 * math.pi * 1000000)\nAssertionError: 1000000.0 != 12566370.614359172 within\
+    \ 7 places (11566370.614359172 difference)\n"
+  killer: test_surfacearea_sphere_large_radius (datasets.GPT_4.Few_shot2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_033.py\", line 17, in test_surfacearea_sphere_large_radius\n\
+    \    def test_surfacearea_sphere_large_radius(self): self.assertAlmostEqual(surfacearea_sphere(1000),\
+    \ 4 * math.pi * 1000000)\nAssertionError: 77880233.64838809 != 12566370.614359172\
+    \ within 7 places (65313863.03402892 difference)\n"
+  killer: test_surfacearea_sphere_large_radius (datasets.GPT_4.Few_shot2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_033.py\", line 17, in test_surfacearea_sphere_large_radius\n\
+    \    def test_surfacearea_sphere_large_radius(self): self.assertAlmostEqual(surfacearea_sphere(1000),\
+    \ 4 * math.pi * 1000000)\nAssertionError: 12.566370614359172 != 12566370.614359172\
+    \ within 7 places (12566358.047988558 difference)\n"
+  killer: test_surfacearea_sphere_large_radius (datasets.GPT_4.Few_shot2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0009992122650146484
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_033.py\", line 17, in test_surfacearea_sphere_large_radius\n\
+    \    def test_surfacearea_sphere_large_radius(self): self.assertAlmostEqual(surfacearea_sphere(1000),\
+    \ 4 * math.pi * 1000000)\nAssertionError: 0.0 != 12566370.614359172 within 7 places\
+    \ (12566370.614359172 difference)\n"
+  killer: test_surfacearea_sphere_large_radius (datasets.GPT_4.Few_shot2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010085105895996094
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_033.py\", line 17, in test_surfacearea_sphere_large_radius\n\
+    \    def test_surfacearea_sphere_large_radius(self): self.assertAlmostEqual(surfacearea_sphere(1000),\
+    \ 4 * math.pi * 1000000)\n  File \"datasets.GPT_4.Few_shot2.programs.program_033\"\
+    , line 3, in surfacearea_sphere\nOverflowError: (34, 'Result too large')\n"
+  killer: test_surfacearea_sphere_large_radius (datasets.GPT_4.Few_shot2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0009875297546386719
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_033.py\", line 17, in test_surfacearea_sphere_large_radius\n\
+    \    def test_surfacearea_sphere_large_radius(self): self.assertAlmostEqual(surfacearea_sphere(1000),\
+    \ 4 * math.pi * 1000000)\nAssertionError: 12.566370614359172 != 12566370.614359172\
+    \ within 7 places (12566358.047988558 difference)\n"
+  killer: test_surfacearea_sphere_large_radius (datasets.GPT_4.Few_shot2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_033.py\", line 17, in test_surfacearea_sphere_large_radius\n\
+    \    def test_surfacearea_sphere_large_radius(self): self.assertAlmostEqual(surfacearea_sphere(1000),\
+    \ 4 * math.pi * 1000000)\nAssertionError: 12.0 != 12566370.614359172 within 7\
+    \ places (12566358.614359172 difference)\n"
+  killer: test_surfacearea_sphere_large_radius (datasets.GPT_4.Few_shot2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_033.py\", line 17, in test_surfacearea_sphere_large_radius\n\
+    \    def test_surfacearea_sphere_large_radius(self): self.assertAlmostEqual(surfacearea_sphere(1000),\
+    \ 4 * math.pi * 1000000)\n  File \"datasets.GPT_4.Few_shot2.programs.program_033\"\
+    , line 3, in surfacearea_sphere\nOverflowError: (34, 'Result too large')\n"
+  killer: test_surfacearea_sphere_large_radius (datasets.GPT_4.Few_shot2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.001992940902709961
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_033
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_033
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.000989675521850586
+  create_target_ast: 0.0
+  mutate_module: 0.04300403594970703
+  run_tests_with_mutant: 0.008975744247436523
+total_time: 0.04898428916931152

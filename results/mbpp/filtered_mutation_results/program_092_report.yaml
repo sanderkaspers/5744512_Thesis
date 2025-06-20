@@ -1,0 +1,134 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 80.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.mbpp.programs.program_092 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_092.py\", line 12, in test_next_power_of_2_with_17_expect_32\n   \
+    \ self.assertEqual(next_power_of_2(17), 32)\n  File \"datasets.mbpp.programs.program_092\"\
+    , line 10, in next_power_of_2\nValueError: negative shift count\n"
+  killer: test_next_power_of_2_with_17_expect_32 (datasets.mbpp.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: ASR
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.0019860267639160156
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_092.py\", line 12, in test_next_power_of_2_with_17_expect_32\n   \
+    \ self.assertEqual(next_power_of_2(17), 32)\nAssertionError: 17 != 32\n"
+  killer: test_next_power_of_2_with_17_expect_32 (datasets.mbpp.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COD
+  number: 3
+  status: killed
+  tests_run: 2
+  time: 0.0009813308715820312
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_092.py\", line 6, in test_next_power_of_2_with_0_expect_1\n    self.assertEqual(next_power_of_2(0),\
+    \ 1)\nAssertionError: 0 != 1\n"
+  killer: test_next_power_of_2_with_0_expect_1 (datasets.mbpp.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0009899139404296875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 5
+  status: timeout
+  tests_run: null
+  time: 5.041967868804932
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_092.py\", line 6, in test_next_power_of_2_with_0_expect_1\n    self.assertEqual(next_power_of_2(0),\
+    \ 1)\nAssertionError: 0 != 1\n"
+  killer: test_next_power_of_2_with_0_expect_1 (datasets.mbpp.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LCR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0003991127014160156
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: LOR
+  number: 7
+  status: survived
+  tests_run: 3
+  time: 0.0010020732879638672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 7
+    operator: LOR
+  number: 8
+  status: timeout
+  tests_run: null
+  time: 5.036591053009033
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_092.py\", line 12, in test_next_power_of_2_with_17_expect_32\n   \
+    \ self.assertEqual(next_power_of_2(17), 32)\nAssertionError: 0 != 32\n"
+  killer: test_next_power_of_2_with_17_expect_32 (datasets.mbpp.tests.test_092.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: LOR
+  number: 9
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 10
+  status: timeout
+  tests_run: null
+  time: 5.029534101486206
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_092
+tests:
+- name: datasets.mbpp.tests.test_092
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 15.16026496887207
+  run_tests_with_mutant: 15.115450859069824
+total_time: 15.166268587112427

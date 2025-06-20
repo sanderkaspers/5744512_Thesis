@@ -1,0 +1,154 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 90.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_025.py\", line 41, in test_boundary_values_large_sequences\n\
+    \    self.assertTrue(is_samepatterns(colors, patterns))\n  File \"datasets.GPT_4.Chain_of_thought.programs.program_025\"\
+    , line 23, in is_samepatterns\nIndexError: list index out of range\n"
+  killer: test_boundary_values_large_sequences (datasets.GPT_4.Chain_of_thought.tests.test_025.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought.programs.program_025 ''
+  mutations:
+  - lineno: 22
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.001995086669921875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: AOR
+  number: 2
+  status: survived
+  tests_run: 12
+  time: 0.001020193099975586
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_025.py\", line 41, in test_boundary_values_large_sequences\n\
+    \    self.assertTrue(is_samepatterns(colors, patterns))\n  File \"datasets.GPT_4.Chain_of_thought.programs.program_025\"\
+    , line 13, in is_samepatterns\nKeyError: 'a'\n"
+  killer: test_boundary_values_large_sequences (datasets.GPT_4.Chain_of_thought.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: COD
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0009999275207519531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_025.py\", line 41, in test_boundary_values_large_sequences\n\
+    \    self.assertTrue(is_samepatterns(colors, patterns))\nAssertionError: False\
+    \ is not true\n"
+  killer: test_boundary_values_large_sequences (datasets.GPT_4.Chain_of_thought.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0009214878082275391
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_025.py\", line 41, in test_boundary_values_large_sequences\n\
+    \    self.assertTrue(is_samepatterns(colors, patterns))\n  File \"datasets.GPT_4.Chain_of_thought.programs.program_025\"\
+    , line 13, in is_samepatterns\nKeyError: 'a'\n"
+  killer: test_boundary_values_large_sequences (datasets.GPT_4.Chain_of_thought.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.002090930938720703
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_025.py\", line 41, in test_boundary_values_large_sequences\n\
+    \    self.assertTrue(is_samepatterns(colors, patterns))\nAssertionError: False\
+    \ is not true\n"
+  killer: test_boundary_values_large_sequences (datasets.GPT_4.Chain_of_thought.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: COI
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0010023117065429688
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_025.py\", line 41, in test_boundary_values_large_sequences\n\
+    \    self.assertTrue(is_samepatterns(colors, patterns))\nAssertionError: False\
+    \ is not true\n"
+  killer: test_boundary_values_large_sequences (datasets.GPT_4.Chain_of_thought.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: COI
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.001018524169921875
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_025.py\", line 41, in test_boundary_values_large_sequences\n\
+    \    self.assertTrue(is_samepatterns(colors, patterns))\nAssertionError: False\
+    \ is not true\n"
+  killer: test_boundary_values_large_sequences (datasets.GPT_4.Chain_of_thought.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0010266304016113281
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_025.py\", line 41, in test_boundary_values_large_sequences\n\
+    \    self.assertTrue(is_samepatterns(colors, patterns))\nAssertionError: False\
+    \ is not true\n"
+  killer: test_boundary_values_large_sequences (datasets.GPT_4.Chain_of_thought.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: ROR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0009589195251464844
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought\\tests\\test_025.py\", line 41, in test_boundary_values_large_sequences\n\
+    \    self.assertTrue(is_samepatterns(colors, patterns))\nAssertionError: False\
+    \ is not true\n"
+  killer: test_boundary_values_large_sequences (datasets.GPT_4.Chain_of_thought.tests.test_025.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: ROR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 12
+targets:
+- datasets.GPT_4.Chain_of_thought.programs.program_025
+tests:
+- name: datasets.GPT_4.Chain_of_thought.tests.test_025
+  target: null
+  time: 0.0010082721710205078
+time_stats:
+  create_mutant_module: 0.0020046234130859375
+  create_target_ast: 0.002007007598876953
+  mutate_module: 0.11656308174133301
+  run_tests_with_mutant: 0.01202702522277832
+total_time: 0.12356781959533691

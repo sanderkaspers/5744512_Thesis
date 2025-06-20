@@ -1,0 +1,96 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_091.py\", line 12, in test_find_even_pair_with_1_2_3_expect_1\n  \
+    \  self.assertEqual(find_even_pair([1,2,3]), 1)\nAssertionError: 5 != 1\n"
+  killer: test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_091 ''
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010166168212890625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_091.py\", line 12, in test_find_even_pair_with_1_2_3_expect_1\n  \
+    \  self.assertEqual(find_even_pair([1,2,3]), 1)\nAssertionError: 0 != 1\n"
+  killer: test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.001413583755493164
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_091.py\", line 12, in test_find_even_pair_with_1_2_3_expect_1\n  \
+    \  self.assertEqual(find_even_pair([1,2,3]), 1)\nAssertionError: -1 != 1\n"
+  killer: test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ASR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_091.py\", line 12, in test_find_even_pair_with_1_2_3_expect_1\n  \
+    \  self.assertEqual(find_even_pair([1,2,3]), 1)\nAssertionError: 2 != 1\n"
+  killer: test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.001001119613647461
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_091.py\", line 12, in test_find_even_pair_with_1_2_3_expect_1\n  \
+    \  self.assertEqual(find_even_pair([1,2,3]), 1)\nAssertionError: 2 != 1\n"
+  killer: test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0009980201721191406
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_091.py\", line 12, in test_find_even_pair_with_1_2_3_expect_1\n  \
+    \  self.assertEqual(find_even_pair([1,2,3]), 1)\nAssertionError: 2 != 1\n"
+  killer: test_find_even_pair_with_1_2_3_expect_1 (datasets.mbpp.tests.test_091.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0010106563568115234
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_091
+tests:
+- name: datasets.mbpp.tests.test_091
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0010018348693847656
+  mutate_module: 0.05407285690307617
+  run_tests_with_mutant: 0.007668495178222656
+total_time: 0.06008648872375488

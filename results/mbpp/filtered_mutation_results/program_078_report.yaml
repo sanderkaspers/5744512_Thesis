@@ -1,0 +1,60 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_078.py\", line 9, in test_is_Sum_Of_Powers_Of_Two_with_7_expect_False\n\
+    \    self.assertEqual(is_Sum_Of_Powers_Of_Two(7), False)\nAssertionError: True\
+    \ != False\n"
+  killer: test_is_Sum_Of_Powers_Of_Two_with_7_expect_False (datasets.mbpp.tests.test_078.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_078 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 3
+  time: 0.0015151500701904297
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_078.py\", line 6, in test_is_Sum_Of_Powers_Of_Two_with_10_expect_True\n\
+    \    self.assertEqual(is_Sum_Of_Powers_Of_Two(10), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_Sum_Of_Powers_Of_Two_with_10_expect_True (datasets.mbpp.tests.test_078.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0009958744049072266
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_078.py\", line 6, in test_is_Sum_Of_Powers_Of_Two_with_10_expect_True\n\
+    \    self.assertEqual(is_Sum_Of_Powers_Of_Two(10), True)\nAssertionError: False\
+    \ != True\n"
+  killer: test_is_Sum_Of_Powers_Of_Two_with_10_expect_True (datasets.mbpp.tests.test_078.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_078
+tests:
+- name: datasets.mbpp.tests.test_078
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.02485060691833496
+  run_tests_with_mutant: 0.003997325897216797
+total_time: 0.03238868713378906

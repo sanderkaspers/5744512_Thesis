@@ -1,0 +1,67 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_099.py\", line 12, in test_five\n    self.assertEqual(count_Set_Bits(5),\
+    \ 2)\nAssertionError: -2 != 2\n"
+  killer: test_five (datasets.o3.tests.test_099.TestVersion)
+  module: &id001 !!python/module:datasets.o3.programs.program_099 ''
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010030269622802734
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_099.py\", line 12, in test_five\n    self.assertEqual(count_Set_Bits(5),\
+    \ 2)\nAssertionError: 0 != 2\n"
+  killer: test_five (datasets.o3.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.001008749008178711
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_099.py\", line 12, in test_five\n    self.assertEqual(count_Set_Bits(5),\
+    \ 2)\nAssertionError: 9 != 2\n"
+  killer: test_five (datasets.o3.tests.test_099.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: LOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0010001659393310547
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 4
+  status: timeout
+  tests_run: null
+  time: 5.03774094581604
+number_of_tests: 5
+targets:
+- datasets.o3.programs.program_099
+tests:
+- name: datasets.o3.tests.test_099
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 5.062356472015381
+  run_tests_with_mutant: 5.04075288772583
+total_time: 5.0673511028289795

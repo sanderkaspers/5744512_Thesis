@@ -1,0 +1,30 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\pynguin\\\
+    tests\\test_063.py\", line 8, in test_case_0\n    assert var_0 == 166\nAssertionError\n"
+  killer: test_case_0 (datasets.pynguin.tests.test_063.TestAll)
+  module: !!python/module:datasets.pynguin.programs.program_063 ''
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 2
+targets:
+- datasets.pynguin.programs.program_063
+tests:
+- name: datasets.pynguin.tests.test_063
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.0166628360748291
+  run_tests_with_mutant: 0.0
+total_time: 0.023734569549560547

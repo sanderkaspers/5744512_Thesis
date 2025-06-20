@@ -1,0 +1,161 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\nAssertionError: 2.0 != 8.0 within\
+    \ 7 places (6.0 difference)\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_041 ''
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.010088682174682617
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\nAssertionError: 2.0 != 8.0 within\
+    \ 7 places (6.0 difference)\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\nAssertionError: 16.0 != 8.0 within\
+    \ 7 places (8.0 difference)\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\n  File \"datasets.GPT_4.Few_shot2.programs.program_041\"\
+    , line 9, in power\n  File \"datasets.GPT_4.Few_shot2.programs.program_041\",\
+    \ line 9, in power\n  File \"datasets.GPT_4.Few_shot2.programs.program_041\",\
+    \ line 9, in power\n  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Few_shot2.programs.program_041\"\
+    , line 2, in power\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.22368955612182617
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\nAssertionError: 1 != 8.0 within\
+    \ 7 places (7.0 difference)\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\nAssertionError: 0 != 8.0 within\
+    \ 7 places (8.0 difference)\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\nAssertionError: 2.0 != 8.0 within\
+    \ 7 places (6.0 difference)\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\nAssertionError: 1 != 8.0 within\
+    \ 7 places (7.0 difference)\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\nAssertionError: 0 != 8.0 within\
+    \ 7 places (8.0 difference)\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_041.py\", line 19, in test_power_float_base\n    def test_power_float_base(self):\
+    \ self.assertAlmostEqual(power(2.0, 3), 8.0)\nAssertionError: 2.0 != 8.0 within\
+    \ 7 places (6.0 difference)\n"
+  killer: test_power_float_base (datasets.GPT_4.Few_shot2.tests.test_041.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_041
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_041
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0009119510650634766
+  create_target_ast: 0.0
+  mutate_module: 0.2725396156311035
+  run_tests_with_mutant: 0.2337782382965088
+total_time: 0.2725396156311035

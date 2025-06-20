@@ -1,0 +1,31 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_037.py\", line 18, in test_large_number\n    self.assertEqual(closest_num(1000000),\
+    \ 999999)\nAssertionError: 1000001 != 999999\n"
+  killer: test_large_number (datasets.o3.tests.test_037.TestVersion)
+  module: !!python/module:datasets.o3.programs.program_037 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 5
+targets:
+- datasets.o3.programs.program_037
+tests:
+- name: datasets.o3.tests.test_037
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.015012979507446289
+  run_tests_with_mutant: 0.0
+total_time: 0.03152871131896973

@@ -1,0 +1,87 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_087.py\", line 9, in test_2\n    self.assertEqual(sum_series(3),\
+    \ 4)\nAssertionError: 2 != 4\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_087.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Zero_shot1.programs.program_087 ''
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_087.py\", line 6, in test_1\n    self.assertEqual(sum_series(2),\
+    \ 2)\n  File \"datasets.GPT_4.Zero_shot1.programs.program_087\", line 5, in sum_series\n\
+    \  File \"datasets.GPT_4.Zero_shot1.programs.program_087\", line 5, in sum_series\n\
+    \  File \"datasets.GPT_4.Zero_shot1.programs.program_087\", line 5, in sum_series\n\
+    \  [Previous line repeated 983 more times]\n  File \"datasets.GPT_4.Zero_shot1.programs.program_087\"\
+    , line 2, in sum_series\nRecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.2208695411682129
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_087.py\", line 6, in test_1\n    self.assertEqual(sum_series(2),\
+    \ 2)\nAssertionError: 0 != 2\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_087.py\", line 6, in test_1\n    self.assertEqual(sum_series(2),\
+    \ 2)\nAssertionError: 0 != 2\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_087.py\", line 9, in test_2\n    self.assertEqual(sum_series(3),\
+    \ 4)\nAssertionError: 3 != 4\n"
+  killer: test_2 (datasets.GPT_4.Zero_shot1.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.0
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Zero_shot1.programs.program_087
+tests:
+- name: datasets.GPT_4.Zero_shot1.tests.test_087
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.25253915786743164
+  run_tests_with_mutant: 0.2208695411682129
+total_time: 0.2701890468597412

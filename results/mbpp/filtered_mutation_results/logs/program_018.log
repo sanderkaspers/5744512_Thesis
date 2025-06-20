@@ -1,0 +1,35 @@
+[*] Start mutation process:
+   - targets: datasets.mbpp.programs.program_018
+   - tests: datasets.mbpp.tests.test_018
+[*] 3 tests passed:
+   - datasets.mbpp.tests.test_018 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ASR datasets.mbpp.programs.program_018: [0.00102 s] killed by test_pos_count_with_1_2_3_4_expect_4 (datasets.mbpp.tests.test_018.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_018.py", line 12, in test_pos_count_with_1_2_3_4_expect_4
+    self.assertEqual(pos_count([1,2,3,4]), 4)
+AssertionError: -4 != 4
+
+   - [#   2] COI datasets.mbpp.programs.program_018: [0.00097 s] killed by test_pos_count_with_1_2_3_4_expect_4 (datasets.mbpp.tests.test_018.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_018.py", line 12, in test_pos_count_with_1_2_3_4_expect_4
+    self.assertEqual(pos_count([1,2,3,4]), 4)
+AssertionError: 0 != 4
+
+   - [#   3] ROR datasets.mbpp.programs.program_018: [0.00099 s] killed by test_pos_count_with_1_2_3_4_expect_4 (datasets.mbpp.tests.test_018.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_018.py", line 12, in test_pos_count_with_1_2_3_4_expect_4
+    self.assertEqual(pos_count([1,2,3,4]), 4)
+AssertionError: 0 != 4
+
+   - [#   4] ROR datasets.mbpp.programs.program_018: [0.00000 s] survived
+[*] Mutation score [0.03461 s]: 75.0%
+   - all: 4
+   - killed: 3 (75.0%)
+   - survived: 1 (25.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

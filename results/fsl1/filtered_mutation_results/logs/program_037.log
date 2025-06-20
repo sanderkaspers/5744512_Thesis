@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot1.programs.program_037
+   - tests: datasets.GPT_4.Few_shot1.tests.test_037
+[*] 5 tests passed:
+   - datasets.GPT_4.Few_shot1.tests.test_037 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Few_shot1.programs.program_037: [0.00100 s] killed by test_closest_num_large (datasets.GPT_4.Few_shot1.tests.test_037.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_037.py", line 13, in test_closest_num_large
+    def test_closest_num_large(self): self.assertEqual(closest_num(1000000), 999999)
+AssertionError: 1000001 != 999999
+
+[*] Mutation score [0.01908 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

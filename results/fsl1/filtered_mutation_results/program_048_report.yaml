@@ -1,0 +1,102 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_048.py\", line 13, in test_palindrome_next_from_123\n \
+    \   def test_palindrome_next_from_123(self): self.assertEqual(next_smallest_palindrome(123),\
+    \ 131)\nAssertionError: 124 != 131\n"
+  killer: test_palindrome_next_from_123 (datasets.GPT_4.Few_shot1.tests.test_048.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot1.programs.program_048 ''
+  mutations:
+  - lineno: 5
+    operator: AOD
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0025794506072998047
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_048.py\", line 5, in test_palindrome_next_from_1\n    def\
+    \ test_palindrome_next_from_1(self): self.assertEqual(next_smallest_palindrome(1),\
+    \ 2)\nAssertionError: 0 != 2\n"
+  killer: test_palindrome_next_from_1 (datasets.GPT_4.Few_shot1.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0010800361633300781
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_048.py\", line 13, in test_palindrome_next_from_123\n \
+    \   def test_palindrome_next_from_123(self): self.assertEqual(next_smallest_palindrome(123),\
+    \ 131)\nAssertionError: 124 != 131\n"
+  killer: test_palindrome_next_from_123 (datasets.GPT_4.Few_shot1.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_048.py\", line 5, in test_palindrome_next_from_1\n    def\
+    \ test_palindrome_next_from_1(self): self.assertEqual(next_smallest_palindrome(1),\
+    \ 2)\nAssertionError: 10 != 2\n"
+  killer: test_palindrome_next_from_1 (datasets.GPT_4.Few_shot1.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0010657310485839844
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_048.py\", line 5, in test_palindrome_next_from_1\n    def\
+    \ test_palindrome_next_from_1(self): self.assertEqual(next_smallest_palindrome(1),\
+    \ 2)\nAssertionError: 10 != 2\n"
+  killer: test_palindrome_next_from_1 (datasets.GPT_4.Few_shot1.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ROR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.001062154769897461
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_048.py\", line 13, in test_palindrome_next_from_123\n \
+    \   def test_palindrome_next_from_123(self): self.assertEqual(next_smallest_palindrome(123),\
+    \ 131)\nAssertionError: 124 != 131\n"
+  killer: test_palindrome_next_from_123 (datasets.GPT_4.Few_shot1.tests.test_048.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: SIR
+  number: 6
+  status: killed
+  tests_run: 2
+  time: 0.000982046127319336
+number_of_tests: 6
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_048
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_048
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.04419994354248047
+  run_tests_with_mutant: 0.008319854736328125
+total_time: 0.051207780838012695

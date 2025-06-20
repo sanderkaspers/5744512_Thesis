@@ -1,0 +1,151 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 90.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_029.py\", line 6, in test_tetrahedral_number_with_5_expect_35_0\n\
+    \    self.assertEqual(tetrahedral_number(5), 35.0)\nAssertionError: 0.9722222222222223\
+    \ != 35.0\n"
+  killer: test_tetrahedral_number_with_5_expect_35_0 (datasets.mbpp.tests.test_029.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_029 ''
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_029.py\", line 6, in test_tetrahedral_number_with_5_expect_35_0\n\
+    \    self.assertEqual(tetrahedral_number(5), 35.0)\nAssertionError: 0.0 != 35.0\n"
+  killer: test_tetrahedral_number_with_5_expect_35_0 (datasets.mbpp.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_029.py\", line 6, in test_tetrahedral_number_with_5_expect_35_0\n\
+    \    self.assertEqual(tetrahedral_number(5), 35.0)\nAssertionError: 18229.166666666668\
+    \ != 35.0\n"
+  killer: test_tetrahedral_number_with_5_expect_35_0 (datasets.mbpp.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_029.py\", line 6, in test_tetrahedral_number_with_5_expect_35_0\n\
+    \    self.assertEqual(tetrahedral_number(5), 35.0)\nAssertionError: 23.333333333333332\
+    \ != 35.0\n"
+  killer: test_tetrahedral_number_with_5_expect_35_0 (datasets.mbpp.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_029.py\", line 6, in test_tetrahedral_number_with_5_expect_35_0\n\
+    \    self.assertEqual(tetrahedral_number(5), 35.0)\nAssertionError: 0.7142857142857143\
+    \ != 35.0\n"
+  killer: test_tetrahedral_number_with_5_expect_35_0 (datasets.mbpp.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_029.py\", line 6, in test_tetrahedral_number_with_5_expect_35_0\n\
+    \    self.assertEqual(tetrahedral_number(5), 35.0)\nAssertionError: 0.6666666666666666\
+    \ != 35.0\n"
+  killer: test_tetrahedral_number_with_5_expect_35_0 (datasets.mbpp.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_029.py\", line 6, in test_tetrahedral_number_with_5_expect_35_0\n\
+    \    self.assertEqual(tetrahedral_number(5), 35.0)\nAssertionError: 3645000000.0\
+    \ != 35.0\n"
+  killer: test_tetrahedral_number_with_5_expect_35_0 (datasets.mbpp.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_029.py\", line 6, in test_tetrahedral_number_with_5_expect_35_0\n\
+    \    self.assertEqual(tetrahedral_number(5), 35.0)\nAssertionError: 15.0 != 35.0\n"
+  killer: test_tetrahedral_number_with_5_expect_35_0 (datasets.mbpp.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_029.py\", line 6, in test_tetrahedral_number_with_5_expect_35_0\n\
+    \    self.assertEqual(tetrahedral_number(5), 35.0)\nAssertionError: 1260 != 35.0\n"
+  killer: test_tetrahedral_number_with_5_expect_35_0 (datasets.mbpp.tests.test_029.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_029
+tests:
+- name: datasets.mbpp.tests.test_029
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.04323768615722656
+  run_tests_with_mutant: 0.0017139911651611328
+total_time: 0.05540895462036133

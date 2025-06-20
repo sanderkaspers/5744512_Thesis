@@ -1,0 +1,88 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_046.py\", line 6, in test_multiply_num_with__8_2_3__1_7__expect__67_2\n\
+    \    self.assertEqual(multiply_num((8, 2, 3, -1, 7)), -67.2)\nAssertionError:\
+    \ -68 != -67.2\n"
+  killer: test_multiply_num_with__8_2_3__1_7__expect__67_2 (datasets.mbpp.tests.test_046.TestVersion)
+  module: &id001 !!python/module:datasets.mbpp.programs.program_046 ''
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 3
+  time: 0.0009992122650146484
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_046.py\", line 9, in test_multiply_num_with__10__20__30__expect__2000_0\n\
+    \    self.assertEqual(multiply_num((-10,-20,-30)), -2000.0)\nAssertionError: -18000\
+    \ != -2000.0\n"
+  killer: test_multiply_num_with__10__20__30__expect__2000_0 (datasets.mbpp.tests.test_046.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0010106563568115234
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_046.py\", line 9, in test_multiply_num_with__10__20__30__expect__2000_0\n\
+    \    self.assertEqual(multiply_num((-10,-20,-30)), -2000.0)\nAssertionError: -5.555555555555555e-05\
+    \ != -2000.0\n"
+  killer: test_multiply_num_with__10__20__30__expect__2000_0 (datasets.mbpp.tests.test_046.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_046.py\", line 9, in test_multiply_num_with__10__20__30__expect__2000_0\n\
+    \    self.assertEqual(multiply_num((-10,-20,-30)), -2000.0)\nAssertionError: 0.0\
+    \ != -2000.0\n"
+  killer: test_multiply_num_with__10__20__30__expect__2000_0 (datasets.mbpp.tests.test_046.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_046.py\", line 9, in test_multiply_num_with__10__20__30__expect__2000_0\n\
+    \    self.assertEqual(multiply_num((-10,-20,-30)), -2000.0)\nAssertionError: 0.3333333333333333\
+    \ != -2000.0\n"
+  killer: test_multiply_num_with__10__20__30__expect__2000_0 (datasets.mbpp.tests.test_046.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ASR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0010027885437011719
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_046
+tests:
+- name: datasets.mbpp.tests.test_046
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.03992605209350586
+  run_tests_with_mutant: 0.006303548812866211
+total_time: 0.05220484733581543

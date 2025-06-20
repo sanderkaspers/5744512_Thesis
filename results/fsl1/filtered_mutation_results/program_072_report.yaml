@@ -1,0 +1,32 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot1\\tests\\test_072.py\", line 5, in test_max_occurrences_basic\n    def\
+    \ test_max_occurrences_basic(self): self.assertEqual(max_occurrences([1, 2, 2,\
+    \ 3]), 2)\nAssertionError: 1 != 2\n"
+  killer: test_max_occurrences_basic (datasets.GPT_4.Few_shot1.tests.test_072.TestVersion)
+  module: !!python/module:datasets.GPT_4.Few_shot1.programs.program_072 ''
+  mutations:
+  - lineno: 5
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 3
+  time: 0.0019931793212890625
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Few_shot1.programs.program_072
+tests:
+- name: datasets.GPT_4.Few_shot1.tests.test_072
+  target: null
+  time: 0.0010104179382324219
+time_stats:
+  create_mutant_module: 0.0010004043579101562
+  create_target_ast: 0.0
+  mutate_module: 0.028538227081298828
+  run_tests_with_mutant: 0.0019931793212890625
+total_time: 0.03454232215881348

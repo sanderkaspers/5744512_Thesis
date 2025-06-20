@@ -1,0 +1,138 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 0.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.pynguin.programs.program_073 ''
+  mutations:
+  - lineno: 9
+    operator: AOD
+  number: 1
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOD
+  number: 2
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: AOR
+  number: 4
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: ASR
+  number: 5
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: ASR
+  number: 6
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: ASR
+  number: 7
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 8
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 9
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: COI
+  number: 10
+  status: survived
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 8
+    operator: COI
+  number: 11
+  status: survived
+  tests_run: 1
+  time: 0.0008921623229980469
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: SIR
+  number: 12
+  status: survived
+  tests_run: 1
+  time: 0.0
+number_of_tests: 1
+targets:
+- datasets.pynguin.programs.program_073
+tests:
+- name: datasets.pynguin.tests.test_073
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.06312870979309082
+  run_tests_with_mutant: 0.016516447067260742
+total_time: 0.07875776290893555

@@ -1,0 +1,34 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot1.programs.program_024
+   - tests: datasets.GPT_4.Few_shot1.tests.test_024
+[*] 10 tests passed:
+   - datasets.GPT_4.Few_shot1.tests.test_024 [0.00100 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Few_shot1.programs.program_024: [0.00100 s] killed by test_dif_square_even_not_mod_4_eq_2 (datasets.GPT_4.Few_shot1.tests.test_024.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_024.py", line 9, in test_dif_square_even_not_mod_4_eq_2
+    def test_dif_square_even_not_mod_4_eq_2(self): self.assertEqual(dif_Square(6), False)
+AssertionError: True != False
+
+   - [#   2] COI datasets.GPT_4.Few_shot1.programs.program_024: [0.00092 s] killed by test_dif_square_even_not_mod_4_eq_2 (datasets.GPT_4.Few_shot1.tests.test_024.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_024.py", line 9, in test_dif_square_even_not_mod_4_eq_2
+    def test_dif_square_even_not_mod_4_eq_2(self): self.assertEqual(dif_Square(6), False)
+AssertionError: True != False
+
+   - [#   3] ROR datasets.GPT_4.Few_shot1.programs.program_024: [0.00101 s] killed by test_dif_square_even_not_mod_4_eq_2 (datasets.GPT_4.Few_shot1.tests.test_024.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot1\tests\test_024.py", line 9, in test_dif_square_even_not_mod_4_eq_2
+    def test_dif_square_even_not_mod_4_eq_2(self): self.assertEqual(dif_Square(6), False)
+AssertionError: True != False
+
+[*] Mutation score [0.03074 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

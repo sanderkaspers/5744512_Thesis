@@ -1,0 +1,31 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Zero_shot1\\tests\\test_007.py\", line 6, in test_1\n    self.assertEqual(test_duplicate([1,\
+    \ 2, 2, 3]), True)\nAssertionError: False != True\n"
+  killer: test_1 (datasets.GPT_4.Zero_shot1.tests.test_007.TestVersion)
+  module: !!python/module:datasets.GPT_4.Zero_shot1.programs.program_007 ''
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0009996891021728516
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Zero_shot1.programs.program_007
+tests:
+- name: datasets.GPT_4.Zero_shot1.tests.test_007
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.018000364303588867
+  run_tests_with_mutant: 0.0009996891021728516
+total_time: 0.024004697799682617

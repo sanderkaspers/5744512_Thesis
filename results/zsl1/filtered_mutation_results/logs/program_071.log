@@ -1,0 +1,84 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Zero_shot1.programs.program_071
+   - tests: datasets.GPT_4.Zero_shot1.tests.test_071
+[*] 7 tests passed:
+   - datasets.GPT_4.Zero_shot1.tests.test_071 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.GPT_4.Zero_shot1.programs.program_071: [0.00000 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 6, in test_1
+    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))
+AssertionError: False is not true
+
+   - [#   2] AOD datasets.GPT_4.Zero_shot1.programs.program_071: [0.00000 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 6, in test_1
+    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))
+AssertionError: False is not true
+
+   - [#   3] AOR datasets.GPT_4.Zero_shot1.programs.program_071: [0.00000 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 6, in test_1
+    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))
+  File "datasets.GPT_4.Zero_shot1.programs.program_071", line 13, in magic_square_test
+IndexError: list index out of range
+
+   - [#   4] AOR datasets.GPT_4.Zero_shot1.programs.program_071: [0.00000 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 6, in test_1
+    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))
+AssertionError: False is not true
+
+   - [#   5] AOR datasets.GPT_4.Zero_shot1.programs.program_071: [0.01301 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 6, in test_1
+    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))
+AssertionError: False is not true
+
+   - [#   6] ASR datasets.GPT_4.Zero_shot1.programs.program_071: [0.00000 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 6, in test_1
+    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))
+AssertionError: False is not true
+
+   - [#   7] ASR datasets.GPT_4.Zero_shot1.programs.program_071: [0.00000 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 6, in test_1
+    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))
+AssertionError: False is not true
+
+   - [#   8] COI datasets.GPT_4.Zero_shot1.programs.program_071: [0.00000 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 6, in test_1
+    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))
+AssertionError: False is not true
+
+   - [#   9] ROR datasets.GPT_4.Zero_shot1.programs.program_071: [0.00000 s] killed by test_2 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 9, in test_2
+    self.assertFalse(magic_square_test([[2,7,6],[9,5,1],[4,3,7]]))
+AssertionError: True is not false
+
+   - [#  10] ROR datasets.GPT_4.Zero_shot1.programs.program_071: [0.00000 s] killed by test_1 (datasets.GPT_4.Zero_shot1.tests.test_071.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Zero_shot1\tests\test_071.py", line 6, in test_1
+    self.assertTrue(magic_square_test([[2,7,6],[9,5,1],[4,3,8]]))
+AssertionError: False is not true
+
+[*] Mutation score [0.10588 s]: 100.0%
+   - all: 10
+   - killed: 10 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

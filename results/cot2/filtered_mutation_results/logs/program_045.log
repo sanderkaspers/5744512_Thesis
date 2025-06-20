@@ -1,0 +1,42 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought2.programs.program_045
+   - tests: datasets.GPT_4.Chain_of_thought2.tests.test_045
+[*] 9 tests passed:
+   - datasets.GPT_4.Chain_of_thought2.tests.test_045 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] ASR datasets.GPT_4.Chain_of_thought2.programs.program_045: [0.00000 s] killed by test_all_same_elements (datasets.GPT_4.Chain_of_thought2.tests.test_045.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_045.py", line 9, in test_all_same_elements
+    def test_all_same_elements(self): self.assertEqual(frequency_lists([[5, 5], [5], [5, 5]]), {5: 5})
+AssertionError: {5: -3} != {5: 5}
+- {5: -3}
+?     ^^
+
++ {5: 5}
+?     ^
+
+
+   - [#   2] COI datasets.GPT_4.Chain_of_thought2.programs.program_045: [0.00000 s] killed by test_all_same_elements (datasets.GPT_4.Chain_of_thought2.tests.test_045.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_045.py", line 9, in test_all_same_elements
+    def test_all_same_elements(self): self.assertEqual(frequency_lists([[5, 5], [5], [5, 5]]), {5: 5})
+  File "datasets.GPT_4.Chain_of_thought2.programs.program_045", line 6, in frequency_lists
+KeyError: 5
+
+   - [#   3] COI datasets.GPT_4.Chain_of_thought2.programs.program_045: [0.00000 s] killed by test_all_same_elements (datasets.GPT_4.Chain_of_thought2.tests.test_045.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought2\tests\test_045.py", line 9, in test_all_same_elements
+    def test_all_same_elements(self): self.assertEqual(frequency_lists([[5, 5], [5], [5, 5]]), {5: 5})
+  File "datasets.GPT_4.Chain_of_thought2.programs.program_045", line 6, in frequency_lists
+KeyError: 5
+
+[*] Mutation score [0.04688 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

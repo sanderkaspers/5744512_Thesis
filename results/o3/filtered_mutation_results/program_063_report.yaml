@@ -1,0 +1,31 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_063.py\", line 18, in test_negative_numbers\n    self.assertEqual(search([-1,-1,2]),\
+    \ 2)\nAssertionError: 0 != 2\n"
+  killer: test_negative_numbers (datasets.o3.tests.test_063.TestVersion)
+  module: !!python/module:datasets.o3.programs.program_063 ''
+  mutations:
+  - lineno: 5
+    operator: LOR
+  number: 1
+  status: killed
+  tests_run: 3
+  time: 0.0010209083557128906
+number_of_tests: 5
+targets:
+- datasets.o3.programs.program_063
+tests:
+- name: datasets.o3.tests.test_063
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0010528564453125
+  mutate_module: 0.0236818790435791
+  run_tests_with_mutant: 0.002027750015258789
+total_time: 0.02865767478942871

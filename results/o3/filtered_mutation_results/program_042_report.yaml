@@ -1,0 +1,46 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_042.py\", line 12, in test_multiple_min_values\n    self.assertEqual(first_of_min_second([(7,\
+    \ 2), (8, 2), (1, 5)]), 7)\n  File \"datasets.o3.programs.program_042\", line\
+    \ 4, in first_of_min_second\nValueError: pairs must not be empty\n"
+  killer: test_multiple_min_values (datasets.o3.tests.test_042.TestVersion)
+  module: &id001 !!python/module:datasets.o3.programs.program_042 ''
+  mutations:
+  - lineno: 3
+    operator: COD
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_042.py\", line 12, in test_multiple_min_values\n    self.assertEqual(first_of_min_second([(7,\
+    \ 2), (8, 2), (1, 5)]), 7)\n  File \"datasets.o3.programs.program_042\", line\
+    \ 4, in first_of_min_second\nValueError: pairs must not be empty\n"
+  killer: test_multiple_min_values (datasets.o3.tests.test_042.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.0
+number_of_tests: 6
+targets:
+- datasets.o3.programs.program_042
+tests:
+- name: datasets.o3.tests.test_042
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.0308074951171875
+  run_tests_with_mutant: 0.0
+total_time: 0.03167986869812012

@@ -1,0 +1,32 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_007.py\", line 11, in test_all_same_elements\n\
+    \    def test_all_same_elements(self): self.assertTrue(test_duplicate([9, 9, 9,\
+    \ 9]))\nAssertionError: False is not true\n"
+  killer: test_all_same_elements (datasets.GPT_4.Chain_of_thought1.tests.test_007.TestVersion)
+  module: !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_007 ''
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0010020732879638672
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_007
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_007
+  target: null
+  time: 0.0010013580322265625
+time_stats:
+  create_mutant_module: 0.0009989738464355469
+  create_target_ast: 0.0
+  mutate_module: 0.019689083099365234
+  run_tests_with_mutant: 0.0010020732879638672
+total_time: 0.02669692039489746

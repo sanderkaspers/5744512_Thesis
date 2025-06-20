@@ -1,0 +1,95 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_087.py\", line 7, in test_even_input\n    def test_even_input(self):\
+    \ self.assertEqual(sum_series(6), 12)\nAssertionError: 4 != 12\n"
+  killer: test_even_input (datasets.GPT_4.Chain_of_thought1.tests.test_087.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought1.programs.program_087 ''
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_087.py\", line 21, in test_boolean_input\n    def\
+    \ test_boolean_input(self): self.assertEqual(sum_series(True), 1)\n  File \"datasets.GPT_4.Chain_of_thought1.programs.program_087\"\
+    , line 5, in sum_series\n  File \"datasets.GPT_4.Chain_of_thought1.programs.program_087\"\
+    , line 5, in sum_series\n  File \"datasets.GPT_4.Chain_of_thought1.programs.program_087\"\
+    , line 5, in sum_series\n  [Previous line repeated 983 more times]\n  File \"\
+    datasets.GPT_4.Chain_of_thought1.programs.program_087\", line 2, in sum_series\n\
+    RecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_boolean_input (datasets.GPT_4.Chain_of_thought1.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.2368156909942627
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_087.py\", line 21, in test_boolean_input\n    def\
+    \ test_boolean_input(self): self.assertEqual(sum_series(True), 1)\nAssertionError:\
+    \ 0 != 1\n"
+  killer: test_boolean_input (datasets.GPT_4.Chain_of_thought1.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_087.py\", line 21, in test_boolean_input\n    def\
+    \ test_boolean_input(self): self.assertEqual(sum_series(True), 1)\n  File \"datasets.GPT_4.Chain_of_thought1.programs.program_087\"\
+    , line 5, in sum_series\n  File \"datasets.GPT_4.Chain_of_thought1.programs.program_087\"\
+    , line 5, in sum_series\n  File \"datasets.GPT_4.Chain_of_thought1.programs.program_087\"\
+    , line 5, in sum_series\n  [Previous line repeated 983 more times]\n  File \"\
+    datasets.GPT_4.Chain_of_thought1.programs.program_087\", line 2, in sum_series\n\
+    RecursionError: maximum recursion depth exceeded in comparison\n"
+  killer: test_boolean_input (datasets.GPT_4.Chain_of_thought1.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.2594716548919678
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought1\\tests\\test_087.py\", line 21, in test_boolean_input\n    def\
+    \ test_boolean_input(self): self.assertEqual(sum_series(True), 1)\nAssertionError:\
+    \ 0 != 1\n"
+  killer: test_boolean_input (datasets.GPT_4.Chain_of_thought1.tests.test_087.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0009992122650146484
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Chain_of_thought1.programs.program_087
+tests:
+- name: datasets.GPT_4.Chain_of_thought1.tests.test_087
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.5336630344390869
+  run_tests_with_mutant: 0.5129356384277344
+total_time: 0.5420718193054199

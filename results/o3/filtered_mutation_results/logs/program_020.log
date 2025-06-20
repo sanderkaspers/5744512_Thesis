@@ -1,0 +1,80 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_020
+   - tests: datasets.o3.tests.test_020
+[*] 7 tests passed:
+   - datasets.o3.tests.test_020 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.o3.programs.program_020: [0.00000 s] killed by test_monotonic_increasing (datasets.o3.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_020.py", line 6, in test_monotonic_increasing
+    self.assertTrue(is_Monotonic([1,2,2,3]))
+AssertionError: False is not true
+
+   - [#   2] AOR datasets.o3.programs.program_020: [0.00189 s] killed by test_monotonic_constant (datasets.o3.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_020.py", line 15, in test_monotonic_constant
+    self.assertTrue(is_Monotonic([5,5,5]))
+  File "datasets.o3.programs.program_020", line 2, in is_Monotonic
+  File "datasets.o3.programs.program_020", line 2, in <genexpr>
+IndexError: list index out of range
+
+   - [#   3] AOR datasets.o3.programs.program_020: [0.00000 s] killed by test_monotonic_decreasing (datasets.o3.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_020.py", line 9, in test_monotonic_decreasing
+    self.assertTrue(is_Monotonic([3,2,2,1]))
+AssertionError: False is not true
+
+   - [#   4] AOR datasets.o3.programs.program_020: [0.00000 s] killed by test_monotonic_decreasing (datasets.o3.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_020.py", line 9, in test_monotonic_decreasing
+    self.assertTrue(is_Monotonic([3,2,2,1]))
+  File "datasets.o3.programs.program_020", line 3, in is_Monotonic
+  File "datasets.o3.programs.program_020", line 3, in <genexpr>
+IndexError: list index out of range
+
+   - [#   5] LCR datasets.o3.programs.program_020: [0.00000 s] killed by test_monotonic_decreasing (datasets.o3.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_020.py", line 9, in test_monotonic_decreasing
+    self.assertTrue(is_Monotonic([3,2,2,1]))
+AssertionError: False is not true
+
+   - [#   6] ROR datasets.o3.programs.program_020: [0.00000 s] killed by test_monotonic_increasing (datasets.o3.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_020.py", line 6, in test_monotonic_increasing
+    self.assertTrue(is_Monotonic([1,2,2,3]))
+AssertionError: False is not true
+
+   - [#   7] ROR datasets.o3.programs.program_020: [0.00000 s] killed by test_monotonic_increasing (datasets.o3.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_020.py", line 6, in test_monotonic_increasing
+    self.assertTrue(is_Monotonic([1,2,2,3]))
+AssertionError: False is not true
+
+   - [#   8] ROR datasets.o3.programs.program_020: [0.00637 s] killed by test_monotonic_decreasing (datasets.o3.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_020.py", line 9, in test_monotonic_decreasing
+    self.assertTrue(is_Monotonic([3,2,2,1]))
+AssertionError: False is not true
+
+   - [#   9] ROR datasets.o3.programs.program_020: [0.00000 s] killed by test_monotonic_decreasing (datasets.o3.tests.test_020.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_020.py", line 9, in test_monotonic_decreasing
+    self.assertTrue(is_Monotonic([3,2,2,1]))
+AssertionError: False is not true
+
+[*] Mutation score [0.06835 s]: 100.0%
+   - all: 9
+   - killed: 9 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

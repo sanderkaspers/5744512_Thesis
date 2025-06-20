@@ -1,0 +1,56 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 66.66666666666666
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought2.programs.program_097 ''
+  mutations:
+  - lineno: 6
+    operator: BCR
+  number: 1
+  status: survived
+  tests_run: 10
+  time: 0.011016845703125
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_097.py\", line 11, in test_all_booleans\n    def\
+    \ test_all_booleans(self): self.assertTrue(check_type((True, False, True)))\n\
+    AssertionError: False is not true\n"
+  killer: test_all_booleans (datasets.GPT_4.Chain_of_thought2.tests.test_097.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COD
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_097.py\", line 11, in test_all_booleans\n    def\
+    \ test_all_booleans(self): self.assertTrue(check_type((True, False, True)))\n\
+    AssertionError: False is not true\n"
+  killer: test_all_booleans (datasets.GPT_4.Chain_of_thought2.tests.test_097.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 10
+targets:
+- datasets.GPT_4.Chain_of_thought2.programs.program_097
+tests:
+- name: datasets.GPT_4.Chain_of_thought2.tests.test_097
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.03165936470031738
+  run_tests_with_mutant: 0.011016845703125
+total_time: 0.03165936470031738

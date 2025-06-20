@@ -1,0 +1,1356 @@
+program_001 (source):
+    def remove_Occ(s,ch): 
+        for i in range(len(s)): 
+            if (s[i] == ch): 
+                s = s[0 : i] + s[i + 1:] 
+                break
+        for i in range(len(s) - 1,-1,-1):  
+            if (s[i] == ch): 
+                s = s[0 : i] + s[i + 1:] 
+                break
+        return s
+program_001 (failed test code):
+        def test_remove_multiple_occurrences(self):
+            self.assertEqual(remove_Occ("mississippi", "s"), "miippi")
+    
+        def test_remove_char_not_present(self):
+            self.assertEqual(remove_Occ("hello", "x"), "hello")
+    
+        def test_remove_empty_string(self):
+            self.assertEqual(remove_Occ("", "a"), "")
+    
+        def test_remove_special_character(self):
+            self.assertEqual(remove_Occ("café", "é"), "caf")
+    
+        def test_case_sensitive(self):
+            self.assertEqual(remove_Occ("Apple", "a"), "Apple")
+    
+
+
+program_001 (assert errors):
+    FAILED: test_remove_multiple_occurrences
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_001.py", line 9, in test_remove_multiple_occurrences
+            self.assertEqual(remove_Occ("mississippi", "s"), "miippi")
+        AssertionError: 'misisippi' != 'miippi'
+        - misisippi
+        ?   ---
+        + miippi
+        
+        
+
+program_002 (source):
+    def sort_matrix(M):
+        result = sorted(M, key=sum)
+        return result
+program_002 (failed test code):
+        def test_negative_numbers(self):
+            self.assertEqual(sort_matrix([[3,-3],[2,0],[1,1]]), [[3,-3],[1,1],[2,0]])
+    
+        def test_empty_matrix(self):
+            self.assertEqual(sort_matrix([]), [])
+    
+        def test_single_row(self):
+            self.assertEqual(sort_matrix([[9,1,0]]), [[9,1,0]])
+    
+
+        def test_random_order(self):
+            self.assertEqual(sort_matrix([[3,4],[1,2],[5]]), [[1,2],[3,4],[5]])
+    
+        def test_already_sorted(self):
+            self.assertEqual(sort_matrix([[1],[2,1,0]]), [[1],[2,1,0]])
+    
+        def test_tie_sums_stable_order(self):
+            self.assertEqual(sort_matrix([[1,1],[2]]), [[1,1],[2]])
+    
+        def test_negative_numbers(self):
+            self.assertEqual(sort_matrix([[3,-3],[2,0],[1,1]]), [[3,-3],[1,1],[2,0]])
+    
+        def test_empty_matrix(self):
+            self.assertEqual(sort_matrix([]), [])
+    
+        def test_single_row(self):
+            self.assertEqual(sort_matrix([[9,1,0]]), [[9,1,0]])
+    
+
+
+program_002 (assert errors):
+    FAILED: test_negative_numbers
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_002.py", line 15, in test_negative_numbers
+            self.assertEqual(sort_matrix([[3,-3],[2,0],[1,1]]), [[3,-3],[1,1],[2,0]])
+        AssertionError: Lists differ: [[3, -3], [2, 0], [1, 1]] != [[3, -3], [1, 1], [2, 0]]
+        
+        First differing element 1:
+        [2, 0]
+        [1, 1]
+        
+        - [[3, -3], [2, 0], [1, 1]]
+        + [[3, -3], [1, 1], [2, 0]]
+        
+    FAILED: test_random_order
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_002.py", line 6, in test_random_order
+            self.assertEqual(sort_matrix([[3,4],[1,2],[5]]), [[1,2],[3,4],[5]])
+        AssertionError: Lists differ: [[1, 2], [5], [3, 4]] != [[1, 2], [3, 4], [5]]
+        
+        First differing element 1:
+        [5]
+        [3, 4]
+        
+        - [[1, 2], [5], [3, 4]]
+        + [[1, 2], [3, 4], [5]]
+        
+
+program_003 (source):
+    def find_Volume(l,b,h) : 
+        return ((l * b * h) / 2)
+program_003 (failed test code):
+        def test_large_numbers(self):
+            self.assertEqual(find_Volume(1000,2000,3000), 2_000_000_000.0)
+    
+        def test_non_numeric_type_error(self):
+            with self.assertRaises(TypeError):
+                find_Volume("a",2,3)
+    
+
+        def test_negative_dimension(self):
+            self.assertEqual(find_Volume(-3,2,1), -2.0)
+    
+        def test_large_numbers(self):
+            self.assertEqual(find_Volume(1000,2000,3000), 2_000_000_000.0)
+    
+        def test_non_numeric_type_error(self):
+            with self.assertRaises(TypeError):
+                find_Volume("a",2,3)
+    
+
+        def test_volume_floats(self):
+            self.assertAlmostEqual(find_Volume(2.5,4.0,3.0), 10.0)
+    
+        def test_zero_dimension(self):
+            self.assertEqual(find_Volume(0,5,7), 0)
+    
+        def test_negative_dimension(self):
+            self.assertEqual(find_Volume(-3,2,1), -2.0)
+    
+        def test_large_numbers(self):
+            self.assertEqual(find_Volume(1000,2000,3000), 2_000_000_000.0)
+    
+        def test_non_numeric_type_error(self):
+            with self.assertRaises(TypeError):
+                find_Volume("a",2,3)
+    
+
+        def test_volume_integers(self):
+            self.assertEqual(find_Volume(3,4,9), 36)
+    
+        def test_volume_floats(self):
+            self.assertAlmostEqual(find_Volume(2.5,4.0,3.0), 10.0)
+    
+        def test_zero_dimension(self):
+            self.assertEqual(find_Volume(0,5,7), 0)
+    
+        def test_negative_dimension(self):
+            self.assertEqual(find_Volume(-3,2,1), -2.0)
+    
+        def test_large_numbers(self):
+            self.assertEqual(find_Volume(1000,2000,3000), 2_000_000_000.0)
+    
+        def test_non_numeric_type_error(self):
+            with self.assertRaises(TypeError):
+                find_Volume("a",2,3)
+    
+
+
+program_003 (assert errors):
+    FAILED: test_large_numbers
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_003.py", line 18, in test_large_numbers
+            self.assertEqual(find_Volume(1000,2000,3000), 2_000_000_000.0)
+        AssertionError: 3000000000.0 != 2000000000.0
+        
+    FAILED: test_negative_dimension
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_003.py", line 15, in test_negative_dimension
+            self.assertEqual(find_Volume(-3,2,1), -2.0)
+        AssertionError: -3.0 != -2.0
+        
+    FAILED: test_volume_floats
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_003.py", line 9, in test_volume_floats
+            self.assertAlmostEqual(find_Volume(2.5,4.0,3.0), 10.0)
+        AssertionError: 15.0 != 10.0 within 7 places (5.0 difference)
+        
+    FAILED: test_volume_integers
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_003.py", line 6, in test_volume_integers
+            self.assertEqual(find_Volume(3,4,9), 36)
+        AssertionError: 54.0 != 36
+        
+
+program_004 (source):
+    import re
+    def text_lowercase_underscore(text):
+            patterns = '^[a-z]+_[a-z]+$'
+            if re.search(patterns,  text):
+                    return True
+            else:
+                    return False
+program_004 (failed test code):
+        def test_acronym_handling(self):
+            self.assertEqual(text_lowercase_underscore("HTTPServerError"), "http_server_error")
+    
+        def test_mixed_digits(self):
+            self.assertEqual(text_lowercase_underscore("Version2Point0"), "version2_point0")
+    
+        def test_empty_string(self):
+            self.assertEqual(text_lowercase_underscore(""), "")
+    
+        def test_single_lowercase(self):
+            self.assertEqual(text_lowercase_underscore("lowercase"), "lowercase")
+    
+        def test_single_uppercase(self):
+            self.assertEqual(text_lowercase_underscore("X"), "x")
+    
+
+        def test_already_snake(self):
+            self.assertEqual(text_lowercase_underscore("already_snake"), "already_snake")
+    
+        def test_acronym_handling(self):
+            self.assertEqual(text_lowercase_underscore("HTTPServerError"), "http_server_error")
+    
+        def test_mixed_digits(self):
+            self.assertEqual(text_lowercase_underscore("Version2Point0"), "version2_point0")
+    
+        def test_empty_string(self):
+            self.assertEqual(text_lowercase_underscore(""), "")
+    
+        def test_single_lowercase(self):
+            self.assertEqual(text_lowercase_underscore("lowercase"), "lowercase")
+    
+        def test_single_uppercase(self):
+            self.assertEqual(text_lowercase_underscore("X"), "x")
+    
+
+        def test_empty_string(self):
+            self.assertEqual(text_lowercase_underscore(""), "")
+    
+        def test_single_lowercase(self):
+            self.assertEqual(text_lowercase_underscore("lowercase"), "lowercase")
+    
+        def test_single_uppercase(self):
+            self.assertEqual(text_lowercase_underscore("X"), "x")
+    
+
+        def test_mixed_digits(self):
+            self.assertEqual(text_lowercase_underscore("Version2Point0"), "version2_point0")
+    
+        def test_empty_string(self):
+            self.assertEqual(text_lowercase_underscore(""), "")
+    
+        def test_single_lowercase(self):
+            self.assertEqual(text_lowercase_underscore("lowercase"), "lowercase")
+    
+        def test_single_uppercase(self):
+            self.assertEqual(text_lowercase_underscore("X"), "x")
+    
+
+        def test_simple_camel(self):
+            self.assertEqual(text_lowercase_underscore("CamelCase"), "camel_case")
+    
+        def test_already_snake(self):
+            self.assertEqual(text_lowercase_underscore("already_snake"), "already_snake")
+    
+        def test_acronym_handling(self):
+            self.assertEqual(text_lowercase_underscore("HTTPServerError"), "http_server_error")
+    
+        def test_mixed_digits(self):
+            self.assertEqual(text_lowercase_underscore("Version2Point0"), "version2_point0")
+    
+        def test_empty_string(self):
+            self.assertEqual(text_lowercase_underscore(""), "")
+    
+        def test_single_lowercase(self):
+            self.assertEqual(text_lowercase_underscore("lowercase"), "lowercase")
+    
+        def test_single_uppercase(self):
+            self.assertEqual(text_lowercase_underscore("X"), "x")
+    
+
+        def test_single_lowercase(self):
+            self.assertEqual(text_lowercase_underscore("lowercase"), "lowercase")
+    
+        def test_single_uppercase(self):
+            self.assertEqual(text_lowercase_underscore("X"), "x")
+    
+
+        def test_single_uppercase(self):
+            self.assertEqual(text_lowercase_underscore("X"), "x")
+    
+
+
+program_004 (assert errors):
+    FAILED: test_acronym_handling
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_004.py", line 12, in test_acronym_handling
+            self.assertEqual(text_lowercase_underscore("HTTPServerError"), "http_server_error")
+        AssertionError: False != 'http_server_error'
+        
+    FAILED: test_already_snake
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_004.py", line 9, in test_already_snake
+            self.assertEqual(text_lowercase_underscore("already_snake"), "already_snake")
+        AssertionError: True != 'already_snake'
+        
+    FAILED: test_empty_string
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_004.py", line 18, in test_empty_string
+            self.assertEqual(text_lowercase_underscore(""), "")
+        AssertionError: False != ''
+        
+    FAILED: test_mixed_digits
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_004.py", line 15, in test_mixed_digits
+            self.assertEqual(text_lowercase_underscore("Version2Point0"), "version2_point0")
+        AssertionError: False != 'version2_point0'
+        
+    FAILED: test_simple_camel
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_004.py", line 6, in test_simple_camel
+            self.assertEqual(text_lowercase_underscore("CamelCase"), "camel_case")
+        AssertionError: False != 'camel_case'
+        
+    FAILED: test_single_lowercase
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_004.py", line 21, in test_single_lowercase
+            self.assertEqual(text_lowercase_underscore("lowercase"), "lowercase")
+        AssertionError: False != 'lowercase'
+        
+    FAILED: test_single_uppercase
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_004.py", line 24, in test_single_uppercase
+            self.assertEqual(text_lowercase_underscore("X"), "x")
+        AssertionError: False != 'x'
+        
+
+program_005 (source):
+    def square_perimeter(a):
+      perimeter=4*a
+      return perimeter
+program_005 (failed test code):
+        def test_non_numeric_type_error(self):
+            with self.assertRaises(TypeError):
+                square_perimeter("a")
+    
+
+
+program_005 (assert errors):
+    FAILED: test_non_numeric_type_error
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_005.py", line 22, in test_non_numeric_type_error
+            square_perimeter("a")
+        AssertionError: TypeError not raised
+        
+
+program_021 (source):
+    def is_sublist(l, s):
+    	sub_set = False
+    	if s == []:
+    		sub_set = True
+    	elif s == l:
+    		sub_set = True
+    	elif len(s) > len(l):
+    		sub_set = False
+    	else:
+    		for i in range(len(l)):
+    			if l[i] == s[0]:
+    				n = 1
+    				while (n < len(s)) and (l[i+n] == s[n]):
+    					n += 1				
+    				if n == len(s):
+    					sub_set = True
+    	return sub_set
+program_021 (failed test code):
+        def test_repeated_elements_false(self):
+            self.assertFalse(is_sublist([1, 1, 2, 1], [1, 2, 1, 1]))
+    
+
+
+program_021 (assert errors):
+    FAILED: test_repeated_elements_false
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_021.py", line 30, in test_repeated_elements_false
+            self.assertFalse(is_sublist([1, 1, 2, 1], [1, 2, 1, 1]))
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\programs\program_021.py", line 13, in is_sublist
+            while (n < len(s)) and (l[i+n] == s[n]):
+        IndexError: list index out of range
+        
+
+program_026 (source):
+    def find_tuples(test_list, K):
+      res = [sub for sub in test_list if all(ele % K == 0 for ele in sub)]
+      return res
+program_026 (failed test code):
+        def test_duplicates_filtered(self):
+            data = [(1,1,1), (2,2), (1,2)]
+            self.assertEqual(find_tuples(data, 2), [(1,2)])
+    
+        def test_empty_input(self):
+            self.assertEqual(find_tuples([], 1), [])
+    
+        def test_k_greater_than_tuple_len(self):
+            data = [(1,), (1,2)]
+            self.assertEqual(find_tuples(data, 3), [])
+    
+        def test_empty_tuple_k_zero(self):
+            data = [()]
+            self.assertEqual(find_tuples(data, 0), [()])
+    
+
+        def test_typical_match(self):
+            data = [(1,2,3), (1,1,2), (4,5,6)]
+            self.assertEqual(find_tuples(data, 3), [(1,2,3), (4,5,6)])
+    
+        def test_duplicates_filtered(self):
+            data = [(1,1,1), (2,2), (1,2)]
+            self.assertEqual(find_tuples(data, 2), [(1,2)])
+    
+        def test_empty_input(self):
+            self.assertEqual(find_tuples([], 1), [])
+    
+        def test_k_greater_than_tuple_len(self):
+            data = [(1,), (1,2)]
+            self.assertEqual(find_tuples(data, 3), [])
+    
+        def test_empty_tuple_k_zero(self):
+            data = [()]
+            self.assertEqual(find_tuples(data, 0), [()])
+    
+
+
+program_026 (assert errors):
+    FAILED: test_duplicates_filtered
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_026.py", line 11, in test_duplicates_filtered
+            self.assertEqual(find_tuples(data, 2), [(1,2)])
+        AssertionError: Lists differ: [(2, 2)] != [(1, 2)]
+        
+        First differing element 0:
+        (2, 2)
+        (1, 2)
+        
+        - [(2, 2)]
+        ?   ^
+        
+        + [(1, 2)]
+        ?   ^
+        
+        
+    FAILED: test_typical_match
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_026.py", line 7, in test_typical_match
+            self.assertEqual(find_tuples(data, 3), [(1,2,3), (4,5,6)])
+        AssertionError: Lists differ: [] != [(1, 2, 3), (4, 5, 6)]
+        
+        Second list contains 2 additional elements.
+        First extra element 0:
+        (1, 2, 3)
+        
+        - []
+        + [(1, 2, 3), (4, 5, 6)]
+        
+
+program_028 (source):
+    def word_len(s): 
+        s = s.split(' ')   
+        for word in s:    
+            if len(word)%2!=0: 
+                return True  
+            else:
+              return False
+program_028 (failed test code):
+        def test_leading_trailing_spaces(self):
+            self.assertEqual(word_len("   hello   "), 1)
+    
+        def test_multiple_spaces_between(self):
+            self.assertEqual(word_len("a  b   c"), 3)
+    
+        def test_empty_string(self):
+            self.assertEqual(word_len(""), 0)
+    
+        def test_tabs_newlines_present(self):
+            self.assertEqual(word_len("a\n b\tc"), 2)
+    
+
+        def test_multiple_spaces_between(self):
+            self.assertEqual(word_len("a  b   c"), 3)
+    
+        def test_empty_string(self):
+            self.assertEqual(word_len(""), 0)
+    
+        def test_tabs_newlines_present(self):
+            self.assertEqual(word_len("a\n b\tc"), 2)
+    
+
+        def test_simple_sentence(self):
+            self.assertEqual(word_len("Hello world"), 2)
+    
+        def test_leading_trailing_spaces(self):
+            self.assertEqual(word_len("   hello   "), 1)
+    
+        def test_multiple_spaces_between(self):
+            self.assertEqual(word_len("a  b   c"), 3)
+    
+        def test_empty_string(self):
+            self.assertEqual(word_len(""), 0)
+    
+        def test_tabs_newlines_present(self):
+            self.assertEqual(word_len("a\n b\tc"), 2)
+    
+
+        def test_tabs_newlines_present(self):
+            self.assertEqual(word_len("a\n b\tc"), 2)
+    
+
+
+program_028 (assert errors):
+    FAILED: test_leading_trailing_spaces
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_028.py", line 9, in test_leading_trailing_spaces
+            self.assertEqual(word_len("   hello   "), 1)
+        AssertionError: False != 1
+        
+    FAILED: test_multiple_spaces_between
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_028.py", line 12, in test_multiple_spaces_between
+            self.assertEqual(word_len("a  b   c"), 3)
+        AssertionError: True != 3
+        
+    FAILED: test_simple_sentence
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_028.py", line 6, in test_simple_sentence
+            self.assertEqual(word_len("Hello world"), 2)
+        AssertionError: True != 2
+        
+    FAILED: test_tabs_newlines_present
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_028.py", line 18, in test_tabs_newlines_present
+            self.assertEqual(word_len("a\n b\tc"), 2)
+        AssertionError: False != 2
+        
+
+program_032 (source):
+    def sequence(n): 
+    	if n == 1 or n == 2: 
+    		return 1
+    	else: 
+    		return sequence(sequence(n-1)) + sequence(n-sequence(n-1))
+program_032 (failed test code):
+        def test_sequence_larger_n(self):
+            self.assertEqual(sequence(10), 9)
+    
+        def test_sequence_negative(self):
+            with self.assertRaises(RecursionError):
+                sequence(-1)
+    
+        def test_sequence_zero(self):
+            with self.assertRaises(RecursionError):
+                sequence(0)
+    
+
+
+program_032 (assert errors):
+    FAILED: test_sequence_larger_n
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_032.py", line 15, in test_sequence_larger_n
+            self.assertEqual(sequence(10), 9)
+        AssertionError: 6 != 9
+        
+
+program_040 (source):
+    def is_undulating(n): 
+    	n = str(n)
+    	if (len(n) <= 2): 
+    		return False
+    	for i in range(2, len(n)): 
+    		if (n[i - 2] != n[i]): 
+    			return False
+    	return True
+program_040 (failed test code):
+        def test_repeated_digits(self):
+            self.assertFalse(is_undulating(111))
+    
+        def test_non_undulating(self):
+            self.assertFalse(is_undulating(1234))
+    
+        def test_large_undulating(self):
+            self.assertTrue(is_undulating(989898))
+    
+        def test_zero(self):
+            self.assertFalse(is_undulating(0))
+    
+
+
+program_040 (assert errors):
+    FAILED: test_repeated_digits
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_040.py", line 15, in test_repeated_digits
+            self.assertFalse(is_undulating(111))
+        AssertionError: True is not false
+        
+
+program_049 (source):
+    def kth_element(arr, k):
+      n = len(arr)
+      for i in range(n):
+        for j in range(0, n-i-1):
+          if arr[j] > arr[j+1]:
+            arr[j], arr[j+1] == arr[j+1], arr[j]
+      return arr[k-1]
+program_049 (failed test code):
+        def test_k_first(self):
+            self.assertEqual(kth_element([3, 1, 2], 1), 1)
+    
+        def test_with_duplicates(self):
+            self.assertEqual(kth_element([7, 7, 8, 1], 3), 7)
+    
+        def test_negative_numbers(self):
+            self.assertEqual(kth_element([0, -1, -5], 2), -1)
+    
+        def test_k_last(self):
+            self.assertEqual(kth_element([4, 6, 2, 5], 4), 6)
+    
+        def test_k_out_of_bounds(self):
+            with self.assertRaises(IndexError):
+                kth_element([1, 2, 3], 4)
+    
+
+        def test_k_last(self):
+            self.assertEqual(kth_element([4, 6, 2, 5], 4), 6)
+    
+        def test_k_out_of_bounds(self):
+            with self.assertRaises(IndexError):
+                kth_element([1, 2, 3], 4)
+    
+
+        def test_k_middle(self):
+            self.assertEqual(kth_element([3, 1, 2], 2), 2)
+    
+        def test_k_first(self):
+            self.assertEqual(kth_element([3, 1, 2], 1), 1)
+    
+        def test_with_duplicates(self):
+            self.assertEqual(kth_element([7, 7, 8, 1], 3), 7)
+    
+        def test_negative_numbers(self):
+            self.assertEqual(kth_element([0, -1, -5], 2), -1)
+    
+        def test_k_last(self):
+            self.assertEqual(kth_element([4, 6, 2, 5], 4), 6)
+    
+        def test_k_out_of_bounds(self):
+            with self.assertRaises(IndexError):
+                kth_element([1, 2, 3], 4)
+    
+
+        def test_with_duplicates(self):
+            self.assertEqual(kth_element([7, 7, 8, 1], 3), 7)
+    
+        def test_negative_numbers(self):
+            self.assertEqual(kth_element([0, -1, -5], 2), -1)
+    
+        def test_k_last(self):
+            self.assertEqual(kth_element([4, 6, 2, 5], 4), 6)
+    
+        def test_k_out_of_bounds(self):
+            with self.assertRaises(IndexError):
+                kth_element([1, 2, 3], 4)
+    
+
+
+program_049 (assert errors):
+    FAILED: test_k_first
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_049.py", line 9, in test_k_first
+            self.assertEqual(kth_element([3, 1, 2], 1), 1)
+        AssertionError: 3 != 1
+        
+    FAILED: test_k_last
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_049.py", line 18, in test_k_last
+            self.assertEqual(kth_element([4, 6, 2, 5], 4), 6)
+        AssertionError: 5 != 6
+        
+    FAILED: test_k_middle
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_049.py", line 6, in test_k_middle
+            self.assertEqual(kth_element([3, 1, 2], 2), 2)
+        AssertionError: 1 != 2
+        
+    FAILED: test_with_duplicates
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_049.py", line 12, in test_with_duplicates
+            self.assertEqual(kth_element([7, 7, 8, 1], 3), 7)
+        AssertionError: 8 != 7
+        
+
+program_050 (source):
+    def snake_to_camel(word):
+            import re
+            return ''.join(x.capitalize() or '_' for x in word.split('_'))
+program_050 (failed test code):
+        def test_empty_string(self):
+            self.assertEqual(snake_to_camel(""), "")
+    
+
+        def test_leading_underscore(self):
+            self.assertEqual(snake_to_camel("_leading"), "Leading")
+    
+        def test_trailing_underscore(self):
+            self.assertEqual(snake_to_camel("trailing_"), "Trailing")
+    
+        def test_all_caps(self):
+            self.assertEqual(snake_to_camel("HELLO_WORLD"), "HelloWorld")
+    
+        def test_empty_string(self):
+            self.assertEqual(snake_to_camel(""), "")
+    
+
+        def test_multiple_underscores(self):
+            self.assertEqual(snake_to_camel("hello__world"), "HelloWorld")
+    
+        def test_leading_underscore(self):
+            self.assertEqual(snake_to_camel("_leading"), "Leading")
+    
+        def test_trailing_underscore(self):
+            self.assertEqual(snake_to_camel("trailing_"), "Trailing")
+    
+        def test_all_caps(self):
+            self.assertEqual(snake_to_camel("HELLO_WORLD"), "HelloWorld")
+    
+        def test_empty_string(self):
+            self.assertEqual(snake_to_camel(""), "")
+    
+
+        def test_trailing_underscore(self):
+            self.assertEqual(snake_to_camel("trailing_"), "Trailing")
+    
+        def test_all_caps(self):
+            self.assertEqual(snake_to_camel("HELLO_WORLD"), "HelloWorld")
+    
+        def test_empty_string(self):
+            self.assertEqual(snake_to_camel(""), "")
+    
+
+
+program_050 (assert errors):
+    FAILED: test_empty_string
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_050.py", line 24, in test_empty_string
+            self.assertEqual(snake_to_camel(""), "")
+        AssertionError: '_' != ''
+        - _
+        + 
+        
+        
+    FAILED: test_leading_underscore
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_050.py", line 15, in test_leading_underscore
+            self.assertEqual(snake_to_camel("_leading"), "Leading")
+        AssertionError: '_Leading' != 'Leading'
+        - _Leading
+        ? -
+        + Leading
+        
+        
+    FAILED: test_multiple_underscores
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_050.py", line 12, in test_multiple_underscores
+            self.assertEqual(snake_to_camel("hello__world"), "HelloWorld")
+        AssertionError: 'Hello_World' != 'HelloWorld'
+        - Hello_World
+        ?      -
+        + HelloWorld
+        
+        
+    FAILED: test_trailing_underscore
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_050.py", line 18, in test_trailing_underscore
+            self.assertEqual(snake_to_camel("trailing_"), "Trailing")
+        AssertionError: 'Trailing_' != 'Trailing'
+        - Trailing_
+        ?         -
+        + Trailing
+        
+        
+
+program_061 (source):
+    def list_to_float(test_list):
+      res = []
+      for tup in test_list:
+        temp = []
+        for ele in tup:
+          if ele.isalpha():
+            temp.append(ele)
+          else:
+            temp.append(float(ele))
+        res.append((temp[0],temp[1])) 
+      return res
+program_061 (failed test code):
+        def test_all_numeric(self):
+            input_data = [('1','2')]
+            expected = [('1',2.0)]  # note: first element remains string '1'
+            self.assertEqual(list_to_float(input_data), expected)
+    
+        def test_empty_list(self):
+            self.assertEqual(list_to_float([]), [])
+    
+
+
+program_061 (assert errors):
+    FAILED: test_all_numeric
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_061.py", line 28, in test_all_numeric
+            self.assertEqual(list_to_float(input_data), expected)
+        AssertionError: Lists differ: [(1.0, 2.0)] != [('1', 2.0)]
+        
+        First differing element 0:
+        (1.0, 2.0)
+        ('1', 2.0)
+        
+        - [(1.0, 2.0)]
+        ?    ^^
+        
+        + [('1', 2.0)]
+        ?   + ^
+        
+        
+
+program_066 (source):
+    import cmath
+    def angle_complex(a,b):
+      cn=complex(a,b)
+      angle=cmath.phase(a+b)
+      return angle
+program_066 (failed test code):
+        def test_negative_imag(self):
+            import math
+            self.assertTrue(math.isclose(angle_complex(0,-1), -math.pi/2, rel_tol=1e-9))
+    
+        def test_quadrant_two(self):
+            import math
+            expected = 3*math.pi/4
+            self.assertTrue(math.isclose(angle_complex(-1,1), expected, rel_tol=1e-9))
+    
+
+        def test_positive_imag(self):
+            import math
+            self.assertTrue(math.isclose(angle_complex(0,1), math.pi/2, rel_tol=1e-9))
+    
+        def test_negative_real(self):
+            import math
+            result = angle_complex(-1,0)
+            # phase for (-1+0j) should be pi
+            self.assertTrue(math.isclose(abs(result), math.pi, rel_tol=1e-9))
+    
+        def test_negative_imag(self):
+            import math
+            self.assertTrue(math.isclose(angle_complex(0,-1), -math.pi/2, rel_tol=1e-9))
+    
+        def test_quadrant_two(self):
+            import math
+            expected = 3*math.pi/4
+            self.assertTrue(math.isclose(angle_complex(-1,1), expected, rel_tol=1e-9))
+    
+
+        def test_quadrant_two(self):
+            import math
+            expected = 3*math.pi/4
+            self.assertTrue(math.isclose(angle_complex(-1,1), expected, rel_tol=1e-9))
+    
+
+
+program_066 (assert errors):
+    FAILED: test_negative_imag
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_066.py", line 21, in test_negative_imag
+            self.assertTrue(math.isclose(angle_complex(0,-1), -math.pi/2, rel_tol=1e-9))
+        AssertionError: False is not true
+        
+    FAILED: test_positive_imag
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_066.py", line 11, in test_positive_imag
+            self.assertTrue(math.isclose(angle_complex(0,1), math.pi/2, rel_tol=1e-9))
+        AssertionError: False is not true
+        
+    FAILED: test_quadrant_two
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_066.py", line 26, in test_quadrant_two
+            self.assertTrue(math.isclose(angle_complex(-1,1), expected, rel_tol=1e-9))
+        AssertionError: False is not true
+        
+
+program_070 (source):
+    def long_words(n, str):
+        word_len = []
+        txt = str.split(" ")
+        for x in txt:
+            if len(x) > n:
+                word_len.append(x)
+        return word_len
+program_070 (failed test code):
+        def test_mixed_length(self):
+            text = "openai creates powerful models"
+            self.assertEqual(long_words(6, text), ["creates", "powerful", "models"])
+    
+
+
+program_070 (assert errors):
+    FAILED: test_mixed_length
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_070.py", line 19, in test_mixed_length
+            self.assertEqual(long_words(6, text), ["creates", "powerful", "models"])
+        AssertionError: Lists differ: ['creates', 'powerful'] != ['creates', 'powerful', 'models']
+        
+        Second list contains 1 additional elements.
+        First extra element 2:
+        'models'
+        
+        - ['creates', 'powerful']
+        + ['creates', 'powerful', 'models']
+        ?                       ++++++++++
+        
+        
+
+program_079 (source):
+    def circle_circumference(r):
+      perimeter=2*3.1415*r
+      return perimeter
+program_079 (failed test code):
+        def test_precision(self):
+            # Compare with math.tau for higher precision reference
+            expected = math.tau/2*3  # tau = 2π, but function uses 3.1415 approximation
+            self.assertAlmostEqual(circle_circumference(1.5), 2*3.1415*1.5, places=4)
+    
+
+
+program_079 (assert errors):
+    FAILED: test_precision
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_079.py", line 22, in test_precision
+            expected = math.tau/2*3  # tau = 2π, but function uses 3.1415 approximation
+        NameError: name 'math' is not defined
+        
+
+program_085 (source):
+    def find_solution(a, b, n):
+    	i = 0
+    	while i * a <= n:
+    		if (n - (i * a)) % b == 0: 
+    			return (i, (n - (i * a)) // b)
+    		i = i + 1
+    	return None
+program_085 (failed test code):
+        def test_find_solution_a_equals_one(self):
+            self.assertEqual(find_solution(1,7,10), (10,0))
+    
+        def test_find_solution_large_numbers(self):
+            self.assertEqual(find_solution(17,23,391), (8,5))
+    
+
+        def test_find_solution_divisible_by_a(self):
+            self.assertEqual(find_solution(4,6,12), (3,0))
+    
+        def test_find_solution_no_solution(self):
+            self.assertIsNone(find_solution(4,6,7))
+    
+        def test_find_solution_zero_n(self):
+            self.assertEqual(find_solution(4,6,0), (0,0))
+    
+        def test_find_solution_a_equals_one(self):
+            self.assertEqual(find_solution(1,7,10), (10,0))
+    
+        def test_find_solution_large_numbers(self):
+            self.assertEqual(find_solution(17,23,391), (8,5))
+    
+
+        def test_find_solution_large_numbers(self):
+            self.assertEqual(find_solution(17,23,391), (8,5))
+    
+
+
+program_085 (assert errors):
+    FAILED: test_find_solution_a_equals_one
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_085.py", line 21, in test_find_solution_a_equals_one
+            self.assertEqual(find_solution(1,7,10), (10,0))
+        AssertionError: Tuples differ: (3, 1) != (10, 0)
+        
+        First differing element 0:
+        3
+        10
+        
+        - (3, 1)
+        + (10, 0)
+        
+    FAILED: test_find_solution_divisible_by_a
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_085.py", line 12, in test_find_solution_divisible_by_a
+            self.assertEqual(find_solution(4,6,12), (3,0))
+        AssertionError: Tuples differ: (0, 2) != (3, 0)
+        
+        First differing element 0:
+        0
+        3
+        
+        - (0, 2)
+        + (3, 0)
+        
+    FAILED: test_find_solution_large_numbers
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_085.py", line 24, in test_find_solution_large_numbers
+            self.assertEqual(find_solution(17,23,391), (8,5))
+        AssertionError: Tuples differ: (0, 17) != (8, 5)
+        
+        First differing element 0:
+        0
+        8
+        
+        - (0, 17)
+        + (8, 5)
+        
+
+program_087 (source):
+    def sum_series(n):
+      if n < 1:
+        return 0
+      else:
+        return n + sum_series(n - 2)
+program_087 (failed test code):
+        def test_sum_series_five(self):
+            self.assertEqual(sum_series(5), 15)
+    
+        def test_sum_series_zero(self):
+            self.assertEqual(sum_series(0), 0)
+    
+        def test_sum_series_negative(self):
+            self.assertEqual(sum_series(-4), 0)
+    
+        def test_sum_series_large(self):
+            self.assertEqual(sum_series(100), 5050)
+    
+        def test_sum_series_float(self):
+            self.assertEqual(sum_series(5.0), 15.0)
+    
+
+        def test_sum_series_float(self):
+            self.assertEqual(sum_series(5.0), 15.0)
+    
+
+        def test_sum_series_large(self):
+            self.assertEqual(sum_series(100), 5050)
+    
+        def test_sum_series_float(self):
+            self.assertEqual(sum_series(5.0), 15.0)
+    
+
+
+program_087 (assert errors):
+    FAILED: test_sum_series_five
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_087.py", line 9, in test_sum_series_five
+            self.assertEqual(sum_series(5), 15)
+        AssertionError: 9 != 15
+        
+    FAILED: test_sum_series_float
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_087.py", line 21, in test_sum_series_float
+            self.assertEqual(sum_series(5.0), 15.0)
+        AssertionError: 9.0 != 15.0
+        
+    FAILED: test_sum_series_large
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_087.py", line 18, in test_sum_series_large
+            self.assertEqual(sum_series(100), 5050)
+        AssertionError: 2550 != 5050
+        
+
+program_088 (source):
+    from math import tan, pi
+    def area_polygon(s, l):
+      area = s * (l ** 2) / (4 * tan(pi / s))
+      return area
+program_088 (failed test code):
+        def test_large_n_approaches_circle(self):
+            # A 1000‑gon with side length 1 approximates area ~785
+            area = area_polygon(1, 1000)
+            self.assertTrue(780 < area < 790)
+    
+
+        def test_square_area(self):
+            import math
+            self.assertAlmostEqual(area_polygon(2, 4), 4.0, places=5)
+    
+        def test_triangle_area(self):
+            import math
+            expected = (3 * 3 ** 2) / (4 * math.tan(math.pi / 3))
+            self.assertAlmostEqual(area_polygon(3, 3), expected, places=5)
+    
+        def test_pentagon_area(self):
+            import math
+            expected = (5 * 5 ** 2) / (4 * math.tan(math.pi / 5))
+            self.assertAlmostEqual(area_polygon(5, 5), expected, places=5)
+    
+        def test_zero_sides_raises(self):
+            with self.assertRaises(ZeroDivisionError):
+                area_polygon(2, 0)
+    
+        def test_negative_side_length(self):
+            import math
+            self.assertAlmostEqual(area_polygon(-4, 4), 16.0, places=5)
+    
+        def test_large_n_approaches_circle(self):
+            # A 1000‑gon with side length 1 approximates area ~785
+            area = area_polygon(1, 1000)
+            self.assertTrue(780 < area < 790)
+    
+
+        def test_zero_sides_raises(self):
+            with self.assertRaises(ZeroDivisionError):
+                area_polygon(2, 0)
+    
+        def test_negative_side_length(self):
+            import math
+            self.assertAlmostEqual(area_polygon(-4, 4), 16.0, places=5)
+    
+        def test_large_n_approaches_circle(self):
+            # A 1000‑gon with side length 1 approximates area ~785
+            area = area_polygon(1, 1000)
+            self.assertTrue(780 < area < 790)
+    
+
+
+program_088 (assert errors):
+    FAILED: test_large_n_approaches_circle
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_088.py", line 30, in test_large_n_approaches_circle
+            self.assertTrue(780 < area < 790)
+        AssertionError: False is not true
+        
+    FAILED: test_square_area
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_088.py", line 7, in test_square_area
+            self.assertAlmostEqual(area_polygon(2, 4), 4.0, places=5)
+        AssertionError: 4.898587196589413e-16 != 4.0 within 5 places (3.9999999999999996 difference)
+        
+    FAILED: test_zero_sides_raises
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_088.py", line 21, in test_zero_sides_raises
+            area_polygon(2, 0)
+        AssertionError: ZeroDivisionError not raised
+        
+
+program_089 (source):
+    import math 
+    def div_sum(n): 
+      total = 1
+      i = 2
+    
+      while i * i <= n:
+        if (n % i == 0):
+          total = (total + i + math.floor(n / i))
+        i += 1
+    
+      return total
+    
+    def are_equivalent(num1, num2): 
+        return div_sum(num1) == div_sum(num2);
+program_089 (failed test code):
+        def test_large_composite(self):
+            self.assertEqual(div_sum(100), 117)
+    
+        def test_zero(self):
+            self.assertEqual(div_sum(0), 1)
+    
+
+        def test_square_number(self):
+            self.assertEqual(div_sum(25), 6)
+    
+        def test_one(self):
+            self.assertEqual(div_sum(1), 1)
+    
+        def test_large_composite(self):
+            self.assertEqual(div_sum(100), 117)
+    
+        def test_zero(self):
+            self.assertEqual(div_sum(0), 1)
+    
+
+
+program_089 (assert errors):
+    FAILED: test_large_composite
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_089.py", line 18, in test_large_composite
+            self.assertEqual(div_sum(100), 117)
+        AssertionError: 127 != 117
+        
+    FAILED: test_square_number
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_089.py", line 12, in test_square_number
+            self.assertEqual(div_sum(25), 6)
+        AssertionError: 11 != 6
+        
+
+program_090 (source):
+    def count_char_position(str1): 
+        count_chars = 0
+        for i in range(len(str1)):
+            if ((i == ord(str1[i]) - ord('A')) or 
+                (i == ord(str1[i]) - ord('a'))): 
+                count_chars += 1
+        return count_chars
+program_090 (failed test code):
+        def test_all_same_char(self):
+            self.assertEqual(count_char_position("aaaa"), {'a':[0,1,2,3]})
+    
+        def test_spaces_and_punctuation(self):
+            self.assertEqual(count_char_position("a b,a"), {'a':[0,2],' ':[1],'b':[3],',':[4]})
+    
+        def test_unicode_characters(self):
+            res = count_char_position("😀🐍😀")
+            self.assertEqual(res['😀'], [0,2])
+            self.assertEqual(res['🐍'], [1])
+    
+        def test_case_sensitivity(self):
+            self.assertEqual(count_char_position("AaA"), {'A':[0,2],'a':[1]})
+    
+
+        def test_case_sensitivity(self):
+            self.assertEqual(count_char_position("AaA"), {'A':[0,2],'a':[1]})
+    
+
+        def test_empty_string(self):
+            self.assertEqual(count_char_position(""), {})
+    
+        def test_all_same_char(self):
+            self.assertEqual(count_char_position("aaaa"), {'a':[0,1,2,3]})
+    
+        def test_spaces_and_punctuation(self):
+            self.assertEqual(count_char_position("a b,a"), {'a':[0,2],' ':[1],'b':[3],',':[4]})
+    
+        def test_unicode_characters(self):
+            res = count_char_position("😀🐍😀")
+            self.assertEqual(res['😀'], [0,2])
+            self.assertEqual(res['🐍'], [1])
+    
+        def test_case_sensitivity(self):
+            self.assertEqual(count_char_position("AaA"), {'A':[0,2],'a':[1]})
+    
+
+        def test_general_string(self):
+            self.assertEqual(count_char_position("hello"), {'h':[0],'e':[1],'l':[2,3],'o':[4]})
+    
+        def test_empty_string(self):
+            self.assertEqual(count_char_position(""), {})
+    
+        def test_all_same_char(self):
+            self.assertEqual(count_char_position("aaaa"), {'a':[0,1,2,3]})
+    
+        def test_spaces_and_punctuation(self):
+            self.assertEqual(count_char_position("a b,a"), {'a':[0,2],' ':[1],'b':[3],',':[4]})
+    
+        def test_unicode_characters(self):
+            res = count_char_position("😀🐍😀")
+            self.assertEqual(res['😀'], [0,2])
+            self.assertEqual(res['🐍'], [1])
+    
+        def test_case_sensitivity(self):
+            self.assertEqual(count_char_position("AaA"), {'A':[0,2],'a':[1]})
+    
+
+        def test_spaces_and_punctuation(self):
+            self.assertEqual(count_char_position("a b,a"), {'a':[0,2],' ':[1],'b':[3],',':[4]})
+    
+        def test_unicode_characters(self):
+            res = count_char_position("😀🐍😀")
+            self.assertEqual(res['😀'], [0,2])
+            self.assertEqual(res['🐍'], [1])
+    
+        def test_case_sensitivity(self):
+            self.assertEqual(count_char_position("AaA"), {'A':[0,2],'a':[1]})
+    
+
+        def test_unicode_characters(self):
+            res = count_char_position("😀🐍😀")
+            self.assertEqual(res['😀'], [0,2])
+            self.assertEqual(res['🐍'], [1])
+    
+        def test_case_sensitivity(self):
+            self.assertEqual(count_char_position("AaA"), {'A':[0,2],'a':[1]})
+    
+
+
+program_090 (assert errors):
+    FAILED: test_all_same_char
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_090.py", line 12, in test_all_same_char
+            self.assertEqual(count_char_position("aaaa"), {'a':[0,1,2,3]})
+        AssertionError: 1 != {'a': [0, 1, 2, 3]}
+        
+    FAILED: test_case_sensitivity
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_090.py", line 23, in test_case_sensitivity
+            self.assertEqual(count_char_position("AaA"), {'A':[0,2],'a':[1]})
+        AssertionError: 1 != {'A': [0, 2], 'a': [1]}
+        
+    FAILED: test_empty_string
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_090.py", line 9, in test_empty_string
+            self.assertEqual(count_char_position(""), {})
+        AssertionError: 0 != {}
+        
+    FAILED: test_general_string
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_090.py", line 6, in test_general_string
+            self.assertEqual(count_char_position("hello"), {'h':[0],'e':[1],'l':[2,3],'o':[4]})
+        AssertionError: 0 != {'h': [0], 'e': [1], 'l': [2, 3], 'o': [4]}
+        
+    FAILED: test_spaces_and_punctuation
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_090.py", line 15, in test_spaces_and_punctuation
+            self.assertEqual(count_char_position("a b,a"), {'a':[0,2],' ':[1],'b':[3],',':[4]})
+        AssertionError: 1 != {'a': [0, 2], ' ': [1], 'b': [3], ',': [4]}
+        
+    FAILED: test_unicode_characters
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_090.py", line 19, in test_unicode_characters
+            self.assertEqual(res['😀'], [0,2])
+        TypeError: 'int' object is not subscriptable
+        
+
+program_094 (source):
+    def sum_range_list(list1, m, n):                                                                                                                                                                                                
+        sum_range = 0                                                                                                                                                                                                         
+        for i in range(m, n+1, 1):                                                                                                                                                                                        
+            sum_range += list1[i]                                                                                                                                                                                                  
+        return sum_range
+program_094 (failed test code):
+        def test_negative_indices(self):
+            with self.assertRaises(IndexError):
+                sum_range_list([1,2,3], -1, 1)
+    
+        def test_large_list(self):
+            data = list(range(1000))
+            self.assertEqual(sum_range_list(data, 100, 199), sum(data[100:200]))
+    
+
+
+program_094 (assert errors):
+    FAILED: test_negative_indices
+        Traceback (most recent call last):
+          File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\datasets\o3\tests\test_094.py", line 20, in test_negative_indices
+            sum_range_list([1,2,3], -1, 1)
+        AssertionError: IndexError not raised
+        
+

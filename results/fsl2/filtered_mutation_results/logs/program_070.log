@@ -1,0 +1,59 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Few_shot2.programs.program_070
+   - tests: datasets.GPT_4.Few_shot2.tests.test_070
+[*] 8 tests passed:
+   - datasets.GPT_4.Few_shot2.tests.test_070 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] COI datasets.GPT_4.Few_shot2.programs.program_070: [0.00000 s] killed by test_long_words_all_long (datasets.GPT_4.Few_shot2.tests.test_070.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_070.py", line 9, in test_long_words_all_long
+    def test_long_words_all_long(self): self.assertEqual(long_words(2, 'Hello world again'), ['Hello', 'world', 'again'])
+AssertionError: Lists differ: [] != ['Hello', 'world', 'again']
+
+Second list contains 3 additional elements.
+First extra element 0:
+'Hello'
+
+- []
++ ['Hello', 'world', 'again']
+
+   - [#   2] ROR datasets.GPT_4.Few_shot2.programs.program_070: [0.00102 s] killed by test_long_words_all_long (datasets.GPT_4.Few_shot2.tests.test_070.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_070.py", line 9, in test_long_words_all_long
+    def test_long_words_all_long(self): self.assertEqual(long_words(2, 'Hello world again'), ['Hello', 'world', 'again'])
+AssertionError: Lists differ: [] != ['Hello', 'world', 'again']
+
+Second list contains 3 additional elements.
+First extra element 0:
+'Hello'
+
+- []
++ ['Hello', 'world', 'again']
+
+   - [#   3] ROR datasets.GPT_4.Few_shot2.programs.program_070: [0.00263 s] killed by test_long_words_basic (datasets.GPT_4.Few_shot2.tests.test_070.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Few_shot2\tests\test_070.py", line 5, in test_long_words_basic
+    def test_long_words_basic(self): self.assertEqual(long_words(3, 'The quick brown fox'), ['quick', 'brown'])
+AssertionError: Lists differ: ['The', 'quick', 'brown', 'fox'] != ['quick', 'brown']
+
+First differing element 0:
+'The'
+'quick'
+
+First list contains 2 additional elements.
+First extra element 2:
+'brown'
+
+- ['The', 'quick', 'brown', 'fox']
++ ['quick', 'brown']
+
+[*] Mutation score [0.04729 s]: 100.0%
+   - all: 3
+   - killed: 3 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

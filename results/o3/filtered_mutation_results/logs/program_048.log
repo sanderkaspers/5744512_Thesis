@@ -1,0 +1,55 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_048
+   - tests: datasets.o3.tests.test_048
+[*] 6 tests passed:
+   - datasets.o3.tests.test_048 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOD datasets.o3.programs.program_048: [0.00000 s] killed by test_cross_century (datasets.o3.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_048.py", line 15, in test_cross_century
+    self.assertEqual(next_smallest_palindrome(99), 101)
+AssertionError: 100 != 101
+
+   - [#   2] AOR datasets.o3.programs.program_048: [0.00000 s] killed by test_cross_century (datasets.o3.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_048.py", line 15, in test_cross_century
+    self.assertEqual(next_smallest_palindrome(99), 101)
+AssertionError: 99 != 101
+
+   - [#   3] AOR datasets.o3.programs.program_048: [0.00000 s] killed by test_cross_century (datasets.o3.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_048.py", line 15, in test_cross_century
+    self.assertEqual(next_smallest_palindrome(99), 101)
+AssertionError: 100 != 101
+
+   - [#   4] COI datasets.o3.programs.program_048: [0.00000 s] killed by test_cross_century (datasets.o3.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_048.py", line 15, in test_cross_century
+    self.assertEqual(next_smallest_palindrome(99), 101)
+AssertionError: 100 != 101
+
+   - [#   5] ROR datasets.o3.programs.program_048: [0.00000 s] killed by test_cross_century (datasets.o3.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_048.py", line 15, in test_cross_century
+    self.assertEqual(next_smallest_palindrome(99), 101)
+AssertionError: 100 != 101
+
+   - [#   6] SIR datasets.o3.programs.program_048: [0.00000 s] killed by test_cross_century (datasets.o3.tests.test_048.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_048.py", line 15, in test_cross_century
+    self.assertEqual(next_smallest_palindrome(99), 101)
+AssertionError: 100 != 101
+
+[*] Mutation score [0.06258 s]: 100.0%
+   - all: 6
+   - killed: 6 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

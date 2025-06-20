@@ -1,0 +1,31 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\o3\\\
+    tests\\test_072.py\", line 11, in test_negative_numbers\n    self.assertEqual(max_occurrences(nums),\
+    \ -1)\nAssertionError: 0 != -1\n"
+  killer: test_negative_numbers (datasets.o3.tests.test_072.TestVersion)
+  module: !!python/module:datasets.o3.programs.program_072 ''
+  mutations:
+  - lineno: 5
+    operator: ASR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0
+number_of_tests: 5
+targets:
+- datasets.o3.programs.program_072
+tests:
+- name: datasets.o3.tests.test_072
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.02937030792236328
+  run_tests_with_mutant: 0.0
+total_time: 0.03195810317993164

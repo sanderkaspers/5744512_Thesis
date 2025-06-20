@@ -1,0 +1,33 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\\
+    tests\\test_050.py\", line 12, in test_snake_to_camel_with_programming_language_expect__ProgrammingLanguage_\n\
+    \    self.assertEqual(snake_to_camel('programming_language'), ('ProgrammingLanguage'))\n\
+    AssertionError: '__' != 'ProgrammingLanguage'\n- __\n+ ProgrammingLanguage\n\n"
+  killer: test_snake_to_camel_with_programming_language_expect__ProgrammingLanguage_
+    (datasets.mbpp.tests.test_050.TestVersion)
+  module: !!python/module:datasets.mbpp.programs.program_050 ''
+  mutations:
+  - lineno: 3
+    operator: LCR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.0019669532775878906
+number_of_tests: 3
+targets:
+- datasets.mbpp.programs.program_050
+tests:
+- name: datasets.mbpp.tests.test_050
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.021009445190429688
+  run_tests_with_mutant: 0.0019669532775878906
+total_time: 0.02701115608215332

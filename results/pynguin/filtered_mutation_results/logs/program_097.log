@@ -1,0 +1,27 @@
+[*] Start mutation process:
+   - targets: datasets.pynguin.programs.program_097
+   - tests: datasets.pynguin.tests.test_097
+[*] 3 tests passed:
+   - datasets.pynguin.tests.test_097 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] BCR datasets.pynguin.programs.program_097: [0.00000 s] survived
+   - [#   2] COD datasets.pynguin.programs.program_097: [0.00957 s] killed by test_case_0 (datasets.pynguin.tests.test_097.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_097.py", line 8, in test_case_0
+    assert var_0 is True
+AssertionError
+
+   - [#   3] COI datasets.pynguin.programs.program_097: [0.00105 s] killed by test_case_0 (datasets.pynguin.tests.test_097.TestAll)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\pynguin\tests\test_097.py", line 8, in test_case_0
+    assert var_0 is True
+AssertionError
+
+[*] Mutation score [0.04395 s]: 66.7%
+   - all: 3
+   - killed: 2 (66.7%)
+   - survived: 1 (33.3%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)

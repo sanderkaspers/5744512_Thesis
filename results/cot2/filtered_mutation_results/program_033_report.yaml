@@ -1,0 +1,153 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_033.py\", line 17, in test_boolean_true_input\n\
+    \    def test_boolean_true_input(self): self.assertAlmostEqual(surfacearea_sphere(True),\
+    \ 4 * math.pi, places=5)\nAssertionError: 1.2732395447351628 != 12.566370614359172\
+    \ within 5 places (11.29313106962401 difference)\n"
+  killer: test_boolean_true_input (datasets.GPT_4.Chain_of_thought2.tests.test_033.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Chain_of_thought2.programs.program_033 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.015630006790161133
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_033.py\", line 17, in test_boolean_true_input\n\
+    \    def test_boolean_true_input(self): self.assertAlmostEqual(surfacearea_sphere(True),\
+    \ 4 * math.pi, places=5)\nAssertionError: 1.0 != 12.566370614359172 within 5 places\
+    \ (11.566370614359172 difference)\n"
+  killer: test_boolean_true_input (datasets.GPT_4.Chain_of_thought2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_033.py\", line 17, in test_boolean_true_input\n\
+    \    def test_boolean_true_input(self): self.assertAlmostEqual(surfacearea_sphere(True),\
+    \ 4 * math.pi, places=5)\nAssertionError: 77.8802336483881 != 12.566370614359172\
+    \ within 5 places (65.31386303402893 difference)\n"
+  killer: test_boolean_true_input (datasets.GPT_4.Chain_of_thought2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_033.py\", line 9, in test_large_radius\n    def\
+    \ test_large_radius(self): expected = 4 * math.pi * (1e6)**2; self.assertAlmostEqual(surfacearea_sphere(1e6),\
+    \ expected, places=2)\nAssertionError: 12.566370614359172 != 12566370614359.172\
+    \ within 2 places (12566370614346.605 difference)\n"
+  killer: test_large_radius (datasets.GPT_4.Chain_of_thought2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_033.py\", line 17, in test_boolean_true_input\n\
+    \    def test_boolean_true_input(self): self.assertAlmostEqual(surfacearea_sphere(True),\
+    \ 4 * math.pi, places=5)\nAssertionError: 12.0 != 12.566370614359172 within 5\
+    \ places (0.5663706143591725 difference)\n"
+  killer: test_boolean_true_input (datasets.GPT_4.Chain_of_thought2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_033.py\", line 9, in test_large_radius\n    def\
+    \ test_large_radius(self): expected = 4 * math.pi * (1e6)**2; self.assertAlmostEqual(surfacearea_sphere(1e6),\
+    \ expected, places=2)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_033\"\
+    , line 3, in surfacearea_sphere\nOverflowError: (34, 'Result too large')\n"
+  killer: test_large_radius (datasets.GPT_4.Chain_of_thought2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_033.py\", line 9, in test_large_radius\n    def\
+    \ test_large_radius(self): expected = 4 * math.pi * (1e6)**2; self.assertAlmostEqual(surfacearea_sphere(1e6),\
+    \ expected, places=2)\nAssertionError: 12.566370614359172 != 12566370614359.172\
+    \ within 2 places (12566370614346.605 difference)\n"
+  killer: test_large_radius (datasets.GPT_4.Chain_of_thought2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_033.py\", line 17, in test_boolean_true_input\n\
+    \    def test_boolean_true_input(self): self.assertAlmostEqual(surfacearea_sphere(True),\
+    \ 4 * math.pi, places=5)\nAssertionError: 12.0 != 12.566370614359172 within 5\
+    \ places (0.5663706143591725 difference)\n"
+  killer: test_boolean_true_input (datasets.GPT_4.Chain_of_thought2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.00823521614074707
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Chain_of_thought2\\tests\\test_033.py\", line 9, in test_large_radius\n    def\
+    \ test_large_radius(self): expected = 4 * math.pi * (1e6)**2; self.assertAlmostEqual(surfacearea_sphere(1e6),\
+    \ expected, places=2)\n  File \"datasets.GPT_4.Chain_of_thought2.programs.program_033\"\
+    , line 3, in surfacearea_sphere\nOverflowError: (34, 'Result too large')\n"
+  killer: test_large_radius (datasets.GPT_4.Chain_of_thought2.tests.test_033.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 2
+  time: 0.0
+number_of_tests: 7
+targets:
+- datasets.GPT_4.Chain_of_thought2.programs.program_033
+tests:
+- name: datasets.GPT_4.Chain_of_thought2.tests.test_033
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.054173946380615234
+  run_tests_with_mutant: 0.023865222930908203
+total_time: 0.054173946380615234

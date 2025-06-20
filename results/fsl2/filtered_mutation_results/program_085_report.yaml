@@ -1,0 +1,254 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 45.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_085.py\", line 9, in test_find_solution_invalid_combo\n\
+    \    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5,\
+    \ 7, 1))\nAssertionError: (3, -2) is not false\n"
+  killer: test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot2.programs.program_085 ''
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 1
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_085.py\", line 9, in test_find_solution_invalid_combo\n\
+    \    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5,\
+    \ 7, 1))\nAssertionError: (3, -2) is not false\n"
+  killer: test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 4
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 6
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 7
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_085.py\", line 5, in test_find_solution_valid_combo\n \
+    \   def test_find_solution_valid_combo(self): self.assertTrue(find_solution(3,\
+    \ 5, 11))\nAssertionError: None is not true\n"
+  killer: test_find_solution_valid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 7
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 10
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 11
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 12
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 13
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 5
+    operator: AOR
+  number: 14
+  status: survived
+  tests_run: 9
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_085.py\", line 9, in test_find_solution_invalid_combo\n\
+    \    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5,\
+    \ 7, 1))\nAssertionError: (-4, 3) is not false\n"
+  killer: test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: AOR
+  number: 15
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_085.py\", line 7, in test_find_solution_exact_multiple\n\
+    \    def test_find_solution_exact_multiple(self): self.assertTrue(find_solution(4,\
+    \ 6, 12))\nAssertionError: None is not true\n"
+  killer: test_find_solution_exact_multiple (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: COI
+  number: 16
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_085.py\", line 9, in test_find_solution_invalid_combo\n\
+    \    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5,\
+    \ 7, 1))\nAssertionError: (0, 0) is not false\n"
+  killer: test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 17
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_085.py\", line 7, in test_find_solution_exact_multiple\n\
+    \    def test_find_solution_exact_multiple(self): self.assertTrue(find_solution(4,\
+    \ 6, 12))\nAssertionError: None is not true\n"
+  killer: test_find_solution_exact_multiple (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 18
+  status: killed
+  tests_run: 1
+  time: 0.014004945755004883
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_085.py\", line 11, in test_find_solution_zero_target\n\
+    \    def test_find_solution_zero_target(self): self.assertTrue(find_solution(5,\
+    \ 3, 0))\nAssertionError: None is not true\n"
+  killer: test_find_solution_zero_target (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: ROR
+  number: 19
+  status: killed
+  tests_run: 9
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot2\\tests\\test_085.py\", line 9, in test_find_solution_invalid_combo\n\
+    \    def test_find_solution_invalid_combo(self): self.assertFalse(find_solution(5,\
+    \ 7, 1))\nAssertionError: (0, 0) is not false\n"
+  killer: test_find_solution_invalid_combo (datasets.GPT_4.Few_shot2.tests.test_085.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 20
+  status: killed
+  tests_run: 2
+  time: 0.0
+number_of_tests: 9
+targets:
+- datasets.GPT_4.Few_shot2.programs.program_085
+tests:
+- name: datasets.GPT_4.Few_shot2.tests.test_085
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 0.10758256912231445
+  run_tests_with_mutant: 0.028595685958862305
+total_time: 0.10758256912231445

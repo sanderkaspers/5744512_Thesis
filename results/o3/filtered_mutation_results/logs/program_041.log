@@ -1,0 +1,20 @@
+[*] Start mutation process:
+   - targets: datasets.o3.programs.program_041
+   - tests: datasets.o3.tests.test_041
+[*] 8 tests passed:
+   - datasets.o3.tests.test_041 [0.00000 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.o3.programs.program_041: [0.00100 s] killed by test_float_base (datasets.o3.tests.test_041.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\o3\tests\test_041.py", line 24, in test_float_base
+    self.assertAlmostEqual(power(2.5, 2), 6.25)
+AssertionError: 5.0 != 6.25 within 7 places (1.25 difference)
+
+[*] Mutation score [0.01551 s]: 100.0%
+   - all: 1
+   - killed: 1 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

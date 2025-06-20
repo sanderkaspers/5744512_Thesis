@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MutPy mutation report - mutation #5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js" type="text/javascript"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+    window.setTimeout(function () {
+        
+        $('.line.number12').attr('title', 'AOR');
+        
+    }, 0);
+</script>
+
+</head>
+<body>
+    <div class="container">
+        
+<div class="page-header">
+    <h1>Mutation #5</h1>
+</div>
+<h3>Details</h3>
+<ul>
+    <li>module - <code><module 'datasets.mbpp.programs.program_071' from 'C:\\Users\\skaspers\\OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\mbpp\\programs\\program_071.py'></code></li>
+    <li><span class="label label-success">killed</span> by <code>test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True (datasets.mbpp.tests.test_071.TestVersion)</code></li>
+    
+    <li>duration - 0.001 s</li>
+    
+    
+    <li>tests run - 2</li>
+    
+</ul>
+
+<h3>Exception traceback</h3>
+<pre>Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\mbpp\tests\test_071.py", line 9, in test_magic_square_test_with_2_7_6_9_5_1_4_3_8_expect_True
+    self.assertEqual(magic_square_test([[2, 7, 6], [9, 5, 1], [4, 3, 8]]), True)
+AssertionError: False != True
+</pre>
+
+<h3>Mutations</h3>
+<ul>
+    
+    <li>AOR - line 12</li>
+    
+</ul>
+<h3>Mutant</h3>
+<pre class="brush: python; first-line: 1; highlight: [12]; toolbar: false;">def magic_square_test(my_matrix):
+    iSize = len(my_matrix[0])
+    sum_list = []
+    sum_list.extend([sum(lines) for lines in my_matrix])
+    for col in range(iSize):
+        sum_list.append(sum((row[col] for row in my_matrix)))
+    result1 = 0
+    for i in range(0, iSize):
+        result1 += my_matrix[i][i]
+    sum_list.append(result1)
+    result2 = 0
+    for i in range(iSize - 1, -1, +1):
+        result2 += my_matrix[i][i]
+    sum_list.append(result2)
+    if len(set(sum_list)) > 1:
+        return False
+    return True</pre>
+
+    </div>
+</body>
+</html>

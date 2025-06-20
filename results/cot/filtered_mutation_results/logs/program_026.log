@@ -1,0 +1,41 @@
+[*] Start mutation process:
+   - targets: datasets.GPT_4.Chain_of_thought.programs.program_026
+   - tests: datasets.GPT_4.Chain_of_thought.tests.test_026
+[*] 13 tests passed:
+   - datasets.GPT_4.Chain_of_thought.tests.test_026 [0.00101 s]
+[*] Start mutants generation and execution:
+   - [#   1] AOR datasets.GPT_4.Chain_of_thought.programs.program_026: [0.00100 s] killed by test_all_tuples_matching (datasets.GPT_4.Chain_of_thought.tests.test_026.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_026.py", line 12, in test_all_tuples_matching
+    self.assertEqual(find_tuples([(4, 8), (2, 6)], 2), [(4, 8), (2, 6)])
+AssertionError: Lists differ: [] != [(4, 8), (2, 6)]
+
+Second list contains 2 additional elements.
+First extra element 0:
+(4, 8)
+
+- []
++ [(4, 8), (2, 6)]
+
+   - [#   2] ROR datasets.GPT_4.Chain_of_thought.programs.program_026: [0.00099 s] killed by test_all_tuples_matching (datasets.GPT_4.Chain_of_thought.tests.test_026.TestVersion)
+
+Traceback (most recent call last):
+  File "C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.\datasets\GPT_4\Chain_of_thought\tests\test_026.py", line 12, in test_all_tuples_matching
+    self.assertEqual(find_tuples([(4, 8), (2, 6)], 2), [(4, 8), (2, 6)])
+AssertionError: Lists differ: [] != [(4, 8), (2, 6)]
+
+Second list contains 2 additional elements.
+First extra element 0:
+(4, 8)
+
+- []
++ [(4, 8), (2, 6)]
+
+[*] Mutation score [0.03309 s]: 100.0%
+   - all: 2
+   - killed: 2 (100.0%)
+   - survived: 0 (0.0%)
+   - incompetent: 0 (0.0%)
+   - timeout: 0 (0.0%)
+HI SANDER, RUNNING MUTPY FROM: C:\Users\skaspers\OneDrive - Capgemini\Documents\Prompted Testsuite Analysis\.venv38\lib\site-packages\mutpy\commandline.py

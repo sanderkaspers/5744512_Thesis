@@ -1,0 +1,219 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 100.0
+mutations:
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 12, in test_case_3\n    self.assertEqual(multiply_int(3,\
+    \ -4), -12) # Positive and negative)\nAssertionError: 12 != -12\n"
+  killer: test_case_3 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: &id001 !!python/module:datasets.GPT_4.Few_shot.programs.program_069 ''
+  mutations:
+  - lineno: 3
+    operator: AOD
+  number: 1
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 12, in test_case_3\n    self.assertEqual(multiply_int(3,\
+    \ -4), -12) # Positive and negative)\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  [Previous line repeated 983 more times]\n  File \"\
+    datasets.GPT_4.Few_shot.programs.program_069\", line 2, in multiply_int\nRecursionError:\
+    \ maximum recursion depth exceeded in comparison\n"
+  killer: test_case_3 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOD
+  number: 2
+  status: killed
+  tests_run: 3
+  time: 0.22099661827087402
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 12, in test_case_3\n    self.assertEqual(multiply_int(3,\
+    \ -4), -12) # Positive and negative)\nAssertionError: 12 != -12\n"
+  killer: test_case_3 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 3
+  status: killed
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 12, in test_case_3\n    self.assertEqual(multiply_int(3,\
+    \ -4), -12) # Positive and negative)\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  [Previous line repeated 983 more times]\n  File \"\
+    datasets.GPT_4.Few_shot.programs.program_069\", line 2, in multiply_int\nRecursionError:\
+    \ maximum recursion depth exceeded in comparison\n"
+  killer: test_case_3 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 3
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 3
+  time: 0.23665308952331543
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 6, in test_case_1\n    self.assertEqual(multiply_int(3,\
+    \ 4), 12) # Positive integers)\nAssertionError: 0 != 12\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 6, in test_case_1\n    self.assertEqual(multiply_int(3,\
+    \ 4), 12) # Positive integers)\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 9, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 9, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 9, in multiply_int\n  [Previous line repeated 983 more times]\n  File \"\
+    datasets.GPT_4.Few_shot.programs.program_069\", line 2, in multiply_int\nRecursionError:\
+    \ maximum recursion depth exceeded in comparison\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 9
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.20854973793029785
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 6, in test_case_1\n    self.assertEqual(multiply_int(3,\
+    \ 4), 12) # Positive integers)\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 9, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 9, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 9, in multiply_int\n  [Previous line repeated 982 more times]\n  File \"\
+    datasets.GPT_4.Few_shot.programs.program_069\", line 2, in multiply_int\nRecursionError:\
+    \ maximum recursion depth exceeded in comparison\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: COI
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.21680951118469238
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 6, in test_case_1\n    self.assertEqual(multiply_int(3,\
+    \ 4), 12) # Positive integers)\nAssertionError: 0 != 12\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: COI
+  number: 8
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 6, in test_case_1\n    self.assertEqual(multiply_int(3,\
+    \ 4), 12) # Positive integers)\nAssertionError: 3 != 12\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 6, in test_case_1\n    self.assertEqual(multiply_int(3,\
+    \ 4), 12) # Positive integers)\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 9, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 9, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 9, in multiply_int\n  [Previous line repeated 982 more times]\n  File \"\
+    datasets.GPT_4.Few_shot.programs.program_069\", line 2, in multiply_int\nRecursionError:\
+    \ maximum recursion depth exceeded in comparison\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.2211759090423584
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 21, in test_case_6\n    self.assertEqual(multiply_int(0,\
+    \ 0), 0) # Both zero)\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  File \"datasets.GPT_4.Few_shot.programs.program_069\"\
+    , line 3, in multiply_int\n  [Previous line repeated 983 more times]\n  File \"\
+    datasets.GPT_4.Few_shot.programs.program_069\", line 2, in multiply_int\nRecursionError:\
+    \ maximum recursion depth exceeded in comparison\n"
+  killer: test_case_6 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 2
+    operator: ROR
+  number: 11
+  status: killed
+  tests_run: 6
+  time: 0.23838543891906738
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 6, in test_case_1\n    self.assertEqual(multiply_int(3,\
+    \ 4), 12) # Positive integers)\nAssertionError: 0 != 12\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 4
+    operator: ROR
+  number: 12
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\skaspers\\\
+    OneDrive - Capgemini\\Documents\\Prompted Testsuite Analysis\\.\\datasets\\GPT_4\\\
+    Few_shot\\tests\\test_069.py\", line 6, in test_case_1\n    self.assertEqual(multiply_int(3,\
+    \ 4), 12) # Positive integers)\nAssertionError: 3 != 12\n"
+  killer: test_case_1 (datasets.GPT_4.Few_shot.tests.test_069.TestVersion)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: ROR
+  number: 13
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 8
+targets:
+- datasets.GPT_4.Few_shot.programs.program_069
+tests:
+- name: datasets.GPT_4.Few_shot.tests.test_069
+  target: null
+  time: 0.0
+time_stats:
+  create_mutant_module: 0.0
+  create_target_ast: 0.0
+  mutate_module: 1.4221246242523193
+  run_tests_with_mutant: 1.3425703048706055
+total_time: 1.4387507438659668
